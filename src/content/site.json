@@ -1,8 +1,13 @@
 {
   "nav": {
     "cta": "Solicitar diagnóstico",
-    "links": "https://api.whatsapp.com/send/?phone=5524992697807&text=Ol%C3%A1%21+Vim+pela+landing+page+da+Cut+Creative+e+gostaria+de+saber+mais.&type=phone_number&app_absent=0[object Object],[object Object],[object Object]"
+    "links": [
+      { "label": "Como trabalhamos", "href": "#como-trabalhamos" },
+      { "label": "Segmentos", "href": "#segmentos" },
+      { "label": "Método", "href": "#metodo" }
+    ]
   },
+
   "hero": {
     "eyebrow": "Marketing focado em resultado.",
     "titulo": "Marketing estratégico para empresas que querem crescer com mais clareza, presença e resultado.",
@@ -11,22 +16,31 @@
     "col1Titulo": "Estratégia",
     "col1Texto": "A Cut Creative é uma agência com time completo: estratégia, social media, tráfego pago e produção audiovisual.",
     "col2Titulo": "Resultado",
-    "col2Texto": "Para empresas que já estão em operação e precisam profissionalizar a comunicação, gerar demanda e crescer com mais consistência."
+    "col2Texto": "Para empresas que já estão em operação e precisam profissionalizar a comunicação, gerar demanda e crescer com mais consistência.",
+    "imagem": "/hero-main.jpg",
+    "imagemMobile": "/hero-main-mobile.jpg"
   },
+
+  "logos": ["", "", "", "", "", "", "", "", "", "", "", "", "", "", "", ""],
+
   "provaSocial": {
     "tituloLinha1": "Trabalhamos com empresas",
     "tituloLinha2": "que precisam de resultado real.",
     "card01Tag": "Prova social",
     "card01Titulo": "Marketing com método.",
     "card01Texto": "Estratégia, social media, tráfego pago e produção audiovisual para negócios em operação.",
+    "card01Imagem": "",
     "card02Titulo": "Negócios em operação",
+    "card02Imagem": "",
     "card03Tag": "Na região",
     "card03Texto": "A Cut Creative atua com negócios locais e regionais em diferentes segmentos. Médicos, clínicas, restaurantes, academias, hotéis, óticas, construtoras, imobiliárias e outros negócios em operação que precisam de marketing com mais organização, clareza e retorno.",
     "card03Cta": "Solicitar diagnóstico gratuito",
     "card04Tag": "Quem confia",
     "card04Numero": "8",
-    "card04Label": "marcas da região comunicam com a Cut"
+    "card04Label": "marcas da região comunicam com a Cut",
+    "card04Imagem": ""
   },
+
   "dorReal": {
     "eyebrow": "A dor real",
     "titulo": "Sua empresa já investe em marketing. Por que ainda não está onde deveria?",
@@ -34,58 +48,142 @@
     "statNumero": "6",
     "statLabel": "os mesmos sinais, em todos os casos",
     "sinaisTitulo": "Os sinais",
+    "sinais": [
+      "Falta de estratégia",
+      "Comunicação desconectada do negócio",
+      "Tráfego pago sem controle",
+      "Conteúdo sem direção",
+      "Resultado sem clareza",
+      "Marketing feito de qualquer jeito"
+    ],
+    "imagem": "",
     "fraseTransicao": "Marketing sem método vira gasto. Com método, vira investimento."
   },
+
   "segmentos": {
     "tituloLinha1": "Experiência com diferentes tipos de negócio.",
     "tituloLinha2": "Foco no resultado de cada um.",
     "texto": "A Cut atende empresas em operação que precisam profissionalizar a comunicação e estruturar o marketing. Cada negócio tem uma dinâmica diferente e a gente entende isso.",
     "cta": "Solicitar diagnóstico gratuito",
     "cards": [
-      "Médicos e clínicas\nComunicação ética, estratégica e voltada para posicionamento de autoridade. O objetivo não é transformar médico em influenciador. É construir uma presença digital que gere confiança, reconhecimento e demanda qualificada.",
-      "Restaurantes e operações de alto giro\nEstratégia de conteúdo, tráfego local e campanhas com foco em movimento, vendas e fortalecimento da marca. Menos dependência de promoção. Mais consistência no fluxo de clientes.",
-      "Negócios locais e regionais\nPara empresas de diferentes segmentos como academias, hotéis, óticas, imobiliárias, construtoras, comércio que precisam de uma comunicação mais profissional, organizada e competitiva. No digital, quem comunica melhor é lembrado antes."
+      {
+        "badge": "Saúde",
+        "titulo": "Médicos e clínicas",
+        "texto": "Comunicação ética, estratégica e voltada para posicionamento de autoridade. O objetivo não é transformar médico em influenciador. É construir uma presença digital que gere confiança, reconhecimento e demanda qualificada.",
+        "imagem": ""
+      },
+      {
+        "badge": "Alimentação",
+        "titulo": "Restaurantes e operações de alto giro",
+        "texto": "Estratégia de conteúdo, tráfego local e campanhas com foco em movimento, vendas e fortalecimento da marca. Menos dependência de promoção. Mais consistência no fluxo de clientes.",
+        "imagem": ""
+      },
+      {
+        "badge": "Local e regional",
+        "titulo": "Negócios locais e regionais",
+        "texto": "Para empresas de diferentes segmentos como academias, hotéis, óticas, imobiliárias, construtoras, comércio que precisam de uma comunicação mais profissional, organizada e competitiva. No digital, quem comunica melhor é lembrado antes.",
+        "imagem": ""
+      }
     ]
   },
+
   "metodo": {
     "eyebrow": "Método Cut",
     "tituloLinha1": "Um processo para transformar marketing",
     "tituloLinha2": "em uma operação que funciona.",
     "texto": "Da estratégia ao conteúdo, do tráfego à análise. A Cut trabalha de ponta a ponta para que sua empresa se comunique melhor e cresça com mais previsibilidade.",
-    "cta": "Solicitar diagnóstico gratuito"
+    "cta": "Solicitar diagnóstico gratuito",
+    "etapas": [
+      {
+        "fase": "Etapa inicial",
+        "titulo": "Diagnóstico estratégico",
+        "texto": "Antes de criar qualquer conteúdo ou campanha, a gente entende o negócio. Posicionamento, público, concorrência, oferta, gargalos de comunicação e oportunidades de crescimento."
+      },
+      {
+        "fase": "Direção",
+        "titulo": "Planejamento de comunicação",
+        "texto": "Com o diagnóstico em mãos, definimos o que comunicar, para quem e em que formato. Para de postar por obrigação. Começa a comunicar com direção."
+      },
+      {
+        "fase": "Conteúdo",
+        "titulo": "Social media estratégico",
+        "texto": "Conteúdo que fortalece autoridade, relacionamento e percepção de valor. Roteiros, carrosséis, artes, stories e campanhas alinhadas com o posicionamento da marca."
+      },
+      {
+        "fase": "Criação",
+        "titulo": "Produção audiovisual",
+        "texto": "Time de gravação e direção criativa para conteúdos em vídeo que tornam a comunicação mais forte, humana e diferenciada."
+      },
+      {
+        "fase": "Aceleração",
+        "titulo": "Tráfego pago",
+        "texto": "Campanhas com foco em alcance qualificado, geração de demanda, agendamentos ou vendas. Mídia paga com planejamento e acompanhamento sem investimento jogado fora."
+      },
+      {
+        "fase": "Contínuo",
+        "titulo": "Análise e otimização",
+        "texto": "Acompanhamento de métricas, ajustes contínuos e relatórios para tomar decisões com base em dado, não em achismo."
+      }
+    ]
   },
+
   "diagnostico": {
-    "imagem": "/team-g4.jpg",
     "eyebrow": "Solicite seu diagnóstico",
     "tituloLinha1": "Solicite um diagnóstico gratuito",
     "tituloLinha2": "para a sua empresa.",
     "texto": "Preencha as informações ao lado. Nossa equipe vai analisar o momento da sua empresa e entrar em contato para uma conversa sem compromisso.",
-    "beneficios": "Diagnóstico estratégico do seu negócio, sem compromisso,análise do momento atual da sua comunicação e marketing,Direção clara dos próximos passos para crescer com método,Conversa com quem entende de estratégia.",
+    "beneficios": [
+      "Diagnóstico estratégico do seu negócio, sem compromisso",
+      "Análise do momento atual da sua comunicação e marketing",
+      "Direção clara dos próximos passos para crescer com método",
+      "Conversa com quem entende de estratégia."
+    ],
     "frase": "Estratégia para orientar. Conteúdo para posicionar. Tráfego para acelerar.",
     "regiao": "A Cut atende empresas em Volta Redonda, Barra Mansa, Resende, Angra dos Reis e toda a região — negócios que já estão em operação e querem profissionalizar o marketing com método e acompanhamento próximo.",
+    "imagem": "/team-g4.jpg",
+    "chips": [
+      { "n": "1", "label": "Preencha o formulário" },
+      { "n": "2", "label": "Nossa equipe analisa" },
+      { "n": "3", "label": "Conversa sem compromisso" }
+    ],
     "form": {
       "titulo": "Diagnóstico gratuito para profissionalizar o marketing da sua empresa",
       "subtitulo": "Retornamos pelo WhatsApp em até 1 dia útil.",
+      "segmentos": [
+        "Saúde",
+        "Alimentação",
+        "Varejo e comércio",
+        "Imobiliário e construção",
+        "Outros"
+      ],
+      "investimentos": [
+        "Até R$ 1.500",
+        "R$ 1.500–3.000",
+        "R$ 3.000–5.000",
+        "Acima de R$ 5.000",
+        "Ainda não invisto"
+      ],
       "cta": "Solicitar diagnóstico gratuito",
-      "segmentos": "Saúde,Alimentação,Varejo e comércio,Imobiliário e construção,outros",
-      "investimentos": "Até R$ 1.500,R$ 1.500–3.000,R$ 3.000–5.000,Acima de R$ 5.000,Ainda não invisto",
       "sucessoTitulo": "Recebemos as informações da sua empresa.",
       "sucessoTexto": "Nossa equipe vai analisar o momento da sua empresa e entrar em contato pelo WhatsApp informado para uma conversa sem compromisso — em até 1 dia útil.",
       "sucessoCta": "Seguir a Cut no Instagram"
     }
   },
+
   "footer": {
     "descricao": "Marketing estratégico com time completo: estratégia, social media, tráfego pago e produção audiovisual."
   },
+
   "contato": {
-    "whatsapp": "5524999999999",
-    "whatsappMensagem": "Olá! Vim pelo site da Cut e quero solicitar um diagnóstico gratuito.",
+    "whatsapp": "5524992697807",
+    "whatsappMensagem": "Olá! Vim pela landing page da Cut Creative e gostaria de saber mais.",
     "email": "agencia.cutcreative@gmail.com",
     "instagram": "https://instagram.com/cutcreative",
     "portalUrl": "https://creativecut.lovable.app",
     "regiao": "Volta Redonda, Barra Mansa, Resende, Angra dos Reis e região",
     "endereco": "[CONFIRMAR endereço] — Volta Redonda, RJ",
     "razaoSocial": "Cut Creative [CONFIRMAR razão social]",
-    "cnpj": "[CONFIRMAR CNPJ]"
+    "cnpj": "[CONFIRMAR CNPJ]",
+    "leadWebhookUrl": ""
   }
 }

@@ -278,7 +278,7 @@
     border-radius: var(--radius-media);
     background: var(--color-ink-800);
   }
-  .media > img {
+  .media img {
     display: block;
     width: 100%;
     height: 100%;

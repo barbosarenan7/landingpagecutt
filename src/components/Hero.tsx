@@ -1,5 +1,5 @@
 import { Reveal } from "../lib/reveal";
-import { BtnPrimary, Media } from "./primitives";
+import { BtnPrimary } from "./primitives";
 import content from "../content/site.json";
 
 const h = content.hero;
@@ -15,14 +15,20 @@ export default function Hero() {
     <section id="top" className="sec-light" aria-labelledby="hero-title">
       <div className="container-cut pt-4 pb-[clamp(40px,5vw,72px)] md:pt-6">
         <div className="relative overflow-hidden rounded-card bg-ink-800 text-paper-50">
-          {/* slot: hero-main.webp — imagem de fundo em bleed total */}
-          <Media
-            file="hero-main.webp"
-            src={h.imagem}
-            alt="Retrato editorial da equipe criativa da Cut em estúdio escuro"
-            eager
-            className="absolute inset-0 h-full !rounded-none"
-          />
+          {/* imagem de fundo em bleed total: versão vertical no mobile,
+              horizontal no desktop (hero.imagemMobile / hero.imagem) */}
+          <div className="media absolute inset-0 h-full !rounded-none">
+            <picture className="block h-full w-full">
+              <source media="(max-width: 640px)" srcSet={h.imagemMobile} />
+              <img
+                src={h.imagem}
+                alt="Retrato editorial no estúdio da Cut Creative"
+                className="h-full w-full object-cover"
+                loading="eager"
+                decoding="async"
+              />
+            </picture>
+          </div>
           {/* scrim para legibilidade do texto sobre a imagem */}
           <div
             className="absolute inset-0"

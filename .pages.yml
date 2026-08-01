@@ -1,7 +1,10 @@
 # Configuração do editor visual (Pages CMS — https://pagescms.org)
-# Abra app.pagescms.org, entre com o GitHub, autorize este repositório
-# e você verá os campos abaixo para editar. As fotos que você enviar
+# Abra app.pagescms.org, entre com o GitHub (conta barbosarenan7),
+# autorize o repositório e edite pelos campos abaixo. As fotos enviadas
 # vão para public/uploads e aparecem no site ao salvar.
+#
+# IMPORTANTE: listas usam `list: true` no próprio campo (sintaxe oficial
+# do Pages CMS). Não usar `type: list` — isso corrompe o site.json.
 
 media:
   input: public/uploads
@@ -12,168 +15,335 @@ content:
     label: Conteúdo do site
     type: file
     path: src/content/site.json
+    format: json
     fields:
       - name: nav
         label: Menu (topo)
         type: object
         fields:
-          - { name: cta, label: "Botão do topo", type: string }
+          - name: cta
+            label: Botão do topo
+            type: string
           - name: links
             label: Links do menu
-            type: list
+            type: object
+            list: true
             fields:
-              - { name: label, label: Texto, type: string }
-              - { name: href, label: "Âncora (ex.: #metodo)", type: string }
+              - name: label
+                label: Texto
+                type: string
+              - name: href
+                label: "Âncora (ex.: #metodo)"
+                type: string
 
       - name: hero
         label: Início (Hero)
         type: object
         fields:
-          - { name: imagem, label: Imagem de fundo, type: image }
-          - { name: eyebrow, label: Linha de apoio (maiúsculas), type: string }
-          - { name: titulo, label: Título principal, type: text }
-          - { name: ctaPrimario, label: "Botão principal", type: string }
-          - { name: ctaSecundario, label: "Botão secundário", type: string }
-          - { name: col1Titulo, label: "Coluna 1 — título", type: string }
-          - { name: col1Texto, label: "Coluna 1 — texto", type: text }
-          - { name: col2Titulo, label: "Coluna 2 — título", type: string }
-          - { name: col2Texto, label: "Coluna 2 — texto", type: text }
+          - name: imagem
+            label: Imagem de fundo (desktop, horizontal)
+            type: image
+          - name: imagemMobile
+            label: Imagem de fundo (celular, vertical)
+            type: image
+          - name: eyebrow
+            label: Linha de apoio (maiúsculas)
+            type: string
+          - name: titulo
+            label: Título principal
+            type: text
+          - name: ctaPrimario
+            label: Botão principal
+            type: string
+          - name: ctaSecundario
+            label: Botão secundário
+            type: string
+          - name: col1Titulo
+            label: Coluna 1 — título
+            type: string
+          - name: col1Texto
+            label: Coluna 1 — texto
+            type: text
+          - name: col2Titulo
+            label: Coluna 2 — título
+            type: string
+          - name: col2Texto
+            label: Coluna 2 — texto
+            type: text
 
       - name: logos
         label: Logos de clientes (16)
-        type: list
-        list: { min: 0, max: 16 }
-        field: { name: logo, label: Logo, type: image }
+        type: image
+        list:
+          max: 16
 
       - name: provaSocial
         label: Prova social
         type: object
         fields:
-          - { name: tituloLinha1, label: "Título — linha 1", type: string }
-          - { name: tituloLinha2, label: "Título — linha 2 (cinza)", type: string }
-          - { name: card01Imagem, label: "Card 01 — imagem", type: image }
-          - { name: card01Tag, label: "Card 01 — etiqueta", type: string }
-          - { name: card01Titulo, label: "Card 01 — título", type: string }
-          - { name: card01Texto, label: "Card 01 — texto", type: text }
-          - { name: card02Imagem, label: "Card 02 — imagem", type: image }
-          - { name: card02Titulo, label: "Card 02 — título", type: string }
-          - { name: card03Tag, label: "Card 03 — etiqueta", type: string }
-          - { name: card03Texto, label: "Card 03 — texto", type: text }
-          - { name: card03Cta, label: "Card 03 — botão", type: string }
-          - { name: card04Imagem, label: "Card 04 — imagem", type: image }
-          - { name: card04Tag, label: "Card 04 — etiqueta", type: string }
-          - { name: card04Numero, label: "Card 04 — número", type: string }
-          - { name: card04Label, label: "Card 04 — legenda", type: string }
+          - name: tituloLinha1
+            label: Título — linha 1
+            type: string
+          - name: tituloLinha2
+            label: Título — linha 2 (cinza)
+            type: string
+          - name: card01Imagem
+            label: Card 01 — imagem
+            type: image
+          - name: card01Tag
+            label: Card 01 — etiqueta
+            type: string
+          - name: card01Titulo
+            label: Card 01 — título
+            type: string
+          - name: card01Texto
+            label: Card 01 — texto
+            type: text
+          - name: card02Imagem
+            label: Card 02 — imagem
+            type: image
+          - name: card02Titulo
+            label: Card 02 — título
+            type: string
+          - name: card03Tag
+            label: Card 03 — etiqueta
+            type: string
+          - name: card03Texto
+            label: Card 03 — texto
+            type: text
+          - name: card03Cta
+            label: Card 03 — botão
+            type: string
+          - name: card04Imagem
+            label: Card 04 — imagem
+            type: image
+          - name: card04Tag
+            label: Card 04 — etiqueta
+            type: string
+          - name: card04Numero
+            label: Card 04 — número
+            type: string
+          - name: card04Label
+            label: Card 04 — legenda
+            type: string
 
       - name: dorReal
         label: A dor real
         type: object
         fields:
-          - { name: eyebrow, label: Linha de apoio, type: string }
-          - { name: titulo, label: Título, type: text }
-          - { name: texto, label: Texto, type: text }
-          - { name: statNumero, label: "Número em destaque", type: string }
-          - { name: statLabel, label: "Legenda do número", type: string }
-          - { name: sinaisTitulo, label: "Título da lista", type: string }
+          - name: eyebrow
+            label: Linha de apoio
+            type: string
+          - name: titulo
+            label: Título
+            type: text
+          - name: texto
+            label: Texto
+            type: text
+          - name: statNumero
+            label: Número em destaque
+            type: string
+          - name: statLabel
+            label: Legenda do número
+            type: string
+          - name: sinaisTitulo
+            label: Título da lista
+            type: string
           - name: sinais
             label: Lista de sinais
-            type: list
-            field: { name: item, label: Sinal, type: string }
-          - { name: imagem, label: Imagem central, type: image }
-          - { name: fraseTransicao, label: Frase de transição, type: text }
+            type: string
+            list: true
+          - name: imagem
+            label: Imagem central
+            type: image
+          - name: fraseTransicao
+            label: Frase de transição
+            type: text
 
       - name: segmentos
         label: Segmentos
         type: object
         fields:
-          - { name: tituloLinha1, label: "Título — linha 1", type: string }
-          - { name: tituloLinha2, label: "Título — linha 2", type: string }
-          - { name: texto, label: Texto, type: text }
-          - { name: cta, label: Botão, type: string }
+          - name: tituloLinha1
+            label: Título — linha 1
+            type: string
+          - name: tituloLinha2
+            label: Título — linha 2
+            type: string
+          - name: texto
+            label: Texto
+            type: text
+          - name: cta
+            label: Botão
+            type: string
           - name: cards
             label: Cards (3)
-            type: list
-            list: { min: 3, max: 3 }
+            type: object
+            list:
+              min: 3
+              max: 3
             fields:
-              - { name: imagem, label: Imagem, type: image }
-              - { name: badge, label: Etiqueta, type: string }
-              - { name: titulo, label: Título, type: string }
-              - { name: texto, label: Texto, type: text }
+              - name: imagem
+                label: Imagem
+                type: image
+              - name: badge
+                label: Etiqueta
+                type: string
+              - name: titulo
+                label: Título
+                type: string
+              - name: texto
+                label: Texto
+                type: text
 
       - name: metodo
         label: Método
         type: object
         fields:
-          - { name: eyebrow, label: Linha de apoio, type: string }
-          - { name: tituloLinha1, label: "Título — linha 1", type: string }
-          - { name: tituloLinha2, label: "Título — linha 2", type: string }
-          - { name: texto, label: Texto de apoio, type: text }
-          - { name: cta, label: Botão, type: string }
+          - name: eyebrow
+            label: Linha de apoio
+            type: string
+          - name: tituloLinha1
+            label: Título — linha 1
+            type: string
+          - name: tituloLinha2
+            label: Título — linha 2
+            type: string
+          - name: texto
+            label: Texto de apoio
+            type: text
+          - name: cta
+            label: Botão
+            type: string
           - name: etapas
             label: Etapas (6)
-            type: list
+            type: object
+            list:
+              min: 6
+              max: 6
             fields:
-              - { name: fase, label: Fase, type: string }
-              - { name: titulo, label: Título, type: string }
-              - { name: texto, label: Texto, type: text }
+              - name: fase
+                label: Fase
+                type: string
+              - name: titulo
+                label: Título
+                type: string
+              - name: texto
+                label: Texto
+                type: text
 
       - name: diagnostico
         label: Diagnóstico + Formulário
         type: object
         fields:
-          - { name: imagem, label: Foto da equipe, type: image }
-          - { name: eyebrow, label: Linha de apoio, type: string }
-          - { name: tituloLinha1, label: "Título — linha 1", type: string }
-          - { name: tituloLinha2, label: "Título — linha 2", type: string }
-          - { name: texto, label: Texto, type: text }
+          - name: imagem
+            label: Foto da equipe
+            type: image
+          - name: eyebrow
+            label: Linha de apoio
+            type: string
+          - name: tituloLinha1
+            label: Título — linha 1
+            type: string
+          - name: tituloLinha2
+            label: Título — linha 2
+            type: string
+          - name: texto
+            label: Texto
+            type: text
           - name: beneficios
             label: Benefícios
-            type: list
-            field: { name: item, label: Benefício, type: string }
-          - { name: frase, label: Frase em destaque, type: text }
-          - { name: regiao, label: Texto de região, type: text }
+            type: string
+            list: true
+          - name: frase
+            label: Frase em destaque
+            type: text
+          - name: regiao
+            label: Texto de região
+            type: text
           - name: chips
             label: Etapas (1-2-3)
-            type: list
+            type: object
+            list:
+              min: 3
+              max: 3
             fields:
-              - { name: n, label: Número, type: string }
-              - { name: label, label: Texto, type: string }
+              - name: n
+                label: Número
+                type: string
+              - name: label
+                label: Texto
+                type: string
           - name: form
             label: Formulário
             type: object
             fields:
-              - { name: titulo, label: Título, type: text }
-              - { name: subtitulo, label: Subtítulo, type: string }
-              - { name: cta, label: Botão enviar, type: string }
+              - name: titulo
+                label: Título
+                type: text
+              - name: subtitulo
+                label: Subtítulo
+                type: string
+              - name: cta
+                label: Botão enviar
+                type: string
               - name: segmentos
                 label: Opções de segmento
-                type: list
-                field: { name: item, label: Opção, type: string }
+                type: string
+                list: true
               - name: investimentos
                 label: Opções de investimento
-                type: list
-                field: { name: item, label: Opção, type: string }
-              - { name: sucessoTitulo, label: "Sucesso — título", type: string }
-              - { name: sucessoTexto, label: "Sucesso — texto", type: text }
-              - { name: sucessoCta, label: "Sucesso — botão", type: string }
+                type: string
+                list: true
+              - name: sucessoTitulo
+                label: Sucesso — título
+                type: string
+              - name: sucessoTexto
+                label: Sucesso — texto
+                type: text
+              - name: sucessoCta
+                label: Sucesso — botão
+                type: string
 
       - name: footer
         label: Rodapé
         type: object
         fields:
-          - { name: descricao, label: Descrição, type: text }
+          - name: descricao
+            label: Descrição
+            type: text
 
       - name: contato
         label: Contato e dados legais
         type: object
         fields:
-          - { name: whatsapp, label: "WhatsApp (só números, com DDI 55)", type: string }
-          - { name: whatsappMensagem, label: Mensagem automática do WhatsApp, type: text }
-          - { name: email, label: E-mail, type: string }
-          - { name: instagram, label: Link do Instagram, type: string }
-          - { name: portalUrl, label: Link do Portal do Cliente, type: string }
-          - { name: regiao, label: Região atendida, type: string }
-          - { name: endereco, label: Endereço, type: string }
-          - { name: razaoSocial, label: Razão social, type: string }
-          - { name: cnpj, label: CNPJ, type: string }
-          - { name: leadWebhookUrl, label: "Webhook do formulário (Make)", type: string }
+          - name: whatsapp
+            label: WhatsApp (só números, com DDI 55)
+            type: string
+          - name: whatsappMensagem
+            label: Mensagem automática do WhatsApp
+            type: text
+          - name: email
+            label: E-mail
+            type: string
+          - name: instagram
+            label: Link do Instagram
+            type: string
+          - name: portalUrl
+            label: Link do Portal do Cliente
+            type: string
+          - name: regiao
+            label: Região atendida
+            type: string
+          - name: endereco
+            label: Endereço
+            type: string
+          - name: razaoSocial
+            label: Razão social
+            type: string
+          - name: cnpj
+            label: CNPJ
+            type: string
+          - name: leadWebhookUrl
+            label: Webhook do formulário (Make)
+            type: string
