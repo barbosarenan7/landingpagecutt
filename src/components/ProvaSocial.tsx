@@ -26,14 +26,28 @@ export default function ProvaSocial() {
             <Media
               file="prova-01.webp"
               src={p.card01Imagem}
-              alt="Retrato de uma pessoa empreendedora no seu negócio local"
+              alt="Equipe da Cut Creative no estúdio — capa do vídeo institucional"
               hover
               className="aspect-[3/4] h-full lg:aspect-auto"
             >
+              {/* escurecimento leve para o botão de play (vídeo futuro) */}
+              <div className="absolute inset-0 bg-ink-900/35" aria-hidden />
               <div className="absolute inset-x-0 top-0 flex justify-between p-5 text-paper-50/85">
                 <span className="bento-tag">01/</span>
                 <span className="bento-tag">{p.card01Tag}</span>
               </div>
+              {/* ícone de play centralizado */}
+              <span
+                className="absolute top-1/2 left-1/2 flex h-16 w-16 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-pill bg-paper-0/90"
+                aria-hidden
+              >
+                <svg width="18" height="20" viewBox="0 0 18 20" fill="none">
+                  <path
+                    d="M2 1.8v16.4c0 .9 1 1.5 1.8 1l13-8.2c.8-.5.8-1.6 0-2.1L3.8.8C3 .3 2 .9 2 1.8Z"
+                    fill="#0B0B0B"
+                  />
+                </svg>
+              </span>
               <div
                 className="absolute inset-x-0 bottom-0 p-6 pt-24"
                 style={{
@@ -73,8 +87,8 @@ export default function ProvaSocial() {
             </Media>
           </Reveal>
 
-          {/* 03 — card escuro com o texto e CTA */}
-          <Reveal delay={140} className="lg:col-span-4">
+          {/* 03 — card escuro com o texto e CTA (ampliado) */}
+          <Reveal delay={140} className="lg:col-span-5">
             <div className="flex h-full flex-col rounded-media bg-ink-900 p-7 text-paper-50">
               <div className="flex justify-between text-text2-dark">
                 <span className="bento-tag">{p.card03Tag}</span>
@@ -91,36 +105,18 @@ export default function ProvaSocial() {
             </div>
           </Reveal>
 
-          {/* 04 — card com número grande sobre imagem */}
-          <Reveal delay={190} className="lg:col-span-4">
-            <Media
-              file="prova-04.webp"
-              src={p.card04Imagem}
-              alt="Detalhe do estúdio da Cut Creative"
-              hover
-              className="aspect-[4/3] h-full lg:aspect-auto"
-            >
-              <div
-                className="absolute inset-0 flex flex-col p-6"
-                style={{
-                  background: "linear-gradient(to top, rgba(11,11,11,.7), rgba(11,11,11,.25))",
-                }}
-              >
-                <div className="flex justify-between text-paper-50/85">
-                  <span className="bento-tag">04/</span>
-                  <span className="bento-tag">{p.card04Tag}</span>
-                </div>
-                <p
-                  className="h-sans my-auto text-center text-paper-50"
-                  style={{ fontSize: "clamp(4rem, 7vw, 6.5rem)" }}
-                >
-                  {p.card04Numero}
-                </p>
-                <p className="text-center text-[13px] text-paper-50/85">
-                  {p.card04Label}
-                </p>
-              </div>
-            </Media>
+          {/* 04 — arte pronta do cliente, sem corte, sem dessaturação
+              (a arte já tem cantos e cores próprios) */}
+          <Reveal delay={190} className="lg:col-span-3">
+            <div className="flex h-full items-center justify-center">
+              <img
+                src={p.card04Imagem}
+                alt="+300 marcas atendidas — estratégia, criação e resultados reais"
+                loading="lazy"
+                decoding="async"
+                className="h-auto max-h-full w-full max-w-full object-contain"
+              />
+            </div>
           </Reveal>
         </div>
       </div>
