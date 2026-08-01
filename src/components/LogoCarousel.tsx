@@ -1,121 +1,80 @@
-import { memo, useRef, useState } from "react";
-import {
-  motion,
-  useAnimationFrame,
-  useMotionValue,
-  useReducedMotion,
-  useTransform,
-} from "framer-motion";
+import { useState } from "react";
 import content from "../content/site.json";
 
 /**
- * Carrossel 3D de logos (cilindro giratório, ref. "3d-carousel"):
- * gira sozinho devagar e aceita arraste horizontal; pausa o giro
- * enquanto o usuário arrasta e respeita prefers-reduced-motion.
+ * Carrossel de logos entre o hero e a prova social: fundo claro,
+ * 2 fileiras em rolagem infinita lenta (a 2ª no sentido inverso),
+ * pausa no hover.
  *
- * Logos em CORES ORIGINAIS (sem filtro/saturação), vindos de
- * src/content/site.json → "logos" (arquivos em public/logos/,
- * canvas 600×450 com peso visual uniforme). Logos de texto branco
- * (Ale Veículos, You Can) ganham cartão escuro para ficarem legíveis;
- * os demais, cartão claro.
+ * Os logos vêm de src/content/site.json → "logos" e vivem em
+ * public/logos/. Todos foram normalizados num canvas 480×160 com o
+ * mesmo peso visual e já carregam as cores finais (vermelho / preto /
+ * cinza, regras do cliente) — por isso NÃO há filtro de cor no CSS.
+ * As fileiras dividem a lista ao meio; com menos itens a trilha é
+ * quadruplicada para o loop nunca abrir buraco.
  */
-type Slot = { src: string; dark: boolean };
-
-// cartão escuro para logos brancos por posição na lista (12 e 13)
-const DARK_FACES = new Set(["/logos/logo-12.png", "/logos/logo-13.png"]);
+type Slot = { name: string; src: string };
 
 const slots: Slot[] = content.logos
   .filter((src) => src && src.trim())
-  .map((src) => ({ src, dark: DARK_FACES.has(src) }));
+  .map((src, i) => ({ name: `logo-${String(i + 1).padStart(2, "0")}.png`, src }));
 
-const Cylinder = memo(function Cylinder({ cards }: { cards: Slot[] }) {
-  const reduced = useReducedMotion();
-  const [dragging, setDragging] = useState(false);
-  const rotation = useMotionValue(0);
-  const velocity = useRef(0); // inércia depois do arraste (graus/s)
+const half = Math.ceil(slots.length / 2);
+const ROW_1 = slots.slice(0, half);
+const ROW_2 = slots.slice(half);
 
-  const faceCount = cards.length;
-  // largura do cilindro por breakpoint simples (evita hook de media query)
-  const cylinderWidth =
-    typeof window !== "undefined" && window.innerWidth < 640 ? 1350 : 2300;
-  const faceWidth = cylinderWidth / faceCount;
-  const radius = cylinderWidth / (2 * Math.PI);
+function LogoSlot({ slot }: { slot: Slot }) {
+  const [missing, setMissing] = useState(false);
 
-  const transform = useTransform(rotation, (v) => `rotate3d(0, 1, 0, ${v}deg)`);
-
-  useAnimationFrame((_, delta) => {
-    if (dragging) return;
-    const dt = delta / 1000;
-    // giro base lento + inércia decaindo
-    const base = reduced ? 0 : -7; // graus/s
-    rotation.set(rotation.get() + (base + velocity.current) * dt);
-    velocity.current *= Math.pow(0.2, dt); // decaimento suave
-  });
-
+  if (missing) {
+    return (
+      <span className="flex h-15 w-40 shrink-0 items-center justify-center rounded-input border border-line-light text-[11px] tracking-[0.08em] text-text3">
+        {slot.name}
+      </span>
+    );
+  }
   return (
-    <div
-      className="flex h-full items-center justify-center"
-      style={{ perspective: "1100px", transformStyle: "preserve-3d" }}
-    >
-      <motion.div
-        drag="x"
-        dragConstraints={{ left: 0, right: 0 }}
-        dragElastic={0}
-        dragMomentum={false}
-        onDragStart={() => setDragging(true)}
-        onDrag={(_, info) => rotation.set(rotation.get() + info.delta.x * 0.09)}
-        onDragEnd={(_, info) => {
-          setDragging(false);
-          velocity.current = info.velocity.x * 0.09;
-        }}
-        className="relative flex h-full origin-center cursor-grab justify-center active:cursor-grabbing"
-        style={{
-          transform,
-          width: cylinderWidth,
-          transformStyle: "preserve-3d",
-        }}
+    <img
+      src={slot.src}
+      alt="Logo de cliente da Cut Creative"
+      loading="lazy"
+      decoding="async"
+      onError={() => setMissing(true)}
+      className="h-15 w-auto shrink-0"
+    />
+  );
+}
+
+function Row({ items, reverse = false }: { items: Slot[]; reverse?: boolean }) {
+  if (items.length === 0) return null;
+  // trilha precisa ter pelo menos ~2× a viewport para o -50% do loop fechar
+  const times = items.length >= 8 ? 2 : 4;
+  const track = Array.from({ length: times }, () => items).flat();
+  return (
+    <div className="marquee overflow-hidden" role="presentation">
+      <div
+        className={`marquee-track items-center gap-9 pr-9 ${reverse ? "marquee-track-rev" : ""}`}
       >
-        {cards.map((card, i) => (
-          <div
-            key={card.src}
-            className="absolute flex h-full origin-center items-center justify-center p-2"
-            style={{
-              width: `${faceWidth}px`,
-              transform: `rotateY(${i * (360 / faceCount)}deg) translateZ(${radius}px)`,
-            }}
-          >
-            <div
-              className={`flex aspect-[4/3] w-full items-center justify-center overflow-hidden rounded-cardmd border p-2 ${
-                card.dark
-                  ? "border-line-dark bg-ink-900"
-                  : "border-line-light bg-paper-0"
-              }`}
-            >
-              <img
-                src={card.src}
-                alt="Logo de cliente da Cut Creative"
-                loading="lazy"
-                decoding="async"
-                draggable={false}
-                className="pointer-events-none h-full w-full object-contain"
-              />
-            </div>
-          </div>
+        {track.map((slot, i) => (
+          <span key={`${slot.name}-${i}`} aria-hidden={i >= items.length} className="flex shrink-0">
+            <LogoSlot slot={slot} />
+          </span>
         ))}
-      </motion.div>
+      </div>
     </div>
   );
-});
+}
 
 export default function LogoCarousel() {
   if (slots.length === 0) return null;
   return (
     <section
       aria-label="Marcas que comunicam com a Cut"
-      className="sec-light overflow-hidden py-[clamp(24px,3vw,40px)]"
+      className="sec-light py-[clamp(32px,4vw,56px)]"
     >
-      <div className="relative h-[300px] w-full sm:h-[340px]">
-        <Cylinder cards={slots} />
+      <div className="container-cut flex flex-col gap-6">
+        <Row items={ROW_1} />
+        <Row items={ROW_2} reverse />
       </div>
     </section>
   );
