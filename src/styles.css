@@ -645,3 +645,18 @@
     }
   }
 }
+
+/* ============================================================
+   Ajustes só de mobile (≤640px). O desktop mantém o padding do
+   design system — o clamp original continua valendo a partir de 641px.
+   ============================================================ */
+@layer components {
+  /* 639px para casar exatamente com o breakpoint sm: do Tailwind, usado
+     no arredondamento da seção de clientes */
+  @media (max-width: 639px) {
+    /* laterais mais justas: os blocos aproveitam melhor a largura da tela */
+    .container-cut {
+      padding-inline: 12px;
+    }
+  }
+}
