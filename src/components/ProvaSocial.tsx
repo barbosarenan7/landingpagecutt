@@ -1,4 +1,4 @@
-import { useRef, useState, type ReactNode } from "react";
+import { useEffect, useRef, useState, type ReactNode } from "react";
 import { Reveal } from "../lib/reveal";
 import { BtnPrimary, Media } from "./primitives";
 import content from "../content/site.json";
@@ -95,17 +95,42 @@ function Seta({ virada = false }: { virada?: boolean }) {
   );
 }
 
-/** Carrossel do mobile: scroll-snap nativo (arraste) + setas e pontos. */
+const N = midias.length;
+
+/** Três blocos idênticos: o do meio é o "real", as pontas alimentam o loop. */
+const trilhaInfinita = [...midias, ...midias, ...midias];
+
+/**
+ * Carrossel do mobile: arraste nativo por scroll-snap, com loop infinito
+ * e o card central em tamanho cheio (os laterais ficam 20% menores).
+ *
+ * O loop é feito triplicando a lista e teleportando o scroll de volta ao
+ * bloco do meio quando o arraste para numa das pontas. Como o salto tem
+ * exatamente a largura de um bloco, a tela não muda — o usuário só sente
+ * que o carrossel nunca acaba.
+ */
 function CarrosselMobile() {
   const trilha = useRef<HTMLDivElement>(null);
-  const [ativo, setAtivo] = useState(0);
+  const parada = useRef<number | undefined>(undefined);
+  const [foco, setFoco] = useState(N); // índice real do card centralizado
 
-  const irPara = (i: number) => {
+  /** scrollLeft que deixa o card `i` exatamente no centro da janela. */
+  const centroDe = (i: number) => {
     const t = trilha.current;
-    if (!t) return;
-    const alvo = t.children[i] as HTMLElement | undefined;
-    if (alvo) t.scrollTo({ left: alvo.offsetLeft - t.offsetLeft, behavior: "smooth" });
+    const el = t?.children[i] as HTMLElement | undefined;
+    if (!t || !el) return 0;
+    return el.offsetLeft - t.offsetLeft - (t.clientWidth - el.clientWidth) / 2;
   };
+
+  // começa no bloco do meio, para haver conteúdo dos dois lados
+  useEffect(() => {
+    const t = trilha.current;
+    if (t) t.scrollLeft = centroDe(N);
+    return () => window.clearTimeout(parada.current);
+  }, []);
+
+  const irPara = (i: number) =>
+    trilha.current?.scrollTo({ left: centroDe(i), behavior: "smooth" });
 
   const aoRolar = () => {
     const t = trilha.current;
@@ -122,7 +147,26 @@ function CarrosselMobile() {
         melhor = i;
       }
     });
-    setAtivo(melhor);
+    setFoco(melhor);
+
+    // quando o arraste para, recentra no bloco do meio (salto invisível)
+    window.clearTimeout(parada.current);
+    parada.current = window.setTimeout(() => {
+      if (melhor >= N && melhor < 2 * N) return;
+      const destino = melhor < N ? melhor + N : melhor - N;
+      t.scrollLeft = centroDe(destino);
+      setFoco(destino);
+    }, 130);
+  };
+
+  const ativo = ((foco % N) + N) % N;
+
+  /** caminho mais curto até o indicador `i`, já contando com o loop. */
+  const pularPara = (i: number) => {
+    let delta = i - ativo;
+    if (delta > N / 2) delta -= N;
+    if (delta < -N / 2) delta += N;
+    irPara(foco + delta);
   };
 
   return (
@@ -132,25 +176,34 @@ function CarrosselMobile() {
         onScroll={aoRolar}
         role="region"
         aria-label="Carrossel de mídias da Cut Creative"
-        className="carrossel -mx-3 flex snap-x snap-mandatory gap-3 overflow-x-auto px-3 pb-1"
+        className="carrossel -mx-3 flex snap-x snap-mandatory items-center gap-3 overflow-x-auto px-3 py-2"
       >
-        {midias.map((m) => (
-          <div key={m.n} className="w-[82%] shrink-0 snap-center">
-            <Media
-              file={m.file}
-              src={m.srcMobile}
-              alt={m.alt}
-              ratio="1 / 1"
-              className="[&_img]:filter-none"
+        {trilhaInfinita.map((m, i) => (
+          <div
+            key={`${m.n}-${i}`}
+            className="w-[72%] shrink-0 snap-center"
+            /* só o bloco do meio é anunciado; as cópias são decorativas */
+            aria-hidden={i < N || i >= 2 * N}
+          >
+            <div
+              className={`carrossel-card ${i === foco ? "" : "carrossel-card-lateral"}`}
             >
-              <Tag>{m.n}</Tag>
-              {m.play && (
-                <>
-                  <div className="absolute inset-0 bg-ink-900/35" aria-hidden />
-                  <Play />
-                </>
-              )}
-            </Media>
+              <Media
+                file={m.file}
+                src={m.srcMobile}
+                alt={m.alt}
+                ratio="1 / 1"
+                className="[&_img]:filter-none"
+              >
+                <Tag>{m.n}</Tag>
+                {m.play && (
+                  <>
+                    <div className="absolute inset-0 bg-ink-900/35" aria-hidden />
+                    <Play />
+                  </>
+                )}
+              </Media>
+            </div>
           </div>
         ))}
       </div>
@@ -159,20 +212,18 @@ function CarrosselMobile() {
       <div className="mt-6 flex items-center justify-center gap-4">
         <button
           type="button"
-          onClick={() => irPara(Math.max(0, ativo - 1))}
-          disabled={ativo === 0}
+          onClick={() => irPara(foco - 1)}
           aria-label="Mídia anterior"
-          className="flex h-11 w-11 items-center justify-center rounded-pill border border-line-light text-ink-900 transition-opacity disabled:opacity-30"
+          className="flex h-11 w-11 items-center justify-center rounded-pill border border-line-light text-ink-900"
         >
           <Seta virada />
         </button>
         <span className="eyebrow">Arraste para o lado</span>
         <button
           type="button"
-          onClick={() => irPara(Math.min(midias.length - 1, ativo + 1))}
-          disabled={ativo === midias.length - 1}
+          onClick={() => irPara(foco + 1)}
           aria-label="Próxima mídia"
-          className="flex h-11 w-11 items-center justify-center rounded-pill border border-line-light text-ink-900 transition-opacity disabled:opacity-30"
+          className="flex h-11 w-11 items-center justify-center rounded-pill border border-line-light text-ink-900"
         >
           <Seta />
         </button>
@@ -183,7 +234,7 @@ function CarrosselMobile() {
           <button
             key={m.n}
             type="button"
-            onClick={() => irPara(i)}
+            onClick={() => pularPara(i)}
             aria-label={`Ir para a mídia ${i + 1}`}
             aria-current={i === ativo}
             className={`h-1.5 rounded-pill transition-all duration-300 ${

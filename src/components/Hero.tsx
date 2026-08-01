@@ -77,8 +77,12 @@ export default function Hero() {
                     {h.eyebrow}
                   </p>
                 </Reveal>
+                {/* no mobile o CTA principal vive no menu suspenso, então
+                    a primeira dobra fica só com o botão secundário */}
                 <Reveal delay={200} className="mt-7 flex flex-wrap items-center gap-4">
-                  <BtnPrimary href="#diagnostico">{h.ctaPrimario}</BtnPrimary>
+                  <BtnPrimary href="#diagnostico" className="hidden sm:inline-flex">
+                    {h.ctaPrimario}
+                  </BtnPrimary>
                   <a
                     href="#como-trabalhamos"
                     className="btn-secondary !border-paper-50/25 text-paper-50"

@@ -62,7 +62,8 @@ export default function Nav() {
         </button>
       </nav>
 
-      {/* painel suspenso: só o CTA, em versão discreta */}
+      {/* painel suspenso: nada além do CTA — a logo já está no header
+          logo acima, então o menu aberto fica logo + botão e mais nada */}
       {open && (
         <div
           id="menu-painel"
@@ -72,11 +73,12 @@ export default function Nav() {
             <a
               href="#diagnostico"
               onClick={() => setOpen(false)}
-              className="btn-secondary !min-h-0 !px-5 !py-2.5 !text-[13px]"
-              style={{ ["--line" as string]: "var(--color-line-light)" }}
+              className="btn-primary !min-h-0 !gap-3 !py-2 !pr-2 !pl-5 !text-[13px]"
             >
-              {content.nav.cta}
-              <Arrow />
+              <span>{content.nav.cta}</span>
+              <span className="btn-circle !h-7 !w-7" aria-hidden>
+                <Arrow />
+              </span>
             </a>
           </div>
         </div>

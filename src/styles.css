@@ -674,4 +674,69 @@
   .carrossel::-webkit-scrollbar {
     display: none;
   }
+
+  /* Card central em tamanho cheio, laterais 20% menores. A escala vive
+     num wrapper interno para a largura de layout não mudar — assim a
+     conta de qual card está centralizado continua estável. */
+  .carrossel-card {
+    transform-origin: center;
+    transition:
+      transform 480ms var(--ease-out-expo),
+      opacity 480ms var(--ease-out-expo);
+  }
+  .carrossel-card-lateral {
+    transform: scale(0.8);
+    opacity: 0.6;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .carrossel-card {
+    transition: none;
+  }
+}
+
+/* ============================================================
+   "A dor real" no mobile: texto e foto viram uma composição só.
+   A imagem nasce do fundo claro da seção por um gradiente e vai
+   escurecendo até virar o fundo do bloco "Os sinais" — nada de
+   blocos brancos soltos entre um e outro.
+   ============================================================ */
+@layer components {
+  .dor-composicao {
+    position: relative;
+    overflow: hidden;
+    /* sem raio no topo: ali a foto se dissolve no fundo da seção */
+    border-radius: 0 0 var(--radius-card) var(--radius-card);
+    color: var(--color-paper-50);
+    --line: var(--color-line-dark);
+    --text2: var(--color-text2-dark);
+  }
+  .dor-composicao > img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 20%;
+    filter: saturate(0.24) contrast(1.06);
+  }
+  /* véu: paper-50 no topo → foto limpa no meio → near-black embaixo */
+  .dor-composicao::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background: linear-gradient(
+      to bottom,
+      var(--color-paper-50) 0%,
+      color-mix(in oklab, var(--color-paper-50) 42%, transparent) 12%,
+      transparent 21%,
+      transparent 30%,
+      color-mix(in oklab, var(--color-ink-900) 46%, transparent) 34%,
+      color-mix(in oklab, var(--color-ink-900) 90%, transparent) 40%,
+      color-mix(in oklab, var(--color-ink-900) 97%, transparent) 55%,
+      color-mix(in oklab, var(--color-ink-900) 99%, transparent) 100%
+    );
+  }
 }

@@ -51,7 +51,55 @@ export default function DorReal() {
             "calc(clamp(40px,5vw,72px) + 2 * clamp(16px,2vw,32px) + clamp(3rem,9vw,8.5rem))",
         }}
       >
-        <div className="grid gap-3 md:grid-cols-2 lg:grid-cols-12">
+        {/* ===== mobile (<768px): texto e foto numa composição contínua =====
+            O título vira o subtítulo da seção (sem card), o texto corre
+            solto abaixo dele e a foto nasce do próprio fundo claro por um
+            gradiente, escurecendo até virar o fundo de "Os sinais". */}
+        <div className="md:hidden">
+          <p className="eyebrow">{d.eyebrow}</p>
+          <h2 className="mt-4 text-[27px] leading-[1.16] font-bold text-balance">
+            {d.titulo}
+          </h2>
+          <p className="text-2nd mt-5 text-[15px] leading-relaxed">{d.texto}</p>
+
+          <div className="mt-7 flex items-center gap-5">
+            <p className="h-sans leading-none" style={{ fontSize: "3.25rem" }}>
+              {d.statNumero}
+              <span className="text-accent">×</span>
+            </p>
+            <p className="max-w-[18ch] text-sm leading-snug text-text2-light">
+              {d.statLabel}
+            </p>
+          </div>
+
+          <div className="dor-composicao mt-8">
+            <img
+              src={d.imagem}
+              alt="Pessoa empreendedora sobrecarregada diante do próprio negócio"
+              loading="lazy"
+              decoding="async"
+            />
+            <div className="relative z-[1] px-6 pt-[clamp(260px,74vw,400px)] pb-8">
+              <p className="eyebrow">{d.sinaisTitulo}</p>
+              <ul className="mt-6">
+                {d.sinais.map((s, i) => (
+                  <li
+                    key={s}
+                    className="flex items-baseline justify-between gap-4 border-b border-white/12 py-4 last:border-b-0"
+                  >
+                    <span className="text-[15px] leading-snug font-medium">{s}</span>
+                    <span className="step-num shrink-0 text-paper-50/55">
+                      {String(i + 1).padStart(2, "0")}
+                    </span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        {/* ===== md+ : composição em cards, preservada ===== */}
+        <div className="hidden gap-3 md:grid md:grid-cols-2 lg:grid-cols-12">
           {/* coluna 1: headline + texto */}
           <div className="flex flex-col gap-3 lg:col-span-4">
             <Reveal className="card-soft">
