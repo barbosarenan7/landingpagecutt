@@ -30,14 +30,15 @@ export default function Home() {
       <Nav />
       <main id="conteudo">
         <Hero />
-        <LogoCarousel />
+        {/* teste de estética: a grade de clientes assume o topo... */}
+        <ClientesGrid />
         <ProvaSocial />
         <DorReal />
         <Segmentos />
         <Metodo />
         <Diagnostico />
-        {/* teste de estética: grade de clientes em paralelo ao carrossel do topo */}
-        <ClientesGrid />
+        {/* ...e o carrossel de logos fecha a página */}
+        <LogoCarousel />
       </main>
       <Footer />
       <WhatsAppFloat />
