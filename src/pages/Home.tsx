@@ -6,6 +6,7 @@ import DorReal from "../components/DorReal";
 import Segmentos from "../components/Segmentos";
 import Metodo from "../components/Metodo";
 import Diagnostico from "../components/Diagnostico";
+import ClientesGrid from "../components/ClientesGrid";
 import Footer from "../components/Footer";
 import WhatsAppFloat from "../components/WhatsAppFloat";
 import CookieBanner from "../components/CookieBanner";
@@ -35,6 +36,8 @@ export default function Home() {
         <Segmentos />
         <Metodo />
         <Diagnostico />
+        {/* teste de estética: grade de clientes em paralelo ao carrossel do topo */}
+        <ClientesGrid />
       </main>
       <Footer />
       <WhatsAppFloat />

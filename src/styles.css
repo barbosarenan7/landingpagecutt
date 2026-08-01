@@ -621,3 +621,27 @@
     animation-direction: reverse;
   }
 }
+
+/* ============================================================
+   Grade de clientes (ClientesGrid) — cruzes só nas intersecções
+   internas: escondidas na última coluna e na última fileira.
+   nth-last-child mantém a regra válida para qualquer número de
+   logos (a grade sempre fecha em múltiplos de 8).
+   ============================================================ */
+@layer components {
+  .logo-plus {
+    display: none;
+  }
+  @media (max-width: 767px) {
+    /* mobile: 4 colunas */
+    .logo-cell:not(:nth-child(4n)):not(:nth-last-child(-n + 4)) .logo-plus {
+      display: block;
+    }
+  }
+  @media (min-width: 768px) {
+    /* desktop: 8 colunas */
+    .logo-cell:not(:nth-child(8n)):not(:nth-last-child(-n + 8)) .logo-plus {
+      display: block;
+    }
+  }
+}
