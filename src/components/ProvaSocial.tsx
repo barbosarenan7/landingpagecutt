@@ -20,15 +20,16 @@ export default function ProvaSocial() {
         </h2>
 
         <div className="mt-12 grid gap-3 lg:grid-cols-12">
-          {/* 01 — card alto ocupando as duas linhas da grade (a grade
-              define a altura; ratio só no mobile, onde não há linhas) */}
-          <Reveal className="lg:col-span-4 lg:row-span-2">
+          {/* 01 — card alto ocupando as duas linhas da grade. No desktop a
+              mídia é absoluta para a foto não inflar a altura das linhas
+              (mantém o gap uniforme de 12px entre todos os cards) */}
+          <Reveal className="lg:relative lg:col-span-4 lg:row-span-2">
             <Media
               file="prova-01.webp"
               src={p.card01Imagem}
               alt="Equipe da Cut Creative no estúdio — capa do vídeo institucional"
               hover
-              className="aspect-[3/4] h-full lg:aspect-auto"
+              className="aspect-[3/4] h-full lg:absolute lg:inset-0 lg:aspect-auto"
             >
               {/* escurecimento leve para o botão de play (vídeo futuro) */}
               <div className="absolute inset-0 bg-ink-900/35" aria-hidden />
@@ -72,11 +73,12 @@ export default function ProvaSocial() {
               alt="Ambiente de trabalho de uma empresa da região em operação"
               ratio="21 / 9"
               hover
+              className="[&_img]:filter-none"
             >
               <div
                 className="absolute inset-0 flex items-start justify-between p-6"
                 style={{
-                  background: "linear-gradient(to bottom, rgba(11,11,11,.55), transparent 55%)",
+                  background: "linear-gradient(to bottom, rgba(11,11,11,.4), transparent 40%)",
                 }}
               >
                 <p className="text-2xl font-bold text-paper-50 md:text-3xl">
@@ -87,8 +89,8 @@ export default function ProvaSocial() {
             </Media>
           </Reveal>
 
-          {/* 03 — card escuro com o texto e CTA (ampliado) */}
-          <Reveal delay={140} className="lg:col-span-5">
+          {/* 03 — card escuro com o texto e CTA */}
+          <Reveal delay={140} className="lg:col-span-4">
             <div className="flex h-full flex-col rounded-media bg-ink-900 p-7 text-paper-50">
               <div className="flex justify-between text-text2-dark">
                 <span className="bento-tag">{p.card03Tag}</span>
@@ -105,18 +107,15 @@ export default function ProvaSocial() {
             </div>
           </Reveal>
 
-          {/* 04 — arte pronta do cliente, sem corte, sem dessaturação
-              (a arte já tem cantos e cores próprios) */}
-          <Reveal delay={190} className="lg:col-span-3">
-            <div className="flex h-full items-center justify-center">
-              <img
-                src={p.card04Imagem}
-                alt="+300 marcas atendidas — estratégia, criação e resultados reais"
-                loading="lazy"
-                decoding="async"
-                className="h-auto max-h-full w-full max-w-full object-contain"
-              />
-            </div>
+          {/* 04 — arte pronta do cliente, mesma largura do 03, cores
+              originais (sem dessaturação) e preenchendo a célula */}
+          <Reveal delay={190} className="lg:col-span-4">
+            <Media
+              file="prova-04.webp"
+              src={p.card04Imagem}
+              alt="+300 marcas atendidas — estratégia, criação e resultados reais"
+              className="aspect-square h-full [&_img]:filter-none lg:aspect-auto"
+            />
           </Reveal>
         </div>
       </div>
