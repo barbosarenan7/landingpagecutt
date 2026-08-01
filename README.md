@@ -1,51 +1,79 @@
-# Cut Creative — Site institucional
+# Cut Creative — Landing page
 
-One-page de conversão + `/obrigado` + `/privacidade`. Direção visual **cinematográfica dourada**: preto quente, dourado antigo (`#c8a24d`) como acento, headline creme gigante em Archivo bold, Inter para texto. O hero ocupa a tela inteira sobre a imagem `public/hero.jpg` (com versão mobile `hero-mobile.jpg`).
-
-## Imagem do hero
-
-- Fonte original (PNG) arquivada em `.assets-src/hero-original.png`.
-- Otimizada para web em `public/hero.jpg` (~208 kB) e `public/hero-mobile.jpg` (~66 kB).
-- Trocar de imagem: substituir os dois arquivos em `public/` mantendo os nomes.
+One-page de conversão + `/obrigado` + `/privacidade`.
+Direção visual **CUT EDITORIAL**: Swiss/editorial, monocromático com
+acento laranja `#FF4D18`, fundos alternando off-white (`#FAFAF8`) e
+near-black (`#0B0B0B`). Tipografia: Satoshi (sans 900) + Instrument
+Serif. Tokens em `src/styles.css` (`@theme`) — **não usar hex fora deles**.
 
 ## Comandos
 
 ```bash
-bun install          # instalar dependências
+bun install          # dependências
 bun run dev          # dev server em http://localhost:5180
 bun run build        # build de produção (dist/)
-bun run preview      # servir o build
 ```
 
-## Onde editar
+## Onde está cada coisa
 
 | O quê | Onde |
 |---|---|
-| Dados pendentes ([CONFIRMAR]) | `src/config/site.ts` — tudo centralizado |
-| Copy das seções | `src/components/*.tsx` (uma seção por arquivo) |
-| Cores / fontes / animações | `src/styles.css` (`@theme`) |
+| **Todos os textos e caminhos de imagem** | `src/content/site.json` |
+| Campos do editor visual (Pages CMS) | `.pages.yml` |
+| Cores, fontes, botões, utilitários | `src/styles.css` |
 | Ordem das seções | `src/pages/Home.tsx` |
+| Componentes (1 por seção) | `src/components/` |
+| Como editar sem código | `COMO_EDITAR.md` |
+| Slots de imagem + prompts | `IMAGE_BRIEF.md` |
 
-## Pendências do briefing (bloqueiam o go-live)
+## Publicação
 
-1. **WhatsApp comercial** → `site.whatsappNumber`
-2. **Webhook Make → Kommo** → `site.leadWebhookUrl` (vazio = modo demonstração: valida e vai para `/obrigado` sem enviar)
-3. **Imagem/Showreel do hero** → hoje usa `public/hero.jpg`; para vídeo, trocar o fundo por `<video>` em `src/components/Hero.tsx`
-4. **Logos de clientes autorizados** → `src/components/LogoMarquee.tsx` (hoje em texto)
-5. **Depoimentos reais do CUT NPS** (com autorização) → `src/components/Depoimentos.tsx`
-6. **Fotos** time/estúdio/G4 → `src/components/Sobre.tsx` e `Cases.tsx`
-7. **CNPJ, razão social, endereço** → `site.legalName` / `site.cnpj` / `site.address`
-8. **Instagram @ oficial, e-mail comercial, URL do portal** → `src/config/site.ts`
-9. **GTM/GA4/Pixel/Clarity** → snippet no `index.html` + IDs (eventos já disparam: `lead` em `/obrigado`, `whatsapp_click`, `lead_form_submit`)
-10. **Domínio** (cutcreative.com.br) e hospedagem (Vercel sugerido)
+- GitHub: `barbosarenan7/landingpagecutt`
+- Vercel: <https://landingpagecutt.vercel.app> — publica sozinha a cada
+  push na `main` (~1 min). Se não atualizar em ~3 min, o webhook falhou:
+  basta um commit vazio (`git commit --allow-empty`) e push.
+- Editor visual: <https://app.pagescms.org> (login GitHub `barbosarenan7`).
+  Salvar no painel = commit + deploy automático.
 
-## Métricas e cases
+## Ordem atual das seções
 
-- `site.showMetrics = false` — números de impacto só entram auditados (v1.1). Ligar a flag e preencher `metric`/`metricLabel` em `Cases.tsx`.
+Hero → **Clientes** (grade preta, logos brancos) → Prova social →
+A dor real → Segmentos → Método → Diagnóstico + Formulário →
+**Carrossel de logos** (marquee) → Footer.
+
+> Os dois blocos de logos (grade e carrossel) são um **teste A/B** em
+> paralelo e usam a mesma lista `site.json → logos`. A grade usa as
+> versões brancas (`public/logos-white/`), o carrossel as coloridas
+> (`public/logos/`). Quando escolher um, o outro pode sair.
+
+## Pendências
+
+1. **Card 03 da prova social sem imagem** — mostra o marcador
+   `prova-03.webp`. Falta a foto.
+2. **Logo preto** — `public/logo-cut.png` é o logo branco renderizado em
+   preto via CSS (`brightness-0`) no header claro. Se existir a versão
+   preta original, trocar.
+3. **Meta Vestibulares** (`logo-04`) fica com halo no branco — é um logo
+   rasterizado com relevo 3D. Ideal pedir vetor/versão chapada.
+4. **Vídeo institucional** — o card 01 já tem capa e botão de play, mas
+   ainda não abre nada. Falta o link do vídeo.
+5. `[CONFIRMAR]` em `site.json → contato`: CNPJ, razão social, endereço.
+6. **Webhook do formulário** (`contato.leadWebhookUrl`) vazio = modo
+   demonstração: valida e mostra sucesso inline sem enviar.
+7. GTM/GA4/Pixel no `index.html` (eventos `lead`, `lead_form_submit`,
+   `whatsapp_click` já disparam).
 
 ## Regras que o site respeita
 
 - Mobile-first, sem overflow horizontal, `prefers-reduced-motion` em tudo
-- Animações apenas `transform`/`opacity` (60fps)
-- Sem preço exposto, sem número inventado, sem foto de banco/IA
-- LGPD: banner de cookies + checkbox de aceite + página de privacidade
+- Animações só com `transform`/`opacity`
+- Imagens dessaturadas (`saturate(.24)`) — exceto artes prontas do cliente
+- LGPD: banner de cookies + aceite no formulário + página de privacidade
+
+## Armadilhas conhecidas
+
+- **Pages CMS e listas:** em `.pages.yml`, listas usam `list: true` no
+  próprio campo. Usar `type: list` corrompe o `site.json` (já aconteceu).
+- **Antes de editar aqui**, rodar `git pull` — o painel commita direto no
+  GitHub e a cópia local não se atualiza sozinha.
+- O padding lateral cai para 12px abaixo de 640px (`.container-cut`).
