@@ -1,0 +1,15 @@
+# dependências e build
+node_modules/
+dist/
+tsconfig.tsbuildinfo
+
+# ambiente e segredos
+.env
+.env.*
+
+# sistema
+.DS_Store
+
+# arquivos soltos de referência (originais arquivados em .assets-src/)
+IMG_9048.JPG.jpeg
+ChatGPT Image*.png

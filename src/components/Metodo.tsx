@@ -1,0 +1,100 @@
+import { useState } from "react";
+import { Reveal } from "../lib/reveal";
+import { BtnPrimary } from "./primitives";
+import content from "../content/site.json";
+
+const m = content.metodo;
+const steps = m.etapas;
+
+/**
+ * Método ref. "Evrone Working Process": faixa de dígitos gigantes com
+ * hairline no topo; a etapa ativa fica em ink-900 e expande o painel
+ * de texto ao lado; hover pinta o dígito de accent. No mobile vira
+ * lista vertical completa.
+ */
+export default function Metodo() {
+  const [active, setActive] = useState(0);
+
+  return (
+    <section id="metodo" className="sec-light section" aria-labelledby="metodo-title">
+      <div className="container-cut">
+        <div className="grid gap-10 lg:grid-cols-12">
+          <div className="lg:col-span-7">
+            <Reveal>
+              <p className="eyebrow">{m.eyebrow}</p>
+            </Reveal>
+            <h2 id="metodo-title" className="mt-6" style={{ fontSize: "var(--fs-h2)" }}>
+              <span className="h-serif block">{m.tituloLinha1}</span>
+              <span className="h-sans block">{m.tituloLinha2}</span>
+            </h2>
+          </div>
+          <Reveal delay={120} className="lg:col-span-4 lg:col-start-9">
+            <p className="text-2nd leading-relaxed lg:pt-2">{m.texto}</p>
+          </Reveal>
+        </div>
+
+        {/* desktop: faixa de dígitos gigantes com painel da etapa ativa */}
+        <Reveal className="mt-16 hidden gap-8 md:flex lg:mt-24">
+          {steps.map((s, i) => {
+            const isActive = active === i;
+            return (
+              <div
+                key={i}
+                className={`border-t border-line-light pt-8 transition-all duration-300 ${
+                  isActive ? "flex-[3]" : "flex-1"
+                }`}
+              >
+                <div className="flex items-start gap-7">
+                  <button
+                    type="button"
+                    className="step-digit"
+                    aria-expanded={isActive}
+                    aria-controls={`metodo-step-${i}`}
+                    aria-label={`Etapa ${i + 1} — ${s.titulo}`}
+                    onClick={() => setActive(i)}
+                    onMouseEnter={() => setActive(i)}
+                    onFocus={() => setActive(i)}
+                  >
+                    {i + 1}
+                  </button>
+                  {isActive && (
+                    <div id={`metodo-step-${i}`} className="min-w-52 pt-2">
+                      <p className="step-num text-text2-light">{s.fase}</p>
+                      <h3 className="mt-3 text-xl leading-snug font-bold">{s.titulo}</h3>
+                      <p className="text-2nd mt-3 text-sm leading-relaxed">{s.texto}</p>
+                    </div>
+                  )}
+                </div>
+              </div>
+            );
+          })}
+        </Reveal>
+
+        {/* mobile: lista vertical completa */}
+        <ol className="mt-14 flex flex-col md:hidden">
+          {steps.map((s, i) => (
+            <Reveal
+              as="li"
+              key={i}
+              delay={i * 60}
+              className="flex gap-6 border-t border-line-light py-7"
+            >
+              <span className="step-digit !cursor-default !text-[3.25rem] text-line-light" aria-hidden>
+                {i + 1}
+              </span>
+              <div>
+                <p className="step-num text-text2-light">{s.fase}</p>
+                <h3 className="mt-2 text-lg leading-snug font-bold">{s.titulo}</h3>
+                <p className="text-2nd mt-2 text-sm leading-relaxed">{s.texto}</p>
+              </div>
+            </Reveal>
+          ))}
+        </ol>
+
+        <Reveal delay={120} className="mt-14 lg:mt-20">
+          <BtnPrimary href="#diagnostico">{m.cta}</BtnPrimary>
+        </Reveal>
+      </div>
+    </section>
+  );
+}
