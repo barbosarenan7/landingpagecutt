@@ -50,18 +50,16 @@ export default function ClientesGrid() {
   if (logos.length === 0) return null;
 
   return (
-    // rounded-t-card: no mobile os cantos de cima arredondam para suavizar
-    // a passagem do hero (claro) para esta seção; no desktop segue reto
     <section
       id="clientes"
-      className="sec-dark rounded-t-card py-[clamp(64px,8vw,112px)] sm:rounded-t-none"
+      className="sec-dark py-[clamp(64px,8vw,112px)]"
       aria-labelledby="clientes-title"
     >
       <div className="container-cut">
-        <p className="eyebrow">Clientes</p>
+        <p className="eyebrow mx-auto flex w-fit">Clientes</p>
         <h2
           id="clientes-title"
-          className="mt-6 mb-12"
+          className="mt-6 mb-12 text-center"
           style={{ fontSize: "var(--fs-h2)" }}
         >
           <span className="h-serif block">Marcas que já comunicam</span>

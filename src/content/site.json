@@ -1,6 +1,6 @@
 {
   "nav": {
-    "cta": "Solicitar diagnóstico",
+    "cta": "Solicitar diagnóstico gratuito",
     "links": [
       { "label": "Como trabalhamos", "href": "#como-trabalhamos" },
       { "label": "Segmentos", "href": "#segmentos" },
@@ -41,17 +41,12 @@
     "tituloAntes": "Marketing baseado em",
     "tituloDestaque": "métricas",
     "tituloDepois": "não em achismo.",
-    "card01Tag": "Prova social",
-    "card01Titulo": "Marketing com método.",
-    "card01Texto": "Estratégia, social media, tráfego pago e produção audiovisual para negócios em operação.",
+    "descricao": "A Cut Creative atua com negócios locais e regionais em diferentes segmentos. Médicos, clínicas, restaurantes, academias, hotéis, óticas, construtoras, imobiliárias e outros negócios em operação que precisam de marketing com mais organização, clareza e retorno.",
+    "cta": "Solicitar diagnóstico gratuito",
     "card01Imagem": "/prova-01.jpg",
     "card02Imagem": "/prova-02.jpg",
-    "card03Tag": "Na região",
-    "card03Texto": "A Cut Creative atua com negócios locais e regionais em diferentes segmentos. Médicos, clínicas, restaurantes, academias, hotéis, óticas, construtoras, imobiliárias e outros negócios em operação que precisam de marketing com mais organização, clareza e retorno.",
-    "card03Cta": "Solicitar diagnóstico gratuito",
-    "card04Tag": "Quem confia",
-    "card04Numero": "8",
-    "card04Label": "marcas da região comunicam com a Cut",
+    "card02ImagemMobile": "/prova-02-mobile.jpg",
+    "card03Imagem": "",
     "card04Imagem": "/prova-04.jpg"
   },
 

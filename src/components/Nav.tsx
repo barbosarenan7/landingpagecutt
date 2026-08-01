@@ -2,22 +2,26 @@ import { useEffect, useState } from "react";
 import { Arrow } from "./primitives";
 import content from "../content/site.json";
 
-const links = content.nav.links;
-
-/** Wordmark tipográfico: sans 900 + ponto no acento. */
+/**
+ * Nav sticky de 72px: paper-50 com blur e hairline inferior (seção 6).
+ * À esquerda o símbolo da marca; à direita apenas o botão de menu, que
+ * abre o painel com o CTA. O logo é branco no arquivo original, então
+ * recebe `brightness-0` para virar preto sobre o header claro.
+ */
 function Logo() {
   return (
-    <a
-      href="#top"
-      aria-label="Cut Creative — início"
-      className="h-sans text-lg tracking-tight text-ink-900"
-    >
-      Cut Creative<span className="text-accent">.</span>
+    <a href="#top" aria-label="Cut Creative — início" className="flex items-center">
+      <img
+        src="/logo-cut.png"
+        alt="Cut Creative"
+        width={213}
+        height={240}
+        className="h-9 w-auto brightness-0"
+      />
     </a>
   );
 }
 
-/** Nav sticky de 72px: paper-50 com blur e hairline inferior (seção 6). */
 export default function Nav() {
   const [open, setOpen] = useState(false);
 
@@ -28,34 +32,24 @@ export default function Nav() {
     };
   }, [open]);
 
+  // fecha com Esc, para o painel não prender o usuário
+  useEffect(() => {
+    if (!open) return;
+    const onKey = (e: KeyboardEvent) => e.key === "Escape" && setOpen(false);
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, [open]);
+
   return (
     <header className="sec-light sticky top-0 z-50 border-b border-line-light bg-paper-50/85 backdrop-blur-md">
       <nav className="container-cut flex h-[72px] items-center justify-between">
         <Logo />
 
-        <div className="hidden items-center gap-10 lg:flex">
-          {links.map((l) => (
-            <a
-              key={l.href}
-              href={l.href}
-              className="text-[15px] font-medium text-ink-900 transition-colors hover:text-accent"
-            >
-              {l.label}
-            </a>
-          ))}
-        </div>
-
-        <a href="#diagnostico" className="btn-primary hidden !min-h-11 lg:inline-flex">
-          {content.nav.cta}
-          <span className="btn-circle" aria-hidden>
-            <Arrow />
-          </span>
-        </a>
-
         <button
           type="button"
-          className="flex h-11 w-11 cursor-pointer flex-col items-center justify-center gap-1.5 lg:hidden"
+          className="flex h-11 w-11 cursor-pointer flex-col items-center justify-center gap-1.5"
           aria-expanded={open}
+          aria-controls="menu-painel"
           aria-label={open ? "Fechar menu" : "Abrir menu"}
           onClick={() => setOpen((v) => !v)}
         >
@@ -68,28 +62,23 @@ export default function Nav() {
         </button>
       </nav>
 
+      {/* painel suspenso: só o CTA, em versão discreta */}
       {open && (
-        <div className="sec-light fixed inset-0 top-[72px] z-40 flex flex-col px-6 pt-4 pb-10 lg:hidden">
-          {links.map((l) => (
+        <div
+          id="menu-painel"
+          className="sec-light absolute inset-x-0 top-[72px] border-b border-line-light bg-paper-50/95 backdrop-blur-md"
+        >
+          <div className="container-cut flex justify-end py-5">
             <a
-              key={l.href}
-              href={l.href}
+              href="#diagnostico"
               onClick={() => setOpen(false)}
-              className="h-sans border-b border-line-light py-6 text-3xl text-ink-900"
+              className="btn-secondary !min-h-0 !px-5 !py-2.5 !text-[13px]"
+              style={{ ["--line" as string]: "var(--color-line-light)" }}
             >
-              {l.label}
-            </a>
-          ))}
-          <a
-            href="#diagnostico"
-            className="btn-primary mt-auto w-full justify-between"
-            onClick={() => setOpen(false)}
-          >
-            {content.nav.cta}
-            <span className="btn-circle" aria-hidden>
+              {content.nav.cta}
               <Arrow />
-            </span>
-          </a>
+            </a>
+          </div>
         </div>
       )}
     </header>

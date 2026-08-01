@@ -660,3 +660,18 @@
     }
   }
 }
+
+/* ============================================================
+   Carrossel mobile da prova social: arraste por scroll-snap, sem
+   a barra de rolagem visível (a navegação é por setas/indicadores).
+   ============================================================ */
+@layer components {
+  .carrossel {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    overscroll-behavior-x: contain;
+  }
+  .carrossel::-webkit-scrollbar {
+    display: none;
+  }
+}

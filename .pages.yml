@@ -90,42 +90,27 @@ content:
           - name: tituloDepois
             label: Título — depois da palavra em destaque
             type: string
+          - name: descricao
+            label: Texto abaixo do título
+            type: text
+          - name: cta
+            label: Botão abaixo do texto
+            type: string
           - name: card01Imagem
-            label: Card 01 — imagem
+            label: Card 01 — imagem (capa do vídeo)
             type: image
-          - name: card01Tag
-            label: Card 01 — etiqueta
-            type: string
-          - name: card01Titulo
-            label: Card 01 — título
-            type: string
-          - name: card01Texto
-            label: Card 01 — texto
-            type: text
           - name: card02Imagem
-            label: Card 02 — imagem
+            label: Card 02 — imagem (desktop)
             type: image
-          - name: card03Tag
-            label: Card 03 — etiqueta
-            type: string
-          - name: card03Texto
-            label: Card 03 — texto
-            type: text
-          - name: card03Cta
-            label: Card 03 — botão
-            type: string
+          - name: card02ImagemMobile
+            label: Card 02 — imagem quadrada (mobile)
+            type: image
+          - name: card03Imagem
+            label: Card 03 — imagem
+            type: image
           - name: card04Imagem
             label: Card 04 — imagem
             type: image
-          - name: card04Tag
-            label: Card 04 — etiqueta
-            type: string
-          - name: card04Numero
-            label: Card 04 — número
-            type: string
-          - name: card04Label
-            label: Card 04 — legenda
-            type: string
 
       - name: dorReal
         label: A dor real
