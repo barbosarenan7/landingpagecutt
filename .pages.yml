@@ -81,11 +81,14 @@ content:
         label: Prova social
         type: object
         fields:
-          - name: tituloLinha1
-            label: Título — linha 1
+          - name: tituloAntes
+            label: Título — antes da palavra em destaque
             type: string
-          - name: tituloLinha2
-            label: Título — linha 2 (cinza)
+          - name: tituloDestaque
+            label: Título — palavra em destaque (laranja)
+            type: string
+          - name: tituloDepois
+            label: Título — depois da palavra em destaque
             type: string
           - name: card01Imagem
             label: Card 01 — imagem
@@ -102,9 +105,6 @@ content:
           - name: card02Imagem
             label: Card 02 — imagem
             type: image
-          - name: card02Titulo
-            label: Card 02 — título
-            type: string
           - name: card03Tag
             label: Card 03 — etiqueta
             type: string

@@ -14,9 +14,15 @@ export default function ProvaSocial() {
   return (
     <section className="sec-light py-[clamp(40px,5vw,72px)]" aria-labelledby="prova-title">
       <div className="container-cut">
-        <h2 id="prova-title" className="font-bold" style={{ fontSize: "var(--fs-h2)", lineHeight: 1.15 }}>
-          <span className="block">{p.tituloLinha1}</span>
-          <span className="block text-text2-light">{p.tituloLinha2}</span>
+        {/* título na fonte do logotipo (h-sans), centralizado, com a
+            palavra de destaque no acento */}
+        <h2
+          id="prova-title"
+          className="h-sans mx-auto max-w-[20ch] text-center text-balance"
+          style={{ fontSize: "var(--fs-h2)" }}
+        >
+          {p.tituloAntes} <span className="text-accent">{p.tituloDestaque}</span>{" "}
+          {p.tituloDepois}
         </h2>
 
         <div className="mt-12 grid gap-3 lg:grid-cols-12">
@@ -65,55 +71,65 @@ export default function ProvaSocial() {
             </Media>
           </Reveal>
 
-          {/* 02 — card largo com título sobre a imagem */}
+          {/* 02 — arte com a informação já embutida; sem título por cima */}
           <Reveal delay={90} className="lg:col-span-8">
             <Media
               file="prova-02.webp"
               src={p.card02Imagem}
-              alt="Ambiente de trabalho de uma empresa da região em operação"
+              alt="Estúdio da Cut Creative: mais de 30 colaboradores, 5 anos no mercado e atendimento nacional"
               ratio="21 / 9"
               hover
               className="[&_img]:filter-none"
             >
-              <div
-                className="absolute inset-0 flex items-start justify-between p-6"
-                style={{
-                  background: "linear-gradient(to bottom, rgba(11,11,11,.4), transparent 40%)",
-                }}
-              >
-                <p className="text-2xl font-bold text-paper-50 md:text-3xl">
-                  {p.card02Titulo}
-                </p>
+              <div className="absolute inset-x-0 top-0 flex justify-end p-6">
                 <span className="bento-tag text-paper-50/85">02/</span>
               </div>
             </Media>
           </Reveal>
 
-          {/* 03 — card escuro com o texto e CTA */}
+          {/* 03 — card em vidro fumê: base escura em degradê, reflexo no
+              topo, brilho de acento difuso no canto e hairline de borda.
+              O conteúdo fica acima das camadas, com contraste preservado. */}
           <Reveal delay={140} className="lg:col-span-4">
-            <div className="flex h-full flex-col rounded-media bg-ink-900 p-7 text-paper-50">
-              <div className="flex justify-between text-text2-dark">
-                <span className="bento-tag">{p.card03Tag}</span>
-                <span className="bento-tag">03/</span>
-              </div>
-              <p className="mt-5 text-[15px] leading-relaxed text-paper-50/90">
-                {p.card03Texto}
-              </p>
-              <div className="mt-auto pt-7">
-                <a href="#diagnostico" className="btn-white">
-                  {p.card03Cta}
-                </a>
+            <div className="relative flex h-full flex-col overflow-hidden rounded-media border border-paper-50/10 p-7 text-paper-50 backdrop-blur-xl">
+              <div
+                className="absolute inset-0 bg-gradient-to-br from-ink-700 via-ink-900 to-ink-900"
+                aria-hidden
+              />
+              <div
+                className="absolute inset-0 bg-gradient-to-b from-paper-50/[0.08] via-transparent to-transparent"
+                aria-hidden
+              />
+              <div
+                className="absolute -top-20 -right-20 h-56 w-56 rounded-pill bg-accent/15 blur-3xl"
+                aria-hidden
+              />
+
+              <div className="relative flex h-full flex-col">
+                <div className="flex justify-between text-text2-dark">
+                  <span className="bento-tag">{p.card03Tag}</span>
+                  <span className="bento-tag">03/</span>
+                </div>
+                <p className="mt-5 text-[15px] leading-relaxed text-paper-50/90">
+                  {p.card03Texto}
+                </p>
+                <div className="mt-auto pt-7">
+                  <a href="#diagnostico" className="btn-white">
+                    {p.card03Cta}
+                  </a>
+                </div>
               </div>
             </div>
           </Reveal>
 
-          {/* 04 — arte pronta do cliente, mesma largura do 03, cores
-              originais (sem dessaturação) e preenchendo a célula */}
+          {/* 04 — arte pronta do cliente preenchendo o card inteiro
+              (object-cover), cores originais e o mesmo hover dos demais */}
           <Reveal delay={190} className="lg:col-span-4">
             <Media
               file="prova-04.webp"
               src={p.card04Imagem}
               alt="+300 marcas atendidas — estratégia, criação e resultados reais"
+              hover
               className="aspect-square h-full [&_img]:filter-none lg:aspect-auto"
             />
           </Reveal>

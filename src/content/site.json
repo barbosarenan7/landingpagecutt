@@ -38,13 +38,13 @@
   ],
 
   "provaSocial": {
-    "tituloLinha1": "Trabalhamos com empresas",
-    "tituloLinha2": "que precisam de resultado real.",
+    "tituloAntes": "Marketing baseado em",
+    "tituloDestaque": "métricas",
+    "tituloDepois": "não em achismo.",
     "card01Tag": "Prova social",
     "card01Titulo": "Marketing com método.",
     "card01Texto": "Estratégia, social media, tráfego pago e produção audiovisual para negócios em operação.",
     "card01Imagem": "/prova-01.jpg",
-    "card02Titulo": "Negócios em operação",
     "card02Imagem": "/prova-02.jpg",
     "card03Tag": "Na região",
     "card03Texto": "A Cut Creative atua com negócios locais e regionais em diferentes segmentos. Médicos, clínicas, restaurantes, academias, hotéis, óticas, construtoras, imobiliárias e outros negócios em operação que precisam de marketing com mais organização, clareza e retorno.",
@@ -70,7 +70,7 @@
       "Resultado sem clareza",
       "Marketing feito de qualquer jeito"
     ],
-    "imagem": "",
+    "imagem": "/dor-central.jpg",
     "fraseTransicao": "Marketing sem método vira gasto. Com método, vira investimento."
   },
 
