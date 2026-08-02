@@ -173,30 +173,19 @@ export default function DorReal() {
       className="sec-light relative overflow-hidden pb-16 lg:pb-20"
       aria-labelledby="dor-title"
     >
-      {/* título fantasma (ref FUTURE) — só "DOR" recebe o acento laranja */}
-      <p className="ghost-title absolute inset-x-0" aria-hidden>
-        A <span style={{ color: "var(--color-accent)" }}>dor</span> real
-      </p>
-
-      {/* pt = (topo da seção anterior) + 2×(top do fantasma) + altura do
-          fantasma → distância acima do título == distância abaixo dele.
-          No celular o fantasma encolhe e o bloco sobe (ver styles.css). */}
       <div className="dor-cabecalho container-cut relative">
-        {/* ===== mobile (<768px): texto centralizado e foto em sangria =====
-            O título fantasma já anuncia a seção, então aqui não se repete
-            o eyebrow. O texto fica centralizado e a foto ocupa a largura
-            inteira da tela, escurecendo até virar o fundo de "Os sinais". */}
+        {/* ===== mobile (<768px): título serif+sans centralizado (mesma
+            linguagem da grade de clientes e do Método) + foto em sangria. */}
         <div className="md:hidden">
-          {/* mesma linguagem do título da prova social: sans black, escala
-              de h2 e a palavra-chave no acento */}
           <h2
-            className="faixa-leitura h-sans text-center text-balance"
-            style={{ fontSize: "var(--fs-h2)" }}
+            id="dor-title"
+            className="faixa-leitura mx-auto text-center text-balance"
+            style={{ fontSize: "clamp(1.3125rem, 5vw, 2.25rem)" }}
           >
-            {d.tituloAntes} <span className="text-accent">{d.tituloDestaque}</span>
-            {d.tituloDepois && ` ${d.tituloDepois}`}
+            <span className="h-serif block">{d.tituloLinha1}</span>
+            <span className="h-sans block">{d.tituloLinha2}</span>
           </h2>
-          <p className="faixa-leitura text-2nd mx-auto mt-5 max-w-[36ch] text-center text-[15px] leading-relaxed">
+          <p className="faixa-leitura text-2nd mx-auto mt-6 max-w-[36ch] text-center text-[15px] leading-relaxed">
             {d.texto}
           </p>
 
@@ -227,10 +216,9 @@ export default function DorReal() {
           <div className="flex flex-col gap-3 lg:col-span-4">
             <Reveal className="card-soft">
               <Corner />
-              <p className="eyebrow">{d.eyebrow}</p>
-              <h2 id="dor-title" className="mt-6 pr-8 text-[26px] leading-snug font-bold text-balance">
-                {d.tituloAntes} <span className="text-accent">{d.tituloDestaque}</span>
-                {d.tituloDepois && ` ${d.tituloDepois}`}
+              <h2 className="pr-8 text-balance" style={{ fontSize: "clamp(1.35rem, 1.55vw, 1.65rem)" }}>
+                <span className="h-serif block leading-snug">{d.tituloLinha1}</span>
+                <span className="h-sans block leading-snug">{d.tituloLinha2}</span>
               </h2>
             </Reveal>
             <Reveal delay={90} className="card-soft flex-1">

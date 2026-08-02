@@ -136,12 +136,10 @@
     color: var(--text2, var(--color-text2-light));
   }
 
-  /* topo da seção "A dor real": o espaço acima do título compensa o
-     título fantasma posicionado em absoluto */
+  /* topo da seção "A dor real": respiro normal entre a prova social
+     acima e o título aqui (sem título fantasma para compensar) */
   .dor-cabecalho {
-    padding-top: calc(
-      clamp(40px, 5vw, 72px) + 2 * clamp(16px, 2vw, 32px) + clamp(3rem, 9vw, 8.5rem)
-    );
+    padding-top: clamp(56px, 7vw, 112px);
   }
 
   /* padding vertical de seção definido em UM único lugar (seção 11) */
@@ -730,15 +728,8 @@
     .card-dif {
       padding: 20px 22px;
     }
-    /* "A DOR REAL" menor e colado no título — o foco é a frase, não o
-       fantasma, que aqui vira só uma assinatura da seção */
-    .ghost-title {
-      top: 12px;
-      font-size: 2.125rem;
-      letter-spacing: 0.02em;
-    }
     .dor-cabecalho {
-      padding-top: 74px;
+      padding-top: 56px;
     }
     /* itens de lista com divisória: o texto recua, a régua fica inteira */
     .faixa-leitura-lista {

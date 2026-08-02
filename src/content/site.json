@@ -58,10 +58,8 @@
     "card04Imagem": "/prova-04.jpg"
   },
   "dorReal": {
-    "eyebrow": "A dor real",
-    "tituloAntes": "Sua empresa tem logística, equipe e investimento. Por que o marketing ainda não acompanha o",
-    "tituloDestaque": "tamanho da operação?",
-    "tituloDepois": "",
+    "tituloLinha1": "Sua empresa tem estrutura e investimento,",
+    "tituloLinha2": "por que o marketing ainda não acompanha o tamanho da operação?",
     "texto": "90% das empresas em crescimento chegam até a Cut com o mesmo cenário: já passaram por agências, já tentaram internalizar, já investiram alto. O que falta nunca é verba. É experiência, método, governança e um parceiro que assuma responsabilidade pelo resultado.",
     "statNumero": "6",
     "statLabel": "os mesmos sinais, em todos os casos",

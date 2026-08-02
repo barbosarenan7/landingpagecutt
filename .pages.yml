@@ -122,18 +122,12 @@ content:
         label: A dor real
         type: object
         fields:
-          - name: eyebrow
-            label: Linha de apoio
-            type: string
-          - name: tituloAntes
-            label: Título — antes da palavra em destaque
+          - name: tituloLinha1
+            label: Título — linha 1 (serifa)
             type: text
-          - name: tituloDestaque
-            label: Título — palavra em destaque (amarelo)
-            type: string
-          - name: tituloDepois
-            label: Título — depois da palavra em destaque
-            type: string
+          - name: tituloLinha2
+            label: Título — linha 2 (sans, negrito)
+            type: text
           - name: texto
             label: Texto
             type: text
