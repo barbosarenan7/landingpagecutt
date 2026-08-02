@@ -113,7 +113,10 @@ export default function Hero() {
                 </Reveal>
               </div>
 
-              <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:col-span-6 lg:pl-10">
+              {/* No celular estas duas colunas saem do card e vão para a área
+                  clara, logo abaixo — assim a foto fica só com o wordmark no
+                  topo e o texto principal no pé. De lg pra cima, nada muda. */}
+              <div className="hidden gap-8 sm:grid-cols-2 lg:col-span-6 lg:grid lg:grid-cols-2 lg:pl-10">
                 <Reveal delay={260}>
                   <h2 className="flex items-center gap-4 text-[22px] font-bold">
                     {h.col1Titulo}
@@ -135,6 +138,28 @@ export default function Hero() {
               </div>
             </div>
           </div>
+        </div>
+
+        {/* ===== celular: Estratégia e Resultado na área clara =====
+            Mesmo conteúdo das colunas do card, agora sobre o off-white:
+            título forte com a régua no acento e texto na cor secundária
+            da seção. Some a partir de lg, onde eles voltam para dentro
+            da foto. */}
+        <div className="mt-12 grid gap-9 sm:grid-cols-2 sm:gap-8 lg:hidden">
+          <Reveal>
+            <h2 className="flex items-center gap-4 text-[22px] font-bold">
+              {h.col1Titulo}
+              <span className="h-px min-w-8 flex-1 bg-accent" aria-hidden />
+            </h2>
+            <p className="text-2nd mt-3 text-[15px] leading-relaxed">{h.col1Texto}</p>
+          </Reveal>
+          <Reveal delay={90}>
+            <h2 className="flex items-center gap-4 text-[22px] font-bold">
+              {h.col2Titulo}
+              <span className="h-px min-w-8 flex-1 bg-accent" aria-hidden />
+            </h2>
+            <p className="text-2nd mt-3 text-[15px] leading-relaxed">{h.col2Texto}</p>
+          </Reveal>
         </div>
       </div>
     </section>
