@@ -206,9 +206,6 @@ content:
           - name: texto
             label: Texto de apoio
             type: text
-          - name: cta
-            label: Botão
-            type: string
           - name: etapas
             label: Etapas (6)
             type: object

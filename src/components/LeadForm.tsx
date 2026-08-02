@@ -123,7 +123,9 @@ export default function LeadForm() {
         </div>
       ) : (
         <>
-          <h3 className="text-[22px] leading-snug font-bold text-balance">
+          {/* no celular o título some da tela, mas segue no fluxo de
+              leitores de tela — o formulário não pode ficar sem cabeçalho */}
+          <h3 className="sr-only text-[22px] leading-snug font-bold text-balance sm:not-sr-only">
             {f.titulo}
           </h3>
           <p className="mt-2 text-sm text-text2-dark">{f.subtitulo}</p>

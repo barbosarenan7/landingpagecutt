@@ -3,12 +3,20 @@
     "cta": "Solicitar diagnóstico gratuito",
     "ctaCurto": "Solicitar diagnóstico",
     "links": [
-      { "label": "Como trabalhamos", "href": "#como-trabalhamos" },
-      { "label": "Segmentos", "href": "#segmentos" },
-      { "label": "Método", "href": "#metodo" }
+      {
+        "label": "Como trabalhamos",
+        "href": "#como-trabalhamos"
+      },
+      {
+        "label": "Segmentos",
+        "href": "#segmentos"
+      },
+      {
+        "label": "Método",
+        "href": "#metodo"
+      }
     ]
   },
-
   "hero": {
     "eyebrow": "Mais de 300 negócios atendidos em Volta Redonda e Brasil.",
     "titulo": "Marketing estratégico para empresas que querem crescer com mais clareza, presença e resultado.",
@@ -20,7 +28,6 @@
     "imagem": "/hero-main.jpg",
     "imagemMobile": "/hero-main-mobile.jpg"
   },
-
   "logos": [
     "/logos/logo-01.png",
     "/logos/logo-02.png",
@@ -36,7 +43,6 @@
     "/logos/logo-12.png",
     "/logos/logo-13.png"
   ],
-
   "provaSocial": {
     "tituloAntes": "Marketing baseado em",
     "tituloDestaque": "métricas",
@@ -52,7 +58,6 @@
     "card03Imagem": "",
     "card04Imagem": "/prova-04.jpg"
   },
-
   "dorReal": {
     "eyebrow": "A dor real",
     "titulo": "Sua empresa tem logística, equipe e investimento. Por que o marketing ainda não acompanha o tamanho da operação?",
@@ -71,7 +76,6 @@
     "imagem": "/dor-central.jpg",
     "fraseTransicao": "Marketing sem método vira gasto. Com método, vira investimento."
   },
-
   "segmentos": {
     "tituloLinha1": "Experiência com diferentes tipos de negócio.",
     "tituloLinha2": "Foco no resultado de cada um.",
@@ -82,35 +86,33 @@
         "badge": "Saúde",
         "titulo": "Médicos, clínicas e operações de saúde",
         "texto": "Comunicação ética e estratégica voltada para autoridade. O objetivo não é transformar médico em influenciador, é construir uma presença que sustenta a marca, enche a agenda e transforma reputação em consultas qualificadas e faturamento previsível, no consultório ou na rede.",
-        "imagem": ""
+        "imagem": "/seg-saude.jpg"
       },
       {
         "badge": "B2B",
         "titulo": "Indústrias e empresas B2B",
         "texto": "Marketing que gera demanda qualificada e sustenta o comercial, não post para preencher feed. Estratégia voltada para faturamento, ciclo de venda e crescimento da operação, com comunicação à altura de quem já é referência no próprio setor.",
-        "imagem": ""
+        "imagem": "/seg-b2b.jpg"
       },
       {
         "badge": "Alimentação",
         "titulo": "Restaurantes, delivery e redes de alimentação",
         "texto": "Estratégia de conteúdo e campanhas com foco em movimento, vendas e delivery. Menos dependência de promoção, mais pedidos entrando com consistência e uma marca forte o bastante para crescer, abrir unidades e faturar mais em cada praça.",
-        "imagem": ""
+        "imagem": "/seg-food.jpg"
       },
       {
         "badge": "Serviços",
         "titulo": "Serviços especializados e de alto valor",
         "texto": "Advocacia, arquitetura, contabilidade, saúde estética e operações que vendem expertise. Construímos autoridade para atrair o cliente certo, não o que só pergunta preço, e posicionar sua empresa como referência para o preço deixar de ser objeção.",
-        "imagem": ""
+        "imagem": "/seg-servicos.jpg"
       }
     ]
   },
-
   "metodo": {
     "eyebrow": "Método Cut",
     "tituloLinha1": "Um processo para transformar marketing",
     "tituloLinha2": "em uma operação que funciona.",
     "texto": "Do diagnóstico à análise, a Cut trabalha de ponta a ponta para que sua empresa se comunique melhor, cresça com previsibilidade e trate marketing como operação, não como tentativa.",
-    "cta": "Solicitar diagnóstico gratuito",
     "etapas": [
       {
         "fase": "Entendimento",
@@ -144,7 +146,6 @@
       }
     ]
   },
-
   "diferenciais": {
     "eyebrow": "Diferenciais",
     "tituloLinha1": "Por que empresas exigentes",
@@ -168,7 +169,6 @@
       }
     ]
   },
-
   "diagnostico": {
     "eyebrow": "Solicite seu diagnóstico",
     "tituloLinha1": "Solicite um diagnóstico gratuito",
@@ -204,11 +204,9 @@
       "sucessoCta": "Seguir a Cut no Instagram"
     }
   },
-
   "footer": {
     "descricao": "Marketing estratégico com time completo: estratégia, social media, tráfego pago e produção audiovisual."
   },
-
   "contato": {
     "whatsapp": "5524992697807",
     "whatsappMensagem": "Olá! Vim pela landing page da Cut Creative e gostaria de saber mais.",

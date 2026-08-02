@@ -716,6 +716,10 @@
     .faixa-leitura {
       padding-inline: 24px;
     }
+    /* cards dos diferenciais mais baixos no celular */
+    .card-dif {
+      padding: 20px 22px;
+    }
     /* itens de lista com divisória: o texto recua, a régua fica inteira */
     .faixa-leitura-lista {
       padding-inline: 24px;

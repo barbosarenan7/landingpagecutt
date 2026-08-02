@@ -45,13 +45,27 @@ export default function Diferenciais() {
 
         <div className="mt-12 grid gap-3 md:mt-16 md:grid-cols-2 lg:grid-cols-4">
           {df.itens.map((item, i) => (
-            <Reveal key={item.titulo} delay={i * 90} className="card-soft flex flex-col">
+            <Reveal
+              key={item.titulo}
+              delay={i * 90}
+              className="card-soft card-dif flex flex-col"
+            >
               <Corner />
-              <span className="step-num text-text3" aria-hidden>
+              {/* no celular o número entra na mesma linha do título, o que
+                  encurta o card; de lg pra cima volta a ser uma linha
+                  própria acima dele */}
+              <span className="step-num hidden text-text3 lg:block" aria-hidden>
                 {String(i + 1).padStart(2, "0")}
               </span>
-              <h3 className="mt-6 pr-8 text-lg leading-snug font-bold">{item.titulo}</h3>
-              <p className="text-2nd mt-3 text-sm leading-relaxed">{item.texto}</p>
+              <h3 className="pr-8 text-lg leading-snug font-bold lg:mt-6">
+                <span className="step-num mr-2 text-text3 lg:hidden" aria-hidden>
+                  {String(i + 1).padStart(2, "0")}.
+                </span>
+                {item.titulo}
+              </h3>
+              <p className="text-2nd mt-2 text-sm leading-relaxed lg:mt-3">
+                {item.texto}
+              </p>
             </Reveal>
           ))}
         </div>

@@ -38,9 +38,11 @@ export default function Segmentos() {
                 <span className="badge badge-light absolute top-4 left-4">{s.badge}</span>
                 <div
                   className="absolute inset-x-0 bottom-0 p-6 pt-24"
+                  /* as fotos têm áreas claras (faíscas, pratos, janelas), então
+                     o véu precisa cobrir toda a caixa de texto, não só o pé */
                   style={{
                     background:
-                      "linear-gradient(to top, rgba(11,11,11,.78), transparent 55%)",
+                      "linear-gradient(to top, rgba(11,11,11,.94) 0%, rgba(11,11,11,.86) 40%, rgba(11,11,11,.55) 70%, transparent 100%)",
                   }}
                 >
                   <h3 className="text-lg font-bold text-paper-50">{s.titulo}</h3>

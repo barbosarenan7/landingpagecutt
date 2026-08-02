@@ -1,6 +1,5 @@
 import { useEffect, useRef, useState } from "react";
 import { Reveal } from "../lib/reveal";
-import { BtnPrimary } from "./primitives";
 import content from "../content/site.json";
 
 const m = content.metodo;
@@ -115,10 +114,6 @@ export default function Metodo() {
             </Reveal>
           ))}
         </ol>
-
-        <Reveal delay={120} className="mt-14 flex justify-center md:justify-start lg:mt-20">
-          <BtnPrimary href="#diagnostico">{m.cta}</BtnPrimary>
-        </Reveal>
       </div>
     </section>
   );
