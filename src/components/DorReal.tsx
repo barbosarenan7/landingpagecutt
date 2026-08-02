@@ -26,6 +26,37 @@ function Corner() {
   );
 }
 
+/**
+ * Frase de transição com mistura tipográfica (sem réguas): serifa como
+ * base, "método" em itálico, "gasto" em sans 900 riscado de laranja e
+ * "investimento" com marcação sólida no acento. Se o texto for editado
+ * no painel e as palavras mudarem, tudo cai no estilo serifado base.
+ */
+function FraseDestaque({ texto }: { texto: string }) {
+  const partes = texto.split(/(método|gasto\.?|investimento\.?)/gi);
+  return (
+    <p className="frase-destaque">
+      {partes.map((p, i) => {
+        const w = p.toLowerCase();
+        if (w === "método") return <em key={i}>{p}</em>;
+        if (w.startsWith("gasto"))
+          return (
+            <span key={i} className="frase-gasto">
+              {p}
+            </span>
+          );
+        if (w.startsWith("investimento"))
+          return (
+            <span key={i} className="frase-marca">
+              {p}
+            </span>
+          );
+        return p;
+      })}
+    </p>
+  );
+}
+
 export default function DorReal() {
   return (
     <section
@@ -146,7 +177,7 @@ export default function DorReal() {
         </div>
 
         <Reveal delay={120} className="mt-16 lg:mt-20">
-          <p className="pull-quote">{d.fraseTransicao}</p>
+          <FraseDestaque texto={d.fraseTransicao} />
         </Reveal>
       </div>
     </section>

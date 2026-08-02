@@ -18,8 +18,10 @@ export default function Metodo() {
   return (
     <section id="metodo" className="sec-light section" aria-labelledby="metodo-title">
       <div className="container-cut">
+        {/* no mobile todo o texto fica centralizado; a partir de md volta
+            ao alinhamento à esquerda do desktop */}
         <div className="grid gap-10 lg:grid-cols-12">
-          <div className="lg:col-span-7">
+          <div className="text-center md:text-left lg:col-span-7">
             <Reveal>
               <p className="eyebrow">{m.eyebrow}</p>
             </Reveal>
@@ -29,7 +31,9 @@ export default function Metodo() {
             </h2>
           </div>
           <Reveal delay={120} className="lg:col-span-4 lg:col-start-9">
-            <p className="text-2nd leading-relaxed lg:pt-2">{m.texto}</p>
+            <p className="text-2nd text-center leading-relaxed md:text-left lg:pt-2">
+              {m.texto}
+            </p>
           </Reveal>
         </div>
 
@@ -70,28 +74,32 @@ export default function Metodo() {
           })}
         </Reveal>
 
-        {/* mobile: lista vertical completa */}
-        <ol className="mt-14 flex flex-col md:hidden">
+        {/* mobile: lista vertical com o dígito fantasma gigante da marca —
+            o texto da etapa sobe e ocupa a metade de baixo do número,
+            tudo centralizado (mesma linguagem do desktop, em vertical) */}
+        <ol className="mt-12 flex flex-col md:hidden">
           {steps.map((s, i) => (
             <Reveal
               as="li"
               key={i}
               delay={i * 60}
-              className="flex gap-6 border-t border-line-light py-7"
+              className="border-t border-line-light px-2 pt-6 pb-10 text-center"
             >
-              <span className="step-digit !cursor-default !text-[3.25rem] text-line-light" aria-hidden>
-                {i + 1}
+              <span className="step-ghost" aria-hidden>
+                {String(i + 1).padStart(2, "0")}
               </span>
-              <div>
-                <p className="step-num text-text2-light">{s.fase}</p>
-                <h3 className="mt-2 text-lg leading-snug font-bold">{s.titulo}</h3>
-                <p className="text-2nd mt-2 text-sm leading-relaxed">{s.texto}</p>
+              <div className="relative -mt-11">
+                <p className="step-num text-accent">{s.fase}</p>
+                <h3 className="mt-3 text-xl leading-snug font-bold">{s.titulo}</h3>
+                <p className="text-2nd mx-auto mt-3 max-w-[34ch] text-sm leading-relaxed">
+                  {s.texto}
+                </p>
               </div>
             </Reveal>
           ))}
         </ol>
 
-        <Reveal delay={120} className="mt-14 lg:mt-20">
+        <Reveal delay={120} className="mt-14 flex justify-center md:justify-start lg:mt-20">
           <BtnPrimary href="#diagnostico">{m.cta}</BtnPrimary>
         </Reveal>
       </div>

@@ -708,14 +708,13 @@
     overflow: hidden;
     /* sangria total: a foto atravessa a página de ponta a ponta */
     margin-inline: calc(50% - 50vw);
-    /* fundo do bloco: paper-50 na primeira faixa (para nenhum fio de
-       subpixel aparecer na emenda com a seção) e near-black embaixo,
-       onde a foto acaba e a lista continua */
+    /* fundo do bloco: paper-50 atrás da área em que a foto se dissolve
+       e near-black embaixo, onde a foto acaba e a lista continua */
     background: linear-gradient(
       to bottom,
       var(--color-paper-50) 0%,
-      var(--color-paper-50) 6%,
-      var(--color-ink-900) 30%
+      var(--color-paper-50) 12%,
+      var(--color-ink-900) 32%
     );
     color: var(--color-paper-50);
     --line: var(--color-line-dark);
@@ -732,9 +731,13 @@
     object-fit: cover;
     object-position: center 20%;
     filter: saturate(0.24) contrast(1.06);
+    /* o esmaecimento do topo é feito na PRÓPRIA foto (máscara), não num
+       véu por cima — assim não existe emenda nem linha possível entre o
+       bloco de texto e o degradê */
+    -webkit-mask-image: linear-gradient(to bottom, transparent 0%, #000 16%);
+    mask-image: linear-gradient(to bottom, transparent 0%, #000 16%);
   }
-  /* véu leve: dissolve curto no topo, uma janela larga com a foto limpa
-     e só depois o escurecimento que sustenta a leitura da lista */
+  /* véu leve: só o escurecimento inferior, que sustenta a lista */
   .dor-composicao::after {
     content: "";
     position: absolute;
@@ -742,11 +745,7 @@
     pointer-events: none;
     background: linear-gradient(
       to bottom,
-      var(--color-paper-50) 0%,
-      var(--color-paper-50) 4%,
-      color-mix(in oklab, var(--color-paper-50) 55%, transparent) 9%,
-      color-mix(in oklab, var(--color-paper-50) 18%, transparent) 14%,
-      transparent 19%,
+      transparent 0%,
       transparent 40%,
       color-mix(in oklab, var(--color-ink-900) 65%, transparent) 46%,
       color-mix(in oklab, var(--color-ink-900) 92%, transparent) 50%,
@@ -760,6 +759,59 @@
     .ghost-title {
       color: color-mix(in oklab, var(--color-ink-900) 13%, transparent);
     }
+  }
+
+  /* dígito fantasma das etapas do método no celular — mesma linguagem
+     dos números gigantes do desktop, em versão vertical centralizada */
+  .step-ghost {
+    display: block;
+    font-weight: 900;
+    font-size: clamp(6rem, 32vw, 8.5rem);
+    line-height: 0.8;
+    letter-spacing: -0.05em;
+    font-variant-numeric: tabular-nums;
+    color: color-mix(in oklab, var(--color-ink-900) 9%, transparent);
+    user-select: none;
+    pointer-events: none;
+  }
+
+  /* frase de transição com mistura tipográfica (substitui o pull-quote
+     nessa seção: sem réguas em cima e embaixo) */
+  .frase-destaque {
+    font-family: var(--font-serif);
+    font-weight: 400;
+    letter-spacing: -0.01em;
+    line-height: 1.22;
+    font-size: clamp(2.25rem, 4.2vw, 3.5rem);
+    text-align: center;
+    text-wrap: balance;
+    padding-block: clamp(16px, 3vw, 40px);
+  }
+  .frase-destaque em {
+    font-style: italic;
+    /* o itálico serifado inclina sobre a palavra seguinte; um respiro
+       mínimo devolve o espaço óptico */
+    margin-inline-end: 0.06em;
+  }
+  /* "gasto": sans pesada, apagada e riscada pelo acento */
+  .frase-gasto {
+    font-family: var(--font-sans);
+    font-weight: 900;
+    font-size: 0.82em;
+    letter-spacing: -0.02em;
+    color: var(--color-text3);
+    text-decoration: line-through;
+    text-decoration-color: var(--color-accent);
+    text-decoration-thickness: 0.09em;
+  }
+  /* "investimento": marcação sólida de caneta, levemente inclinada */
+  .frase-marca {
+    display: inline-block;
+    background: var(--color-accent);
+    color: var(--color-accent-ink);
+    padding: 0.02em 0.18em 0.12em;
+    border-radius: 0.14em;
+    transform: rotate(-1.2deg);
   }
 
   /* CTA do header no celular: pill accent compacto, em caixa alta */
