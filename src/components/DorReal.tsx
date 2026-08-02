@@ -51,35 +51,26 @@ export default function DorReal() {
             "calc(clamp(40px,5vw,72px) + 2 * clamp(16px,2vw,32px) + clamp(3rem,9vw,8.5rem))",
         }}
       >
-        {/* ===== mobile (<768px): texto e foto numa composição contínua =====
-            O título vira o subtítulo da seção (sem card), o texto corre
-            solto abaixo dele e a foto nasce do próprio fundo claro por um
-            gradiente, escurecendo até virar o fundo de "Os sinais". */}
+        {/* ===== mobile (<768px): texto centralizado e foto em sangria =====
+            O título fantasma já anuncia a seção, então aqui não se repete
+            o eyebrow. O texto fica centralizado e a foto ocupa a largura
+            inteira da tela, escurecendo até virar o fundo de "Os sinais". */}
         <div className="md:hidden">
-          <p className="eyebrow">{d.eyebrow}</p>
-          <h2 className="mt-4 text-[27px] leading-[1.16] font-bold text-balance">
+          <h2 className="text-center text-[27px] leading-[1.16] font-bold text-balance">
             {d.titulo}
           </h2>
-          <p className="text-2nd mt-5 text-[15px] leading-relaxed">{d.texto}</p>
+          <p className="text-2nd mx-auto mt-5 max-w-[36ch] text-center text-[15px] leading-relaxed">
+            {d.texto}
+          </p>
 
-          <div className="mt-7 flex items-center gap-5">
-            <p className="h-sans leading-none" style={{ fontSize: "3.25rem" }}>
-              {d.statNumero}
-              <span className="text-accent">×</span>
-            </p>
-            <p className="max-w-[18ch] text-sm leading-snug text-text2-light">
-              {d.statLabel}
-            </p>
-          </div>
-
-          <div className="dor-composicao mt-8">
+          <div className="dor-composicao mt-9">
             <img
               src={d.imagem}
               alt="Pessoa empreendedora sobrecarregada diante do próprio negócio"
               loading="lazy"
               decoding="async"
             />
-            <div className="relative z-[1] px-6 pt-[clamp(260px,74vw,400px)] pb-8">
+            <div className="relative z-[1] px-5 pt-[clamp(430px,115vw,580px)] pb-9">
               <p className="eyebrow">{d.sinaisTitulo}</p>
               <ul className="mt-6">
                 {d.sinais.map((s, i) => (

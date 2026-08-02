@@ -209,7 +209,7 @@ function CarrosselMobile() {
       </div>
 
       {/* controles: setas, dica de arraste e indicadores */}
-      <div className="mt-6 flex items-center justify-center gap-4">
+      <div className="mt-2 flex items-center justify-center gap-4">
         <button
           type="button"
           onClick={() => irPara(foco - 1)}
@@ -229,7 +229,7 @@ function CarrosselMobile() {
         </button>
       </div>
 
-      <div className="mt-4 flex justify-center gap-2">
+      <div className="mt-3 flex justify-center gap-2">
         {midias.map((m, i) => (
           <button
             key={m.n}

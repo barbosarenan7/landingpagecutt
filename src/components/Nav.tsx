@@ -45,9 +45,15 @@ export default function Nav() {
       <nav className="container-cut flex h-[72px] items-center justify-between">
         <Logo />
 
+        {/* no celular o CTA mora no próprio header, compacto e em caixa
+            alta — não há hambúrguer nem painel para abrir */}
+        <a href="#diagnostico" className="btn-cta-compacto md:hidden">
+          {content.nav.ctaCurto}
+        </a>
+
         <button
           type="button"
-          className="flex h-11 w-11 cursor-pointer flex-col items-center justify-center gap-1.5"
+          className="hidden h-11 w-11 cursor-pointer flex-col items-center justify-center gap-1.5 md:flex"
           aria-expanded={open}
           aria-controls="menu-painel"
           aria-label={open ? "Fechar menu" : "Abrir menu"}

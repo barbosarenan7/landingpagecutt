@@ -24,6 +24,9 @@ content:
           - name: cta
             label: Botão do topo
             type: string
+          - name: ctaCurto
+            label: Botão do topo — versão curta (celular)
+            type: string
           - name: links
             label: Links do menu
             type: object

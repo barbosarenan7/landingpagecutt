@@ -1,6 +1,7 @@
 {
   "nav": {
     "cta": "Solicitar diagnóstico gratuito",
+    "ctaCurto": "Solicitar diagnóstico",
     "links": [
       { "label": "Como trabalhamos", "href": "#como-trabalhamos" },
       { "label": "Segmentos", "href": "#segmentos" },

@@ -706,22 +706,35 @@
   .dor-composicao {
     position: relative;
     overflow: hidden;
-    /* sem raio no topo: ali a foto se dissolve no fundo da seção */
-    border-radius: 0 0 var(--radius-card) var(--radius-card);
+    /* sangria total: a foto atravessa a página de ponta a ponta */
+    margin-inline: calc(50% - 50vw);
+    /* fundo do bloco: paper-50 na primeira faixa (para nenhum fio de
+       subpixel aparecer na emenda com a seção) e near-black embaixo,
+       onde a foto acaba e a lista continua */
+    background: linear-gradient(
+      to bottom,
+      var(--color-paper-50) 0%,
+      var(--color-paper-50) 6%,
+      var(--color-ink-900) 30%
+    );
     color: var(--color-paper-50);
     --line: var(--color-line-dark);
     --text2: var(--color-text2-dark);
   }
+  /* a foto ocupa só a faixa de cima; em 375px cabe inteira, sem corte,
+     o que deixa a nota de R$100 no meio da área limpa do gradiente */
   .dor-composicao > img {
     position: absolute;
-    inset: 0;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: 100%;
+    height: min(133.3vw, 620px);
     object-fit: cover;
     object-position: center 20%;
     filter: saturate(0.24) contrast(1.06);
   }
-  /* véu: paper-50 no topo → foto limpa no meio → near-black embaixo */
+  /* véu leve: dissolve curto no topo, uma janela larga com a foto limpa
+     e só depois o escurecimento que sustenta a leitura da lista */
   .dor-composicao::after {
     content: "";
     position: absolute;
@@ -730,13 +743,38 @@
     background: linear-gradient(
       to bottom,
       var(--color-paper-50) 0%,
-      color-mix(in oklab, var(--color-paper-50) 42%, transparent) 12%,
-      transparent 21%,
-      transparent 30%,
-      color-mix(in oklab, var(--color-ink-900) 46%, transparent) 34%,
-      color-mix(in oklab, var(--color-ink-900) 90%, transparent) 40%,
-      color-mix(in oklab, var(--color-ink-900) 97%, transparent) 55%,
-      color-mix(in oklab, var(--color-ink-900) 99%, transparent) 100%
+      var(--color-paper-50) 4%,
+      color-mix(in oklab, var(--color-paper-50) 55%, transparent) 9%,
+      color-mix(in oklab, var(--color-paper-50) 18%, transparent) 14%,
+      transparent 19%,
+      transparent 40%,
+      color-mix(in oklab, var(--color-ink-900) 65%, transparent) 46%,
+      color-mix(in oklab, var(--color-ink-900) 92%, transparent) 50%,
+      color-mix(in oklab, var(--color-ink-900) 97%, transparent) 58%,
+      color-mix(in oklab, var(--color-ink-900) 97%, transparent) 100%
     );
+  }
+
+  /* título fantasma um tom mais firme no celular ("A" e "REAL") */
+  @media (max-width: 767px) {
+    .ghost-title {
+      color: color-mix(in oklab, var(--color-ink-900) 13%, transparent);
+    }
+  }
+
+  /* CTA do header no celular: pill accent compacto, em caixa alta */
+  .btn-cta-compacto {
+    display: inline-flex;
+    align-items: center;
+    border-radius: var(--radius-pill);
+    background: var(--color-accent);
+    color: var(--color-accent-ink);
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    line-height: 1;
+    padding: 14px 18px;
+    white-space: nowrap;
   }
 }
