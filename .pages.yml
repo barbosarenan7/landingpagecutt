@@ -165,11 +165,11 @@ content:
             label: Botão
             type: string
           - name: cards
-            label: Cards (3)
+            label: Cards (4)
             type: object
             list:
-              min: 3
-              max: 3
+              min: 4
+              max: 4
             fields:
               - name: imagem
                 label: Imagem
@@ -213,6 +213,33 @@ content:
               - name: fase
                 label: Fase
                 type: string
+              - name: titulo
+                label: Título
+                type: string
+              - name: texto
+                label: Texto
+                type: text
+
+      - name: diferenciais
+        label: Diferenciais
+        type: object
+        fields:
+          - name: eyebrow
+            label: Linha de apoio
+            type: string
+          - name: tituloLinha1
+            label: Título — linha 1
+            type: string
+          - name: tituloLinha2
+            label: Título — linha 2
+            type: string
+          - name: itens
+            label: Blocos (4)
+            type: object
+            list:
+              min: 4
+              max: 4
+            fields:
               - name: titulo
                 label: Título
                 type: string

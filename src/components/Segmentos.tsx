@@ -8,8 +8,9 @@ const seg = content.segmentos;
  *  e as imagens vêm de src/content/site.json → "segmentos". */
 const style = [
   { file: "seg-saude.webp", alt: "Médica de jaleco branco em corredor de clínica minimalista", tilt: "tilt-l", lift: "" },
-  { file: "seg-food.webp", alt: "Chef finalizando um prato em cozinha de restaurante em movimento", tilt: "", lift: "md:-translate-y-8" },
-  { file: "seg-local.webp", alt: "Fachada de comércio local ao entardecer com pessoa passando", tilt: "tilt-r", lift: "" },
+  { file: "seg-b2b.webp", alt: "Chão de fábrica de indústria em operação, com equipe técnica", tilt: "", lift: "md:-translate-y-8" },
+  { file: "seg-food.webp", alt: "Chef finalizando um prato em cozinha de restaurante em movimento", tilt: "tilt-r", lift: "" },
+  { file: "seg-servicos.webp", alt: "Profissional em escritório de serviços especializados durante reunião", tilt: "", lift: "md:-translate-y-8" },
 ];
 
 const segments = seg.cards.map((c, i) => ({ ...c, ...style[i] }));
@@ -30,7 +31,7 @@ export default function Segmentos() {
           </Reveal>
         </div>
 
-        <div className="mt-16 grid gap-8 md:mt-24 md:grid-cols-3">
+        <div className="mt-16 grid gap-8 md:mt-24 md:grid-cols-2 lg:grid-cols-4">
           {segments.map((s, i) => (
             <Reveal key={s.titulo} delay={i * 90} className={`${s.tilt} ${s.lift}`}>
               <Media file={s.file} src={s.imagem} alt={s.alt} ratio="3 / 4" hover>

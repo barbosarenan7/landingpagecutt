@@ -53,18 +53,18 @@
 
   "dorReal": {
     "eyebrow": "A dor real",
-    "titulo": "Sua empresa já investe em marketing. Por que ainda não está onde deveria?",
-    "texto": "A maioria das empresas que chega até a Cut já tentou alguma coisa antes. Post frequente, impulsionamento, freelancer, agência. Mas o problema costuma ser o mesmo em todos os casos.",
+    "titulo": "Sua empresa tem logística, equipe e investimento. Por que o marketing ainda não acompanha o tamanho da operação?",
+    "texto": "90% das empresas em crescimento chegam até a Cut com o mesmo cenário: já passaram por agências, já tentaram internalizar, já investiram alto. O que falta nunca é verba. É experiência, método, governança e um parceiro que assuma responsabilidade pelo resultado.",
     "statNumero": "6",
     "statLabel": "os mesmos sinais, em todos os casos",
     "sinaisTitulo": "Os sinais",
     "sinais": [
-      "Falta de estratégia",
-      "Comunicação desconectada do negócio",
-      "Tráfego pago sem controle",
-      "Conteúdo sem direção",
-      "Resultado sem clareza",
-      "Marketing feito de qualquer jeito"
+      "Marketing desalinhado do comercial",
+      "Agência que executa, mas não conhece o negócio",
+      "Investimento alto sem clareza de retorno",
+      "Relatórios que mostram números, não decisões",
+      "Dependência de pessoas, não de processo",
+      "Comunicação abaixo do tamanho da marca"
     ],
     "imagem": "/dor-central.jpg",
     "fraseTransicao": "Marketing sem método vira gasto. Com método, vira investimento."
@@ -73,25 +73,31 @@
   "segmentos": {
     "tituloLinha1": "Experiência com diferentes tipos de negócio.",
     "tituloLinha2": "Foco no resultado de cada um.",
-    "texto": "A Cut atende empresas em operação que precisam profissionalizar a comunicação e estruturar o marketing. Cada negócio tem uma dinâmica diferente e a gente entende isso.",
+    "texto": "A Cut atende empresas em operação que precisam estruturar o marketing e crescer com consistência. Cada negócio tem uma dinâmica diferente — e a estratégia acompanha isso para gerar resultado de verdade.",
     "cta": "Solicitar diagnóstico gratuito",
     "cards": [
       {
         "badge": "Saúde",
-        "titulo": "Médicos e clínicas",
-        "texto": "Comunicação ética, estratégica e voltada para posicionamento de autoridade. O objetivo não é transformar médico em influenciador. É construir uma presença digital que gere confiança, reconhecimento e demanda qualificada.",
+        "titulo": "Médicos, clínicas e operações de saúde",
+        "texto": "Comunicação ética e estratégica voltada para autoridade. O objetivo não é transformar médico em influenciador, é construir uma presença que sustenta a marca, enche a agenda e transforma reputação em consultas qualificadas e faturamento previsível, no consultório ou na rede.",
+        "imagem": ""
+      },
+      {
+        "badge": "B2B",
+        "titulo": "Indústrias e empresas B2B",
+        "texto": "Marketing que gera demanda qualificada e sustenta o comercial, não post para preencher feed. Estratégia voltada para faturamento, ciclo de venda e crescimento da operação, com comunicação à altura de quem já é referência no próprio setor.",
         "imagem": ""
       },
       {
         "badge": "Alimentação",
-        "titulo": "Restaurantes e operações de alto giro",
-        "texto": "Estratégia de conteúdo, tráfego local e campanhas com foco em movimento, vendas e fortalecimento da marca. Menos dependência de promoção. Mais consistência no fluxo de clientes.",
+        "titulo": "Restaurantes, delivery e redes de alimentação",
+        "texto": "Estratégia de conteúdo e campanhas com foco em movimento, vendas e delivery. Menos dependência de promoção, mais pedidos entrando com consistência e uma marca forte o bastante para crescer, abrir unidades e faturar mais em cada praça.",
         "imagem": ""
       },
       {
-        "badge": "Local e regional",
-        "titulo": "Negócios locais e regionais",
-        "texto": "Para empresas de diferentes segmentos como academias, hotéis, óticas, imobiliárias, construtoras, comércio que precisam de uma comunicação mais profissional, organizada e competitiva. No digital, quem comunica melhor é lembrado antes.",
+        "badge": "Serviços",
+        "titulo": "Serviços especializados e de alto valor",
+        "texto": "Advocacia, arquitetura, contabilidade, saúde estética e operações que vendem expertise. Construímos autoridade para atrair o cliente certo, não o que só pergunta preço, e posicionar sua empresa como referência para o preço deixar de ser objeção.",
         "imagem": ""
       }
     ]
@@ -101,38 +107,62 @@
     "eyebrow": "Método Cut",
     "tituloLinha1": "Um processo para transformar marketing",
     "tituloLinha2": "em uma operação que funciona.",
-    "texto": "Da estratégia ao conteúdo, do tráfego à análise. A Cut trabalha de ponta a ponta para que sua empresa se comunique melhor e cresça com mais previsibilidade.",
+    "texto": "Do diagnóstico à análise, a Cut trabalha de ponta a ponta para que sua empresa se comunique melhor, cresça com previsibilidade e trate marketing como operação, não como tentativa.",
     "cta": "Solicitar diagnóstico gratuito",
     "etapas": [
       {
-        "fase": "Etapa inicial",
+        "fase": "Entendimento",
         "titulo": "Diagnóstico estratégico",
-        "texto": "Antes de criar qualquer conteúdo ou campanha, a gente entende o negócio. Posicionamento, público, concorrência, oferta, gargalos de comunicação e oportunidades de crescimento."
+        "texto": "Entendemos onde seu negócio está, para onde precisa ir e o que já foi tentado sem funcionar. É aqui que o marketing deixa de ser achismo e passa a ter direção. Sem diagnóstico, toda estratégia vira genérica."
+      },
+      {
+        "fase": "Contexto",
+        "titulo": "Estudo de mercado",
+        "texto": "Analisamos seu público real, seus concorrentes e o espaço que ninguém está ocupando. Entendemos o momento do seu mercado antes de propor qualquer ação. É aqui que nasce a sua diferença competitiva."
       },
       {
         "fase": "Direção",
-        "titulo": "Planejamento de comunicação",
-        "texto": "Com o diagnóstico em mãos, definimos o que comunicar, para quem e em que formato. Para de postar por obrigação. Começa a comunicar com direção."
+        "titulo": "Planejamento estratégico",
+        "texto": "Definimos posicionamento, o que comunicar, para quem e em que formato. Sua empresa para de publicar por obrigação e passa a comunicar com direção, alinhada ao objetivo comercial e ao tamanho da operação."
       },
       {
-        "fase": "Conteúdo",
-        "titulo": "Social media estratégico",
-        "texto": "Conteúdo que fortalece autoridade, relacionamento e percepção de valor. Roteiros, carrosséis, artes, stories e campanhas alinhadas com o posicionamento da marca."
+        "fase": "Execução",
+        "titulo": "Produção",
+        "texto": "Estúdio e equipe próprios. Direção, captação e edição feitas por quem conhece a sua estratégia, não por quem recebeu uma tarefa. Padrão, consistência e escala sem depender de terceiros."
       },
       {
-        "fase": "Criação",
-        "titulo": "Produção audiovisual",
-        "texto": "Time de gravação e direção criativa para conteúdos em vídeo que tornam a comunicação mais forte, humana e diferenciada."
+        "fase": "Condução",
+        "titulo": "Gestão",
+        "texto": "Responsáveis definidos, rituais de acompanhamento e prazos acordados. Cada fase tem dono e cada entrega tem data. Nada fica solto no caminho e nada depende de cobrança sua."
       },
       {
-        "fase": "Aceleração",
-        "titulo": "Tráfego pago",
-        "texto": "Campanhas com foco em alcance qualificado, geração de demanda, agendamentos ou vendas. Mídia paga com planejamento e acompanhamento sem investimento jogado fora."
-      },
-      {
-        "fase": "Contínuo",
+        "fase": "Evolução",
         "titulo": "Análise e otimização",
-        "texto": "Acompanhamento de métricas, ajustes contínuos e relatórios para tomar decisões com base em dado, não em achismo."
+        "texto": "Relatório mensal com leitura executiva: o que funcionou, o que muda e por quê. Medimos, comparamos e ajustamos a cada ciclo. Aqui número não é enfeite de dashboard, vira decisão."
+      }
+    ]
+  },
+
+  "diferenciais": {
+    "eyebrow": "Diferenciais",
+    "tituloLinha1": "Por que empresas exigentes",
+    "tituloLinha2": "escolhem a Cut?",
+    "itens": [
+      {
+        "titulo": "Squad dedicado",
+        "texto": "Um time fixo alocado na sua conta — estratégia, criação, tráfego e audiovisual. Você fala com quem executa, não com um atendimento que repassa recado."
+      },
+      {
+        "titulo": "Governança clara",
+        "texto": "Responsáveis nomeados, rituais de alinhamento e prazos acordados em contrato. Cada entrega tem dono e data. Nada depende da sua cobrança."
+      },
+      {
+        "titulo": "Reporting executivo",
+        "texto": "Relatório mensal com leitura de negócio, não print de dashboard. Você enxerga o que o investimento gerou e decide o próximo passo com clareza."
+      },
+      {
+        "titulo": "Produção própria",
+        "texto": "Estúdio e equipe audiovisual internos. Escala, padrão e velocidade sem depender de terceiros ou ficar refém de freelancer."
       }
     ]
   },
@@ -161,11 +191,10 @@
         "Outros"
       ],
       "investimentos": [
-        "Até R$ 1.500",
-        "R$ 1.500–3.000",
-        "R$ 3.000–5.000",
-        "Acima de R$ 5.000",
-        "Ainda não invisto"
+        "Até R$ 5 mil",
+        "R$ 5 mil a R$ 15 mil",
+        "R$ 15 mil a R$ 50 mil",
+        "Acima de R$ 50 mil"
       ],
       "cta": "Solicitar diagnóstico gratuito",
       "sucessoTitulo": "Recebemos as informações da sua empresa.",

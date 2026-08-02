@@ -4,6 +4,7 @@ import ProvaSocial from "../components/ProvaSocial";
 import DorReal from "../components/DorReal";
 import Segmentos from "../components/Segmentos";
 import Metodo from "../components/Metodo";
+import Diferenciais from "../components/Diferenciais";
 import Diagnostico from "../components/Diagnostico";
 import ClientesGrid from "../components/ClientesGrid";
 import Footer from "../components/Footer";
@@ -37,6 +38,7 @@ export default function Home() {
         <DorReal />
         <Segmentos />
         <Metodo />
+        <Diferenciais />
         <Diagnostico />
       </main>
       <Footer />

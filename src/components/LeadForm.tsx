@@ -43,6 +43,7 @@ export default function LeadForm() {
     if (phone.length < 10)
       e.whatsapp = "Informe um WhatsApp válido com DDD — é por ele que retornamos.";
     if (!String(data.get("empresa") || "").trim()) e.empresa = "Informe o nome da empresa.";
+    if (!String(data.get("cargo") || "").trim()) e.cargo = "Informe seu cargo na empresa.";
     if (!data.get("segmento")) e.segmento = "Selecione o segmento.";
     if (!String(data.get("desafio") || "").trim())
       e.desafio = "Conte em uma frase o principal desafio.";
@@ -58,7 +59,16 @@ export default function LeadForm() {
     const errs = validate(data);
     setErrors(errs);
     if (Object.keys(errs).length > 0) {
-      const order = ["nome", "whatsapp", "empresa", "segmento", "investimento", "desafio", "aceite"];
+      const order = [
+        "nome",
+        "whatsapp",
+        "empresa",
+        "cargo",
+        "segmento",
+        "investimento",
+        "desafio",
+        "aceite",
+      ];
       const firstKey = order.find((k) => errs[k]);
       if (firstKey) form.querySelector<HTMLElement>(`[name='${firstKey}']`)?.focus();
       return;
@@ -191,6 +201,26 @@ export default function LeadForm() {
               {errors.empresa && (
                 <p id="e-empresa" role="alert" className={errCls}>
                   {errors.empresa}
+                </p>
+              )}
+            </div>
+
+            <div>
+              <label htmlFor="f-cargo" className="field-label">
+                Seu cargo na empresa
+              </label>
+              <input
+                id="f-cargo"
+                name="cargo"
+                type="text"
+                autoComplete="organization-title"
+                className="field-box"
+                aria-invalid={!!errors.cargo}
+                aria-describedby={errors.cargo ? "e-cargo" : undefined}
+              />
+              {errors.cargo && (
+                <p id="e-cargo" role="alert" className={errCls}>
+                  {errors.cargo}
                 </p>
               )}
             </div>
