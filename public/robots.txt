@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /obrigado
 
-Sitemap: https://landingpagecutt.vercel.app/sitemap.xml
+Sitemap: https://cutcreativee.com.br/sitemap.xml

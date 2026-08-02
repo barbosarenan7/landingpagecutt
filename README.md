@@ -28,10 +28,15 @@ bun run build        # build de produção (dist/)
 
 ## Publicação
 
+- **Domínio: <https://cutcreativee.com.br>** (Registro.br, apex como
+  principal). DNS pelo Registro.br em "Configurar endereçamento" →
+  registro A apontando para `216.198.79.1` (IP da Vercel). O modo
+  avançado da zona trava o modo básico por 2h — não é necessário.
 - GitHub: `barbosarenan7/landingpagecutt`
-- Vercel: <https://landingpagecutt.vercel.app> — publica sozinha a cada
-  push na `main` (~1 min). Se não atualizar em ~3 min, o webhook falhou:
-  basta um commit vazio (`git commit --allow-empty`) e push.
+- Vercel: <https://landingpagecutt.vercel.app> segue no ar como endereço
+  de teste. Publica sozinha a cada push na `main` (~1 min). Se não
+  atualizar em ~3 min, o webhook falhou: basta um commit vazio
+  (`git commit --allow-empty`) e push.
 - Editor visual: <https://app.pagescms.org> (login GitHub `barbosarenan7`).
   Salvar no painel = commit + deploy automático.
 
