@@ -122,11 +122,14 @@ content:
         label: A dor real
         type: object
         fields:
-          - name: tituloLinha1
-            label: Título — linha 1 (serifa)
-            type: text
-          - name: tituloLinha2
-            label: Título — linha 2 (sans, negrito)
+          - name: tituloSerif1
+            label: Título — 1ª linha em serifa
+            type: string
+          - name: tituloSerif2
+            label: Título — 2ª linha em serifa
+            type: string
+          - name: tituloSans
+            label: Título — bloco em sans negrito (destaques em amarelo aplicados em "marketing" e "tamanho da operação")
             type: text
           - name: texto
             label: Texto

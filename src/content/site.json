@@ -58,8 +58,9 @@
     "card04Imagem": "/prova-04.jpg"
   },
   "dorReal": {
-    "tituloLinha1": "Sua empresa tem estrutura e investimento,",
-    "tituloLinha2": "por que o marketing ainda não acompanha o tamanho da operação?",
+    "tituloSerif1": "Sua empresa tem",
+    "tituloSerif2": "estrutura e investimento",
+    "tituloSans": "por que o marketing ainda não acompanha o tamanho da operação?",
     "texto": "90% das empresas em crescimento chegam até a Cut com o mesmo cenário: já passaram por agências, já tentaram internalizar, já investiram alto. O que falta nunca é verba. É experiência, método, governança e um parceiro que assuma responsabilidade pelo resultado.",
     "statNumero": "6",
     "statLabel": "os mesmos sinais, em todos os casos",

@@ -35,6 +35,30 @@ function FotoDor() {
  * lista com hairlines no estilo linhas de dado.
  * Slot: dor-central.webp (3:4).
  */
+
+/**
+ * Destaca "marketing" e "tamanho da operação" em amarelo dentro do
+ * bloco sans do título. Faz o split preservando os matches para não
+ * depender de ordem/quantidade de destaques.
+ */
+function TituloSansDestacado({ texto }: { texto: string }) {
+  const regex = /(marketing|tamanho da operação)/i;
+  const partes = texto.split(regex);
+  return (
+    <>
+      {partes.map((p, i) =>
+        regex.test(p) ? (
+          <span key={i} className="text-accent">
+            {p}
+          </span>
+        ) : (
+          <span key={i}>{p}</span>
+        ),
+      )}
+    </>
+  );
+}
+
 function Corner() {
   return (
     <span className="card-corner" aria-hidden>
@@ -180,10 +204,25 @@ export default function DorReal() {
           <h2
             id="dor-title"
             className="faixa-leitura mx-auto text-center text-balance"
-            style={{ fontSize: "clamp(1.3125rem, 5vw, 2.25rem)" }}
           >
-            <span className="h-serif block">{d.tituloLinha1}</span>
-            <span className="h-sans block">{d.tituloLinha2}</span>
+            <span
+              className="h-serif block leading-[1.05]"
+              style={{ fontSize: "clamp(1.625rem, 7.2vw, 2.75rem)" }}
+            >
+              {d.tituloSerif1}
+            </span>
+            <span
+              className="h-serif block leading-[1.05]"
+              style={{ fontSize: "clamp(1.625rem, 7.2vw, 2.75rem)" }}
+            >
+              {d.tituloSerif2}
+            </span>
+            <span
+              className="h-sans mt-1 block leading-[1.1]"
+              style={{ fontSize: "clamp(1.5rem, 6.4vw, 2.5rem)" }}
+            >
+              <TituloSansDestacado texto={d.tituloSans} />
+            </span>
           </h2>
           <p className="faixa-leitura text-2nd mx-auto mt-6 max-w-[36ch] text-center text-[15px] leading-relaxed">
             {d.texto}
@@ -217,8 +256,11 @@ export default function DorReal() {
             <Reveal className="card-soft">
               <Corner />
               <h2 className="pr-8 text-balance" style={{ fontSize: "clamp(1.35rem, 1.55vw, 1.65rem)" }}>
-                <span className="h-serif block leading-snug">{d.tituloLinha1}</span>
-                <span className="h-sans block leading-snug">{d.tituloLinha2}</span>
+                <span className="h-serif block leading-snug">{d.tituloSerif1}</span>
+                <span className="h-serif block leading-snug">{d.tituloSerif2}</span>
+                <span className="h-sans mt-1 block leading-snug">
+                  <TituloSansDestacado texto={d.tituloSans} />
+                </span>
               </h2>
             </Reveal>
             <Reveal delay={90} className="card-soft flex-1">

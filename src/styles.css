@@ -728,8 +728,11 @@
     .card-dif {
       padding: 20px 22px;
     }
+    /* corta o excesso de branco entre os indicadores do carrossel da
+       prova social e o título da dor real; o pb da seção anterior já
+       dá o respiro necessário */
     .dor-cabecalho {
-      padding-top: 56px;
+      padding-top: 16px;
     }
     /* itens de lista com divisória: o texto recua, a régua fica inteira */
     .faixa-leitura-lista {
