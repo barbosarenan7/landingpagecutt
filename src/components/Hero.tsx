@@ -1,8 +1,10 @@
 import { Reveal } from "../lib/reveal";
-import { BtnPrimary } from "./primitives";
+import { BtnPrimary, fontesOtimizadas } from "./primitives";
 import content from "../content/site.json";
 
 const h = content.hero;
+const otimMobile = fontesOtimizadas(h.imagemMobile);
+const otimDesktop = fontesOtimizadas(h.imagem);
 
 /**
  * Hero ref. "Dominic®": card escuro full-bleed com wordmark gigante
@@ -19,13 +21,32 @@ export default function Hero() {
               horizontal no desktop (hero.imagemMobile / hero.imagem) */}
           <div className="media hero-foto absolute inset-0 h-full !rounded-none">
             <picture className="block h-full w-full">
+              {otimMobile && (
+                <source
+                  media="(max-width: 640px)"
+                  type="image/avif"
+                  srcSet={otimMobile.avif}
+                />
+              )}
+              {otimMobile && (
+                <source
+                  media="(max-width: 640px)"
+                  type="image/webp"
+                  srcSet={otimMobile.webp}
+                />
+              )}
               <source media="(max-width: 640px)" srcSet={h.imagemMobile} />
+              {otimDesktop && <source type="image/avif" srcSet={otimDesktop.avif} />}
+              {otimDesktop && <source type="image/webp" srcSet={otimDesktop.webp} />}
               <img
                 src={h.imagem}
                 alt="Retrato editorial no estúdio da Cut Creative"
                 className="h-full w-full object-cover"
+                width={2000}
+                height={1315}
                 loading="eager"
                 decoding="async"
+                fetchPriority="high"
               />
             </picture>
           </div>

@@ -297,7 +297,8 @@
     mix-blend-mode: overlay;
     pointer-events: none;
   }
-  .media-hover:hover > img {
+  /* descendente (não filho direto): o img pode estar dentro de <picture> */
+  .media-hover:hover img {
     transform: scale(1.035);
   }
 
@@ -748,8 +749,9 @@
     --text2: var(--color-text2-dark);
   }
   /* a foto ocupa só a faixa de cima; em 375px cabe inteira, sem corte,
-     o que deixa a nota de R$100 no meio da área limpa do gradiente */
-  .dor-composicao > img {
+     o que deixa a nota de R$100 no meio da área limpa do gradiente
+     (classe própria: o img pode vir embrulhado num <picture>) */
+  .dor-composicao .dor-foto {
     position: absolute;
     top: 0;
     left: 0;

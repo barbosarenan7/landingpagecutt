@@ -1,9 +1,33 @@
 import { useEffect, useRef, useState, type ReactNode } from "react";
 import { Reveal } from "../lib/reveal";
-import { Media } from "./primitives";
+import { Media, fontesOtimizadas } from "./primitives";
 import content from "../content/site.json";
 
 const d = content.dorReal;
+const otimDor = fontesOtimizadas(d.imagem);
+
+/** Foto de fundo da composição mobile, com AVIF/WebP quando existirem. */
+function FotoDor() {
+  const img = (
+    <img
+      className="dor-foto"
+      src={d.imagem}
+      alt="Pessoa empreendedora sobrecarregada diante do próprio negócio"
+      width={1000}
+      height={1333}
+      loading="lazy"
+      decoding="async"
+    />
+  );
+  if (!otimDor) return img;
+  return (
+    <picture>
+      <source type="image/avif" srcSet={otimDor.avif} />
+      <source type="image/webp" srcSet={otimDor.webp} />
+      {img}
+    </picture>
+  );
+}
 
 /**
  * A dor real ref. "FUTURE": título fantasma atrás, cards cinza suaves
@@ -180,12 +204,7 @@ export default function DorReal() {
           </p>
 
           <div className="dor-composicao mt-9">
-            <img
-              src={d.imagem}
-              alt="Pessoa empreendedora sobrecarregada diante do próprio negócio"
-              loading="lazy"
-              decoding="async"
-            />
+            <FotoDor />
             <div className="relative z-[1] px-5 pt-[clamp(430px,115vw,580px)] pb-9">
               <p className="eyebrow">{d.sinaisTitulo}</p>
               <ul className="mt-6">

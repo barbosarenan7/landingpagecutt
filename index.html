@@ -4,6 +4,24 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#FAFAF8" />
+    <!-- LCP: a foto do hero entra na fila junto com o HTML, sem esperar o
+         React renderizar. AVIF cobre os navegadores modernos; nos raros
+         sem suporte o <picture> ainda serve o JPEG (preload perdido, mas
+         página correta). -->
+    <link
+      rel="preload"
+      as="image"
+      href="/hero-main-mobile.avif"
+      media="(max-width: 640px)"
+      fetchpriority="high"
+    />
+    <link
+      rel="preload"
+      as="image"
+      href="/hero-main.avif"
+      media="(min-width: 641px)"
+      fetchpriority="high"
+    />
     <link rel="preconnect" href="https://api.fontshare.com" crossorigin />
     <link rel="preconnect" href="https://cdn.fontshare.com" crossorigin />
     <link

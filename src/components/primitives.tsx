@@ -1,4 +1,20 @@
 import { useState, type CSSProperties, type ReactNode } from "react";
+import otimizadas from "../content/imagens-otimizadas.json";
+
+/**
+ * Imagens que possuem irmãos .avif/.webp gerados por
+ * scripts/otimizar-imagens.ts. Uploads do painel (em /uploads) nunca
+ * entram no manifesto e seguem servidos como estão.
+ */
+const comOtimizada = new Set<string>(otimizadas);
+
+export function fontesOtimizadas(caminho: string) {
+  if (!comOtimizada.has(caminho)) return null;
+  return {
+    avif: caminho.replace(/\.(jpe?g|png)$/i, ".avif"),
+    webp: caminho.replace(/\.(jpe?g|png)$/i, ".webp"),
+  };
+}
 
 /** Seta de 14px usada nos botões (SVG inline, sem pacote de ícones). */
 export function Arrow() {
@@ -99,22 +115,33 @@ export function Media({
   const candidate = src && src.trim() ? src : `/${file}`;
   const [failed, setFailed] = useState(false);
   const style: CSSProperties | undefined = ratio ? { aspectRatio: ratio } : undefined;
+  const fontes = fontesOtimizadas(candidate);
+  const img = (
+    <img
+      src={candidate}
+      alt={alt}
+      width={width}
+      height={height}
+      loading={eager ? "eager" : "lazy"}
+      decoding="async"
+      onError={() => setFailed(true)}
+    />
+  );
   return (
     <div className={`media ${hover ? "media-hover" : ""} ${className}`} style={style}>
       {failed ? (
         <span className="media-placeholder" role="img" aria-label={alt}>
           {file}
         </span>
+      ) : fontes ? (
+        // AVIF → WebP → original; o CSS `.media img` continua valendo
+        <picture className="contents">
+          <source type="image/avif" srcSet={fontes.avif} />
+          <source type="image/webp" srcSet={fontes.webp} />
+          {img}
+        </picture>
       ) : (
-        <img
-          src={candidate}
-          alt={alt}
-          width={width}
-          height={height}
-          loading={eager ? "eager" : "lazy"}
-          decoding="async"
-          onError={() => setFailed(true)}
-        />
+        img
       )}
       {children && <div className="absolute inset-0">{children}</div>}
     </div>
