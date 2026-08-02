@@ -59,7 +59,7 @@ export default function ClientesGrid() {
         <p className="eyebrow mx-auto flex w-fit">Clientes</p>
         <h2
           id="clientes-title"
-          className="mt-6 mb-12 text-center"
+          className="faixa-leitura mt-6 mb-12 text-center"
           style={{ fontSize: "var(--fs-h2)" }}
         >
           <span className="h-serif block">Marcas que já trabalharam</span>

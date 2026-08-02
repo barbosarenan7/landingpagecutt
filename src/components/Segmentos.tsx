@@ -19,7 +19,7 @@ export default function Segmentos() {
   return (
     <section id="segmentos" className="sec-dark section" aria-labelledby="seg-title">
       <div className="container-cut">
-        <div className="mx-auto max-w-[60rem] text-center">
+        <div className="faixa-leitura mx-auto max-w-[60rem] text-center">
           <h2 id="seg-title" style={{ fontSize: "var(--fs-h2)" }}>
             <span className="h-serif block">{seg.tituloLinha1}</span>
             <span className="h-sans block">{seg.tituloLinha2}</span>

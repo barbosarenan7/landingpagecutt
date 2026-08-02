@@ -32,7 +32,7 @@ export default function Footer() {
   return (
     <footer className="sec-dark relative border-t border-line-dark">
       <div className="container-cut py-16 md:py-20">
-        <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-4">
+        <div className="faixa-leitura grid gap-12 md:grid-cols-2 lg:grid-cols-4">
           <div>
             <p className="h-sans text-2xl text-paper-50">
               Cut Creative<span className="text-accent">.</span>
@@ -129,7 +129,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-14 flex flex-col gap-3 border-t border-line-dark pt-6 text-xs text-text3 md:flex-row md:items-center md:justify-between">
+        <div className="faixa-leitura-lista mt-14 flex flex-col gap-3 border-t border-line-dark pt-6 text-xs text-text3 md:flex-row md:items-center md:justify-between">
           <p>
             © {new Date().getFullYear()} {site.legalName} — CNPJ {site.cnpj}
           </p>

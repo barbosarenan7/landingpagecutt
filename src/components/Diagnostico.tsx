@@ -93,7 +93,7 @@ export default function Diagnostico() {
         </Reveal>
 
         <Reveal delay={120}>
-          <p className="mx-auto mt-8 max-w-3xl text-center text-sm leading-relaxed text-text3">
+          <p className="faixa-leitura mx-auto mt-8 max-w-3xl text-center text-sm leading-relaxed text-text3">
             {dg.regiao}
           </p>
         </Reveal>

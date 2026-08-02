@@ -135,7 +135,7 @@ export default function Hero() {
             título forte com a régua no acento e texto na cor secundária
             da seção. Some a partir de lg, onde eles voltam para dentro
             da foto. */}
-        <div className="mt-12 grid gap-9 sm:grid-cols-2 sm:gap-8 lg:hidden">
+        <div className="faixa-leitura mt-12 grid gap-9 sm:grid-cols-2 sm:gap-8 lg:hidden">
           <Reveal>
             <h2 className="flex items-center gap-4 text-[22px] font-bold">
               {h.col1Titulo}

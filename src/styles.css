@@ -702,6 +702,25 @@
       padding-inline: 12px;
     }
   }
+
+  /* ============================================================
+     Faixa de leitura do celular.
+     Cards e mídias continuam colados na borda (12px do container),
+     mas TODO texto que fica direto sobre o fundo recua mais 24px —
+     somando 36px da borda da tela, a mesma margem do texto dentro do
+     card do hero. É essa linha que alinha a página inteira.
+     A partir de 640px o próprio container já dá o respiro e a regra
+     se desliga.
+     ============================================================ */
+  @media (max-width: 639px) {
+    .faixa-leitura {
+      padding-inline: 24px;
+    }
+    /* itens de lista com divisória: o texto recua, a régua fica inteira */
+    .faixa-leitura-lista {
+      padding-inline: 24px;
+    }
+  }
 }
 
 /* ============================================================

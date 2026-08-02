@@ -37,7 +37,7 @@ export default function Metodo() {
       <div className="container-cut">
         {/* no mobile todo o texto fica centralizado; a partir de md volta
             ao alinhamento à esquerda do desktop */}
-        <div className="grid gap-10 lg:grid-cols-12">
+        <div className="faixa-leitura grid gap-10 lg:grid-cols-12">
           <div className="text-center md:text-left lg:col-span-7">
             <Reveal>
               <p className="eyebrow">{m.eyebrow}</p>
@@ -100,7 +100,7 @@ export default function Metodo() {
               as="li"
               key={i}
               delay={i * 60}
-              className="border-t border-line-light px-2 pt-6 pb-10 text-center"
+              className="faixa-leitura-lista border-t border-line-light pt-6 pb-10 text-center"
             >
               <span className="step-ghost" aria-hidden>
                 {String(i + 1).padStart(2, "0")}

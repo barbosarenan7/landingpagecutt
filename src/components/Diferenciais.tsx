@@ -33,7 +33,7 @@ export default function Diferenciais() {
       aria-labelledby="dif-title"
     >
       <div className="container-cut">
-        <div className="mx-auto max-w-[60rem] text-center">
+        <div className="faixa-leitura mx-auto max-w-[60rem] text-center">
           <Reveal>
             <p className="eyebrow mx-auto flex w-fit">{df.eyebrow}</p>
           </Reveal>

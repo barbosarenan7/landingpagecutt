@@ -275,7 +275,7 @@ export default function ProvaSocial() {
         {/* título na fonte do logotipo, centralizado, destaque no acento */}
         <h2
           id="prova-title"
-          className="h-sans mx-auto max-w-[20ch] text-center text-balance"
+          className="faixa-leitura h-sans mx-auto max-w-[20ch] text-center text-balance"
           style={{ fontSize: "var(--fs-h2)" }}
         >
           {p.tituloAntes} <span className="text-accent">{p.tituloDestaque}</span>{" "}
@@ -284,7 +284,7 @@ export default function ProvaSocial() {
 
         {/* texto que antes vivia dentro do card 03 */}
         <Reveal delay={80}>
-          <p className="text-2nd mx-auto mt-6 max-w-[58ch] text-center leading-relaxed">
+          <p className="faixa-leitura text-2nd mx-auto mt-6 max-w-[58ch] text-center leading-relaxed">
             {p.descricao}
           </p>
         </Reveal>

@@ -137,7 +137,7 @@ function FraseDestaque({ texto }: { texto: string }) {
   const p1 = linha1.split(/(sem método)/i);
   const p2 = linha2.split(/(investimento\.?)/i);
   return (
-    <p className="frase-destaque h-sans" style={{ fontSize: "var(--fs-h2)" }}>
+    <p className="faixa-leitura frase-destaque h-sans" style={{ fontSize: "var(--fs-h2)" }}>
       <span className="block">
         {p1.map((p, i) =>
           p.toLowerCase() === "sem método" ? (
@@ -196,16 +196,16 @@ export default function DorReal() {
             o eyebrow. O texto fica centralizado e a foto ocupa a largura
             inteira da tela, escurecendo até virar o fundo de "Os sinais". */}
         <div className="md:hidden">
-          <h2 className="text-center text-[27px] leading-[1.16] font-bold text-balance">
+          <h2 className="faixa-leitura text-center text-[27px] leading-[1.16] font-bold text-balance">
             {d.titulo}
           </h2>
-          <p className="text-2nd mx-auto mt-5 max-w-[36ch] text-center text-[15px] leading-relaxed">
+          <p className="faixa-leitura text-2nd mx-auto mt-5 max-w-[36ch] text-center text-[15px] leading-relaxed">
             {d.texto}
           </p>
 
           <div className="dor-composicao mt-9">
             <FotoDor />
-            <div className="relative z-[1] px-5 pt-[clamp(430px,115vw,580px)] pb-9">
+            <div className="relative z-[1] px-9 pt-[clamp(430px,115vw,580px)] pb-9">
               <p className="eyebrow">{d.sinaisTitulo}</p>
               <ul className="mt-6">
                 {d.sinais.map((s, i) => (
