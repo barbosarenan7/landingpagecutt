@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Reveal } from "../lib/reveal";
 import { BtnPrimary } from "./primitives";
 import content from "../content/site.json";
@@ -14,6 +14,23 @@ const steps = m.etapas;
  */
 export default function Metodo() {
   const [active, setActive] = useState(0);
+  const lista = useRef<HTMLOListElement>(null);
+
+  // anima os dígitos do mobile sempre que entram na tela, nos dois
+  // sentidos do scroll (a classe é ligada/desligada pelo observer)
+  useEffect(() => {
+    const digitos = lista.current?.querySelectorAll(".step-ghost");
+    if (!digitos?.length) return;
+    const io = new IntersectionObserver(
+      (entries) =>
+        entries.forEach((e) =>
+          e.target.classList.toggle("step-ghost-in", e.isIntersecting),
+        ),
+      { threshold: 0.35 },
+    );
+    digitos.forEach((d) => io.observe(d));
+    return () => io.disconnect();
+  }, []);
 
   return (
     <section id="metodo" className="sec-light section" aria-labelledby="metodo-title">
@@ -77,7 +94,7 @@ export default function Metodo() {
         {/* mobile: lista vertical com o dígito fantasma gigante da marca —
             o texto da etapa sobe e ocupa a metade de baixo do número,
             tudo centralizado (mesma linguagem do desktop, em vertical) */}
-        <ol className="mt-12 flex flex-col md:hidden">
+        <ol ref={lista} className="mt-12 flex flex-col md:hidden">
           {steps.map((s, i) => (
             <Reveal
               as="li"
@@ -89,7 +106,7 @@ export default function Metodo() {
                 {String(i + 1).padStart(2, "0")}
               </span>
               <div className="relative -mt-11">
-                <p className="step-num text-accent">{s.fase}</p>
+                <p className="step-num text-ink-900">{s.fase}</p>
                 <h3 className="mt-3 text-xl leading-snug font-bold">{s.titulo}</h3>
                 <p className="text-2nd mx-auto mt-3 max-w-[34ch] text-sm leading-relaxed">
                   {s.texto}

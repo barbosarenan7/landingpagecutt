@@ -694,6 +694,11 @@
   .carrossel-card {
     transition: none;
   }
+  .step-ghost {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
 }
 
 /* ============================================================
@@ -761,8 +766,9 @@
     }
   }
 
-  /* dígito fantasma das etapas do método no celular — mesma linguagem
-     dos números gigantes do desktop, em versão vertical centralizada */
+  /* dígito gigante das etapas do método no celular — em laranja, com
+     entrada animada sempre que aparece na tela (nos dois sentidos do
+     scroll; a classe .step-ghost-in é ligada pelo IntersectionObserver) */
   .step-ghost {
     display: block;
     font-weight: 900;
@@ -770,9 +776,18 @@
     line-height: 0.8;
     letter-spacing: -0.05em;
     font-variant-numeric: tabular-nums;
-    color: color-mix(in oklab, var(--color-ink-900) 9%, transparent);
+    color: color-mix(in oklab, var(--color-accent) 32%, transparent);
     user-select: none;
     pointer-events: none;
+    opacity: 0;
+    transform: translateY(28px) scale(0.92);
+    transition:
+      opacity 650ms var(--ease-out-expo),
+      transform 650ms var(--ease-out-expo);
+  }
+  .step-ghost-in {
+    opacity: 1;
+    transform: none;
   }
 
   /* frase de transição no par serifa fina / sans black dos títulos de
