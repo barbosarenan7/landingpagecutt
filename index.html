@@ -22,11 +22,21 @@
       media="(min-width: 641px)"
       fetchpriority="high"
     />
-    <link rel="preconnect" href="https://api.fontshare.com" crossorigin />
-    <link rel="preconnect" href="https://cdn.fontshare.com" crossorigin />
+    <!-- Satoshi agora é self-hosted (@font-face em styles.css); os dois
+         pesos mais visíveis do primeiro paint entram com preload -->
     <link
-      href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700,900&display=swap"
-      rel="stylesheet"
+      rel="preload"
+      as="font"
+      type="font/woff2"
+      href="/fonts/satoshi-900.woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      as="font"
+      type="font/woff2"
+      href="/fonts/satoshi-400.woff2"
+      crossorigin
     />
     <title>Cut Creative — Marketing com método | Volta Redonda, RJ</title>
     <meta

@@ -2,6 +2,40 @@
 @import "@fontsource/instrument-serif";
 
 /* ============================================================
+   Satoshi self-hosted (mesmos woff2 que a Fontshare servia — o CSS
+   remoto era render-blocking e segurava o primeiro paint em ~700ms).
+   Licença: Fontshare Free Font License (uso web permitido).
+   ============================================================ */
+@font-face {
+  font-family: "Satoshi";
+  src: url("/fonts/satoshi-400.woff2") format("woff2");
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Satoshi";
+  src: url("/fonts/satoshi-500.woff2") format("woff2");
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Satoshi";
+  src: url("/fonts/satoshi-700.woff2") format("woff2");
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Satoshi";
+  src: url("/fonts/satoshi-900.woff2") format("woff2");
+  font-weight: 900;
+  font-display: swap;
+  font-style: normal;
+}
+
+/* ============================================================
    CUT EDITORIAL — tokens (seção 3, 4 e 5 do design system)
    Nenhum hex fora da tabela. Acento: amarelo Pantone (#FFCC00).
    ============================================================ */
