@@ -1,4 +1,4 @@
-import { useState, type FormEvent } from "react";
+import { useRef, useState, type FormEvent } from "react";
 import { Link } from "react-router-dom";
 import { Arrow } from "./primitives";
 import { site, track } from "../config/site";
@@ -33,6 +33,8 @@ export default function LeadForm() {
   const [errors, setErrors] = useState<Errors>({});
   const [failed, setFailed] = useState(false);
   const [success, setSuccess] = useState(false);
+  // anti-spam: instante em que o form montou (bots enviam em <3s)
+  const montadoEm = useRef(Date.now());
 
   function validate(data: FormData): Errors {
     const e: Errors = {};
@@ -62,9 +64,17 @@ export default function LeadForm() {
       return;
     }
 
+    // anti-spam silencioso: honeypot preenchido ou envio rápido demais
+    // (<3s) mostram o sucesso sem disparar o webhook — humano não cai aqui
+    if (String(data.get("website") || "").length > 0 || Date.now() - montadoEm.current < 3000) {
+      setSuccess(true);
+      return;
+    }
+
     setSending(true);
     setFailed(false);
     const payload = Object.fromEntries(data.entries());
+    delete (payload as Record<string, unknown>).website;
 
     try {
       if (site.leadWebhookUrl) {
@@ -109,6 +119,17 @@ export default function LeadForm() {
           <p className="mt-2 text-sm text-text2-dark">{f.subtitulo}</p>
 
           <form onSubmit={onSubmit} noValidate className="mt-8 flex flex-col gap-5">
+            {/* honeypot: invisível para humanos, irresistível para bots */}
+            <div className="hidden" aria-hidden="true">
+              <label htmlFor="f-website">Não preencha este campo</label>
+              <input
+                id="f-website"
+                name="website"
+                type="text"
+                tabIndex={-1}
+                autoComplete="off"
+              />
+            </div>
             <div>
               <label htmlFor="f-nome" className="field-label">
                 Seu nome
