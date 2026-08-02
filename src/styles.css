@@ -301,6 +301,12 @@
     transform: scale(1.035);
   }
 
+  /* foto do hero: um degrau acima na saturação (nível 3 na escala em que
+     0 é o padrão dessaturado .24 e 10 é a foto original) */
+  .hero-foto img {
+    filter: saturate(0.47) contrast(1.06) brightness(0.99);
+  }
+
   /* placeholder de imagem ainda não gerada (IMAGE_BRIEF.md) */
   .media-placeholder {
     display: flex;

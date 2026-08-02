@@ -17,7 +17,7 @@ export default function Hero() {
         <div className="relative overflow-hidden rounded-card bg-ink-800 text-paper-50">
           {/* imagem de fundo em bleed total: versão vertical no mobile,
               horizontal no desktop (hero.imagemMobile / hero.imagem) */}
-          <div className="media absolute inset-0 h-full !rounded-none">
+          <div className="media hero-foto absolute inset-0 h-full !rounded-none">
             <picture className="block h-full w-full">
               <source media="(max-width: 640px)" srcSet={h.imagemMobile} />
               <img
