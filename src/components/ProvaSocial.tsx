@@ -38,6 +38,22 @@ function Tag({ children }: { children: ReactNode }) {
   );
 }
 
+/** Legenda no pé do card, sobre o mesmo degradê usado nos Segmentos. */
+function Legenda({ children }: { children: ReactNode }) {
+  return (
+    <div
+      className="absolute inset-x-0 bottom-0 p-6 pt-24"
+      style={{
+        background: "linear-gradient(to top, rgba(11,11,11,.82), transparent 60%)",
+      }}
+    >
+      <p className="max-w-[34ch] text-[13px] leading-relaxed font-medium text-paper-50">
+        {children}
+      </p>
+    </div>
+  );
+}
+
 /** Slots de mídia — a ordem vale para o desktop e para o carrossel. */
 const midias = [
   {
@@ -47,6 +63,7 @@ const midias = [
     srcMobile: p.card01Imagem,
     alt: "Equipe da Cut Creative no estúdio — capa do vídeo institucional",
     play: true,
+    legenda: p.card01Legenda,
   },
   {
     n: "02/",
@@ -55,6 +72,7 @@ const midias = [
     srcMobile: p.card02ImagemMobile,
     alt: "Estúdio da Cut Creative com o time em operação",
     play: false,
+    legenda: p.card02Legenda,
   },
   {
     n: "03/",
@@ -63,6 +81,7 @@ const midias = [
     srcMobile: p.card03Imagem,
     alt: "Bastidores da operação da Cut Creative",
     play: false,
+    legenda: p.card03Legenda,
   },
   {
     n: "04/",
@@ -71,6 +90,7 @@ const midias = [
     srcMobile: p.card04Imagem,
     alt: "+300 marcas atendidas — estratégia, criação e resultados reais",
     play: false,
+    legenda: "",
   },
 ];
 
@@ -202,6 +222,7 @@ function CarrosselMobile() {
                     <Play />
                   </>
                 )}
+                {m.legenda && <Legenda>{m.legenda}</Legenda>}
               </Media>
             </div>
           </div>
@@ -287,6 +308,7 @@ export default function ProvaSocial() {
               <div className="absolute inset-0 bg-ink-900/35" aria-hidden />
               <Tag>01/</Tag>
               <Play />
+              <Legenda>{midias[0].legenda}</Legenda>
             </Media>
           </Reveal>
 
@@ -301,6 +323,7 @@ export default function ProvaSocial() {
               className="[&_img]:filter-none"
             >
               <Tag>02/</Tag>
+              <Legenda>{midias[1].legenda}</Legenda>
             </Media>
           </Reveal>
 
@@ -314,6 +337,7 @@ export default function ProvaSocial() {
               className="h-full [&_img]:filter-none"
             >
               <Tag>03/</Tag>
+              <Legenda>{midias[2].legenda}</Legenda>
             </Media>
           </Reveal>
 

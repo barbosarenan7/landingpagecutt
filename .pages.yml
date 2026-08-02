@@ -58,9 +58,6 @@ content:
           - name: ctaPrimario
             label: Botão principal
             type: string
-          - name: ctaSecundario
-            label: Botão secundário
-            type: string
           - name: col1Titulo
             label: Coluna 1 — título
             type: string
@@ -99,6 +96,15 @@ content:
           - name: cta
             label: Botão abaixo do texto
             type: string
+          - name: card01Legenda
+            label: Card 01 — legenda sobre a imagem
+            type: text
+          - name: card02Legenda
+            label: Card 02 — legenda sobre a imagem
+            type: text
+          - name: card03Legenda
+            label: Card 03 — legenda sobre a imagem
+            type: text
           - name: card01Imagem
             label: Card 01 — imagem (capa do vídeo)
             type: image

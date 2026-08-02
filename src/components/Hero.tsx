@@ -16,26 +16,29 @@ export default function Hero() {
   return (
     <section id="top" className="sec-light" aria-labelledby="hero-title">
       <div className="container-cut pt-4 pb-[clamp(40px,5vw,72px)] md:pt-6">
-        <div className="relative overflow-hidden rounded-card bg-ink-800 text-paper-50">
+        {/* No desktop o card assume a proporção exata do arquivo (2000×1315),
+            para o object-cover não cortar nada — é o wordmark embutido que
+            vai de ponta a ponta da foto. Abaixo de lg vale a altura de tela. */}
+        <div className="relative overflow-hidden rounded-card bg-ink-800 text-paper-50 lg:aspect-[2000/1315]">
           {/* imagem de fundo em bleed total: versão vertical no mobile,
               horizontal no desktop (hero.imagemMobile / hero.imagem) */}
           <div className="media hero-foto absolute inset-0 h-full !rounded-none">
             <picture className="block h-full w-full">
               {otimMobile && (
                 <source
-                  media="(max-width: 640px)"
+                  media="(max-width: 1023px)"
                   type="image/avif"
                   srcSet={otimMobile.avif}
                 />
               )}
               {otimMobile && (
                 <source
-                  media="(max-width: 640px)"
+                  media="(max-width: 1023px)"
                   type="image/webp"
                   srcSet={otimMobile.webp}
                 />
               )}
-              <source media="(max-width: 640px)" srcSet={h.imagemMobile} />
+              <source media="(max-width: 1023px)" srcSet={h.imagemMobile} />
               {otimDesktop && <source type="image/avif" srcSet={otimDesktop.avif} />}
               {otimDesktop && <source type="image/webp" srcSet={otimDesktop.webp} />}
               <img
@@ -69,12 +72,12 @@ export default function Hero() {
             <span className="vert-label !text-paper-50/80">2026</span>
           </div>
 
-          <div className="relative z-10 flex min-h-[max(620px,86vh)] flex-col px-6 pt-10 pb-8 md:px-12 md:pt-12 md:pb-12">
-            {/* Wordmark gigante cruzando a imagem (ref Dominic®). No desktop
-                ele já vem embutido na própria foto (passando atrás do retrato),
-                então só é renderizado abaixo de 641px — exatamente o ponto em
-                que o <picture> troca para a versão mobile, que não tem o texto. */}
-            <Reveal className="min-[641px]:hidden">
+          <div className="relative z-10 flex min-h-[max(620px,86vh)] flex-col px-6 pt-10 pb-8 md:px-12 md:pt-12 md:pb-12 lg:h-full lg:min-h-0">
+            {/* Wordmark gigante cruzando a imagem (ref Dominic®). De lg pra
+                cima ele já vem embutido na própria foto (passando atrás do
+                retrato), então só é renderizado abaixo de 1024px — o mesmo
+                ponto em que o <picture> troca para a versão sem texto. */}
+            <Reveal className="lg:hidden">
               <p
                 className="h-sans select-none"
                 aria-hidden
@@ -101,18 +104,12 @@ export default function Hero() {
                     {h.eyebrow}
                   </p>
                 </Reveal>
-                {/* no mobile o CTA principal vive no menu suspenso, então
-                    a primeira dobra fica só com o botão secundário */}
+                {/* no celular o CTA principal vive no header, por isso ele
+                    só aparece a partir de sm */}
                 <Reveal delay={200} className="mt-7 flex flex-wrap items-center gap-4">
                   <BtnPrimary href="#diagnostico" className="hidden sm:inline-flex">
                     {h.ctaPrimario}
                   </BtnPrimary>
-                  <a
-                    href="#como-trabalhamos"
-                    className="btn-secondary !border-paper-50/25 text-paper-50"
-                  >
-                    {h.ctaSecundario}
-                  </a>
                 </Reveal>
               </div>
 

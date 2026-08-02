@@ -62,7 +62,7 @@ export default function ClientesGrid() {
           className="mt-6 mb-12 text-center"
           style={{ fontSize: "var(--fs-h2)" }}
         >
-          <span className="h-serif block">Marcas que já comunicam</span>
+          <span className="h-serif block">Marcas que já trabalharam</span>
           <span className="h-sans block">com a Cut Creative.</span>
         </h2>
 
