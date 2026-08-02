@@ -1,7 +1,6 @@
 {
   "nav": {
-    "cta": "Solicitar diagnóstico gratuito",
-    "ctaCurto": "Solicitar diagnóstico",
+    "cta": "Solicitar diagnóstico",
     "links": [
       {
         "label": "Como trabalhamos",
@@ -20,7 +19,7 @@
   "hero": {
     "eyebrow": "Mais de 300 negócios atendidos em Volta Redonda e Brasil.",
     "titulo": "Marketing estratégico para empresas que querem crescer com mais clareza, presença e resultado.",
-    "ctaPrimario": "Solicitar diagnóstico gratuito",
+    "ctaPrimario": "Solicitar diagnóstico",
     "col1Titulo": "Estratégia",
     "col1Texto": "Estudamos seu negócio, estruturamos a solução certa e executamos todas as fases, da estratégia à produção, com equipe e estúdio próprios.",
     "col2Titulo": "Resultado",
@@ -48,7 +47,7 @@
     "tituloDestaque": "métricas",
     "tituloDepois": "não em achismo.",
     "descricao": "Há 4 anos mergulhamos fundo em cada negócio que atendemos. Estudamos a sua empresa como se fosse nossa até alcançar aquilo que quase ninguém no mercado entrega: clareza total. A partir daí, viramos parte do seu time, executamos o caminho traçado com método validado e transformamos esforço em previsibilidade de retorno.",
-    "cta": "Solicitar diagnóstico gratuito",
+    "cta": "Solicitar diagnóstico",
     "card01Legenda": "Conheça quem está por trás dos resultados",
     "card02Legenda": "Estrutura presencial, estúdio profissional e equipe de produção sem terceirizar nada.",
     "card03Legenda": "Método próprio, 4 anos de empresa e +30 colaboradores distribuídos em equipes.",
@@ -60,7 +59,9 @@
   },
   "dorReal": {
     "eyebrow": "A dor real",
-    "titulo": "Sua empresa tem logística, equipe e investimento. Por que o marketing ainda não acompanha o tamanho da operação?",
+    "tituloAntes": "Sua empresa tem logística, equipe e investimento. Por que o marketing ainda não acompanha o",
+    "tituloDestaque": "tamanho da operação?",
+    "tituloDepois": "",
     "texto": "90% das empresas em crescimento chegam até a Cut com o mesmo cenário: já passaram por agências, já tentaram internalizar, já investiram alto. O que falta nunca é verba. É experiência, método, governança e um parceiro que assuma responsabilidade pelo resultado.",
     "statNumero": "6",
     "statLabel": "os mesmos sinais, em todos os casos",
@@ -80,7 +81,7 @@
     "tituloLinha1": "Experiência com diferentes tipos de negócio.",
     "tituloLinha2": "Foco no resultado de cada um.",
     "texto": "A Cut atende empresas em operação que precisam estruturar o marketing e crescer com consistência. Cada negócio tem uma dinâmica diferente — e a estratégia acompanha isso para gerar resultado de verdade.",
-    "cta": "Solicitar diagnóstico gratuito",
+    "cta": "Solicitar diagnóstico",
     "cards": [
       {
         "badge": "Saúde",
@@ -198,7 +199,7 @@
         "R$ 15 mil a R$ 50 mil",
         "Acima de R$ 50 mil"
       ],
-      "cta": "Solicitar diagnóstico gratuito",
+      "cta": "Solicitar diagnóstico",
       "sucessoTitulo": "Recebemos as informações da sua empresa.",
       "sucessoTexto": "Nossa equipe vai analisar o momento da sua empresa e entrar em contato pelo WhatsApp informado para uma conversa sem compromisso — em até 1 dia útil.",
       "sucessoCta": "Seguir a Cut no Instagram"

@@ -136,6 +136,14 @@
     color: var(--text2, var(--color-text2-light));
   }
 
+  /* topo da seção "A dor real": o espaço acima do título compensa o
+     título fantasma posicionado em absoluto */
+  .dor-cabecalho {
+    padding-top: calc(
+      clamp(40px, 5vw, 72px) + 2 * clamp(16px, 2vw, 32px) + clamp(3rem, 9vw, 8.5rem)
+    );
+  }
+
   /* padding vertical de seção definido em UM único lugar (seção 11) */
   .section {
     padding-block: clamp(88px, 11vw, 176px);
@@ -533,6 +541,8 @@
 @layer components {
   /* título fantasma atrás do conteúdo (ref FUTURE) */
   .ghost-title {
+    top: clamp(16px, 2vw, 32px);
+    font-size: clamp(3rem, 9vw, 8.5rem);
     font-weight: 900;
     letter-spacing: -0.02em;
     line-height: 1;
@@ -719,6 +729,16 @@
     /* cards dos diferenciais mais baixos no celular */
     .card-dif {
       padding: 20px 22px;
+    }
+    /* "A DOR REAL" menor e colado no título — o foco é a frase, não o
+       fantasma, que aqui vira só uma assinatura da seção */
+    .ghost-title {
+      top: 12px;
+      font-size: 2.125rem;
+      letter-spacing: 0.02em;
+    }
+    .dor-cabecalho {
+      padding-top: 74px;
     }
     /* itens de lista com divisória: o texto recua, a régua fica inteira */
     .faixa-leitura-lista {

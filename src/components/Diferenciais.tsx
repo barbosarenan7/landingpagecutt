@@ -54,11 +54,11 @@ export default function Diferenciais() {
               {/* no celular o número entra na mesma linha do título, o que
                   encurta o card; de lg pra cima volta a ser uma linha
                   própria acima dele */}
-              <span className="step-num hidden text-text3 lg:block" aria-hidden>
+              <span className="step-num hidden font-bold text-accent lg:block" aria-hidden>
                 {String(i + 1).padStart(2, "0")}
               </span>
               <h3 className="pr-8 text-lg leading-snug font-bold lg:mt-6">
-                <span className="step-num mr-2 text-text3 lg:hidden" aria-hidden>
+                <span className="step-num mr-2 font-bold text-accent lg:hidden" aria-hidden>
                   {String(i + 1).padStart(2, "0")}.
                 </span>
                 {item.titulo}

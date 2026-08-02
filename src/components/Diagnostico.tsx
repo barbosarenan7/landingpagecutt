@@ -86,7 +86,7 @@ export default function Diagnostico() {
             </div>
 
             {/* painel direito: formulário escuro */}
-            <div className="bg-ink-900 p-7 md:p-10 lg:border-l lg:border-line-dark">
+            <div id="formulario" className="bg-ink-900 p-7 md:p-10 lg:border-l lg:border-line-dark">
               <LeadForm />
             </div>
           </div>

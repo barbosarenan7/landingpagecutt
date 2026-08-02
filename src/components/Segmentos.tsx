@@ -56,7 +56,7 @@ export default function Segmentos() {
         </div>
 
         <Reveal delay={120} className="mt-16 flex justify-center md:mt-20">
-          <BtnPrimary href="#diagnostico">{seg.cta}</BtnPrimary>
+          <BtnPrimary href="#formulario">{seg.cta}</BtnPrimary>
         </Reveal>
       </div>
     </section>

@@ -90,14 +90,14 @@ export default function Hero() {
                   {h.titulo}
                 </h1>
                 <Reveal delay={120}>
-                  <p className="mt-4 text-[15px] tracking-[0.08em] text-accent uppercase lg:text-paper-50/70">
+                  <p className="mt-4 text-[15px] tracking-[0.08em] text-accent uppercase">
                     {h.eyebrow}
                   </p>
                 </Reveal>
                 {/* no celular o CTA principal vive no header, por isso ele
                     só aparece a partir de sm */}
                 <Reveal delay={200} className="mt-7 flex flex-wrap items-center gap-4">
-                  <BtnPrimary href="#diagnostico" className="hidden sm:inline-flex">
+                  <BtnPrimary href="#formulario" className="hidden sm:inline-flex">
                     {h.ctaPrimario}
                   </BtnPrimary>
                 </Reveal>
@@ -141,14 +141,14 @@ export default function Hero() {
               {h.col1Titulo}
               <span className="h-px min-w-8 flex-1 bg-accent" aria-hidden />
             </h2>
-            <p className="text-2nd mt-3 text-[15px] leading-relaxed">{h.col1Texto}</p>
+            <p className="text-2nd mt-1.5 text-[15px] leading-snug">{h.col1Texto}</p>
           </Reveal>
           <Reveal delay={90}>
             <h2 className="flex items-center gap-4 text-[22px] font-bold">
               {h.col2Titulo}
               <span className="h-px min-w-8 flex-1 bg-accent" aria-hidden />
             </h2>
-            <p className="text-2nd mt-3 text-[15px] leading-relaxed">{h.col2Texto}</p>
+            <p className="text-2nd mt-1.5 text-[15px] leading-snug">{h.col2Texto}</p>
           </Reveal>
         </div>
       </div>

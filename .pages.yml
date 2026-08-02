@@ -24,9 +24,6 @@ content:
           - name: cta
             label: Botão do topo
             type: string
-          - name: ctaCurto
-            label: Botão do topo — versão curta (celular)
-            type: string
           - name: links
             label: Links do menu
             type: object
@@ -128,9 +125,15 @@ content:
           - name: eyebrow
             label: Linha de apoio
             type: string
-          - name: titulo
-            label: Título
+          - name: tituloAntes
+            label: Título — antes da palavra em destaque
             type: text
+          - name: tituloDestaque
+            label: Título — palavra em destaque (amarelo)
+            type: string
+          - name: tituloDepois
+            label: Título — depois da palavra em destaque
+            type: string
           - name: texto
             label: Texto
             type: text

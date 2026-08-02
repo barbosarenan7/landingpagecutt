@@ -290,7 +290,7 @@ export default function ProvaSocial() {
         </Reveal>
 
         <Reveal delay={140} className="mt-8 flex justify-center">
-          <BtnPrimary href="#diagnostico">{p.cta}</BtnPrimary>
+          <BtnPrimary href="#formulario">{p.cta}</BtnPrimary>
         </Reveal>
 
         {/* ===== desktop: bento assimétrico (estrutura preservada) ===== */}
