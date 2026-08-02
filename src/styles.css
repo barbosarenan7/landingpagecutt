@@ -3,7 +3,7 @@
 
 /* ============================================================
    CUT EDITORIAL — tokens (seção 3, 4 e 5 do design system)
-   Nenhum hex fora da tabela. Acento: Opção A (#FF4D18).
+   Nenhum hex fora da tabela. Acento: amarelo Pantone (#FFCC00).
    ============================================================ */
 @theme {
   /* --- cor --- */
@@ -17,9 +17,10 @@
   --color-text2-light: #6b6862;
   --color-text2-dark: #a6a39d;
   --color-text3: #b4b1aa;
-  --color-accent: #ff4d18;
-  --color-accent-soft: #ffe6dc;
-  --color-accent-ink: #ffffff;
+  --color-accent: #ffcc00;
+  --color-accent-soft: #fff4c2;
+  /* texto/ícones sobre o acento: preto — branco não lê sobre #FFCC00 */
+  --color-accent-ink: #0b0b0b;
 
   /* --- tipo --- */
   --font-sans: "Satoshi", "Inter Tight", ui-sans-serif, system-ui, sans-serif;
@@ -213,8 +214,9 @@
     width: 32px;
     height: 32px;
     border-radius: var(--radius-pill);
-    background: var(--color-paper-0);
-    color: var(--color-ink-900);
+    /* círculo preto com seta branca: o branco de antes some no amarelo */
+    background: var(--color-ink-900);
+    color: var(--color-paper-0);
     flex-shrink: 0;
     transition: transform 220ms var(--ease-out-expo);
   }
