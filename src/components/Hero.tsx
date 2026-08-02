@@ -73,34 +73,24 @@ export default function Hero() {
           </div>
 
           <div className="relative z-10 flex min-h-[max(620px,86vh)] flex-col px-6 pt-10 pb-8 md:px-12 md:pt-12 md:pb-12 lg:h-full lg:min-h-0">
-            {/* Wordmark gigante cruzando a imagem (ref Dominic®). De lg pra
-                cima ele já vem embutido na própria foto (passando atrás do
-                retrato), então só é renderizado abaixo de 1024px — o mesmo
-                ponto em que o <picture> troca para a versão sem texto. */}
-            <Reveal className="lg:hidden">
-              <p
-                className="h-sans select-none"
-                aria-hidden
-                style={{ fontSize: "clamp(3.25rem, 11.5vw, 10.5rem)", lineHeight: 0.9 }}
-              >
-                Cut Creative<span className="align-top text-[0.35em]">®</span>
-              </p>
-            </Reveal>
-
+            {/* Sem wordmark em HTML: a marca vem das próprias fotos — o
+                símbolo atrás do retrato no celular, o lettering "Cut
+                Creative®" na versão desktop. */}
             <div className="flex-1" />
 
             {/* rodapé do card: título + CTA à esquerda, colunas à direita */}
             <div className="grid items-end gap-10 lg:grid-cols-12">
               <div className="lg:col-span-6">
+                {/* entrelinha mais fechada no celular; no desktop segue 1.08 */}
                 <h1
                   id="hero-title"
-                  className="font-bold"
-                  style={{ fontSize: "clamp(1.75rem, 3.2vw, 2.875rem)", lineHeight: 1.08 }}
+                  className="font-bold leading-[1] lg:leading-[1.08]"
+                  style={{ fontSize: "clamp(1.75rem, 3.2vw, 2.875rem)" }}
                 >
                   {h.titulo}
                 </h1>
                 <Reveal delay={120}>
-                  <p className="mt-4 text-[15px] tracking-[0.08em] text-paper-50/70 uppercase">
+                  <p className="mt-4 text-[15px] tracking-[0.08em] text-accent uppercase lg:text-paper-50/70">
                     {h.eyebrow}
                   </p>
                 </Reveal>
