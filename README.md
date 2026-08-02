@@ -77,3 +77,13 @@ A dor real → Segmentos → Método → Diagnóstico + Formulário →
 - **Antes de editar aqui**, rodar `git pull` — o painel commita direto no
   GitHub e a cópia local não se atualiza sozinha.
 - O padding lateral cai para 12px abaixo de 640px (`.container-cut`).
+- **Imagens novas em `public/`:** rodar `bun run scripts/otimizar-imagens.ts`
+  para gerar os irmãos `.avif`/`.webp` e atualizar o manifesto
+  (`src/content/imagens-otimizadas.json`). Sem isso a imagem funciona,
+  só não ganha os formatos leves. Uploads do painel (`/uploads`) ficam de
+  fora de propósito.
+- **Ao instalar o GTM**, liberar os domínios do Google na
+  `Content-Security-Policy` do `vercel.json` (`script-src` e
+  `connect-src`), senão o script é bloqueado silenciosamente.
+- **Satoshi é self-hosted** (`public/fonts/`). Não recolocar o CSS da
+  Fontshare no `index.html` — ele é render-blocking e custou ~1,2s de FCP.
