@@ -1,6 +1,5 @@
 import Nav from "../components/Nav";
 import Hero from "../components/Hero";
-import LogoCarousel from "../components/LogoCarousel";
 import ProvaSocial from "../components/ProvaSocial";
 import DorReal from "../components/DorReal";
 import Segmentos from "../components/Segmentos";
@@ -30,15 +29,15 @@ export default function Home() {
       <Nav />
       <main id="conteudo">
         <Hero />
-        {/* teste de estética: a grade de clientes assume o topo... */}
+        {/* clientes: a grade preta logo após o hero (o carrossel marquee
+            foi aposentado — o componente segue parqueado em
+            src/components/LogoCarousel.tsx se quiser voltar) */}
         <ClientesGrid />
         <ProvaSocial />
         <DorReal />
         <Segmentos />
         <Metodo />
         <Diagnostico />
-        {/* ...e o carrossel de logos fecha a página */}
-        <LogoCarousel />
       </main>
       <Footer />
       <WhatsAppFloat />

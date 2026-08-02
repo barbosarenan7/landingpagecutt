@@ -699,9 +699,19 @@
     transform: none;
     transition: none;
   }
-  .ph-caixa,
-  .ph-cursor {
+  /* sem animação: caixa e cursor ficam fixos no estado final,
+     imunes ao liga/desliga do loop */
+  .ph .ph-caixa {
     transition: none;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+  }
+  .ph .ph-cursor {
+    transition: none;
+    left: calc(100% + 4px);
+    top: calc(100% + 4px);
+    opacity: 1;
   }
 }
 
@@ -845,5 +855,10 @@
     left: calc(100% + 4px);
     top: calc(100% + 4px);
     opacity: 1;
+  }
+  /* reset instantâneo entre um ciclo e outro do loop */
+  .ph-reset .ph-caixa,
+  .ph-reset .ph-cursor {
+    transition: none;
   }
 }

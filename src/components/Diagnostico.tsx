@@ -4,14 +4,12 @@ import LeadForm from "./LeadForm";
 import content from "../content/site.json";
 
 const dg = content.diagnostico;
-/** O 1º chip fica destacado (ativo); os demais, discretos. */
-const chips = dg.chips.map((c, i) => ({ ...c, active: i === 0 }));
 
 /**
  * Solicite ref. "sign-up split": card grande dividido em dois painéis.
- * Esquerda: foto da equipe como fundo com scrim + título, benefícios e
- * chips de etapas 1-2-3. Direita: formulário escuro com inputs em caixa
- * e botão branco. Slot: team-g4 (foto real em public/team-g4.jpg).
+ * Esquerda: arte do símbolo do grupo como fundo com scrim + título e
+ * benefícios. Direita: formulário escuro com inputs em caixa e botão
+ * branco. Slot: logo-grupo (arte real em public/logo-grupo.png).
  */
 function Check() {
   return (
@@ -40,22 +38,25 @@ export default function Diagnostico() {
       <div className="container-cut">
         <Reveal>
           <div className="grid overflow-hidden rounded-card border border-line-dark lg:grid-cols-2">
-            {/* painel esquerdo: foto da equipe + conteúdo */}
+            {/* painel esquerdo: arte do símbolo do grupo + conteúdo.
+                A arte é pronta (já escura), então fica sem dessaturação e
+                expandida para cobrir todo o painel; o scrim leve garante
+                a leitura do texto por cima. */}
             <div className="relative flex flex-col p-7 md:p-10">
               <Media
-                file="team-g4.webp"
+                file="logo-grupo.png"
                 src={dg.imagem}
-                alt="Equipe da Cut Creative reunida no estúdio, no evento G4 Advisor"
-                width={1400}
-                height={875}
-                className="absolute inset-0 h-full !rounded-none"
+                alt="Símbolo da Cut Creative sobre fundo escuro texturizado"
+                width={1080}
+                height={1080}
+                className="absolute inset-0 h-full !rounded-none [&_img]:filter-none"
               />
               <div
                 className="absolute inset-0"
                 aria-hidden
                 style={{
                   background:
-                    "linear-gradient(to top, rgba(11,11,11,.92) 0%, rgba(11,11,11,.62) 55%, rgba(11,11,11,.42) 100%)",
+                    "linear-gradient(to top, rgba(11,11,11,.85) 0%, rgba(11,11,11,.5) 55%, rgba(11,11,11,.3) 100%)",
                 }}
               />
 
@@ -81,37 +82,6 @@ export default function Diagnostico() {
                   ))}
                 </ul>
 
-                <p
-                  className="h-serif mt-10 max-w-md text-paper-50"
-                  style={{ fontSize: "clamp(1.5rem, 2.2vw, 2rem)", lineHeight: 1.15 }}
-                >
-                  {dg.frase}
-                </p>
-
-                {/* chips de etapas (ref sign-up) */}
-                <div className="mt-auto grid grid-cols-3 gap-3 pt-12">
-                  {chips.map((c) => (
-                    <div
-                      key={c.n}
-                      className={`rounded-cardmd p-4 ${
-                        c.active
-                          ? "bg-paper-0 text-ink-900"
-                          : "bg-paper-0/10 text-paper-50 backdrop-blur-sm"
-                      }`}
-                    >
-                      <span
-                        className={`flex h-6 w-6 items-center justify-center rounded-pill text-xs font-bold ${
-                          c.active ? "bg-ink-900 text-paper-0" : "bg-paper-0/20 text-paper-50"
-                        }`}
-                        aria-hidden
-                      >
-                        {c.n}
-                      </span>
-                      <p className="mt-3 text-[13px] leading-snug font-medium">{c.label}</p>
-                      {/* c.label vem de src/content/site.json → diagnostico.chips */}
-                    </div>
-                  ))}
-                </div>
               </div>
             </div>
 

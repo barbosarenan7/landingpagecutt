@@ -225,7 +225,7 @@ content:
         type: object
         fields:
           - name: imagem
-            label: Foto da equipe
+            label: Imagem de fundo (painel esquerdo)
             type: image
           - name: eyebrow
             label: Linha de apoio
@@ -243,25 +243,9 @@ content:
             label: Benefícios
             type: string
             list: true
-          - name: frase
-            label: Frase em destaque
-            type: text
           - name: regiao
             label: Texto de região
             type: text
-          - name: chips
-            label: Etapas (1-2-3)
-            type: object
-            list:
-              min: 3
-              max: 3
-            fields:
-              - name: n
-                label: Número
-                type: string
-              - name: label
-                label: Texto
-                type: string
           - name: form
             label: Formulário
             type: object

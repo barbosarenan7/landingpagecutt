@@ -37,6 +37,8 @@ function Corner() {
 function PointerHighlight({ children }: { children: ReactNode }) {
   const alvo = useRef<HTMLSpanElement>(null);
   const [ativo, setAtivo] = useState(false);
+  const [on, setOn] = useState(false);
+  const [corte, setCorte] = useState(false);
 
   useEffect(() => {
     const el = alvo.current;
@@ -48,8 +50,36 @@ function PointerHighlight({ children }: { children: ReactNode }) {
     return () => io.disconnect();
   }, []);
 
+  // em cena, a animação roda em ciclos: desenha (1s), segura 3s e
+  // recomeça do zero (o reset é instantâneo, com as transições cortadas)
+  useEffect(() => {
+    if (!ativo) {
+      setOn(false);
+      return;
+    }
+    let t1: number | undefined;
+    let t2: number | undefined;
+    const rodar = () => {
+      setCorte(true);
+      setOn(false);
+      t1 = window.setTimeout(() => {
+        setCorte(false);
+        setOn(true);
+        t2 = window.setTimeout(rodar, 4000); // 1s de desenho + 3s parado
+      }, 40);
+    };
+    rodar();
+    return () => {
+      window.clearTimeout(t1);
+      window.clearTimeout(t2);
+    };
+  }, [ativo]);
+
   return (
-    <span ref={alvo} className={`ph ${ativo ? "ph-on" : ""}`}>
+    <span
+      ref={alvo}
+      className={`ph ${on ? "ph-on" : ""} ${corte ? "ph-reset" : ""}`}
+    >
       <span className="relative z-[1]">{children}</span>
       <span className="ph-caixa" aria-hidden />
       <span className="ph-cursor" aria-hidden>
