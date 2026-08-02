@@ -176,12 +176,12 @@ function CarrosselMobile() {
         onScroll={aoRolar}
         role="region"
         aria-label="Carrossel de mídias da Cut Creative"
-        className="carrossel -mx-3 flex snap-x snap-mandatory items-center gap-3 overflow-x-auto px-3 py-2"
+        className="carrossel -mx-3 flex snap-x snap-mandatory items-center gap-1.5 overflow-x-auto px-3 py-2"
       >
         {trilhaInfinita.map((m, i) => (
           <div
             key={`${m.n}-${i}`}
-            className="w-[72%] shrink-0 snap-center"
+            className="w-[82%] shrink-0 snap-center"
             /* só o bloco do meio é anunciado; as cópias são decorativas */
             aria-hidden={i < N || i >= 2 * N}
           >

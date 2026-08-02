@@ -10,7 +10,9 @@ import content from "../content/site.json";
  */
 function Logo() {
   return (
-    <a href="#top" aria-label="Cut Creative — início" className="flex items-center">
+    // no celular a logo se afasta da borda esquerda (ml-2); no desktop
+    // o container-cut já dá o respiro e a margem volta a zero
+    <a href="#top" aria-label="Cut Creative — início" className="ml-2 flex items-center md:ml-0">
       <img
         src="/logo-cut.png"
         alt="Cut Creative"
@@ -45,10 +47,17 @@ export default function Nav() {
       <nav className="container-cut flex h-[72px] items-center justify-between">
         <Logo />
 
-        {/* no celular o CTA mora no próprio header, compacto e em caixa
-            alta — não há hambúrguer nem painel para abrir */}
-        <a href="#diagnostico" className="btn-cta-compacto md:hidden">
-          {content.nav.ctaCurto}
+        {/* no celular o CTA mora no próprio header, no layout do botão
+            padrão (pill + círculo com seta), em versão reduzida e sem o
+            "gratuito" — não há hambúrguer nem painel para abrir */}
+        <a
+          href="#diagnostico"
+          className="btn-primary !min-h-0 !gap-2.5 !py-1.5 !pr-1.5 !pl-4 !text-[13px] md:hidden"
+        >
+          <span>{content.nav.ctaCurto}</span>
+          <span className="btn-circle !h-7 !w-7" aria-hidden>
+            <Arrow />
+          </span>
         </a>
 
         <button

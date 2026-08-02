@@ -99,7 +99,9 @@ function FraseDestaque({ texto }: { texto: string }) {
         <span className="block">
           {p2.map((p, i) =>
             p.toLowerCase().startsWith("investimento") ? (
-              <PointerHighlight key={i}>{p}</PointerHighlight>
+              <PointerHighlight key={i}>
+                <span className="text-accent">{p}</span>
+              </PointerHighlight>
             ) : (
               p
             ),
