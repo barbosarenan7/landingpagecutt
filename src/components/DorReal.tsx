@@ -1,3 +1,4 @@
+import { useEffect, useRef, useState, type ReactNode } from "react";
 import { Reveal } from "../lib/reveal";
 import { Media } from "./primitives";
 import content from "../content/site.json";
@@ -27,27 +28,78 @@ function Corner() {
 }
 
 /**
- * Frase de transição no mesmo par tipográfico dos títulos de seção
- * ("Marcas que já comunicam / com a Cut Creative."): a primeira frase
- * na serifa fina, a segunda na sans black — e só "investimento" recebe
- * a marcação sólida laranja. Sem réguas. Se o texto for editado no
- * painel, a divisão continua sendo no primeiro ponto final.
+ * Destaque "pointer highlight" (adaptação do componente Aceternity para
+ * os padrões deste projeto, sem a dependência `motion`): quando a
+ * palavra entra na tela, uma caixa laranja se desenha ao redor dela a
+ * partir do canto superior esquerdo enquanto o cursor desliza até o
+ * canto inferior direito. Re-anima nos dois sentidos do scroll.
+ */
+function PointerHighlight({ children }: { children: ReactNode }) {
+  const alvo = useRef<HTMLSpanElement>(null);
+  const [ativo, setAtivo] = useState(false);
+
+  useEffect(() => {
+    const el = alvo.current;
+    if (!el) return;
+    const io = new IntersectionObserver(([e]) => setAtivo(e.isIntersecting), {
+      threshold: 0.6,
+    });
+    io.observe(el);
+    return () => io.disconnect();
+  }, []);
+
+  return (
+    <span ref={alvo} className={`ph ${ativo ? "ph-on" : ""}`}>
+      <span className="relative z-[1]">{children}</span>
+      <span className="ph-caixa" aria-hidden />
+      <span className="ph-cursor" aria-hidden>
+        <svg
+          width="18"
+          height="18"
+          viewBox="0 0 16 16"
+          fill="currentColor"
+          stroke="currentColor"
+          strokeWidth="1"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        >
+          <path d="M14.082 2.182a.5.5 0 0 1 .103.557L8.528 15.467a.5.5 0 0 1-.917-.007L5.57 10.694.803 8.652a.5.5 0 0 1-.006-.916l12.728-5.657a.5.5 0 0 1 .556.103z" />
+        </svg>
+      </span>
+    </span>
+  );
+}
+
+/**
+ * Frase de transição: tudo na mesma sans bold, alinhado e centralizado.
+ * "sem método" fica laranja e "investimento" recebe o pointer highlight.
+ * Se o texto for editado no painel, a divisão das duas linhas continua
+ * sendo no primeiro ponto final e os destaques caem no estilo base.
  */
 function FraseDestaque({ texto }: { texto: string }) {
   const ponto = texto.indexOf(". ");
   const linha1 = ponto >= 0 ? texto.slice(0, ponto + 1) : texto;
   const linha2 = ponto >= 0 ? texto.slice(ponto + 2) : "";
-  const partes = linha2.split(/(investimento\.?)/i);
+  const p1 = linha1.split(/(sem método)/i);
+  const p2 = linha2.split(/(investimento\.?)/i);
   return (
-    <p className="frase-destaque" style={{ fontSize: "var(--fs-h2)" }}>
-      <span className="h-serif block">{linha1}</span>
+    <p className="frase-destaque h-sans" style={{ fontSize: "var(--fs-h2)" }}>
+      <span className="block">
+        {p1.map((p, i) =>
+          p.toLowerCase() === "sem método" ? (
+            <span key={i} className="text-accent">
+              {p}
+            </span>
+          ) : (
+            p
+          ),
+        )}
+      </span>
       {linha2 && (
-        <span className="h-sans block">
-          {partes.map((p, i) =>
+        <span className="block">
+          {p2.map((p, i) =>
             p.toLowerCase().startsWith("investimento") ? (
-              <span key={i} className="frase-marca">
-                {p}
-              </span>
+              <PointerHighlight key={i}>{p}</PointerHighlight>
             ) : (
               p
             ),
