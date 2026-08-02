@@ -775,34 +775,12 @@
     pointer-events: none;
   }
 
-  /* frase de transição com mistura tipográfica (substitui o pull-quote
-     nessa seção: sem réguas em cima e embaixo) */
+  /* frase de transição no par serifa fina / sans black dos títulos de
+     seção (substitui o pull-quote: sem réguas em cima e embaixo) */
   .frase-destaque {
-    font-family: var(--font-serif);
-    font-weight: 400;
-    letter-spacing: -0.01em;
-    line-height: 1.22;
-    font-size: clamp(2.25rem, 4.2vw, 3.5rem);
     text-align: center;
     text-wrap: balance;
     padding-block: clamp(16px, 3vw, 40px);
-  }
-  .frase-destaque em {
-    font-style: italic;
-    /* o itálico serifado inclina sobre a palavra seguinte; um respiro
-       mínimo devolve o espaço óptico */
-    margin-inline-end: 0.06em;
-  }
-  /* "gasto": sans pesada, apagada e riscada pelo acento */
-  .frase-gasto {
-    font-family: var(--font-sans);
-    font-weight: 900;
-    font-size: 0.82em;
-    letter-spacing: -0.02em;
-    color: var(--color-text3);
-    text-decoration: line-through;
-    text-decoration-color: var(--color-accent);
-    text-decoration-thickness: 0.09em;
   }
   /* "investimento": marcação sólida de caneta, levemente inclinada */
   .frase-marca {

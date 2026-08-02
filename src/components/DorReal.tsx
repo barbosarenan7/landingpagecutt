@@ -27,32 +27,33 @@ function Corner() {
 }
 
 /**
- * Frase de transição com mistura tipográfica (sem réguas): serifa como
- * base, "método" em itálico, "gasto" em sans 900 riscado de laranja e
- * "investimento" com marcação sólida no acento. Se o texto for editado
- * no painel e as palavras mudarem, tudo cai no estilo serifado base.
+ * Frase de transição no mesmo par tipográfico dos títulos de seção
+ * ("Marcas que já comunicam / com a Cut Creative."): a primeira frase
+ * na serifa fina, a segunda na sans black — e só "investimento" recebe
+ * a marcação sólida laranja. Sem réguas. Se o texto for editado no
+ * painel, a divisão continua sendo no primeiro ponto final.
  */
 function FraseDestaque({ texto }: { texto: string }) {
-  const partes = texto.split(/(método|gasto\.?|investimento\.?)/gi);
+  const ponto = texto.indexOf(". ");
+  const linha1 = ponto >= 0 ? texto.slice(0, ponto + 1) : texto;
+  const linha2 = ponto >= 0 ? texto.slice(ponto + 2) : "";
+  const partes = linha2.split(/(investimento\.?)/i);
   return (
-    <p className="frase-destaque">
-      {partes.map((p, i) => {
-        const w = p.toLowerCase();
-        if (w === "método") return <em key={i}>{p}</em>;
-        if (w.startsWith("gasto"))
-          return (
-            <span key={i} className="frase-gasto">
-              {p}
-            </span>
-          );
-        if (w.startsWith("investimento"))
-          return (
-            <span key={i} className="frase-marca">
-              {p}
-            </span>
-          );
-        return p;
-      })}
+    <p className="frase-destaque" style={{ fontSize: "var(--fs-h2)" }}>
+      <span className="h-serif block">{linha1}</span>
+      {linha2 && (
+        <span className="h-sans block">
+          {partes.map((p, i) =>
+            p.toLowerCase().startsWith("investimento") ? (
+              <span key={i} className="frase-marca">
+                {p}
+              </span>
+            ) : (
+              p
+            ),
+          )}
+        </span>
+      )}
     </p>
   );
 }
