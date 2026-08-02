@@ -70,8 +70,11 @@ export default function Hero() {
           </div>
 
           <div className="relative z-10 flex min-h-[max(620px,86vh)] flex-col px-6 pt-10 pb-8 md:px-12 md:pt-12 md:pb-12">
-            {/* wordmark gigante cruzando a imagem (ref Dominic®) */}
-            <Reveal>
+            {/* Wordmark gigante cruzando a imagem (ref Dominic®). No desktop
+                ele já vem embutido na própria foto (passando atrás do retrato),
+                então só é renderizado abaixo de 641px — exatamente o ponto em
+                que o <picture> troca para a versão mobile, que não tem o texto. */}
+            <Reveal className="min-[641px]:hidden">
               <p
                 className="h-sans select-none"
                 aria-hidden
