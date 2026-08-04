@@ -6,6 +6,7 @@ tsconfig.tsbuildinfo
 # ambiente e segredos
 .env
 .env.*
+!.env.example
 
 # sistema
 .DS_Store

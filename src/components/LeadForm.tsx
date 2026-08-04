@@ -1,7 +1,7 @@
 import { useRef, useState, type FormEvent } from "react";
 import { Link } from "react-router-dom";
 import { Arrow } from "./primitives";
-import { site, track } from "../config/site";
+import { site, track, whatsappHref } from "../config/site";
 import content from "../content/site.json";
 
 const f = content.diagnostico.form;
@@ -9,13 +9,30 @@ const f = content.diagnostico.form;
 /**
  * Formulário escuro (painel direito do split, ref sign-up): inputs em
  * caixa `.field-box`, labels 11px e botão branco.
- * Destino: webhook do Make (→ Kommo + notificação WhatsApp do comercial).
- * Sem webhook configurado, valida e mostra o sucesso inline (demonstração).
- * Sucesso substitui o formulário inline, sem alert() — evento `lead` dispara aqui.
+ *
+ * Ao enviar, dois canais em paralelo:
+ *  1. abre o WhatsApp do comercial já com os dados preenchidos (o próprio
+ *     visitante inicia a conversa);
+ *  2. dispara POST /api/lead → a função serverless notifica o WhatsApp
+ *     pessoal via Botconversa (best-effort; não bloqueia o sucesso).
  * Textos e opções vêm de src/content/site.json → diagnostico.form.
  */
 const segmentos = f.segmentos;
 const investimentos = f.investimentos;
+
+/** Mensagem que o visitante leva ao abrir a conversa com o comercial. */
+function mensagemComercial(p: Record<string, string>): string {
+  return [
+    "Olá! Acabei de solicitar um diagnóstico no site da Cut Creative.",
+    "",
+    `Nome: ${p.nome || "-"}`,
+    `Empresa: ${p.empresa || "-"}`,
+    `Cargo: ${p.cargo || "-"}`,
+    `Segmento: ${p.segmento || "-"}`,
+    `Investimento/mês: ${p.investimento || "-"}`,
+    `Desafio: ${p.desafio || "-"}`,
+  ].join("\n");
+}
 
 function maskPhone(v: string) {
   const d = v.replace(/\D/g, "").slice(0, 11);
@@ -31,8 +48,9 @@ const errCls = "mt-1.5 text-[13px] text-accent";
 export default function LeadForm() {
   const [sending, setSending] = useState(false);
   const [errors, setErrors] = useState<Errors>({});
-  const [failed, setFailed] = useState(false);
   const [success, setSuccess] = useState(false);
+  // link do WhatsApp (com os dados) para o botão de continuar na tela de sucesso
+  const [waUrl, setWaUrl] = useState("");
   // anti-spam: instante em que o form montou (bots enviam em <3s)
   const montadoEm = useRef(Date.now());
 
@@ -75,33 +93,37 @@ export default function LeadForm() {
     }
 
     // anti-spam silencioso: honeypot preenchido ou envio rápido demais
-    // (<3s) mostram o sucesso sem disparar o webhook — humano não cai aqui
+    // (<3s) mostram o sucesso sem notificar ninguém — humano não cai aqui
     if (String(data.get("website") || "").length > 0 || Date.now() - montadoEm.current < 3000) {
       setSuccess(true);
       return;
     }
 
-    setSending(true);
-    setFailed(false);
-    const payload = Object.fromEntries(data.entries());
-    delete (payload as Record<string, unknown>).website;
+    const payload = Object.fromEntries(data.entries()) as Record<string, string>;
+    delete payload.website;
 
+    // 1) abre o WhatsApp do comercial já com os dados — precisa acontecer
+    //    dentro do gesto do clique (antes de qualquer await) para o navegador
+    //    não bloquear o popup
+    const url = whatsappHref(mensagemComercial(payload));
+    setWaUrl(url);
+    window.open(url, "_blank", "noopener,noreferrer");
+
+    // 2) notifica o WhatsApp pessoal via Botconversa (best-effort — nunca
+    //    bloqueia o sucesso; o WhatsApp acima já é o canal garantido)
+    setSending(true);
     try {
-      if (site.leadWebhookUrl) {
-        const res = await fetch(site.leadWebhookUrl, {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ ...payload, origem: "site", ts: Date.now() }),
-        });
-        if (!res.ok) throw new Error(`webhook ${res.status}`);
-      }
-      track("lead_form_submit", { segmento: payload.segmento });
-      track("lead"); // GA4 + Meta Pixel Lead via GTM — sucesso é inline
-      setSuccess(true);
+      await fetch("/api/lead", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload),
+      });
     } catch {
-      setFailed(true);
-      setSending(false);
+      // silencioso: o lead não se perde, o comercial já recebeu pelo WhatsApp
     }
+    track("lead_form_submit", { segmento: payload.segmento });
+    track("lead"); // GA4 + Meta Pixel Lead via GTM
+    setSuccess(true);
   }
 
   return (
@@ -111,14 +133,24 @@ export default function LeadForm() {
           <p className="eyebrow">Diagnóstico solicitado</p>
           <h3 className="mt-5 text-2xl leading-snug font-bold">{f.sucessoTitulo}</h3>
           <p className="mt-4 leading-relaxed text-text2-dark">{f.sucessoTexto}</p>
+          {waUrl && (
+            <a
+              href={waUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-white mt-8"
+            >
+              Falar agora no WhatsApp
+              <Arrow />
+            </a>
+          )}
           <a
             href={site.instagram}
             target="_blank"
             rel="noopener noreferrer"
-            className="btn-white mt-8"
+            className="mt-5 text-sm text-text2-dark underline underline-offset-4"
           >
             {f.sucessoCta}
-            <Arrow />
           </a>
         </div>
       ) : (
@@ -321,16 +353,6 @@ export default function LeadForm() {
                 </p>
               )}
             </div>
-
-            {failed && (
-              <p
-                role="alert"
-                className="rounded-input border border-accent/50 bg-ink-800 px-4 py-3 text-sm text-paper-50"
-              >
-                Não conseguimos enviar agora. Tente novamente — ou fale direto
-                com a gente pelo WhatsApp no canto da tela.
-              </p>
-            )}
 
             <button
               type="submit"

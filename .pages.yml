@@ -346,6 +346,3 @@ content:
           - name: cnpj
             label: CNPJ
             type: string
-          - name: leadWebhookUrl
-            label: Webhook do formulário (Make)
-            type: string

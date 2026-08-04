@@ -63,10 +63,36 @@ A dor real → Segmentos → Método → Diagnóstico + Formulário →
 4. **Vídeo institucional** — o card 01 já tem capa e botão de play, mas
    ainda não abre nada. Falta o link do vídeo.
 5. `[CONFIRMAR]` em `site.json → contato`: CNPJ, razão social, endereço.
-6. **Webhook do formulário** (`contato.leadWebhookUrl`) vazio = modo
-   demonstração: valida e mostra sucesso inline sem enviar.
-7. GTM/GA4/Pixel no `index.html` (eventos `lead`, `lead_form_submit`,
+6. GTM/GA4/Pixel no `index.html` (eventos `lead`, `lead_form_submit`,
    `whatsapp_click` já disparam).
+
+## Formulário → WhatsApp (Botconversa)
+
+Ao enviar o diagnóstico, duas coisas acontecem em paralelo:
+
+1. **Abre o WhatsApp do comercial** (`site.json → contato.whatsapp`) já
+   com os dados do lead preenchidos na mensagem — o próprio visitante
+   inicia a conversa.
+2. **Notifica o WhatsApp pessoal** via Botconversa: o formulário chama a
+   função serverless `api/lead.ts`, que do lado do servidor usa a API do
+   Botconversa (`get/create subscriber` + `send_message`) para mandar
+   todos os dados do lead para o número configurado.
+
+A função é **best-effort**: se o Botconversa falhar ou não estiver
+configurado, o envio ainda dá certo — o canal do WhatsApp acima é
+garantido e o lead não se perde.
+
+**Configuração (Vercel → Settings → Environment Variables):**
+
+| Variável | O que é |
+|---|---|
+| `BOTCONVERSA_API_KEY` | Chave "Integração via Webhook" (Botconversa → Configurações → Integrações) |
+| `BOTCONVERSA_NOTIFY_PHONE` | Número que recebe a notificação (seu WhatsApp), E.164 só dígitos, ex. `5524999999999` |
+
+Sem essas variáveis, o site funciona igual — só não dispara a
+notificação do Botconversa. Template das variáveis em `.env.example`.
+Para a notificação chegar, o número precisa ter interagido com o seu bot
+(janela de 24h do WhatsApp) — mande um "oi" para o seu próprio bot uma vez.
 
 ## Regras que o site respeita
 

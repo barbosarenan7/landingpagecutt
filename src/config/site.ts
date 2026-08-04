@@ -30,10 +30,6 @@ export const site = {
   cnpj: c.cnpj,
   address: c.endereco,
 
-  // Webhook do Make (form → Kommo + notificação WhatsApp do comercial).
-  // Vazio = modo demonstração: o form valida e mostra o sucesso inline sem enviar.
-  leadWebhookUrl: c.leadWebhookUrl,
-
   // Métricas de impacto — só entram no ar quando auditadas (v1.1).
   showMetrics: false,
 
@@ -41,8 +37,10 @@ export const site = {
   showTestimonialPlaceholders: true,
 } as const;
 
-export const whatsappHref = () =>
-  `https://wa.me/${site.whatsappNumber}?text=${encodeURIComponent(site.whatsappMessage)}`;
+/** Link do WhatsApp comercial. Sem argumento usa a mensagem padrão; o
+ *  formulário passa uma mensagem com os dados do lead já preenchidos. */
+export const whatsappHref = (message: string = site.whatsappMessage) =>
+  `https://wa.me/${site.whatsappNumber}?text=${encodeURIComponent(message)}`;
 
 /** Push seguro no dataLayer (GTM). No-op se o GTM ainda não estiver instalado. */
 export function track(event: string, data: Record<string, unknown> = {}) {

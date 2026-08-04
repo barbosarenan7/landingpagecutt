@@ -216,7 +216,6 @@
     "regiao": "Volta Redonda, Barra Mansa, Resende, Angra dos Reis e região",
     "endereco": "[CONFIRMAR endereço] — Volta Redonda, RJ",
     "razaoSocial": "Cut Creative [CONFIRMAR razão social]",
-    "cnpj": "[CONFIRMAR CNPJ]",
-    "leadWebhookUrl": ""
+    "cnpj": "[CONFIRMAR CNPJ]"
   }
 }
