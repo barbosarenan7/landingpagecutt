@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import Obrigado from "./pages/Obrigado";
 import Privacidade from "./pages/Privacidade";
 import ServicoPage from "./pages/Servico";
+import NaoEncontrada from "./pages/NaoEncontrada";
 import servicos from "./content/servicos.json";
 
 export default function App() {
@@ -23,6 +24,7 @@ export default function App() {
       ))}
       <Route path="/obrigado" element={<Obrigado />} />
       <Route path="/privacidade" element={<Privacidade />} />
+      <Route path="*" element={<NaoEncontrada />} />
     </Routes>
   );
 }
