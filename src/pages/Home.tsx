@@ -12,18 +12,7 @@ import Footer from "../components/Footer";
 import WhatsAppFloat from "../components/WhatsAppFloat";
 import CookieBanner from "../components/CookieBanner";
 import { Seo } from "../lib/seo";
-import content from "../content/site.json";
-
-/** FAQPage a partir das perguntas de site.json — elegível a resultado rico. */
-const faqSchema = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  mainEntity: content.faq.itens.map((i) => ({
-    "@type": "Question",
-    name: i.pergunta,
-    acceptedAnswer: { "@type": "Answer", text: i.resposta },
-  })),
-};
+import { rotaHome } from "../lib/rotas";
 
 /**
  * CUT EDITORIAL — ritmo de fundos (seção 6):
@@ -35,12 +24,7 @@ const faqSchema = {
 export default function Home() {
   return (
     <>
-      <Seo
-        title="Cut Creative — Agência de marketing em Volta Redonda, RJ"
-        description="Agência de marketing estratégico em Volta Redonda: estratégia, social media, tráfego pago e produção audiovisual própria. Solicite um diagnóstico gratuito."
-        path="/"
-        jsonLd={faqSchema}
-      />
+      <Seo {...rotaHome} />
       <a
         href="#conteudo"
         className="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-[60] focus:bg-accent focus:px-4 focus:py-2 focus:text-accent-ink"

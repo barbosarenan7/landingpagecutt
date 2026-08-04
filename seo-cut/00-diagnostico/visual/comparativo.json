@@ -1,0 +1,22 @@
+{
+  "metodo": "Medição no navegador após percorrer a página inteira (para carregar todas as imagens lazy). A primeira baseline foi descartada por ter sido medida antes do lazy-load, o que colapsava os cards 03/04 da prova social e falseava a altura.",
+  "desktop_1280x900": {
+    "antes_producao":  { "alturasSecoes": [866,683,1234,1004,1082,868,593,1013,1320], "alturaTotal": 9217, "rodape": 479, "imagens": 45, "links": 28, "botoes": 21, "palavras": 1236 },
+    "depois_build":    { "alturasSecoes": [866,683,1234,1004,1082,868,593,1013,1320], "alturaTotal": 9217, "rodape": 479, "imagens": 45, "links": 28, "botoes": 21, "palavras": 1236 },
+    "diferencas": "nenhuma"
+  },
+  "mobile_375x812": {
+    "antes_producao":  { "alturasSecoes": [1086,679,915,1615,2628,2286,858,1047,1800], "alturaTotal": 13533, "rodape": 546, "links": 28, "palavras": 1457, "overflowX": false },
+    "depois_build":    { "alturasSecoes": [1086,679,915,1615,2628,2286,858,1047,1800], "alturaTotal": 13533, "rodape": 546, "links": 28, "palavras": 1457, "overflowX": false },
+    "diferencas": "nenhuma"
+  },
+  "funcional": {
+    "avisosDeHidratacao": 0,
+    "menuSuspenso": "abre e fecha",
+    "acordeaoFaq": "alterna",
+    "acordeaoRodape": "expande (136px)",
+    "gtm": "carrega (gtm.js/dom/load) e dispara click_whatsapp_button e lead_form_success",
+    "formulario": "valida, envia, mostra tela de sucesso",
+    "ctasParaFormulario": 4
+  }
+}

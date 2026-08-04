@@ -7,12 +7,10 @@ import CookieBanner from "../components/CookieBanner";
 import { BtnPrimary } from "../components/primitives";
 import { Reveal } from "../lib/reveal";
 import { Seo } from "../lib/seo";
-import { site } from "../config/site";
+import { jsonLdServico } from "../lib/rotas";
 import dados from "../content/servicos.json";
 
 export type Servico = (typeof dados.servicos)[number];
-
-const BASE = "https://cutcreativee.com.br";
 
 /** Seta ↗ do canto dos cards, igual às seções da home. */
 function Corner() {
@@ -88,54 +86,8 @@ function FaqServico({ itens }: { itens: Servico["faq"] }) {
  */
 export default function ServicoPage({ servico }: { servico: Servico }) {
   const outros = dados.servicos.filter((s) => s.slug !== servico.slug);
-  const url = `${BASE}/${servico.slug}`;
 
-  const jsonLd = [
-    {
-      "@context": "https://schema.org",
-      "@type": "Service",
-      name: servico.nome,
-      serviceType: servico.nome,
-      description: servico.metaDescricao,
-      url,
-      provider: {
-        "@type": "ProfessionalService",
-        name: "Cut Creative",
-        telephone: "+55" + site.whatsappNumber,
-        address: {
-          "@type": "PostalAddress",
-          streetAddress: "Rua Norival de Freitas, 52, sala 101",
-          addressLocality: "Volta Redonda",
-          addressRegion: "RJ",
-          postalCode: "27215-100",
-          addressCountry: "BR",
-        },
-      },
-      areaServed: [
-        { "@type": "City", name: "Volta Redonda" },
-        { "@type": "City", name: "Barra Mansa" },
-        { "@type": "City", name: "Resende" },
-        { "@type": "City", name: "Angra dos Reis" },
-      ],
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      mainEntity: servico.faq.map((f) => ({
-        "@type": "Question",
-        name: f.pergunta,
-        acceptedAnswer: { "@type": "Answer", text: f.resposta },
-      })),
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "BreadcrumbList",
-      itemListElement: [
-        { "@type": "ListItem", position: 1, name: "Início", item: `${BASE}/` },
-        { "@type": "ListItem", position: 2, name: servico.nome, item: url },
-      ],
-    },
-  ];
+  const jsonLd = jsonLdServico(servico.slug);
 
   return (
     <>
