@@ -111,29 +111,43 @@ export async function POST(request: Request): Promise<Response> {
   if (lead.website) return json({ ok: true, notified: false });
 
   const apiKey = process.env.BOTCONVERSA_API_KEY;
-  const notifyPhone = soDigitos(process.env.BOTCONVERSA_NOTIFY_PHONE || "");
+  // aceita um ou vários números separados por vírgula
+  const notifyPhones = (process.env.BOTCONVERSA_NOTIFY_PHONE || "")
+    .split(",")
+    .map(soDigitos)
+    .filter((p) => p.length >= 10);
 
   // sem configuração → não quebra nada; o WhatsApp do cliente é o canal garantido
-  if (!apiKey || !notifyPhone) {
+  if (!apiKey || notifyPhones.length === 0) {
     return json({ ok: true, notified: false, reason: "botconversa-off" });
   }
 
-  try {
-    let id = await getSubscriberId(notifyPhone, apiKey);
-    if (id == null) id = await createSubscriber(notifyPhone, apiKey);
-    if (id == null) throw new Error("subscriber não resolvido");
+  const value = montarMensagem(lead);
 
-    const res = await bcFetch(
-      `subscriber/${id}/send_message`,
-      { method: "POST", body: JSON.stringify({ type: "text", value: montarMensagem(lead) }) },
-      apiKey,
-    );
-    if (!res.ok) throw new Error(`send_message ${res.status}`);
+  // notifica cada número de forma independente — a falha em um não impede
+  // os outros de receberem
+  const resultados = await Promise.all(
+    notifyPhones.map(async (phone) => {
+      try {
+        let id = await getSubscriberId(phone, apiKey);
+        if (id == null) id = await createSubscriber(phone, apiKey);
+        if (id == null) throw new Error("subscriber não resolvido");
 
-    return json({ ok: true, notified: true });
-  } catch (err) {
-    // best-effort: loga no servidor (Vercel logs) mas não bloqueia o lead
-    console.error("[lead] falha ao notificar via Botconversa:", err);
-    return json({ ok: true, notified: false });
-  }
+        const res = await bcFetch(
+          `subscriber/${id}/send_message`,
+          { method: "POST", body: JSON.stringify({ type: "text", value }) },
+          apiKey,
+        );
+        if (!res.ok) throw new Error(`send_message ${res.status}`);
+        return true;
+      } catch (err) {
+        // best-effort: loga no servidor (Vercel logs) mas não bloqueia o lead
+        console.error(`[lead] falha ao notificar ${phone} via Botconversa:`, err);
+        return false;
+      }
+    }),
+  );
+
+  const enviados = resultados.filter(Boolean).length;
+  return json({ ok: true, notified: enviados > 0, count: enviados });
 }

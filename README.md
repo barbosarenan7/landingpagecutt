@@ -87,7 +87,7 @@ garantido e o lead não se perde.
 | Variável | O que é |
 |---|---|
 | `BOTCONVERSA_API_KEY` | Chave "Integração via Webhook" (Botconversa → Configurações → Integrações) |
-| `BOTCONVERSA_NOTIFY_PHONE` | Número que recebe a notificação (seu WhatsApp), E.164 só dígitos, ex. `5524999999999` |
+| `BOTCONVERSA_NOTIFY_PHONE` | Número(s) que recebem a notificação, E.164 só dígitos. Vários = separados por vírgula, ex. `5524999999999,5524988888888` |
 
 Sem essas variáveis, o site funciona igual — só não dispara a
 notificação do Botconversa. Template das variáveis em `.env.example`.
