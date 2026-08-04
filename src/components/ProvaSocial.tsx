@@ -250,18 +250,24 @@ function CarrosselMobile() {
         </button>
       </div>
 
-      <div className="mt-3 flex justify-center gap-2">
+      <div className="mt-3 flex justify-center gap-1">
         {midias.map((m, i) => (
+          // a área de toque tem 24×24 (acessibilidade); a barrinha visível
+          // continua com 6px de altura, centralizada dentro do botão
           <button
             key={m.n}
             type="button"
             onClick={() => pularPara(i)}
             aria-label={`Ir para a mídia ${i + 1}`}
             aria-current={i === ativo}
-            className={`h-1.5 rounded-pill transition-all duration-300 ${
-              i === ativo ? "w-6 bg-accent" : "w-1.5 bg-line-light"
-            }`}
-          />
+            className="flex h-6 w-6 items-center justify-center"
+          >
+            <span
+              className={`h-1.5 rounded-pill transition-all duration-300 ${
+                i === ativo ? "w-6 bg-accent" : "w-1.5 bg-line-light"
+              }`}
+            />
+          </button>
         ))}
       </div>
     </div>
