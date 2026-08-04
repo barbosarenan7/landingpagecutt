@@ -1,3 +1,4 @@
+import type { CSSProperties } from "react";
 import content from "../content/site.json";
 
 /**
@@ -22,6 +23,33 @@ const logos = content.logos
   .filter((src) => src && src.trim())
   // mesma lista do carrossel, servida pela pasta das versões brancas
   .map((src) => src.replace("/logos/", "/logos-white/"));
+
+/**
+ * Destaque de tamanho por logo (conforme marcação do cliente): algumas
+ * marcas são compactas e "afogam" em margem transparente, aparecendo
+ * pequenas na grade. Para elas usamos a versão recortada (`-lg`, arte
+ * cheia) e ampliamos a altura via `--esc`. Verde = 2×, vermelho = 1,5×.
+ */
+const escala: Record<string, number> = {
+  // marcas compactas ampliadas (recorte + escala)
+  "logo-02": 1.575, // Gastro Center (1,75 − 10%)
+  "logo-09": 1.75, // Cidade do Aço
+  "logo-11": 1.4, // Hobby (1,75 − 20%)
+  "logo-12": 1.4, // AHE (1,75 − 20%)
+  "logo-07": 1.2, // Scennario (ícone novo) → +20%
+  // vermelho no print → +50%
+  "logo-03": 1.5,
+  "logo-04": 1.5,
+  "logo-05": 1.5,
+  "logo-06": 1.5,
+  "logo-08": 1.5,
+  // ajustes finos
+  "logo-13": 1.4, // Youcan → +40%
+  "logo-10": 1.25, // Padoka → +25%
+  "logo-14": 1.25, // Forshape → +25%
+  "logo-15": 1.25, // ICT → +25%
+  "logo-16": 1.4, // Moraes Buffet → +40%
+};
 
 // completa a grade até fechar fileiras de 8 (e, por consequência, de 4)
 const total = Math.ceil(logos.length / 8) * 8;
@@ -67,24 +95,32 @@ export default function ClientesGrid() {
         </h2>
 
         <div className="grid grid-cols-4 border-t border-l border-line-dark md:grid-cols-8">
-          {cells.map((src, i) => (
-            <div
-              key={src ?? `vazio-${i}`}
-              className="logo-cell relative flex items-center justify-center border-r border-b border-line-dark px-2 py-5 md:px-4 md:py-9"
-            >
-              {src && (
-                <img
-                  src={src}
-                  alt="Logo de cliente da Cut Creative"
-                  loading="lazy"
-                  decoding="async"
-                  draggable={false}
-                  className="pointer-events-none h-9 w-auto max-w-full object-contain opacity-90 transition-opacity duration-300 select-none hover:opacity-100 md:h-10"
-                />
-              )}
-              <Plus />
-            </div>
-          ))}
+          {cells.map((src, i) => {
+            const base = src?.match(/(logo-\d+)/)?.[1];
+            const esc = base ? escala[base] : undefined;
+            // logos ampliadas usam a versão recortada (arte cheia)
+            const finalSrc =
+              esc && base ? src!.replace(`${base}.png`, `${base}-lg.png`) : src;
+            return (
+              <div
+                key={src ?? `vazio-${i}`}
+                className="logo-cell relative flex items-center justify-center border-r border-b border-line-dark px-2 py-5 md:px-4 md:py-9"
+              >
+                {finalSrc && (
+                  <img
+                    src={finalSrc}
+                    alt="Logo de cliente da Cut Creative"
+                    loading="lazy"
+                    decoding="async"
+                    draggable={false}
+                    className="logo-cloud-img pointer-events-none w-auto max-w-full object-contain opacity-90 transition-opacity duration-300 select-none hover:opacity-100"
+                    style={esc ? ({ "--esc": esc } as CSSProperties) : undefined}
+                  />
+                )}
+                <Plus />
+              </div>
+            );
+          })}
         </div>
       </div>
     </section>

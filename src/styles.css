@@ -695,6 +695,18 @@
       display: block;
     }
   }
+
+  /* altura base da logo (h-9 / md:h-10), multiplicada por --esc nas
+     marcas ampliadas (ver mapa `escala` em ClientesGrid). A largura fica
+     em w-auto + max-w-full, então logos largas nunca estouram a coluna. */
+  .logo-cloud-img {
+    height: calc(2.25rem * var(--esc, 1));
+  }
+  @media (min-width: 768px) {
+    .logo-cloud-img {
+      height: calc(2.5rem * var(--esc, 1));
+    }
+  }
 }
 
 /* ============================================================
