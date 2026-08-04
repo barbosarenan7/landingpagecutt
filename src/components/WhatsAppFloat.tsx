@@ -8,7 +8,13 @@ export default function WhatsAppFloat() {
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Falar com a Cut no WhatsApp"
-      onClick={() => track("whatsapp_click", { origem: "float" })}
+      onClick={() => {
+        track("whatsapp_click", { origem: "float" });
+        // evento para o GTM (trigger "CE - Clique WhatsApp" → GA4 + Google Ads)
+        const w = window as unknown as { dataLayer?: Record<string, unknown>[] };
+        w.dataLayer = w.dataLayer || [];
+        w.dataLayer.push({ event: "click_whatsapp_button" });
+      }}
       className="fixed right-5 bottom-5 z-40 flex h-14 w-14 cursor-pointer items-center justify-center rounded-pill bg-accent text-accent-ink shadow-lg transition-transform duration-200 hover:-translate-y-1"
     >
       <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden>

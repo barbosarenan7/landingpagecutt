@@ -102,6 +102,11 @@ export default function LeadForm() {
     const payload = Object.fromEntries(data.entries()) as Record<string, string>;
     delete payload.website;
 
+    // evento para o GTM (trigger "CE - Lead Formulário" → GA4 + Google Ads)
+    const w = window as unknown as { dataLayer?: Record<string, unknown>[] };
+    w.dataLayer = w.dataLayer || [];
+    w.dataLayer.push({ event: "lead_form_success", lead_source: "form_submit" });
+
     // 1) abre o WhatsApp do comercial já com os dados — precisa acontecer
     //    dentro do gesto do clique (antes de qualquer await) para o navegador
     //    não bloquear o popup
