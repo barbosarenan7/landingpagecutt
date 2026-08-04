@@ -31,16 +31,16 @@ export default function Faq() {
           </h2>
         </div>
 
-        {/* um retângulo só: os itens dividem o mesmo fundo e são separados
-            apenas por hairlines, em vez de virarem cards soltos */}
-        <div className="card-soft mx-auto mt-12 max-w-[52rem] overflow-hidden !p-0 md:mt-16">
+        {/* cards separados, cada um com seu retângulo arredondado e um
+            chevron fino à direita (referência enviada pelo cliente) */}
+        <div className="mx-auto mt-12 flex max-w-[52rem] flex-col gap-3 md:mt-16">
           {fq.itens.map((item, i) => {
             const aberto = aberta === i;
             return (
               <Reveal
                 key={item.pergunta}
                 delay={i * 60}
-                className={i > 0 ? "border-t border-line" : ""}
+                className="card-soft overflow-hidden !p-0"
               >
                 <h3>
                   <button
@@ -50,22 +50,21 @@ export default function Faq() {
                     aria-controls={`faq-painel-${i}`}
                     onClick={() => setAberta(aberto ? null : i)}
                   >
-                    <span className="text-[15px] leading-snug font-bold md:text-base">
+                    <span className="text-[15px] leading-snug font-medium">
                       {item.pergunta}
                     </span>
-                    {/* botão amarelo com chevron: comunica "abre para
-                        baixo" melhor que o +, que era lido como enfeite */}
+                    {/* chevron fino e discreto, como na referência */}
                     <span
-                      className={`flex h-8 w-8 shrink-0 items-center justify-center rounded-pill bg-accent text-accent-ink transition-transform duration-300 ${
+                      className={`text-2nd mt-0.5 shrink-0 transition-transform duration-300 ${
                         aberto ? "rotate-180" : ""
                       }`}
                       aria-hidden
                     >
-                      <svg width="11" height="7" viewBox="0 0 11 7" fill="none">
+                      <svg width="13" height="8" viewBox="0 0 13 8" fill="none">
                         <path
-                          d="M1 1l4.5 4.5L10 1"
+                          d="M1 1l5.5 5.5L12 1"
                           stroke="currentColor"
-                          strokeWidth="1.8"
+                          strokeWidth="1.4"
                           strokeLinecap="round"
                           strokeLinejoin="round"
                         />

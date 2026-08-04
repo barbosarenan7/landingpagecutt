@@ -23,38 +23,30 @@ const p = content.provaSocial;
 function InstagramSelo() {
   return (
     <span
-      className="absolute top-1/2 left-1/2 flex w-[78%] max-w-[15rem] -translate-x-1/2 -translate-y-1/2 flex-col items-center gap-3 rounded-card bg-ink-900/70 px-5 py-6 text-center backdrop-blur-sm"
+      className="absolute top-1/2 left-1/2 w-[76%] max-w-[15rem] -translate-x-1/2 -translate-y-1/2"
       aria-hidden
     >
-      <span className="flex h-12 w-12 items-center justify-center rounded-pill bg-paper-50 text-ink-900">
-        <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
-          <rect
-            x="2.5"
-            y="2.5"
-            width="19"
-            height="19"
-            rx="5.5"
-            stroke="currentColor"
-            strokeWidth="1.8"
+      {/* caixa branca com o avatar transbordando o topo, igual à
+          caixinha de perguntas dos stories */}
+      <span className="relative block rounded-[18px] bg-paper-0 px-4 pt-9 pb-4 shadow-xl">
+        <span className="absolute -top-6 left-1/2 block h-12 w-12 -translate-x-1/2 overflow-hidden rounded-pill border-[3px] border-paper-0 bg-ink-900">
+          <img
+            src="/favicon.png"
+            alt=""
+            width={192}
+            height={192}
+            loading="lazy"
+            decoding="async"
+            className="h-full w-full object-cover"
           />
-          <circle cx="12" cy="12" r="4.25" stroke="currentColor" strokeWidth="1.8" />
-          <circle cx="17.3" cy="6.7" r="1.3" fill="currentColor" />
-        </svg>
-      </span>
-      <span className="text-[15px] leading-tight font-bold text-paper-50">
-        {p.instagramArroba}
-      </span>
-      <span className="flex items-center gap-1.5 text-[12px] font-medium text-accent">
-        Ver no Instagram
-        <svg width="12" height="9" viewBox="0 0 14 10" fill="none">
-          <path
-            d="M9 1l4 4-4 4M13 5H1"
-            stroke="currentColor"
-            strokeWidth="1.6"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          />
-        </svg>
+        </span>
+        <span className="block text-center text-[17px] leading-tight font-medium text-ink-900">
+          {p.instagramArroba}
+        </span>
+        {/* onde ficaria "Digite algo…" entra a chamada de clique */}
+        <span className="mt-3 block rounded-[10px] bg-ink-900/[0.08] py-2.5 text-center text-[14px] font-medium text-ink-900/55">
+          Clique aqui
+        </span>
       </span>
     </span>
   );
