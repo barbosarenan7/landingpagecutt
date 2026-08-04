@@ -964,3 +964,59 @@
     transition: none;
   }
 }
+
+/* ============================================================
+   Botão flutuante do WhatsApp — halo pulsando atrás do ícone.
+   Chama atenção sem mexer no layout (só transform/opacity, então
+   não força recálculo de layout) e some para quem pediu menos
+   movimento no sistema.
+   ============================================================ */
+@layer components {
+  .whats-float {
+    position: relative;
+    isolation: isolate;
+  }
+  .whats-float::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    border-radius: var(--radius-pill);
+    background: var(--color-accent);
+    animation: whats-halo 2.4s ease-out infinite;
+  }
+  @keyframes whats-halo {
+    0% {
+      transform: scale(1);
+      opacity: 0.55;
+    }
+    70% {
+      transform: scale(1.7);
+      opacity: 0;
+    }
+    100% {
+      transform: scale(1.7);
+      opacity: 0;
+    }
+  }
+  /* leve respiro no próprio botão, para o ícone "vibrar" de leve */
+  .whats-float {
+    animation: whats-pulso 2.4s ease-in-out infinite;
+  }
+  @keyframes whats-pulso {
+    0%,
+    100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.06);
+    }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .whats-float,
+    .whats-float::before {
+      animation: none;
+    }
+  }
+}
+

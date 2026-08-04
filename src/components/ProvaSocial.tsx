@@ -120,27 +120,6 @@ const midias = [
   },
 ];
 
-function Seta({ virada = false }: { virada?: boolean }) {
-  return (
-    <svg
-      width="14"
-      height="10"
-      viewBox="0 0 14 10"
-      fill="none"
-      aria-hidden
-      className={virada ? "rotate-180" : ""}
-    >
-      <path
-        d="M9 1l4 4-4 4M13 5H1"
-        stroke="currentColor"
-        strokeWidth="1.5"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-    </svg>
-  );
-}
-
 const N = midias.length;
 
 /** Três blocos idênticos: o do meio é o "real", as pontas alimentam o loop. */
@@ -265,25 +244,9 @@ function CarrosselMobile() {
         ))}
       </div>
 
-      {/* controles: setas, dica de arraste e indicadores */}
-      <div className="mt-2 flex items-center justify-center gap-4">
-        <button
-          type="button"
-          onClick={() => irPara(foco - 1)}
-          aria-label="Mídia anterior"
-          className="flex h-11 w-11 items-center justify-center rounded-pill border border-line-light text-ink-900"
-        >
-          <Seta virada />
-        </button>
+      {/* sem setas: o arraste e os indicadores dão conta da navegação */}
+      <div className="mt-3 flex items-center justify-center">
         <span className="eyebrow">Arraste para o lado</span>
-        <button
-          type="button"
-          onClick={() => irPara(foco + 1)}
-          aria-label="Próxima mídia"
-          className="flex h-11 w-11 items-center justify-center rounded-pill border border-line-light text-ink-900"
-        >
-          <Seta />
-        </button>
       </div>
 
       <div className="mt-3 flex justify-center gap-1">

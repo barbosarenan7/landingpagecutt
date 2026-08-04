@@ -31,11 +31,17 @@ export default function Faq() {
           </h2>
         </div>
 
-        <div className="mx-auto mt-12 flex max-w-[52rem] flex-col gap-3 md:mt-16">
+        {/* um retângulo só: os itens dividem o mesmo fundo e são separados
+            apenas por hairlines, em vez de virarem cards soltos */}
+        <div className="card-soft mx-auto mt-12 max-w-[52rem] overflow-hidden !p-0 md:mt-16">
           {fq.itens.map((item, i) => {
             const aberto = aberta === i;
             return (
-              <Reveal key={item.pergunta} delay={i * 60} className="card-soft !p-0">
+              <Reveal
+                key={item.pergunta}
+                delay={i * 60}
+                className={i > 0 ? "border-t border-line" : ""}
+              >
                 <h3>
                   <button
                     type="button"
@@ -47,10 +53,10 @@ export default function Faq() {
                     <span className="text-[15px] leading-snug font-bold md:text-base">
                       {item.pergunta}
                     </span>
-                    {/* chevron comunica "abre para baixo" melhor que o +,
-                        que era lido como ícone decorativo */}
+                    {/* botão amarelo com chevron: comunica "abre para
+                        baixo" melhor que o +, que era lido como enfeite */}
                     <span
-                      className={`flex h-7 w-7 shrink-0 items-center justify-center rounded-pill border border-line text-accent transition-transform duration-300 ${
+                      className={`flex h-8 w-8 shrink-0 items-center justify-center rounded-pill bg-accent text-accent-ink transition-transform duration-300 ${
                         aberto ? "rotate-180" : ""
                       }`}
                       aria-hidden

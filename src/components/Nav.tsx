@@ -136,16 +136,32 @@ export default function Nav() {
                       Início
                     </Link>
                   </li>
+                  {/* o CTA não fica mais no header do celular, então
+                      entra aqui para o caminho até o formulário não sumir */}
+                  <li className="border-t border-line-light p-3 sm:hidden">
+                    <a
+                      href="/#formulario"
+                      onClick={() => setAberto(false)}
+                      className="btn-primary !min-h-0 w-full !justify-between !gap-2.5 !py-1.5 !pr-1.5 !pl-4 !text-[13px]"
+                    >
+                      <span>{content.nav.cta}</span>
+                      <span className="btn-circle !h-7 !w-7" aria-hidden>
+                        <Arrow />
+                      </span>
+                    </a>
+                  </li>
                 </ul>
               </div>
             )}
           </div>
 
           {/* CTA compacto, no layout do botão padrão. Aponta direto para
-              os campos do formulário, não para o topo da seção. */}
+              os campos do formulário, não para o topo da seção. No
+              celular sai de cena: fica só o menu, e o CTA aparece dentro
+              dele e ao longo da página. */}
           <a
             href="/#formulario"
-            className="btn-primary !min-h-0 !gap-2.5 !py-1.5 !pr-1.5 !pl-4 !text-[13px]"
+            className="btn-primary !hidden !min-h-0 !gap-2.5 !py-1.5 !pr-1.5 !pl-4 !text-[13px] sm:!inline-flex"
           >
             <span>{content.nav.cta}</span>
             <span className="btn-circle !h-7 !w-7" aria-hidden>

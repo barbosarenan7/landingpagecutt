@@ -1,3 +1,4 @@
+import { useState, type ReactNode } from "react";
 import { Link } from "react-router-dom";
 import { site, whatsappHref, track } from "../config/site";
 import content from "../content/site.json";
@@ -71,19 +72,82 @@ const redes = [
   },
 ];
 
+/**
+ * Bloco de links do rodapé. No celular vira acordeão (encurta muito a
+ * página); a partir de md o grid volta a 1fr e ele é uma coluna comum.
+ *
+ * Fechado, o conteúdo continua no HTML — só some visualmente. O Google
+ * rastreia os links normalmente, então compactar não custa SEO.
+ */
+function Grupo({
+  titulo,
+  rotulo,
+  children,
+}: {
+  titulo: string;
+  rotulo?: string;
+  children: ReactNode;
+}) {
+  const [aberto, setAberto] = useState(false);
+  const id = `rodape-${titulo.toLowerCase().normalize("NFD").replace(/[^a-z]/g, "")}`;
+
+  return (
+    <div className="border-b border-line-dark md:border-0">
+      <button
+        type="button"
+        onClick={() => setAberto((v) => !v)}
+        aria-expanded={aberto}
+        aria-controls={id}
+        className="flex w-full cursor-pointer items-center justify-between py-4 text-left md:pointer-events-none md:py-0"
+      >
+        <span className="eyebrow">{titulo}</span>
+        <span
+          className={`text-text3 transition-transform duration-200 md:hidden ${
+            aberto ? "rotate-180" : ""
+          }`}
+          aria-hidden
+        >
+          <svg width="11" height="7" viewBox="0 0 11 7" fill="none">
+            <path
+              d="M1 1l4.5 4.5L10 1"
+              stroke="currentColor"
+              strokeWidth="1.6"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
+          </svg>
+        </span>
+      </button>
+      {/* fechado só no celular; de md pra cima a linha volta a 1fr e o
+          bloco fica sempre aberto, como coluna comum */}
+      <nav
+        id={id}
+        aria-label={rotulo ?? titulo}
+        className={`grid transition-[grid-template-rows] duration-300 ease-out md:!grid-rows-[1fr] ${
+          aberto ? "grid-rows-[1fr]" : "grid-rows-[0fr]"
+        }`}
+      >
+        <div className="overflow-hidden">
+          <div className="pb-5 md:mt-5 md:pb-0">{children}</div>
+        </div>
+      </nav>
+    </div>
+  );
+}
+
 export default function Footer() {
   return (
     <footer className="sec-dark relative border-t border-line-dark">
-      <div className="container-cut py-12 md:py-20">
-        <div className="faixa-leitura grid gap-8 md:grid-cols-2 md:gap-12 lg:grid-cols-4">
+      <div className="container-cut py-9 md:py-20">
+        <div className="faixa-leitura grid gap-5 md:grid-cols-2 md:gap-12 lg:grid-cols-4">
           <div>
             <p className="h-sans text-2xl text-paper-50">
               Cut Creative<span className="text-accent">.</span>
             </p>
-            <p className="text-2nd mt-4 max-w-xs text-sm leading-relaxed">
+            <p className="text-2nd mt-3 max-w-xs text-sm leading-relaxed md:mt-4">
               {content.footer.descricao}
             </p>
-            <div className="mt-6 flex flex-wrap gap-2">
+            <div className="mt-5 flex flex-wrap gap-2 md:mt-6">
               {redes.map((r) => (
                 <a
                   key={r.rotulo}
@@ -107,9 +171,8 @@ export default function Footer() {
             </div>
           </div>
 
-          <nav aria-label="Seções do site">
-            <p className="eyebrow">Navegação</p>
-            <ul className="mt-5 flex flex-col gap-3 text-sm">
+          <Grupo titulo="Navegação" rotulo="Seções do site">
+            <ul className="flex flex-col gap-3 text-sm">
               {[
                 ["#como-trabalhamos", "Como trabalhamos"],
                 ["#segmentos", "Segmentos"],
@@ -123,11 +186,12 @@ export default function Footer() {
                 </li>
               ))}
             </ul>
+          </Grupo>
 
-            {/* páginas de serviço: links internos ajudam o Google a
-                encontrar e entender as novas páginas */}
-            <p className="eyebrow mt-8">Serviços</p>
-            <ul className="mt-5 flex flex-col gap-3 text-sm">
+          {/* páginas de serviço: links internos ajudam o Google a
+              encontrar e entender as novas páginas */}
+          <Grupo titulo="Serviços" rotulo="Serviços">
+            <ul className="flex flex-col gap-3 text-sm">
               {servicos.servicos.map((s) => (
                 <li key={s.slug}>
                   <Link
@@ -139,11 +203,10 @@ export default function Footer() {
                 </li>
               ))}
             </ul>
-          </nav>
+          </Grupo>
 
-          <div>
-            <p className="eyebrow">Contato</p>
-            <ul className="mt-5 flex flex-col gap-3 text-sm">
+          <Grupo titulo="Contato">
+            <ul className="flex flex-col gap-3 text-sm">
               <li>
                 <a
                   href={whatsappHref()}
@@ -160,17 +223,13 @@ export default function Footer() {
                   {site.email}
                 </a>
               </li>
+              <li className="text-2nd leading-relaxed">{site.address}</li>
+              <li className="leading-relaxed text-text3">{site.region}</li>
             </ul>
-          </div>
-
-          <div>
-            <p className="eyebrow">Onde estamos</p>
-            <p className="text-2nd mt-5 text-sm leading-relaxed">{site.address}</p>
-            <p className="mt-2 text-sm leading-relaxed text-text3">{site.region}</p>
-          </div>
+          </Grupo>
         </div>
 
-        <div className="faixa-leitura-lista mt-10 flex flex-col gap-3 border-t border-line-dark pt-6 text-xs text-text3 md:mt-14 md:flex-row md:items-center md:justify-between">
+        <div className="faixa-leitura-lista mt-7 flex flex-col gap-2 border-t border-line-dark pt-5 text-xs text-text3 md:mt-14 md:flex-row md:items-center md:justify-between md:gap-3 md:pt-6">
           <p>
             © {new Date().getFullYear()} {site.legalName} — CNPJ {site.cnpj}
           </p>
