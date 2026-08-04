@@ -40,11 +40,37 @@ bun run build        # build de produção (dist/)
 - Editor visual: <https://app.pagescms.org> (login GitHub `barbosarenan7`).
   Salvar no painel = commit + deploy automático.
 
+## Rotas
+
+| Rota | Página |
+| --- | --- |
+| `/` | Home (one-page) |
+| `/trafego-pago-volta-redonda` | Serviço — tráfego pago |
+| `/social-media-volta-redonda` | Serviço — social media |
+| `/producao-audiovisual-volta-redonda` | Serviço — audiovisual |
+| `/privacidade` | Política de privacidade |
+| `*` | 404 com `noindex` |
+
+As páginas de serviço existem para dar ao Google conteúdo por
+serviço + localidade — a home sozinha não ranqueia todos os termos.
+Compartilham o layout `src/pages/Servico.tsx` e vêm de
+`src/content/servicos.json`: **para criar um serviço novo basta
+adicionar um item nesse JSON** (a rota, o link do rodapé e o schema
+saem de lá). Depois, acrescentar a URL em `public/sitemap.xml`.
+
+Metadados por rota ficam em `src/lib/seo.tsx` (title, description,
+canonical, OG e JSON-LD). Sem ele toda rota herdaria o title da home.
+
 ## Ordem atual das seções
 
 Hero → **Clientes** (grade preta, logos brancos) → Prova social →
-A dor real → Segmentos → Método → Diagnóstico + Formulário →
-**Carrossel de logos** (marquee) → Footer.
+A dor real → Segmentos → Método → Diferenciais → Diagnóstico +
+Formulário → **FAQ** → Footer.
+
+> A **FAQ** foi adicionada ao final da página de propósito, para o
+> cliente decidir onde ela fica. Para movê-la, basta reordenar
+> `<Faq />` em `src/pages/Home.tsx`. Ela alimenta o schema `FAQPage`
+> da home (candidato a resultado rico na busca).
 
 > Os dois blocos de logos (grade e carrossel) são um **teste A/B** em
 > paralelo e usam a mesma lista `site.json → logos`. A grade usa as
@@ -116,5 +142,12 @@ Para a notificação chegar, o número precisa ter interagido com o seu bot
 - **Ao instalar o GTM**, liberar os domínios do Google na
   `Content-Security-Policy` do `vercel.json` (`script-src` e
   `connect-src`), senão o script é bloqueado silenciosamente.
+  Incluir `https://*.doubleclick.net` inteiro: com apenas
+  `*.g.doubleclick.net` o ping de conversão do Google Ads
+  (`ad.doubleclick.net`) é barrado e a conversão não registra.
+- **Rota nova sem 404:** o `vercel.json` tem um `rewrites` que serve o
+  `index.html` para tudo que não é arquivo estático nem `/api/*`. Sem
+  ele, abrir `/privacidade` direto no navegador devolvia 404 (o Google
+  recebia erro ao seguir o sitemap). Não remover.
 - **Satoshi é self-hosted** (`public/fonts/`). Não recolocar o CSS da
   Fontshare no `index.html` — ele é render-blocking e custou ~1,2s de FCP.
