@@ -46,9 +46,9 @@ const escala: Record<string, number> = {
   // ajustes finos
   "logo-13": 1.4, // Youcan → +40%
   "logo-10": 1.25, // Padoka → +25%
-  "logo-14": 1.25, // Forshape → +25%
-  "logo-15": 1.25, // ICT → +25%
-  "logo-16": 1.4, // Moraes Buffet → +40%
+  "logo-14": 1.5, // Forshape (1,25 + 20%)
+  "logo-15": 1.44, // ICT (1,25 + 15%)
+  "logo-16": 1.82, // Moraes Buffet (1,40 + 30%)
 };
 
 // completa a grade até fechar fileiras de 8 (e, por consequência, de 4)
