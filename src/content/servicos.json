@@ -1,0 +1,220 @@
+{
+  "servicos": [
+    {
+      "slug": "trafego-pago-volta-redonda",
+      "nome": "Tráfego pago",
+      "metaTitulo": "Gestão de tráfego pago em Volta Redonda | Cut Creative",
+      "metaDescricao": "Gestão de tráfego pago (Meta Ads e Google Ads) para empresas de Volta Redonda e região: estratégia, verba controlada e relatório que vira decisão. Diagnóstico gratuito.",
+      "eyebrow": "Tráfego pago",
+      "tituloLinha1": "Gestão de tráfego pago em",
+      "tituloLinha2": "Volta Redonda e região.",
+      "resumo": "Campanhas com planejamento, acompanhamento e relatório — mídia para gerar demanda, agendamento e venda, sem verba jogada fora.",
+      "intro": [
+        "Tráfego pago não é apertar “impulsionar”. É decidir para quem falar, com qual oferta, em qual momento da jornada — e medir o que cada real investido devolveu para o negócio.",
+        "A Cut Creative faz a gestão de mídia paga de empresas que já estão em operação em Volta Redonda, Barra Mansa, Resende, Angra dos Reis e toda a região Sul Fluminense. A campanha não começa antes do diagnóstico: primeiro entendemos o negócio, a margem e o ciclo de venda; depois a verba entra no ar."
+      ],
+      "entregaveisTitulo": "O que está incluído",
+      "entregaveis": [
+        {
+          "titulo": "Estratégia antes da verba",
+          "texto": "Definição de público, oferta e funil a partir do diagnóstico. Você sabe o que a campanha precisa provar antes de ela subir."
+        },
+        {
+          "titulo": "Criativos com produção própria",
+          "texto": "Peças e vídeos feitos pelo nosso estúdio, com direção criativa. Anúncio não é print de post: é peça pensada para converter."
+        },
+        {
+          "titulo": "Gestão e otimização contínua",
+          "texto": "Acompanhamento das campanhas, testes e realocação de verba conforme o que está performando — não no piloto automático."
+        },
+        {
+          "titulo": "Relatório que vira decisão",
+          "texto": "Leitura executiva mensal: o que funcionou, o que muda e por quê. Número aqui não é enfeite de dashboard."
+        }
+      ],
+      "processoTitulo": "Como conduzimos",
+      "processo": [
+        {
+          "titulo": "Diagnóstico",
+          "texto": "Entendemos onde o negócio está, o que já foi tentado e qual resultado a mídia precisa entregar."
+        },
+        {
+          "titulo": "Estruturação",
+          "texto": "Montagem das campanhas, públicos e criativos, com a mensuração configurada desde o primeiro dia."
+        },
+        {
+          "titulo": "Operação",
+          "texto": "Campanhas no ar com acompanhamento próximo, ajuste de verba e testes de oferta e criativo."
+        },
+        {
+          "titulo": "Análise",
+          "texto": "Relatório mensal com leitura de negócio e definição do próximo ciclo."
+        }
+      ],
+      "paraQuemTitulo": "Para quem é",
+      "paraQuem": [
+        "Empresas em operação que já investem em mídia e não têm clareza do retorno",
+        "Negócios que precisam de demanda qualificada e não só de alcance",
+        "Operações que querem previsibilidade comercial, não picos isolados de venda"
+      ],
+      "faq": [
+        {
+          "pergunta": "Qual o investimento mínimo em mídia?",
+          "resposta": "Depende do segmento, do ciclo de venda e do objetivo. A verba de mídia é definida no diagnóstico, junto com a expectativa realista de retorno — é por isso que a primeira conversa é gratuita e sem compromisso."
+        },
+        {
+          "pergunta": "Vocês trabalham com Meta Ads e Google Ads?",
+          "resposta": "Sim. A escolha da plataforma sai da estratégia, não do gosto: depende de onde está a demanda do seu negócio e em que momento da jornada o cliente decide."
+        },
+        {
+          "pergunta": "Em quanto tempo a campanha dá resultado?",
+          "resposta": "Organização e leitura de dados aparecem nas primeiras semanas. Demanda qualificada consistente vem conforme estratégia, verba e ciclo de venda. Quem promete resultado garantido em poucos dias está vendendo o que não controla."
+        }
+      ]
+    },
+    {
+      "slug": "social-media-volta-redonda",
+      "nome": "Social media",
+      "metaTitulo": "Social media estratégico em Volta Redonda | Cut Creative",
+      "metaDescricao": "Gestão de redes sociais para empresas de Volta Redonda e região: calendário estratégico, roteiro, design, edição e postagem. Conteúdo com direção, não por obrigação.",
+      "eyebrow": "Social media",
+      "tituloLinha1": "Social media estratégico em",
+      "tituloLinha2": "Volta Redonda e região.",
+      "resumo": "Gestão completa das redes com calendário estratégico, roteiros, design, edição e postagem — conteúdo com direção, não por obrigação.",
+      "intro": [
+        "A maior parte das empresas não tem um problema de frequência de post. Tem um problema de direção: publica porque precisa publicar, sem que o conteúdo sustente a marca nem ajude o comercial a vender.",
+        "A Cut Creative assume a operação de conteúdo de empresas da região Sul Fluminense de ponta a ponta — do planejamento à postagem — com equipe e estúdio próprios. O calendário nasce do posicionamento definido no diagnóstico, não de tendência aleatória."
+      ],
+      "entregaveisTitulo": "O que está incluído",
+      "entregaveis": [
+        {
+          "titulo": "Planejamento e calendário",
+          "texto": "Pautas conectadas ao objetivo comercial do mês, com posicionamento definido e temas que sustentam autoridade."
+        },
+        {
+          "titulo": "Roteiro, design e edição",
+          "texto": "Da ideia à peça pronta: roteiro, direção, identidade visual aplicada e edição feita por quem conhece a estratégia."
+        },
+        {
+          "titulo": "Captação com estúdio próprio",
+          "texto": "Gravação de foto e vídeo sem depender de terceiros — padrão e consistência em escala."
+        },
+        {
+          "titulo": "Postagem e acompanhamento",
+          "texto": "Publicação, monitoramento e leitura mensal do que o conteúdo gerou para a marca e para o comercial."
+        }
+      ],
+      "processoTitulo": "Como conduzimos",
+      "processo": [
+        {
+          "titulo": "Diagnóstico e posicionamento",
+          "texto": "Definimos o que comunicar, para quem e em qual formato, alinhado ao tamanho da operação."
+        },
+        {
+          "titulo": "Calendário",
+          "texto": "Planejamento do ciclo com pautas, formatos e responsáveis definidos."
+        },
+        {
+          "titulo": "Produção",
+          "texto": "Captação, edição e aprovação pelo portal do cliente, com prazos acordados."
+        },
+        {
+          "titulo": "Análise",
+          "texto": "Relatório mensal com leitura executiva e ajuste do próximo ciclo."
+        }
+      ],
+      "paraQuemTitulo": "Para quem é",
+      "paraQuem": [
+        "Empresas cuja comunicação está abaixo do tamanho da operação",
+        "Negócios que dependem de pessoas, e não de processo, para manter as redes de pé",
+        "Marcas que precisam construir autoridade para atrair o cliente certo"
+      ],
+      "faq": [
+        {
+          "pergunta": "Preciso aparecer nos vídeos?",
+          "resposta": "Não obrigatoriamente. A direção criativa encontra o formato certo para cada negócio — tem marca que pede rosto, tem marca que pede produto, ambiente ou equipe."
+        },
+        {
+          "pergunta": "Vocês fazem a captação ou só a edição?",
+          "resposta": "As duas. Temos estúdio e equipe de produção próprios, então a captação, a edição e a postagem acontecem sob o mesmo teto — sem terceirizar e sem ficar refém de freelancer."
+        },
+        {
+          "pergunta": "Como aprovo o que vai ser publicado?",
+          "resposta": "Pelo portal do cliente, onde você acompanha calendário, aprovações e a jornada do projeto. Cada entrega tem responsável e data."
+        }
+      ]
+    },
+    {
+      "slug": "producao-audiovisual-volta-redonda",
+      "nome": "Produção audiovisual",
+      "metaTitulo": "Produção audiovisual e de vídeo em Volta Redonda | Cut Creative",
+      "metaDescricao": "Produtora com estúdio próprio em Volta Redonda: captação de foto e vídeo, direção criativa e edição para empresas da região. Solicite um diagnóstico gratuito.",
+      "eyebrow": "Produção audiovisual",
+      "tituloLinha1": "Produção audiovisual com",
+      "tituloLinha2": "estúdio próprio em Volta Redonda.",
+      "resumo": "Captação de foto e vídeo com direção criativa e estúdio próprio — comunicação mais forte, humana e cinematográfica.",
+      "intro": [
+        "Vídeo é o formato que mais sustenta marca hoje — e também o que mais expõe amadorismo. A diferença entre um material que constrói autoridade e um que só ocupa espaço está na direção, não no equipamento.",
+        "A Cut Creative tem estúdio e equipe audiovisual internos em Volta Redonda. Direção, captação e edição são feitas por quem conhece a estratégia do cliente, não por quem recebeu uma tarefa solta."
+      ],
+      "entregaveisTitulo": "O que está incluído",
+      "entregaveis": [
+        {
+          "titulo": "Direção criativa",
+          "texto": "Conceito e roteiro alinhados ao posicionamento da marca e ao objetivo de cada peça."
+        },
+        {
+          "titulo": "Captação em estúdio ou no local",
+          "texto": "Gravação no nosso estúdio ou na operação do cliente — clínica, indústria, restaurante, escritório."
+        },
+        {
+          "titulo": "Edição e finalização",
+          "texto": "Montagem, correção de cor, trilha e identidade visual aplicada, no formato de cada canal."
+        },
+        {
+          "titulo": "Escala e padrão",
+          "texto": "Equipe própria garante volume e consistência ao longo dos meses, sem depender de terceiros."
+        }
+      ],
+      "processoTitulo": "Como conduzimos",
+      "processo": [
+        {
+          "titulo": "Briefing e conceito",
+          "texto": "Entendemos o objetivo da peça e definimos a direção criativa."
+        },
+        {
+          "titulo": "Pré-produção",
+          "texto": "Roteiro, cronograma, locação e tudo que a diária precisa para render."
+        },
+        {
+          "titulo": "Captação",
+          "texto": "Gravação com direção no set, no estúdio ou na operação do cliente."
+        },
+        {
+          "titulo": "Pós e entrega",
+          "texto": "Edição, aprovação pelo portal e entrega nos formatos de cada canal."
+        }
+      ],
+      "paraQuemTitulo": "Para quem é",
+      "paraQuem": [
+        "Empresas que precisam de volume de conteúdo com padrão constante",
+        "Marcas que querem institucional, cases e conteúdo de autoridade",
+        "Operações que hoje dependem de freelancer e sofrem com prazo e padrão"
+      ],
+      "faq": [
+        {
+          "pergunta": "Vocês têm estúdio próprio?",
+          "resposta": "Sim, estúdio e equipe de produção próprios em Volta Redonda. É o que permite manter padrão, prazo e escala sem terceirizar a captação."
+        },
+        {
+          "pergunta": "Dá para gravar na minha empresa?",
+          "resposta": "Sim. Boa parte dos materiais ganha força quando gravada na operação real — clínica, chão de fábrica, cozinha ou escritório. A escolha entra na pré-produção."
+        },
+        {
+          "pergunta": "A produção pode ser contratada sem o restante?",
+          "resposta": "Pode. O escopo é definido no diagnóstico: tem cliente que contrata só audiovisual e tem cliente que contrata a operação completa de marketing."
+        }
+      ]
+    }
+  ]
+}

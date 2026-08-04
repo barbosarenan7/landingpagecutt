@@ -125,6 +125,9 @@
     color: var(--color-paper-50);
     --line: var(--color-line-dark);
     --text2: var(--color-text2-dark);
+    /* cards em seção escura: superfície levemente elevada, não branca */
+    --card-surface: color-mix(in oklab, var(--color-paper-50) 7%, var(--color-ink-900));
+    --card-linha: var(--color-line-dark);
   }
   .hairline-t {
     border-top: 1px solid var(--line, var(--color-line-light));
@@ -553,10 +556,16 @@
   }
 
   /* card cinza suave (ref FUTURE) */
+  /* A superfície do card acompanha a seção: em .sec-dark as variáveis
+     --card-surface/--card-linha são redefinidas (mesmo padrão de --line
+     e --text2), então o mesmo card serve fundo claro e escuro. */
   .card-soft {
     position: relative;
     border-radius: var(--radius-cardmd);
-    background: color-mix(in oklab, var(--color-ink-900) 4%, var(--color-paper-50));
+    background: var(
+      --card-surface,
+      color-mix(in oklab, var(--color-ink-900) 4%, var(--color-paper-50))
+    );
     padding: 28px;
   }
 
@@ -571,7 +580,7 @@
     width: 28px;
     height: 28px;
     border-radius: var(--radius-pill);
-    border: 1px solid var(--color-line-light);
+    border: 1px solid var(--card-linha, var(--color-line-light));
     color: var(--color-text3);
   }
 

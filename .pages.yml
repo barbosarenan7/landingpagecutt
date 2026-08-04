@@ -250,6 +250,31 @@ content:
                 label: Texto
                 type: text
 
+      - name: faq
+        label: Perguntas frequentes
+        type: object
+        fields:
+          - name: eyebrow
+            label: Linha de apoio
+            type: string
+          - name: tituloLinha1
+            label: Título — linha 1
+            type: string
+          - name: tituloLinha2
+            label: Título — linha 2
+            type: string
+          - name: itens
+            label: Perguntas
+            type: object
+            list: true
+            fields:
+              - name: pergunta
+                label: Pergunta
+                type: text
+              - name: resposta
+                label: Resposta
+                type: text
+
       - name: diagnostico
         label: Diagnóstico + Formulário
         type: object

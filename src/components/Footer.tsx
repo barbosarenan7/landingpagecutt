@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { site, whatsappHref, track } from "../config/site";
 import content from "../content/site.json";
+import servicos from "../content/servicos.json";
 
 /** Ícones sociais em SVG inline de 18px (seção 12.8). */
 function InstagramIcon() {
@@ -83,6 +84,22 @@ export default function Footer() {
                   <a href={href} className="text-2nd transition-colors hover:text-paper-50">
                     {label}
                   </a>
+                </li>
+              ))}
+            </ul>
+
+            {/* páginas de serviço: links internos ajudam o Google a
+                encontrar e entender as novas páginas */}
+            <p className="eyebrow mt-8">Serviços</p>
+            <ul className="mt-5 flex flex-col gap-3 text-sm">
+              {servicos.servicos.map((s) => (
+                <li key={s.slug}>
+                  <Link
+                    to={`/${s.slug}`}
+                    className="text-2nd transition-colors hover:text-paper-50"
+                  >
+                    {s.nome}
+                  </Link>
                 </li>
               ))}
             </ul>
