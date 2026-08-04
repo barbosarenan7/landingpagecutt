@@ -59,10 +59,9 @@ export default function Home() {
         <Segmentos />
         <Metodo />
         <Diferenciais />
-        <Diagnostico />
-        {/* adicionada ao final da página: a posição definitiva fica a
-            critério do cliente (pode subir para antes do formulário) */}
+        {/* responde as objeções logo antes do formulário */}
         <Faq />
+        <Diagnostico />
       </main>
       <Footer />
       <WhatsAppFloat />

@@ -17,7 +17,7 @@ export default function Faq() {
   return (
     <section
       id="faq"
-      className="sec-light pb-[clamp(88px,11vw,176px)]"
+      className="sec-dark section"
       aria-labelledby="faq-title"
     >
       <div className="container-cut">
@@ -47,13 +47,23 @@ export default function Faq() {
                     <span className="text-[15px] leading-snug font-bold md:text-base">
                       {item.pergunta}
                     </span>
+                    {/* chevron comunica "abre para baixo" melhor que o +,
+                        que era lido como ícone decorativo */}
                     <span
-                      className={`h-sans shrink-0 text-2xl leading-none text-accent transition-transform duration-300 ${
-                        aberto ? "rotate-45" : ""
+                      className={`flex h-7 w-7 shrink-0 items-center justify-center rounded-pill border border-line text-accent transition-transform duration-300 ${
+                        aberto ? "rotate-180" : ""
                       }`}
                       aria-hidden
                     >
-                      +
+                      <svg width="11" height="7" viewBox="0 0 11 7" fill="none">
+                        <path
+                          d="M1 1l4.5 4.5L10 1"
+                          stroke="currentColor"
+                          strokeWidth="1.8"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        />
+                      </svg>
                     </span>
                   </button>
                 </h3>

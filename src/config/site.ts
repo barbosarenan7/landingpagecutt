@@ -24,7 +24,8 @@ export const site = {
 
   email: c.email,
   instagram: c.instagram,
-  portalUrl: c.portalUrl,
+  linkedin: c.linkedin,
+  behance: c.behance,
 
   legalName: c.razaoSocial,
   cnpj: c.cnpj,

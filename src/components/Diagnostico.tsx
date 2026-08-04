@@ -70,7 +70,10 @@ export default function Diagnostico() {
                   {dg.texto}
                 </p>
 
-                <ul className="mt-7 flex max-w-md flex-col gap-2.5">
+                {/* no desktop os benefícios descem para a base da foto
+                    (mt-auto), deixando o título respirando no topo; no
+                    celular seguem logo abaixo do texto */}
+                <ul className="mt-7 flex max-w-md flex-col gap-2.5 lg:mt-auto lg:pt-12">
                   {dg.beneficios.map((b) => (
                     <li
                       key={b}

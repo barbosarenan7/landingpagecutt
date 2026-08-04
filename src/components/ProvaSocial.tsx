@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState, type ReactNode } from "react";
 import { Reveal } from "../lib/reveal";
 import { BtnPrimary, Media } from "./primitives";
+import { site, track } from "../config/site";
 import content from "../content/site.json";
 
 const p = content.provaSocial;
@@ -14,19 +15,47 @@ const p = content.provaSocial;
  * mesmo tamanho, arraste por scroll-snap + setas e indicadores.
  */
 
-/** Botão de play sobre a capa do vídeo institucional (card 01). */
-function Play() {
+/**
+ * Prévia do perfil no Instagram sobre o card 01 (o vídeo institucional
+ * saiu de cena). O card inteiro vira link: no celular o próprio sistema
+ * abre o app do Instagram, no desktop abre o perfil no navegador.
+ */
+function InstagramSelo() {
   return (
     <span
-      className="absolute top-1/2 left-1/2 flex h-16 w-16 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-pill bg-paper-0/90"
+      className="absolute top-1/2 left-1/2 flex w-[78%] max-w-[15rem] -translate-x-1/2 -translate-y-1/2 flex-col items-center gap-3 rounded-card bg-ink-900/70 px-5 py-6 text-center backdrop-blur-sm"
       aria-hidden
     >
-      <svg width="18" height="20" viewBox="0 0 18 20" fill="none">
-        <path
-          d="M2 1.8v16.4c0 .9 1 1.5 1.8 1l13-8.2c.8-.5.8-1.6 0-2.1L3.8.8C3 .3 2 .9 2 1.8Z"
-          fill="#0B0B0B"
-        />
-      </svg>
+      <span className="flex h-12 w-12 items-center justify-center rounded-pill bg-paper-50 text-ink-900">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+          <rect
+            x="2.5"
+            y="2.5"
+            width="19"
+            height="19"
+            rx="5.5"
+            stroke="currentColor"
+            strokeWidth="1.8"
+          />
+          <circle cx="12" cy="12" r="4.25" stroke="currentColor" strokeWidth="1.8" />
+          <circle cx="17.3" cy="6.7" r="1.3" fill="currentColor" />
+        </svg>
+      </span>
+      <span className="text-[15px] leading-tight font-bold text-paper-50">
+        {p.instagramArroba}
+      </span>
+      <span className="flex items-center gap-1.5 text-[12px] font-medium text-accent">
+        Ver no Instagram
+        <svg width="12" height="9" viewBox="0 0 14 10" fill="none">
+          <path
+            d="M9 1l4 4-4 4M13 5H1"
+            stroke="currentColor"
+            strokeWidth="1.6"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          />
+        </svg>
+      </span>
     </span>
   );
 }
@@ -61,8 +90,8 @@ const midias = [
     file: "prova-01.webp",
     src: p.card01Imagem,
     srcMobile: p.card01Imagem,
-    alt: "Equipe da Cut Creative no estúdio — capa do vídeo institucional",
-    play: true,
+    alt: "Equipe da Cut Creative no estúdio",
+    instagram: true,
     legenda: p.card01Legenda,
   },
   {
@@ -71,7 +100,6 @@ const midias = [
     src: p.card02Imagem,
     srcMobile: p.card02ImagemMobile,
     alt: "Estúdio da Cut Creative com o time em operação",
-    play: false,
     legenda: p.card02Legenda,
   },
   {
@@ -80,7 +108,6 @@ const midias = [
     src: p.card03Imagem,
     srcMobile: p.card03Imagem,
     alt: "Bastidores da operação da Cut Creative",
-    play: false,
     legenda: p.card03Legenda,
   },
   {
@@ -89,7 +116,6 @@ const midias = [
     src: p.card04Imagem,
     srcMobile: p.card04Imagem,
     alt: "+300 marcas atendidas — estratégia, criação e resultados reais",
-    play: false,
     legenda: "",
   },
 ];
@@ -216,10 +242,20 @@ function CarrosselMobile() {
                 className="[&_img]:filter-none"
               >
                 <Tag>{m.n}</Tag>
-                {m.play && (
+                {m.instagram && (
                   <>
-                    <div className="absolute inset-0 bg-ink-900/35" aria-hidden />
-                    <Play />
+                    <div className="absolute inset-0 bg-ink-900/45" aria-hidden />
+                    <InstagramSelo />
+                    {/* o link cobre o card inteiro; no celular o sistema
+                        abre direto o app do Instagram */}
+                    <a
+                      href={site.instagram}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      onClick={() => track("instagram_click", { origem: "prova_social" })}
+                      aria-label={`Ver o perfil ${p.instagramArroba} no Instagram`}
+                      className="absolute inset-0 z-[2]"
+                    />
                   </>
                 )}
                 {m.legenda && <Legenda>{m.legenda}</Legenda>}
@@ -311,10 +347,18 @@ export default function ProvaSocial() {
               hover
               className="absolute inset-0"
             >
-              <div className="absolute inset-0 bg-ink-900/35" aria-hidden />
+              <div className="absolute inset-0 bg-ink-900/45" aria-hidden />
               <Tag>01/</Tag>
-              <Play />
+              <InstagramSelo />
               <Legenda>{midias[0].legenda}</Legenda>
+              <a
+                href={site.instagram}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => track("instagram_click", { origem: "prova_social" })}
+                aria-label={`Ver o perfil ${p.instagramArroba} no Instagram`}
+                className="absolute inset-0 z-[2]"
+              />
             </Media>
           </Reveal>
 

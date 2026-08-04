@@ -87,9 +87,10 @@ export default function Nav() {
   return (
     <header className="sec-light sticky top-0 z-50 border-b border-line-light bg-paper-50/85 backdrop-blur-md">
       <nav className="container-cut flex h-[72px] items-center justify-between gap-3">
-        <div className="flex items-center gap-1">
-          <Logo />
+        <Logo />
 
+        {/* menu e CTA juntos, à direita */}
+        <div className="flex items-center gap-1">
           <div ref={caixa} className="relative">
             <button
               type="button"
@@ -111,7 +112,8 @@ export default function Nav() {
             {aberto && (
               <div
                 id="menu-servicos"
-                className="absolute top-full left-0 mt-2 w-[17rem] overflow-hidden rounded-card border border-line-light bg-paper-50 shadow-lg"
+                /* ancorado à direita para não sair da tela no celular */
+                className="absolute top-full right-0 mt-2 w-[17rem] overflow-hidden rounded-card border border-line-light bg-paper-50 shadow-lg"
               >
                 <ul className="flex flex-col py-1">
                   {servicos.servicos.map((s) => (
@@ -138,19 +140,19 @@ export default function Nav() {
               </div>
             )}
           </div>
-        </div>
 
-        {/* CTA compacto, no layout do botão padrão. Aponta direto para os
-            campos do formulário, não para o topo da seção. */}
-        <a
-          href="/#formulario"
-          className="btn-primary !min-h-0 !gap-2.5 !py-1.5 !pr-1.5 !pl-4 !text-[13px]"
-        >
-          <span>{content.nav.cta}</span>
-          <span className="btn-circle !h-7 !w-7" aria-hidden>
-            <Arrow />
-          </span>
-        </a>
+          {/* CTA compacto, no layout do botão padrão. Aponta direto para
+              os campos do formulário, não para o topo da seção. */}
+          <a
+            href="/#formulario"
+            className="btn-primary !min-h-0 !gap-2.5 !py-1.5 !pr-1.5 !pl-4 !text-[13px]"
+          >
+            <span>{content.nav.cta}</span>
+            <span className="btn-circle !h-7 !w-7" aria-hidden>
+              <Arrow />
+            </span>
+          </a>
+        </div>
       </nav>
     </header>
   );

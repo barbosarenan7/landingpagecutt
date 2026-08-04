@@ -356,8 +356,11 @@ content:
           - name: instagram
             label: Link do Instagram
             type: string
-          - name: portalUrl
-            label: Link do Portal do Cliente
+          - name: linkedin
+            label: Link do LinkedIn
+            type: string
+          - name: behance
+            label: Link do Behance
             type: string
           - name: regiao
             label: Região atendida
