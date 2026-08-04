@@ -1,5 +1,11 @@
 import site from "../content/site.json";
 import servicos from "../content/servicos.json";
+import blogJson from "../content/blog.json";
+import landingsJson from "../content/landings.json";
+import type { ConteudoBlog, ConteudoLandings } from "./tipos";
+
+const blog = blogJson as ConteudoBlog;
+const landings = landingsJson as ConteudoLandings;
 
 /**
  * Fonte única dos metadados de cada rota.
@@ -117,5 +123,148 @@ export const rotasServico: MetaRota[] = servicos.servicos.map((s) => ({
   jsonLd: jsonLdServico(s.slug),
 }));
 
-/** Tudo que deve ser pré-renderizado e entrar no sitemap. */
-export const rotas: MetaRota[] = [rotaHome, ...rotasServico, rotaPrivacidade];
+/* ------------------------------------------------------------------
+   Blog
+   ------------------------------------------------------------------ */
+
+export const rotaBlog: MetaRota = {
+  path: "/blog",
+  title: blog.indice.metaTitulo,
+  description: blog.indice.metaDescricao,
+  jsonLd: {
+    "@context": "https://schema.org",
+    "@type": "Blog",
+    name: "Blog da Cut Creative",
+    url: `${BASE}/blog`,
+    publisher: { "@type": "Organization", name: "Cut Creative", url: `${BASE}/` },
+  },
+};
+
+/** BlogPosting + BreadcrumbList + FAQPage de um artigo. */
+export function metaDoPost(slug: string): MetaRota {
+  const p = blog.posts.find((x) => x.slug === slug);
+  const path = `/blog/${slug}`;
+  if (!p) return { path, title: blog.indice.metaTitulo, description: blog.indice.metaDescricao };
+  const url = `${BASE}${path}`;
+
+  const jsonLd: Record<string, unknown>[] = [
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      headline: p.titulo,
+      description: p.metaDescricao,
+      url,
+      mainEntityOfPage: url,
+      datePublished: p.data,
+      dateModified: p.atualizado || p.data,
+      inLanguage: "pt-BR",
+      author: { "@type": "Organization", name: "Cut Creative", url: `${BASE}/` },
+      publisher: {
+        "@type": "Organization",
+        name: "Cut Creative",
+        url: `${BASE}/`,
+        logo: { "@type": "ImageObject", url: `${BASE}/icon-512.png` },
+      },
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Início", item: `${BASE}/` },
+        { "@type": "ListItem", position: 2, name: "Blog", item: `${BASE}/blog` },
+        { "@type": "ListItem", position: 3, name: p.titulo, item: url },
+      ],
+    },
+  ];
+
+  if (p.faq.length > 0) {
+    jsonLd.push({
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: p.faq.map((f) => ({
+        "@type": "Question",
+        name: f.pergunta,
+        acceptedAnswer: { "@type": "Answer", text: f.resposta },
+      })),
+    });
+  }
+
+  return { path, title: p.metaTitulo, description: p.metaDescricao, jsonLd };
+}
+
+export const rotasPost: MetaRota[] = blog.posts.map((p) => metaDoPost(p.slug));
+
+/* ------------------------------------------------------------------
+   Landings BOFU (cidade, segmento, serviço)
+   ------------------------------------------------------------------ */
+
+/** LocalBusiness + Service + FAQPage + BreadcrumbList de uma landing. */
+export function metaDaLanding(slug: string): MetaRota {
+  const l = landings.landings.find((x) => x.slug === slug);
+  const path = `/${slug}`;
+  if (!l) return { path, title: rotaHome.title, description: rotaHome.description };
+  const url = `${BASE}${path}`;
+
+  const jsonLd: Record<string, unknown>[] = [
+    {
+      "@context": "https://schema.org",
+      "@type": ["ProfessionalService", "LocalBusiness"],
+      name: "Cut Creative",
+      description: l.metaDescricao,
+      url,
+      telephone: "+55" + site.contato.whatsapp,
+      address: endereco,
+      areaServed: areaAtendida,
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      name: l.titulo,
+      serviceType: l.keywordPrincipal,
+      description: l.metaDescricao,
+      url,
+      provider: { "@type": "ProfessionalService", name: "Cut Creative", url: `${BASE}/` },
+      areaServed: areaAtendida,
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Início", item: `${BASE}/` },
+        { "@type": "ListItem", position: 2, name: l.titulo, item: url },
+      ],
+    },
+  ];
+
+  if (l.faq.length > 0) {
+    jsonLd.push({
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: l.faq.map((f) => ({
+        "@type": "Question",
+        name: f.pergunta,
+        acceptedAnswer: { "@type": "Answer", text: f.resposta },
+      })),
+    });
+  }
+
+  return { path, title: l.metaTitulo, description: l.metaDescricao, jsonLd };
+}
+
+export const rotasLanding: MetaRota[] = landings.landings.map((l) => metaDaLanding(l.slug));
+
+/**
+ * Tudo que deve ser pré-renderizado e entrar no sitemap.
+ *
+ * Post e landing novos entram sozinhos: basta acrescentar o item em
+ * blog.json ou landings.json. Nada a mexer aqui, no App.tsx nem no
+ * sitemap.
+ */
+export const rotas: MetaRota[] = [
+  rotaHome,
+  ...rotasServico,
+  ...rotasLanding,
+  rotaBlog,
+  ...rotasPost,
+  rotaPrivacidade,
+];

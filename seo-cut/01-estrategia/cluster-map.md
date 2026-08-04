@@ -1,37 +1,81 @@
-# Cluster Map — Cut Creative
+# Cluster Map — Cut Creative (v3)
 
 Keyword-mãe: **agência de marketing digital em Volta Redonda**.
-Cluster reproduzido conforme definido. Nenhuma peça acrescentada,
-removida ou reordenada.
 
-Total: **1 pilar + 34 peças** (numeração de 02 a 35; a 01 é o pilar).
+Atualizado com as decisões do Renan: as antigas peças 06 e 07 viram uma
+só (tráfego pago e social media são o mesmo serviço na operação da Cut),
+a assessoria estratégica entra no cluster e a numeração foi refeita.
+
+Total: **1 pilar + 34 peças**.
+
+## O fio condutor: audiovisual próprio
+
+Este cluster não é uma lista de páginas. É um argumento repetido de
+ângulos diferentes: **a Cut filma, edita e produz com equipe própria em
+Volta Redonda; as agências que ranqueiam hoje terceirizam.**
+
+Nenhum concorrente mapeado (DIVIA, Expert Marketing, Especialista
+Digital, Savizz, Boost, Activa) pode afirmar isso com verdade. É o fosso.
+
+Como aparece em cada camada:
+
+| Camada | Ângulo do audiovisual |
+| --- | --- |
+| Serviço | A produção própria alimenta o serviço: o vídeo do anúncio sai da mesma equipe que gere a campanha |
+| Cidade | A equipe se desloca e grava presencialmente naquela cidade, sem terceirizar fornecedor local |
+| Segmento | Gravar dentro do contexto: a clínica, o prato no restaurante, o treino na academia |
+| MOFU e TOFU | Quando o tema encostar em vídeo ou conteúdo, falar de dentro de quem produz, não de quem contrata |
+
+Limite: nada de equipamento, prêmio ou volume de produção inventado.
+Onde precisar de dado concreto, marcar
+`[VERIFICAR COM RENAN: detalhe real da estrutura audiovisual]`.
 
 ## Página pilar
 
 | # | Peça | Rota | Situação |
 | --- | --- | --- | --- |
-| 01 | Home — Agência de Marketing Digital em Volta Redonda | `/` | **No ar.** Não será reescrita. |
+| 01 | Home — Agência de Marketing Digital em Volta Redonda | `/` | **No ar. Protegida: não será reescrita.** |
 
-Todas as peças novas linkam para o pilar.
+Todas as 34 peças linkam para o pilar.
 
 ## BOFU de cidade
 
-| # | Peça | Slug | Prioridade |
-| --- | --- | --- | --- |
-| 02 | Agência de Marketing Digital em Barra Mansa | `/agencia-marketing-digital-barra-mansa` | 1 |
-| 03 | Agência de Marketing Digital em Resende | `/agencia-marketing-digital-resende` | 1 |
-| 04 | Agência de Marketing Digital em Angra dos Reis | `/agencia-marketing-digital-angra-dos-reis` | 2 |
-| 05 | Agência de Marketing Digital em Barra do Piraí | `/agencia-marketing-digital-barra-do-pirai` | 3 |
+| # | Peça | Slug | Situação | Prioridade |
+| --- | --- | --- | --- | --- |
+| 02 | Agência de Marketing Digital em Barra Mansa | `/agencia-marketing-digital-barra-mansa` | Nova | 1 |
+| 03 | Agência de Marketing Digital em Resende | `/agencia-marketing-digital-resende` | Nova | 1 |
+| 04 | Agência de Marketing Digital em Angra dos Reis | `/agencia-marketing-digital-angra-dos-reis` | Nova | 2 |
+| 05 | Agência de Marketing Digital em Barra do Piraí | `/agencia-marketing-digital-barra-do-pirai` | Nova | 3 |
+
+Âncora econômica de cada município, para as páginas não virarem variação
+do mesmo texto:
+
+| Cidade | Perfil |
+| --- | --- |
+| Barra Mansa | Comércio e indústria |
+| Resende | Polo automotivo |
+| Angra dos Reis | Turismo e náutica |
+| Barra do Piraí | Comércio local |
 
 ## BOFU de serviço
 
-| # | Peça | Slug | Prioridade |
-| --- | --- | --- | --- |
-| 06 | Gestão de Tráfego Pago em Volta Redonda | `/gestao-trafego-pago-volta-redonda` | 1 |
-| 07 | Gestão de Redes Sociais em Volta Redonda | `/gestao-redes-sociais-volta-redonda` | 1 |
-| 08 | Produção de Vídeo e Audiovisual em Volta Redonda | `/producao-audiovisual-volta-redonda` | 1 |
-| 09 | Criação de Conteúdo para Instagram em Volta Redonda | `/conteudo-instagram-volta-redonda` | 2 |
-| 10 | Branding e Identidade Visual em Volta Redonda | `/branding-volta-redonda` | 3 |
+| # | Peça | Slug | Situação | Prioridade |
+| --- | --- | --- | --- | --- |
+| 06 | Gestão de Tráfego Pago e Redes Sociais em Volta Redonda | `[VERIFICAR COM RENAN: qual URL sobrevive]` | **Reescrita consolidada** de 2 páginas no ar | 1 |
+| 07 | Produção de Vídeo e Audiovisual em Volta Redonda | `/producao-audiovisual-volta-redonda` | **Reescrita**, mantém a URL | 1 |
+| 08 | Assessoria Estratégica de Marketing em Volta Redonda | `/assessoria-estrategica-de-marketing` | Já no ar. **Não reescrever**, só linkar | 2 |
+| 09 | Criação de Conteúdo para Instagram em Volta Redonda | `/conteudo-instagram-volta-redonda` | Nova | 2 |
+| 10 | Branding e Identidade Visual em Volta Redonda | `/branding-volta-redonda` | Nova | 3 |
+
+**Peça 06 — consolidação.** As duas páginas hoje no ar
+(`/trafego-pago-volta-redonda` e `/social-media-volta-redonda`) viram
+uma. A URL sobrevivente sai do histórico de indexação no Search Console;
+a outra recebe **redirect 301**. O argumento da página é que tráfego e
+social operam juntos, com o vídeo produzido pela própria Cut alimentando
+os dois.
+
+**Peça 07 — audiovisual.** É a landing dedicada, mas o audiovisual não
+fica confinado nela: é o fio condutor de todo o cluster.
 
 ## BOFU de segmento
 
@@ -45,6 +89,9 @@ Todas as peças novas linkam para o pilar.
 | 16 | Marketing para Óticas em Volta Redonda | `/marketing-para-oticas-volta-redonda` | 3 |
 | 17 | Marketing para Hotéis e Pousadas na Costa Verde | `/marketing-para-hoteis-costa-verde` | 3 |
 
+As peças 11 e 12 tratam de publicidade médica, regulada pelos conselhos
+de classe: saem marcadas com `REVISÃO REGULATÓRIA PENDENTE`.
+
 ## MOFU
 
 | # | Peça | Slug | Prioridade |
@@ -57,6 +104,9 @@ Todas as peças novas linkam para o pilar.
 | 23 | Contratar Social Media ou Fazer Interno | `/blog/social-media-interno-ou-agencia` | 2 |
 | 24 | Quanto Investir em Tráfego Pago por Mês | `/blog/quanto-investir-trafego-pago` | 2 |
 | 25 | Vídeo ou Foto: O Que Converte Mais no Instagram | `/blog/video-ou-foto-instagram` | 3 |
+
+**Peça 25** é chave para o pilar audiovisual: é onde a Cut argumenta,
+de dentro, por que vídeo converte mais, com a autoridade de quem produz.
 
 ## TOFU
 
@@ -73,19 +123,32 @@ Todas as peças novas linkam para o pilar.
 | 34 | Google Meu Negócio: Como Configurar e Aparecer no Mapa | `/blog/google-meu-negocio-como-configurar` | 1 |
 | 35 | Por Que Meu Anúncio Não Está Convertendo | `/blog/anuncio-nao-converte` | 3 |
 
+**Peça 33** é o outro pilar audiovisual, no topo do funil: atrai quem
+quer fazer sozinho e descobre no caminho que precisa de quem produz.
+
 ## Distribuição
 
 | Camada | Peças | P1 | P2 | P3 |
 | --- | --- | --- | --- | --- |
 | BOFU cidade | 4 | 2 | 1 | 1 |
-| BOFU serviço | 5 | 3 | 1 | 1 |
+| BOFU serviço | 5 | 2 | 2 | 1 |
 | BOFU segmento | 7 | 2 | 2 | 3 |
 | MOFU | 8 | 4 | 3 | 1 |
 | TOFU | 10 | 2 | 5 | 3 |
-| **Total** | **34** | **13** | **12** | **9** |
+| **Total** | **34** | **12** | **13** | **9** |
 
-Ordem de produção sugerida pela prioridade: as 13 peças P1 primeiro
-(2 cidades, 3 serviços, 2 segmentos, 4 MOFU, 2 TOFU), depois P2 e P3.
+Das 34, três já existem no ar em alguma forma: a 06 (duas páginas a
+consolidar), a 07 (a reescrever) e a 08 (só linkar). **31 são novas.**
+
+## Ordem de produção
+
+| Etapa | Peças | Por quê |
+| --- | --- | --- |
+| Tarefa 4 | 02, 03, 06, 07, 11, 12 | BOFU P1: converte e resolve as páginas duplicadas |
+| Tarefa 5 | 18, 19, 20, 21 | MOFU P1: intenção de comparação, alimenta o BOFU |
+| Tarefa 6 | 27, 34 | TOFU P1: volume de topo, alimenta o MOFU |
+| Depois | 12 peças P2 | |
+| Por último | 9 peças P3 | |
 
 ## Lógica de links internos
 
@@ -115,50 +178,32 @@ Ordem de produção sugerida pela prioridade: as 13 peças P1 primeiro
 
 Regras:
 
-1. **Toda peça linka para o pilar.** É o que concentra autoridade na
+1. **Toda peça linka para o pilar**, para concentrar autoridade na
    keyword-mãe.
-2. **TOFU aponta para MOFU**, que aponta para **BOFU**. O visitante que
-   chegou por dúvida genérica é conduzido até a página que converte.
+2. **TOFU aponta para MOFU**, que aponta para **BOFU**.
 3. **BOFU cruza com BOFU** quando o tema encosta: cidade ↔ serviço,
-   serviço ↔ segmento. Ex.: a de Barra Mansa cita tráfego pago; a de
-   clínicas cita produção de vídeo.
-4. **O pilar não linka para todas as 34.** Só para as BOFU principais, no
-   menu e no rodapé — senão dilui a autoridade que ele deveria concentrar.
-5. **Nunca duas peças disputando o mesmo termo.** Ver observações abaixo.
+   serviço ↔ segmento.
+4. **A peça 07 (audiovisual) é hub**: toda peça que tocar em vídeo linka
+   para ela. É assim que o diferencial vira autoridade de URL.
+5. **O pilar não linka para as 34.** Só para as BOFU principais, no menu
+   e no rodapé, para não diluir a autoridade que ele concentra.
+6. Mínimo de 3 links internos por peça, com âncora descritiva.
 
-## Observações (não alteram o cluster)
+## Pendências que bloqueiam produção
 
-Registro o que encontrei ao cruzar o cluster com o site que já está no
-ar. Nada foi mudado — a decisão é de vocês.
-
-**1. A peça 08 tem o slug de uma página que já existe.**
-`/producao-audiovisual-volta-redonda` está publicada hoje. Ou a 08 é
-tratada como *reescrita/expansão* dessa página, ou haverá conflito de
-URL. Não é peça nova.
-
-**2. As peças 06 e 07 disputam termo com páginas já no ar.**
-
-| Peça do cluster | Slug do cluster | Página já publicada |
+| # | Pendência | Bloqueia |
 | --- | --- | --- |
-| 06 Gestão de Tráfego Pago | `/gestao-trafego-pago-volta-redonda` | `/trafego-pago-volta-redonda` |
-| 07 Gestão de Redes Sociais | `/gestao-redes-sociais-volta-redonda` | `/social-media-volta-redonda` |
+| 1 | Qual URL sobrevive na consolidação da peça 06 (decisão via Search Console) | Peça 06 |
+| 2 | Prova real por cidade e por segmento: cliente, case, foto | Todas as BOFU |
+| 3 | Nome e descrição das 6 etapas do Método Cut | Todas as BOFU |
+| 4 | Dados concretos da estrutura audiovisual | Todo o cluster |
+| 5 | Faixa de investimento praticada | Peça 18 |
+| 6 | Revisão regulatória de publicidade médica | Peças 11 e 12 |
 
-São temas idênticos em URLs diferentes. Publicar as duas versões cria
-canibalização: o Google não sabe qual ranquear e as duas perdem força.
-Os caminhos possíveis são consolidar numa URL só (com redirect 301 da
-que sair) ou manter a existente e riscar a peça do cluster. **Precisa de
-decisão antes de produzir 06, 07 e 08.**
+Consolidadas na Tarefa 8, em `/seo-cut/03-pendencias/verificar-com-renan.md`.
 
-**3. Uma página no ar está fora do cluster.**
-`/assessoria-estrategica-de-marketing` existe e não aparece em nenhuma
-camada. Vale decidir se entra no mapa ou se fica como página avulsa.
+## Estrutura técnica (Tarefa 3, Parte B)
 
-**4. As 24 peças de blog exigem uma rota `/blog` que ainda não existe.**
-Hoje o site não tem `/blog` nem listagem. Antes da primeira peça MOFU ou
-TOFU será preciso criar a estrutura de blog (índice, layout de post e
-entrada no sitemap). Não está no cluster, mas é pré-requisito dele.
-
-**5. Dados que faltam para produzir as peças.**
-Cidade e segmento pedem prova local (cliente atendido, case, foto do
-trabalho). Onde não houver material real, a peça sai com
-`[VERIFICAR COM RENAN]` no lugar, conforme as regras.
+As 24 peças de blog exigiam uma rota `/blog` que não existia. Criada
+nesta tarefa, junto com os templates de post e de landing BOFU. Ver
+`seo-cut/01-estrategia/estrutura-blog.md`.
