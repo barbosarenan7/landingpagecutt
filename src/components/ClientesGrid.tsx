@@ -36,10 +36,10 @@ const escala: Record<string, number> = {
   "logo-09": 1.75, // Cidade do Aço
   "logo-11": 1.4, // Hobby (1,75 − 20%)
   "logo-12": 1.4, // AHE (1,75 − 20%)
-  "logo-07": 1.2, // Scennario (ícone novo) → +20%
+  "logo-07": 1.5, // Scennario (ícone novo) → 1,2 + 25%
   // vermelho no print → +50%
   "logo-03": 1.5,
-  "logo-04": 1.5,
+  "logo-04": 1.35, // Meta (logo novo em alta) → +35% do original
   "logo-05": 1.5,
   "logo-06": 1.5,
   "logo-08": 1.5,
