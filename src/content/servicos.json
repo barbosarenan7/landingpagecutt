@@ -215,6 +215,78 @@
           "resposta": "Pode. O escopo é definido no diagnóstico: tem cliente que contrata só audiovisual e tem cliente que contrata a operação completa de marketing."
         }
       ]
+    },
+    {
+      "slug": "assessoria-estrategica-de-marketing",
+      "nome": "Assessoria estratégica",
+      "metaTitulo": "Assessoria estratégica de marketing | Cut Creative",
+      "metaDescricao": "Programa de 90 dias com diagnóstico, manual de marca, análise de mercado e plano de ação. O método da Cut Creative para empresas dentro e fora da região.",
+      "eyebrow": "Assessoria estratégica",
+      "tituloLinha1": "O método completo,",
+      "tituloLinha2": "mesmo fora da região.",
+      "resumo": "Programa de 90 dias com manual de marca, análise de mercado e plano de ação completo — a estratégia documentada para a sua equipe executar.",
+      "intro": [
+        "Nem toda empresa precisa terceirizar a execução. Muitas já têm equipe interna ou fornecedores — o que falta é direção: saber o que comunicar, para quem, com qual posicionamento e em que ordem.",
+        "A assessoria estratégica entrega exatamente essa parte. É um programa de 90 dias em que a Cut Creative faz o diagnóstico, estuda o mercado e deixa o plano documentado para o seu time executar. Atendemos presencialmente em Volta Redonda e região, e de forma remota para empresas de qualquer lugar do país."
+      ],
+      "entregaveisTitulo": "O que está incluído",
+      "entregaveis": [
+        {
+          "titulo": "Diagnóstico estratégico",
+          "texto": "Leitura completa de onde o negócio está, o que já foi tentado e o que precisa mudar antes de investir mais."
+        },
+        {
+          "titulo": "Estudo de mercado",
+          "texto": "Análise do público real, dos concorrentes e do espaço que ninguém está ocupando no seu setor."
+        },
+        {
+          "titulo": "Manual de marca",
+          "texto": "Posicionamento, tom de voz e diretrizes de comunicação documentados — a régua que a execução precisa seguir."
+        },
+        {
+          "titulo": "Plano de ação",
+          "texto": "O caminho definido em etapas, com prioridades e responsáveis, pronto para a sua equipe ou fornecedores executarem."
+        }
+      ],
+      "processoTitulo": "Como conduzimos",
+      "processo": [
+        {
+          "titulo": "Imersão",
+          "texto": "Entendemos o negócio, a operação, o comercial e o histórico de marketing."
+        },
+        {
+          "titulo": "Análise",
+          "texto": "Mercado, concorrência e público, para achar a diferença competitiva real."
+        },
+        {
+          "titulo": "Documentação",
+          "texto": "Manual de marca e plano de ação escritos, não improvisados em call."
+        },
+        {
+          "titulo": "Acompanhamento",
+          "texto": "Calls de alinhamento durante os 90 dias para ajustar o plano conforme a execução avança."
+        }
+      ],
+      "paraQuemTitulo": "Para quem é",
+      "paraQuem": [
+        "Empresas com equipe interna que precisa de direção, não de mão de obra",
+        "Negócios fora da região que querem o método da Cut sem execução local",
+        "Operações que vão contratar agência e querem entrar na conversa sabendo o que pedir"
+      ],
+      "faq": [
+        {
+          "pergunta": "Vocês atendem fora de Volta Redonda?",
+          "resposta": "Sim. A assessoria estratégica é justamente o formato para empresas fora da região: o método completo, conduzido remotamente. Execução presencial (produção e captação) segue concentrada em Volta Redonda, Barra Mansa, Resende, Angra dos Reis e região."
+        },
+        {
+          "pergunta": "Ao final dos 90 dias eu preciso contratar a execução?",
+          "resposta": "Não. O plano é seu e fica documentado para a sua equipe ou seus fornecedores executarem. Se fizer sentido para os dois lados, aí sim conversamos sobre a Cut assumir a operação."
+        },
+        {
+          "pergunta": "Qual a diferença para uma consultoria pontual?",
+          "resposta": "Consultoria costuma terminar num parecer. Aqui a entrega é operacional: manual de marca, plano de ação por etapas e acompanhamento durante os 90 dias, para o plano sair do papel."
+        }
+      ]
     }
   ]
 }
