@@ -1,0 +1,319 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8" />
+<title>Método de SEO e Performance</title>
+<style>
+  @page { size: A4; margin: 22mm 18mm; }
+  * { box-sizing: border-box; }
+  body {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    color: #141414; font-size: 10.5pt; line-height: 1.55; margin: 0;
+  }
+  h1 { font-size: 26pt; line-height: 1.1; margin: 0 0 6pt; letter-spacing: -0.5pt; }
+  h2 { font-size: 15pt; margin: 22pt 0 8pt; padding-bottom: 4pt; border-bottom: 2px solid #ffcc00; page-break-after: avoid; }
+  h3 { font-size: 11.5pt; margin: 14pt 0 4pt; page-break-after: avoid; }
+  p { margin: 0 0 8pt; }
+  ul, ol { margin: 0 0 10pt; padding-left: 18pt; }
+  li { margin-bottom: 3pt; }
+  table { width: 100%; border-collapse: collapse; margin: 8pt 0 14pt; font-size: 9.5pt; page-break-inside: avoid; }
+  th { text-align: left; background: #141414; color: #fff; padding: 5pt 7pt; }
+  td { padding: 5pt 7pt; border-bottom: 1px solid #ddd; vertical-align: top; }
+  tr:nth-child(even) td { background: #f7f7f4; }
+  .capa { height: 245mm; display: flex; flex-direction: column; justify-content: space-between; page-break-after: always; }
+  .capa .marca { font-size: 10pt; letter-spacing: 3pt; text-transform: uppercase; color: #888; }
+  .capa .numeros { display: flex; gap: 14pt; margin-top: 24pt; }
+  .num { flex: 1; border-top: 3px solid #ffcc00; padding-top: 8pt; }
+  .num b { display: block; font-size: 22pt; }
+  .num span { font-size: 8.5pt; color: #555; text-transform: uppercase; letter-spacing: 1pt; }
+  .fase { background: #141414; color: #ffcc00; display: inline-block; padding: 2pt 8pt; font-size: 8.5pt; letter-spacing: 2pt; text-transform: uppercase; border-radius: 2pt; margin-bottom: 2pt; }
+  .caixa { background: #f7f7f4; border-left: 3px solid #ffcc00; padding: 8pt 10pt; margin: 10pt 0; page-break-inside: avoid; }
+  .caixa b { display: block; margin-bottom: 3pt; }
+  .aviso { background: #fff8e1; border-left: 3px solid #c90; padding: 8pt 10pt; margin: 10pt 0; font-size: 9.5pt; page-break-inside: avoid; }
+  .rodape-capa { font-size: 9pt; color: #777; }
+  .quebra { page-break-before: always; }
+  code { background: #eee; padding: 0 3pt; border-radius: 2pt; font-size: 9pt; }
+  .check li { list-style: none; position: relative; padding-left: 16pt; }
+  .check li::before { content: "☐"; position: absolute; left: 0; }
+</style>
+</head>
+<body>
+
+<!-- ==================== CAPA ==================== -->
+<div class="capa">
+  <div>
+    <p class="marca">Cut Creative · Método proprietário</p>
+    <h1>SEO técnico, conteúdo e performance:<br/>o método completo aplicado<br/>a um site real</h1>
+    <p style="font-size:12pt; color:#444; max-width:150mm; margin-top:10pt;">
+      Como um site invisível para o Google e para as IAs virou uma operação de
+      19 páginas indexáveis, com nota máxima de SEO e carregamento de primeira
+      linha no celular. Documento de método: cada fase explicada para ser
+      reaplicada em qualquer cliente.
+    </p>
+    <div class="numeros">
+      <div class="num"><b>100</b><span>SEO no Lighthouse</span></div>
+      <div class="num"><b>~100</b><span>Boas práticas</span></div>
+      <div class="num"><b>97</b><span>Acessibilidade</span></div>
+      <div class="num"><b>65 → 94</b><span>Performance celular</span></div>
+    </div>
+    <div class="numeros">
+      <div class="num"><b>5 KB → 90 KB</b><span>Texto real no HTML da home</span></div>
+      <div class="num"><b>19</b><span>Páginas indexáveis criadas</span></div>
+      <div class="num"><b>6,4 s → 3,0 s</b><span>LCP no 4G lento</span></div>
+    </div>
+  </div>
+  <p class="rodape-capa">Caso executado em agosto de 2026 · cutcreativee.com.br · Uso interno e comercial da Cut Creative</p>
+</div>
+
+<!-- ==================== COMO USAR ==================== -->
+<h2>Como usar este manual</h2>
+<p>Este documento serve a dois propósitos. O primeiro é comercial: as fases 0 a 8
+formam a espinha de uma proposta de serviço, e o plano de 8 semanas do final
+pode ser apresentado ao cliente quase como está. O segundo é operacional: cada
+fase registra o que foi feito, por que foi feito e como replicar, para que o
+método não dependa da memória de ninguém.</p>
+<p>Uma regra atravessa o método inteiro e explica por que ele funciona:
+<b>nada é inventado</b>. Nenhum número, case, preço ou promessa entra em página
+sem vir do cliente. Onde falta dado, a seção sai do ar ou vira pendência
+registrada, nunca texto genérico. É isso que torna o conteúdo defensável diante
+de concorrente, de conselho profissional e do próprio Google.</p>
+
+<h2>O resultado em uma tabela</h2>
+<table>
+  <tr><th>Indicador</th><th>Antes</th><th>Depois</th></tr>
+  <tr><td>Texto no HTML servido (home)</td><td>5 KB, praticamente vazio</td><td>90 KB, conteúdo completo</td></tr>
+  <tr><td>O que um crawler de IA enxergava</td><td>Página em branco</td><td>1.400 a 1.800 palavras por página</td></tr>
+  <tr><td>Título por rota</td><td>Todas as rotas com o mesmo título</td><td>Título, descrição e schema próprios em cada uma</td></tr>
+  <tr><td>Páginas indexáveis</td><td>6 lidas pelo Google</td><td>19 no sitemap, sitemap reprocessado</td></tr>
+  <tr><td>Lighthouse SEO (celular)</td><td>abaixo de 100</td><td><b>100</b></tr>
+  <tr><td>Performance (celular, 4G lento)</td><td><b>65</b>, LCP 6,4 s</td><td><b>94</b>, LCP 3,0 s</td></tr>
+  <tr><td>Peso de imagens da home</td><td>~1,2 MB</td><td>~530 KB, mesmas fotos</td></tr>
+  <tr><td>Presença no Google Meu Negócio</td><td>Perfil parado</td><td>Postagens ativas, serviços mapeados</td></tr>
+</table>
+
+<!-- ==================== FASE 0 ==================== -->
+<h2><span class="fase">Fase 0</span> &nbsp;Diagnóstico: por que o site não aparecia</h2>
+<p><b>Sintoma relatado pelo cliente:</b> "quando pesquisam agência de marketing
+na minha cidade, não me acham". A reação comum do mercado seria vender mais
+conteúdo. O diagnóstico mostrou que o problema era anterior ao conteúdo.</p>
+<p><b>O que o diagnóstico encontrou:</b> o site era renderizado inteiramente no
+navegador (CSR). O servidor entregava um HTML de 5 KB sem nenhum texto, e o
+conteúdo só aparecia depois que o JavaScript rodava. O Google até processa
+JavaScript, com atraso e prioridade menor. Crawlers de IA (ChatGPT, Perplexity,
+Claude) não processam: viam uma página vazia. Um segundo defeito agravava o
+quadro: os metadados eram injetados por JavaScript, então todas as rotas
+serviam o mesmo título da home.</p>
+<div class="caixa">
+  <b>Como replicar o diagnóstico em 10 minutos</b>
+  1. Rodar <code>curl -s https://site-do-cliente.com | wc -c</code> e ler o HTML cru: se o texto da página não está lá, crawler nenhum vê.<br/>
+  2. Conferir o título de 3 rotas diferentes no HTML servido: se são iguais, o site briga consigo mesmo no Google.<br/>
+  3. Rodar o PageSpeed Insights no celular e guardar o número como linha de base.<br/>
+  4. Conferir robots.txt, sitemap e a ficha do Google Meu Negócio.
+</div>
+<p><b>Entregável da fase:</b> relatório técnico curto, sem executar nenhuma
+mudança. Diagnóstico é fase somente leitura: isso gera confiança e separa o
+método de quem sai mexendo no site alheio no primeiro dia.</p>
+
+<!-- ==================== FASE 1 ==================== -->
+<h2><span class="fase">Fase 1</span> &nbsp;Correção de renderização (a fundação)</h2>
+<p><b>Objetivo:</b> fazer o servidor entregar o conteúdo pronto, sem trocar de
+framework, sem reescrever o site e sem adicionar dependências.</p>
+<p><b>Como foi feito:</b> pré-renderização no build (SSG). Um script passou a
+gerar, para cada rota, um arquivo HTML completo com o conteúdo já renderizado,
+título, descrição, canonical e dados estruturados (schema.org) próprios. O
+navegador continua recebendo o mesmo site interativo; a diferença é que o
+texto agora chega antes do JavaScript.</p>
+<ul>
+  <li>Home saltou de 5 KB para 90 KB de HTML com conteúdo real.</li>
+  <li>Cada rota ganhou title, meta description e JSON-LD individuais, gerados de uma fonte única de metadados.</li>
+  <li>Sitemap passou a ser gerado automaticamente no build: página nova entra sozinha, ninguém precisa lembrar de editar XML.</li>
+  <li>robots.txt liberou explicitamente os crawlers de IA: GPTBot, OAI-SearchBot, ClaudeBot, PerplexityBot, Google-Extended.</li>
+  <li>Schema da empresa declarado como ProfessionalService e LocalBusiness, com endereço, CNPJ e área atendida.</li>
+</ul>
+<div class="aviso"><b>Regra de segurança que virou marca do método:</b> a home em
+produção é intocável. Toda mudança foi validada com comparação byte a byte do
+HTML gerado antes e depois. O cliente sabe que o site que converte não muda sem
+autorização expressa, item por item.</div>
+
+<!-- ==================== FASE 2 ==================== -->
+<h2><span class="fase">Fase 2</span> &nbsp;Estratégia: o mapa de conteúdo (cluster)</h2>
+<p><b>Objetivo:</b> decidir o que escrever antes de escrever. O entregável é um
+mapa de 1 página pilar + 34 peças, com prioridade, slug e função de cada uma.</p>
+<h3>As decisões estruturais que valem para qualquer cliente</h3>
+<ul>
+  <li><b>A home é o pilar e disputa a keyword-mãe.</b> Nunca criar uma página que compita com ela pela mesma busca: seria a única canibalização grave possível.</li>
+  <li><b>Três camadas de fundo de funil (BOFU):</b> cidades vizinhas, serviços e segmentos de cliente. Cada página ataca uma busca que a home não pega.</li>
+  <li><b>Meio e topo de funil (MOFU e TOFU)</b> em formato de blog: comparações e dúvidas reais de quem ainda está decidindo.</li>
+  <li><b>Um fio condutor em todas as peças.</b> No caso, o diferencial audiovisual próprio: cada página repete o mesmo argumento por um ângulo diferente. O cluster deixa de ser uma lista de páginas e vira um argumento.</li>
+  <li><b>Regras de link definidas no mapa</b>, antes da produção: toda peça linka o pilar, TOFU aponta para MOFU, MOFU para BOFU, e a peça do diferencial é o hub que todas citam.</li>
+</ul>
+<p><b>Infraestrutura criada junto:</b> o conteúdo vive em arquivos de dados
+(JSON), não em código. Publicar uma peça nova é acrescentar um objeto: rota,
+metadados, HTML pré-renderizado e entrada no sitemap saem sozinhos. Isso é o
+que torna o serviço escalável e barato de manter.</p>
+
+<!-- ==================== FASE 3 ==================== -->
+<h2 class="quebra"><span class="fase">Fase 3</span> &nbsp;Produção de conteúdo com regras rígidas</h2>
+<p>16 peças foram escritas e publicadas neste ciclo. O que separa esta produção
+de conteúdo genérico de agência são as regras, todas verificáveis:</p>
+<h3>Estrutura obrigatória de uma landing de fundo de funil (11 seções)</h3>
+<ol>
+  <li>H1 com a palavra-chave exata</li>
+  <li>Subheadline com o diferencial do cliente em destaque</li>
+  <li>Prova social com números reais fornecidos pelo cliente</li>
+  <li>A dor específica daquele público, em 2 parágrafos</li>
+  <li>O que é entregue, em cartões concretos</li>
+  <li>O método do cliente, copiado literalmente da página principal (por script, sem redigitação)</li>
+  <li>Case real, ou a seção simplesmente não é exibida</li>
+  <li>Por que o local com estrutura própria supera o concorrente que terceiriza</li>
+  <li>FAQ com 8 perguntas que respondem objeções reais</li>
+  <li>CTA final para a conversa de diagnóstico</li>
+  <li>Região atendida e formas de contato</li>
+</ol>
+<h3>Regras de artigo (MOFU e TOFU)</h3>
+<ul>
+  <li>1.200 a 1.800 palavras, resposta direta nos 2 primeiros parágrafos.</li>
+  <li>Ao menos 1 tabela comparativa, FAQ com 4 perguntas, 2 blocos de CTA editorial.</li>
+  <li>Mínimo de 3 links internos com âncora descritiva.</li>
+  <li>Nenhuma estatística de terceiro sem fonte. Neste projeto, nenhuma foi necessária: argumentos verificáveis substituem números emprestados.</li>
+  <li>Requisitos técnicos: title até 60 caracteres, description até 155, schema completo (artigo, breadcrumb e FAQ).</li>
+</ul>
+<h3>Padrões editoriais que dão credibilidade</h3>
+<ul>
+  <li><b>O artigo que desqualifica o próprio autor convence mais.</b> O guia "como escolher uma agência" tem a seção "quando a resposta é não contratar agência". O guia de vídeo diz em quais casos vale fazer sozinho.</li>
+  <li><b>Cidades vizinhas não são variação de texto.</b> Cada página parte da economia real do município e a sobreposição de redação própria ficou abaixo de 4% entre qualquer par (limite do método: 30%).</li>
+  <li><b>Setor regulado é tratado como regulado.</b> As páginas de saúde passaram por revisão à parte: sem promessa de resultado, sem preço de procedimento, sem depoimento de paciente, com a política de imagem definida pelo cliente e validação prévia do profissional registrada como regra.</li>
+  <li><b>Zero travessão e zero clichê de texto de IA.</b> Pontuação natural, frases com ritmo de gente.</li>
+</ul>
+
+<!-- ==================== FASE 4 ==================== -->
+<h2><span class="fase">Fase 4</span> &nbsp;Consolidação de páginas concorrentes</h2>
+<p>Duas páginas antigas (tráfego pago e social media) disputavam espaço e
+diluíam autoridade. Foram fundidas em uma única página com o argumento de que
+os dois serviços operam juntos. A URL de maior intenção comercial sobreviveu e
+a outra recebeu <b>redirecionamento 301</b>, preservando toda a autoridade
+acumulada. Detalhe técnico que vale dinheiro: na Vercel, a configuração padrão
+de redirect permanente responde 308; foi forçado o 301 literal.</p>
+
+<!-- ==================== FASE 5 ==================== -->
+<h2><span class="fase">Fase 5</span> &nbsp;Arquitetura de links: auditoria e correção</h2>
+<p>Com as peças no ar, um script mediu a malha de links interna inteira e
+gerou a matriz de quem aponta para quem. Achados típicos, corrigidos em
+seguida:</p>
+<ul>
+  <li><b>Páginas órfãs:</b> artigos publicados sem nenhum link editorial chegando neles. Todas receberam entradas de páginas relacionadas.</li>
+  <li><b>Âncoras repetidas:</b> a mesma âncora 9 vezes para a mesma URL parece automação. Viraram 8 variantes distintas.</li>
+  <li><b>Âncoras genéricas para a home:</b> 11 de 12 links diziam só o nome da marca. Foram reescritos carregando a keyword-mãe e a região, sem repetir texto.</li>
+  <li><b>Canibalização:</b> medida por sobreposição de texto e por keyword. Resultado: nenhuma.</li>
+</ul>
+<p><b>Entregável:</b> documento de arquitetura com a matriz completa, os
+problemas achados, as correções aplicadas e as regras para as próximas peças.</p>
+
+<!-- ==================== FASE 6 ==================== -->
+<h2><span class="fase">Fase 6</span> &nbsp;Governança: o cliente decide, tudo fica registrado</h2>
+<p>A parte invisível que sustenta o método. Três práticas:</p>
+<ul>
+  <li><b>Perguntas diretas, nunca lição de casa.</b> O cliente recebe um documento só de perguntas objetivas, com caixinhas de marcar, sem precisar abrir página nenhuma. Cases, políticas comerciais, números autorizados: tudo vem por resposta dele.</li>
+  <li><b>Pendência visível não vai ao ar.</b> Se falta um case, a seção não é exibida. Nenhum marcador interno aparece para o visitante.</li>
+  <li><b>Afirmações comparativas exigem prova.</b> Frases como "a agência com mais clientes da cidade" só entram se o cliente declara que sustenta. Sem prova, ficam fora, e isso é registrado.</li>
+  <li><b>Todo merge é do cliente.</b> O trabalho sobe por Pull Request; quem aperta o botão de publicar é ele. Rastreabilidade completa de quem aprovou o quê.</li>
+</ul>
+
+<!-- ==================== FASE 7 ==================== -->
+<h2 class="quebra"><span class="fase">Fase 7</span> &nbsp;Propriedades Google: onde o negócio local ganha o jogo</h2>
+<h3>Search Console</h3>
+<ul>
+  <li>Propriedade verificada (arquivo HTML mantido no site permite reverificação em um clique).</li>
+  <li>Sitemap reenviado: o Google trabalhava com uma lista de 6 URLs enquanto o site tinha 19. Após o reenvio, 19 páginas encontradas.</li>
+</ul>
+<h3>Google Meu Negócio</h3>
+<ul>
+  <li>Postagens publicadas direto na ficha (aparecem no resultado de busca da marca): serviço, estrutura, método e segmento, cada uma com um argumento do cluster.</li>
+  <li>Serviços mapeados com descrição pronta e categorias definidas.</li>
+  <li>Regra de segurança: nunca tocar em perfil de cliente do cliente, mesmo com acesso.</li>
+</ul>
+<h3>Google Tag Manager</h3>
+<ul>
+  <li>Container publicado com a tag de conversão do Google Ads ativa e eventos de formulário e WhatsApp no dataLayer.</li>
+</ul>
+<div class="aviso"><b>Nota de venda:</b> em cidade média, a ficha do Google bem
+cuidada costuma converter mais que um mês de posts em rede social. É o item de
+maior retorno por hora investida do pacote.</div>
+
+<!-- ==================== FASE 8 ==================== -->
+<h2><span class="fase">Fase 8</span> &nbsp;Performance: de 65 para 94 no celular</h2>
+<p>Medição de referência: Lighthouse em celular emulado com 4G lento, a mesma
+régua do PageSpeed Insights. Quatro frentes, na ordem de impacto:</p>
+<table>
+  <tr><th>Frente</th><th>O que foi feito</th><th>Efeito</th></tr>
+  <tr><td>Imagens</td><td>Logos de até 775 px servidas para células de 80 px foram redimensionadas e convertidas para AVIF com fallback. Fotos recomprimidas para até 2x o tamanho exibido. Mais de 700 KB removidos por visita, mesmas imagens aos olhos do visitante.</td><td>533 KiB de desperdício zerados</td></tr>
+  <tr><td>CSS crítico</td><td>O CSS deixou de ser requisição separada e passou a ir embutido no HTML de cada página gerada. A página pinta com o próprio documento.</td><td>~900 ms de bloqueio removidos</td></tr>
+  <tr><td>Fontes</td><td>Preload das fontes da primeira dobra, incluindo a que tem nome com hash, localizada automaticamente a cada build.</td><td>586 ms de cadeia removidos</td></tr>
+  <tr><td>Scripts de terceiros</td><td>A causa raiz do LCP alto: a foto principal baixava em 270 ms e esperava 5,7 s para pintar porque 296 KB de scripts do Google ocupavam a janela crítica. O Tag Manager passou a carregar no primeiro toque ou 1,5 s após o load. O dataLayer nasce imediatamente, então nenhum evento ou conversão se perde.</td><td>LCP liberado</td></tr>
+  <tr><td>Cache</td><td>Imagens de 1 dia para 30 dias com revalidação. Visita repetida não baixa nada.</td><td>256 KiB por revisita</td></tr>
+</table>
+<table>
+  <tr><th>Métrica (celular, 4G lento)</th><th>Antes</th><th>Depois</th></tr>
+  <tr><td>Performance</td><td>65</td><td><b>94</b></td></tr>
+  <tr><td>LCP (maior elemento pintado)</td><td>6,4 s</td><td><b>3,0 s</b></td></tr>
+  <tr><td>FCP (primeira pintura)</td><td>2,4 s</td><td><b>1,5 s</b></td></tr>
+  <tr><td>Speed Index</td><td>5,1 s</td><td><b>1,5 s</b></td></tr>
+  <tr><td>CLS (estabilidade de layout)</td><td>0</td><td><b>0</b></td></tr>
+</table>
+<p><b>Honestidade que fideliza cliente:</b> o que separa 94 de 100 é o custo de
+existir Tag Manager e React. Prometer 100 exigiria trocar a arquitetura, e não
+vale o risco. E a nota de acessibilidade parou em 97 por decisão de marca: o
+ponto restante é o contraste do amarelo institucional, e cor de marca não se
+altera por auditoria automática.</p>
+
+<!-- ==================== PLANO DE VENDA ==================== -->
+<h2 class="quebra">O plano de ação para vender: 8 semanas</h2>
+<table>
+  <tr><th>Semana</th><th>Fase</th><th>Entregável que o cliente recebe</th></tr>
+  <tr><td>1</td><td>Diagnóstico (somente leitura)</td><td>Relatório: renderização, metadados, linha de base do PageSpeed, estado do Google Meu Negócio e do Search Console</td></tr>
+  <tr><td>2</td><td>Fundação técnica</td><td>Site pré-renderizado, metadados por rota, sitemap automático, schema completo, crawlers de IA liberados</td></tr>
+  <tr><td>2</td><td>Estratégia</td><td>Mapa do cluster: pilar, 30+ peças com prioridade, regras de link, fio condutor do diferencial</td></tr>
+  <tr><td>3 a 5</td><td>Produção prioridade 1</td><td>Landings de cidade, serviço e segmento + primeiros artigos, tudo no padrão das 11 seções e revisado com o cliente</td></tr>
+  <tr><td>5</td><td>Consolidação</td><td>Fusão de páginas concorrentes com 301, decisão de URL registrada</td></tr>
+  <tr><td>6</td><td>Arquitetura de links</td><td>Auditoria da malha interna, correção de órfãs e âncoras, prova de não canibalização</td></tr>
+  <tr><td>6</td><td>Propriedades Google</td><td>Search Console verificado e sitemap reenviado, ficha do GMN ativada com postagens e serviços, GTM validado</td></tr>
+  <tr><td>7</td><td>Performance</td><td>Imagens, CSS crítico, fontes, cache e terceiros: nota de celular na faixa 90+</td></tr>
+  <tr><td>8</td><td>Fechamento</td><td>Documento de pendências com dono e prazo, manual do que foi feito, plano de continuidade das peças restantes</td></tr>
+</table>
+
+<h3>Checklist de qualidade (roda ao fim de cada fase)</h3>
+<ul class="check">
+  <li>Nenhum texto visível de página protegida alterado sem autorização item a item</li>
+  <li>HTML gerado comparado antes e depois de cada mudança</li>
+  <li>Nenhum dado, número, case ou promessa inventados</li>
+  <li>Nenhum marcador interno visível ao visitante</li>
+  <li>Formulário, CTAs e rastreamento testados no navegador</li>
+  <li>Publicação sempre por Pull Request aprovado pelo cliente</li>
+  <li>Setor regulado com revisão específica registrada</li>
+  <li>Diferencial do cliente presente em toda peça produzida</li>
+</ul>
+
+<h3>Os 7 argumentos de venda deste serviço</h3>
+<ol>
+  <li><b>"Seu site pode estar invisível e você não sabe."</b> O teste do HTML cru leva 1 minuto na frente do cliente e se demonstra sozinho.</li>
+  <li><b>IA é o novo canal de busca.</b> ChatGPT e Perplexity não executam JavaScript: quem não corrige a renderização não existe para eles.</li>
+  <li><b>Conteúdo sem estratégia é custo.</b> O cluster garante que cada página ataca uma busca diferente, sem competir com as outras.</li>
+  <li><b>Nada de conteúdo genérico.</b> Cada afirmação vem do negócio real do cliente, o que nenhum concorrente consegue copiar.</li>
+  <li><b>Setor regulado tratado com seriedade</b> protege o CNPJ e o registro profissional do cliente.</li>
+  <li><b>Performance é conversão:</b> página que demora 7 segundos no celular perde o clique pago antes de mostrar a oferta.</li>
+  <li><b>Governança auditável:</b> o cliente aprova tudo, tudo fica registrado, e o método não o deixa refém de ninguém.</li>
+</ol>
+
+<h3>Ferramentas usadas (todas gratuitas ou já presentes)</h3>
+<p>Lighthouse e PageSpeed Insights para medição · Google Search Console ·
+Google Business Profile · Google Tag Manager · sharp para otimização de
+imagem · o próprio build do site para pré-renderização · scripts de auditoria
+de links e de sobreposição de texto desenvolvidos no projeto e reaproveitáveis.</p>
+
+<p style="margin-top:28pt; padding-top:10pt; border-top:2px solid #ffcc00; font-size:9pt; color:#777;">
+Documento produzido a partir do projeto real cutcreativee.com.br, agosto de
+2026. Todos os números citados foram medidos durante a execução e podem ser
+reproduzidos com as ferramentas listadas.</p>
+
+</body>
+</html>

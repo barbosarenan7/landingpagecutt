@@ -56,20 +56,6 @@
     />
     <!-- Satoshi agora é self-hosted (@font-face em styles.css); os dois
          pesos mais visíveis do primeiro paint entram com preload -->
-    <link
-      rel="preload"
-      as="font"
-      type="font/woff2"
-      href="/fonts/satoshi-900.woff2"
-      crossorigin
-    />
-    <link
-      rel="preload"
-      as="font"
-      type="font/woff2"
-      href="/fonts/satoshi-400.woff2"
-      crossorigin
-    />
     <title>Cut Creative — Marketing com método | Volta Redonda, RJ</title>
     <link rel="canonical" href="https://cutcreativee.com.br/" />
     <!-- favicon precisa ser quadrado e >=48px para o Google exibir na busca -->
@@ -143,6 +129,6 @@
     ></noscript>
     <!-- End Google Tag Manager (noscript) -->
     <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
+    <script type="module" fetchpriority="low" src="/src/main.tsx"></script>
   </body>
 </html>
