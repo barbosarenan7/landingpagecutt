@@ -2,18 +2,36 @@
 <html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
-    <!-- Google Tag Manager -->
+    <!-- Google Tag Manager, fora do caminho crítico.
+         Os 296 KB de gtm.js + gtag.js competiam com a foto do hero na
+         janela de pintura e eram o principal atraso de LCP no celular
+         (PageSpeed: 5,7 s de render delay). O dataLayer nasce na hora,
+         então nenhum push do site se perde; o script em si entra no
+         primeiro toque/rolagem ou 1,5 s após o load, o que vier antes.
+         Conversões continuam registrando: o gclid do clique no anúncio
+         persiste e o evento sai logo depois da página pintar. -->
     <script>
-      (function (w, d, s, l, i) {
-        w[l] = w[l] || [];
-        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
-        var f = d.getElementsByTagName(s)[0],
-          j = d.createElement(s),
-          dl = l != "dataLayer" ? "&l=" + l : "";
-        j.async = true;
-        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
-        f.parentNode.insertBefore(j, f);
-      })(window, document, "script", "dataLayer", "GTM-MQVRD3LX");
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+      (function () {
+        var feito = false;
+        function carrega() {
+          if (feito) return;
+          feito = true;
+          var j = document.createElement("script");
+          j.async = true;
+          j.src = "https://www.googletagmanager.com/gtm.js?id=GTM-MQVRD3LX";
+          document.head.appendChild(j);
+        }
+        function aposLoad() {
+          setTimeout(carrega, 1500);
+        }
+        if (document.readyState === "complete") aposLoad();
+        else window.addEventListener("load", aposLoad);
+        ["pointerdown", "keydown", "touchstart", "scroll"].forEach(function (ev) {
+          window.addEventListener(ev, carrega, { once: true, passive: true });
+        });
+      })();
     </script>
     <!-- End Google Tag Manager -->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
