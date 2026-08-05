@@ -9,7 +9,7 @@
 | Keywords secundárias | marketing digital Barra Mansa, agência de publicidade Barra Mansa, tráfego pago Barra Mansa, social media Barra Mansa, produtora de vídeo Barra Mansa |
 | Title tag (49 caracteres) | Agência de Marketing Digital em Barra Mansa | Cut |
 | Meta description (145 caracteres) | Agência de marketing em Barra Mansa com audiovisual próprio: estratégia, tráfego pago, conteúdo e gravação na sua operação. Diagnóstico gratuito. |
-| Links internos | `/`, `/assessoria-estrategica-de-marketing`, `/blog/agencia-ou-freelancer`, `/producao-audiovisual-volta-redonda`, `/trafego-pago-volta-redonda` |
+| Links internos | `/`, `/assessoria-estrategica-de-marketing`, `/blog/agencia-ou-freelancer`, `/marketing-para-restaurantes-volta-redonda`, `/producao-audiovisual-volta-redonda`, `/trafego-pago-volta-redonda` |
 | CTA | 3 (topo, meio e fim) |
 | Schema | ProfessionalService/LocalBusiness + Service + BreadcrumbList + FAQPage |
 | Implementada | Sim, em `src/content/landings.json` |
@@ -118,7 +118,7 @@ Quando essa agência precisa de imagem, acontece uma de duas coisas. Ou ela usa 
 
 > Quem grava dentro da sua operação enxerga o que nenhum briefing consegue descrever.
 
-É esse o motivo de a produção audiovisual não ser um serviço à parte na Cut. Ela é o que alimenta o conteúdo, o anúncio e a construção de autoridade da marca ao mesmo tempo. Se quiser ver só essa parte, ela está detalhada na página de [produção de vídeo](/producao-audiovisual-volta-redonda).
+É esse o motivo de a produção audiovisual não ser um serviço à parte na Cut. Ela é o que alimenta o conteúdo, o anúncio e a construção de autoridade da marca ao mesmo tempo. Se quiser ver só essa parte, ela está detalhada na página de [captação de foto e vídeo com equipe própria](/producao-audiovisual-volta-redonda). E se o seu negócio é restaurante ou delivery, o recorte certo é [marketing para restaurantes e delivery](/marketing-para-restaurantes-volta-redonda).
 
 `[bloco de CTA do diagnóstico — utm: utm_source=site&utm_medium=landing&utm_campaign=barra-mansa]`
 

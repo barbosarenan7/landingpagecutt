@@ -175,8 +175,9 @@ consolidar), a 07 (a reescrever) e a 08 (só linkar). **31 são novas.**
 | Tarefa 4 | 02, 03, 06, 07, 11, 12 | BOFU P1: converte e resolve as páginas duplicadas |
 | Tarefa 5 | 19, 20, 21 | MOFU P1: intenção de comparação, alimenta o BOFU |
 | Tarefa 6 | 27, 34 | TOFU P1: volume de topo, alimenta o MOFU |
-| **Próxima** | **33** | Vídeo profissional para empresa. Estava bloqueada pela falta de dados da estrutura audiovisual, que chegaram na Tarefa 6. É o segundo pilar audiovisual, no topo do funil |
-| Depois | 18 | Assim que título e slug do ângulo novo forem definidos |
+| Feita | 33 | Vídeo profissional para empresa. Segundo pilar audiovisual, no topo do funil |
+| Feita | 18 | Preço, no ângulo educativo |
+| **Próxima** | **04** Angra dos Reis, **09** conteúdo Instagram, **14** academias | P2 |
 | Depois | 11 peças P2 restantes | |
 | Por último | 9 peças P3 | |
 
@@ -249,7 +250,7 @@ Detalhadas em `/seo-cut/03-pendencias/verificar-com-renan.md`.
 
 Arquivos em `seo-cut/02-conteudo/bofu/` e `seo-cut/02-conteudo/mofu/`.
 
-**13 das 34 peças escritas.** Faltam 21.
+**15 das 34 peças escritas.** Faltam 19, mais a 36, que nasceu fora do plano.
 
 Auditoria de linkagem entre elas em
 `seo-cut/01-estrategia/arquitetura-links.md` (Tarefa 7).

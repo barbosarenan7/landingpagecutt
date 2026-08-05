@@ -9,7 +9,7 @@
 | Keywords secundárias | marketing médico Volta Redonda, agência de marketing para médicos, divulgação de consultório médico, publicidade médica Volta Redonda |
 | Title tag (54 caracteres) | Marketing para Médicos em Volta Redonda | Cut Creative |
 | Meta description (154 caracteres) | Marketing médico em Volta Redonda com produção de vídeo própria: autoridade construída com conteúdo ético, dentro das regras do CFM. Diagnóstico gratuito. |
-| Links internos | `/`, `/marketing-para-clinicas-volta-redonda`, `/producao-audiovisual-volta-redonda`, `/trafego-pago-volta-redonda` |
+| Links internos | `/`, `/assessoria-estrategica-de-marketing`, `/marketing-para-clinicas-volta-redonda`, `/producao-audiovisual-volta-redonda`, `/trafego-pago-volta-redonda` |
 | CTA | 3 (topo, meio e fim) |
 | Schema | ProfessionalService/LocalBusiness + Service + BreadcrumbList + FAQPage |
 | Implementada | Sim, em `src/content/landings.json` |
@@ -152,7 +152,7 @@ A captação presencial cobre Volta Redonda, Barra Mansa, Resende, Angra dos Rei
 
 ### Vamos conversar sobre a sua presença antes de gravar qualquer coisa
 
-O diagnóstico é gratuito, leva cerca de 40 minutos e termina com uma leitura clara de onde a sua autoridade já existe e onde ela ainda não chega. Conheça também a [nossa agência de marketing em Volta Redonda](/) e o [marketing para clínicas](/marketing-para-clinicas-volta-redonda).
+O diagnóstico é gratuito, leva cerca de 40 minutos e termina com uma leitura clara de onde a sua autoridade já existe e onde ela ainda não chega. Conheça também a [nossa agência de marketing em Volta Redonda](/) e a [assessoria estratégica para quem já tem equipe](/assessoria-estrategica-de-marketing).
 
 ## 11. Região atendida e contato
 

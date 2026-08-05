@@ -9,11 +9,11 @@
 | Keywords secundárias | vale a pena contratar agência de marketing, freelancer de marketing digital, diferença entre agência e freelancer, contratar social media freelancer |
 | Title tag (51 caracteres) | Agência de Marketing ou Freelancer: o Que Vale Mais |
 | Meta description (143 caracteres) | A diferença real entre agência e freelancer: custo, prazo, escala e o que quebra primeiro. Comparativo honesto de quem opera no Sul Fluminense. |
-| Palavras (só o texto do artigo) | 1359 |
+| Palavras (só o texto do artigo) | 1376 |
 | Tabelas comparativas | 1 |
 | Blocos advertoriais | 2 |
 | FAQ | 4 perguntas |
-| Links internos | `/`, `/assessoria-estrategica-de-marketing`, `/producao-audiovisual-volta-redonda`, `/trafego-pago-volta-redonda` |
+| Links internos | `/`, `/assessoria-estrategica-de-marketing`, `/blog/preco-de-agencia-de-marketing`, `/producao-audiovisual-volta-redonda`, `/trafego-pago-volta-redonda` |
 | Schema | BlogPosting + BreadcrumbList + FAQPage |
 | Estatística usada | Nenhuma. Não foi preciso marcar `[FONTE NECESSÁRIA]` |
 | Implementado | Sim, em `src/content/blog.json` |
@@ -66,7 +66,7 @@ Faça a conta com o seu caso, não com uma média de mercado. Some quantas horas
 
 Agora responda: se essas horas voltassem para você, elas iriam para onde? Para o comercial, para a operação, para uma decisão que só o dono toma. Essa é a diferença que não aparece em nenhuma proposta comercial, porque nenhum fornecedor emite nota pelo seu tempo.
 
-Não é um argumento contra freelancer. É um argumento contra decidir só pelo valor da fatura. Um freelancer bem escolhido, com escopo claro e alguém competente coordenando, é a melhor relação de custo que existe. Três freelancers sem ninguém coordenando é a pior.
+Não é um argumento contra freelancer. É um argumento contra decidir só pelo valor da fatura, assunto que está detalhado em [por que agência séria não passa preço antes de entender o negócio](/blog/preco-de-agencia-de-marketing). Um freelancer bem escolhido, com escopo claro e alguém competente coordenando, é a melhor relação de custo que existe. Três freelancers sem ninguém coordenando é a pior.
 
 ## O risco que ninguém coloca na planilha
 

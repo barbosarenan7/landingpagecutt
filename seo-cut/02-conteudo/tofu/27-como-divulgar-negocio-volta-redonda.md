@@ -9,11 +9,11 @@
 | Keywords secundárias | divulgar empresa Volta Redonda, como anunciar negócio local, marketing para empresa de Volta Redonda, onde divulgar meu negócio |
 | Title tag (42 caracteres) | Como Divulgar Meu Negócio em Volta Redonda |
 | Meta description (154 caracteres) | Os canais que funcionam para empresa local em Volta Redonda e região, em que ordem atacar e o que cada um cobra de você. Guia prático, sem receita pronta. |
-| Palavras (só o texto do artigo) | 1298 |
+| Palavras (só o texto do artigo) | 1308 |
 | Tabelas comparativas | 1 |
 | Blocos advertoriais | 2 |
 | FAQ | 4 perguntas |
-| Links internos | `/`, `/assessoria-estrategica-de-marketing`, `/blog/google-meu-negocio-como-configurar`, `/blog/trafego-pago-ou-organico`, `/producao-audiovisual-volta-redonda`, `/trafego-pago-volta-redonda` |
+| Links internos | `/`, `/assessoria-estrategica-de-marketing`, `/blog/google-meu-negocio-como-configurar`, `/blog/trafego-pago-ou-organico`, `/marketing-para-restaurantes-volta-redonda`, `/producao-audiovisual-volta-redonda`, `/trafego-pago-volta-redonda` |
 | Schema | BlogPosting + BreadcrumbList + FAQPage |
 | Estatística usada | Nenhuma. Não foi preciso marcar `[FONTE NECESSÁRIA]` |
 | Implementado | Sim, em `src/content/blog.json` |
@@ -86,7 +86,7 @@ O marketing raramente fecha a venda sozinho. Ele qualifica, prova capacidade té
 
 ### Alimentação
 
-É o segmento em que imagem decide. Foto ruim de prato afasta mais do que preço alto. Aqui a produção de imagem não é luxo, é o produto sendo mostrado.
+É o segmento em que imagem decide. Foto ruim de prato afasta mais do que preço alto. Aqui a produção de imagem não é luxo, é o produto sendo mostrado. O recorte completo está em [marketing para restaurantes e delivery](/marketing-para-restaurantes-volta-redonda).
 
 ## Erros que a gente vê toda semana na região
 
