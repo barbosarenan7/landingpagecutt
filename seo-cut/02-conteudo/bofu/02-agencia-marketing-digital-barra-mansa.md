@@ -95,11 +95,11 @@ Relatório mensal com leitura executiva: o que funcionou, o que muda e por quê.
 
 ### Case: o restaurante que virou operação de eventos
 
-O Moraes Buffet de Brasas chegou à Cut com um restaurante só e um objetivo claro: entrar no mercado de eventos. O caminho não veio de um post de sorte. Veio de muitos testes até encontrarmos o que construía autoridade de verdade.
+O Moraes Buffet de Brasas fica em Volta Redonda, a poucos minutos de Barra Mansa, e chegou à Cut com um restaurante só e um objetivo claro: entrar no mercado de eventos. O caminho não veio de um post de sorte. Veio de muitos testes até encontrarmos o que construía autoridade de verdade.
 
 A virada foi criar um momento característico dentro dos eventos. Ele passou a retirar os ossos da costela e cortar a costela com o próprio osso, na frente dos convidados. As pessoas filmavam sozinhas. Em seguida, levamos os próprios contratantes a reproduzir o gesto, e cada evento passou a gerar conteúdo espontâneo, gravado por quem estava lá.
 
-Foi assim que a operação passou a expandir para eventos: com um ativo de marca que se repete a cada contrato, e não com anúncio comprando atenção do zero toda vez.
+Foi assim que a operação passou a expandir para eventos: com um ativo de marca que se repete a cada contrato, e não com anúncio comprando atenção do zero toda vez. Vale dizer que os eventos acontecem em Volta Redonda, Barra Mansa e toda a região, e a nossa equipe grava em qualquer uma delas.
 
 ## 8. Agência local com produção própria x agência de fora
 

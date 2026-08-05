@@ -64,7 +64,8 @@ export type Landing = {
   entrega: { titulo: string; itens: { titulo: string; texto: string }[] };
   /** As 6 etapas são cópia literal do Método Cut da home: não reescrever. */
   metodo: { titulo: string; etapas: { fase: string; nome: string; texto: string }[] };
-  caseReal: { titulo: string; paragrafos: string[] };
+  /** opcional: peça sem case real não mostra a seção, em vez de mostrar aviso */
+  caseReal?: { titulo: string; paragrafos: string[] };
   porqueLocal: { titulo: string; blocos: Bloco[] };
   faq: Pergunta[];
   ctaFinal: { titulo: string; texto: string };

@@ -101,9 +101,13 @@ Relatório mensal com leitura executiva: o que funcionou, o que muda e por quê.
 
 ## 7. Case
 
-### Case do segmento
+### Case: mais de 40 médicos acompanhados
 
-[VERIFICAR COM RENAN: case a definir - trabalho com grande empresa de Volta Redonda]
+A Cut é hoje a agência que mais atende médicos em Volta Redonda. São mais de 40 profissionais acompanhados, em pediatria, cardiologia, endocrinologia, psiquiatria, geriatria, dermatologia e outras especialidades, além de operações de saúde maiores como a Clínica Cardio Centro.
+
+O que torna isso possível é uma equipe interna dedicada exclusivamente a marketing médico. Não é o mesmo time que atende restaurante e loja tentando adaptar a receita. É gente que já sabe o que a publicidade em saúde permite, que entende a diferença entre construir autoridade e fazer propaganda de procedimento, e que não precisa aprender o seu setor do zero.
+
+Para você isso significa duas coisas práticas. A primeira é que a conversa começa no ponto certo, sem aula sobre o que pode e o que não pode. A segunda é que a sua especialidade não vai receber a mesma pauta genérica do colega de outra área, porque quem escreve já acompanha várias especialidades ao mesmo tempo e conhece a diferença entre elas.
 
 ## 8. Agência local com produção própria x agência de fora
 

@@ -155,21 +155,24 @@ export default function LandingBofu({ landing: l }: { landing: Landing }) {
           </div>
         </section>
 
-        {/* 7: case */}
-        <section className="sec-dark section" aria-labelledby="case">
-          <div className="container-cut">
-            <div className="faixa-leitura max-w-[46rem]">
-              <h2 id="case" style={{ fontSize: "var(--fs-h3)" }}>
-                <span className="h-sans block">{l.caseReal.titulo}</span>
-              </h2>
-              {l.caseReal.paragrafos.map((p, i) => (
-                <p key={i} className="text-2nd mt-5 leading-relaxed">
-                  {inline(p)}
-                </p>
-              ))}
+        {/* 7: case. Peça sem case real não mostra a seção: melhor faltar
+            do que inventar cliente ou deixar aviso interno na página. */}
+        {l.caseReal && (
+          <section className="sec-dark section" aria-labelledby="case">
+            <div className="container-cut">
+              <div className="faixa-leitura max-w-[46rem]">
+                <h2 id="case" style={{ fontSize: "var(--fs-h3)" }}>
+                  <span className="h-sans block">{l.caseReal.titulo}</span>
+                </h2>
+                {l.caseReal.paragrafos.map((p, i) => (
+                  <p key={i} className="text-2nd mt-5 leading-relaxed">
+                    {inline(p)}
+                  </p>
+                ))}
+              </div>
             </div>
-          </div>
-        </section>
+          </section>
+        )}
 
         {/* 8: local com produção própria x agência de fora */}
         <section className="sec-light section" aria-labelledby="local">
@@ -219,12 +222,15 @@ export default function LandingBofu({ landing: l }: { landing: Landing }) {
                   >
                     (24) 99269-7807
                   </a>{" "}
-                  · E-mail{" "}
+                  e e-mail{" "}
                   <a href={`mailto:${site.email}`} className="underline underline-offset-4">
                     {site.email}
                   </a>
                 </p>
-                <p className="mt-3">{site.address}</p>
+                {/* o endereço vem de site.json, que é conteúdo da home e não
+                    pode ser alterado. Aqui só trocamos os separadores, que
+                    no texto original são travessão e ponto médio. */}
+                <p className="mt-3">{site.address.replace(" — ", ", ").replace(" · ", ". ")}</p>
               </div>
             </div>
           </div>

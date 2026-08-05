@@ -93,9 +93,9 @@ Relatório mensal com leitura executiva: o que funcionou, o que muda e por quê.
 
 ## 7. Case
 
-### Case de Resende
-
-[VERIFICAR COM RENAN: case a definir - trabalho com grande empresa de Volta Redonda]
+**Seção ausente da página, de propósito.** Não há case real para
+esta peça ainda, e a seção não é renderizada em vez de exibir
+aviso interno ou cliente inventado. Ver `perguntas-para-o-renan.md`.
 
 ## 8. Agência local com produção própria x agência de fora
 
@@ -138,7 +138,7 @@ Depende do escopo e da verba de mídia, e sai do diagnóstico. A primeira conver
 Não. Tem cliente que começa só pela produção de vídeo, tem cliente que começa pelo tráfego e tem cliente que contrata a operação completa. O escopo sai do diagnóstico, não de um pacote pronto.
 
 **Vocês assinam contrato de fidelidade longo?**  
-O prazo é acordado antes, com escopo e entregas descritas. Marketing precisa de alguns ciclos para mostrar leitura de dados, e isso é explicado com franqueza na proposta em vez de ser embutido em letra miúda.
+O contrato mínimo é de 5 meses. Não é fidelidade por fidelidade: marketing precisa de alguns ciclos para gerar leitura de dados confiável, e prometer resultado em prazo menor seria vender o que ninguém controla. Escopo e entregas ficam descritos antes de você assinar.
 
 **Em quanto tempo aparece resultado?**  
 Organização e leitura de dados aparecem nas primeiras semanas. Demanda qualificada e constante depende de estratégia, verba e ciclo de venda. Ninguém sério garante resultado em poucos dias.

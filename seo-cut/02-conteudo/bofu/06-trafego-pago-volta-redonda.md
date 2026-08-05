@@ -95,9 +95,9 @@ Relatório mensal com leitura executiva: o que funcionou, o que muda e por quê.
 
 ## 7. Case
 
-### Case de tráfego e conteúdo
-
-[VERIFICAR COM RENAN: case a definir - trabalho com grande empresa de Volta Redonda]
+**Seção ausente da página, de propósito.** Não há case real para
+esta peça ainda, e a seção não é renderizada em vez de exibir
+aviso interno ou cliente inventado. Ver `perguntas-para-o-renan.md`.
 
 ## 8. Agência local com produção própria x agência de fora
 

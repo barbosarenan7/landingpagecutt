@@ -9,7 +9,7 @@
 | Keywords secundárias | como contratar agência de marketing, o que perguntar para uma agência de marketing, agência de marketing confiável, cuidados ao contratar agência digital |
 | Title tag (48 caracteres) | Como Escolher uma Agência de Marketing sem Errar |
 | Meta description (142 caracteres) | O que olhar antes de assinar: processo, responsabilidade, produção e contrato. Sinais de alerta e as perguntas certas para a primeira reunião. |
-| Palavras (só o texto do artigo) | 1272 |
+| Palavras (só o texto do artigo) | 1273 |
 | Tabelas comparativas | 1 |
 | Blocos advertoriais | 2 |
 | FAQ | 4 perguntas |
@@ -102,8 +102,8 @@ Se o seu caso é o primeiro, o formato certo costuma ser um plano documentado, c
 **Devo pedir garantia de resultado?**  
 Peça clareza, não garantia. Ninguém controla concorrência, sazonalidade e decisão de compra. O que uma agência pode garantir é processo: escopo descrito, prazos acordados, responsáveis nomeados e relatório em data combinada. Quem garante faturamento está prometendo o que não controla.
 
-**Qual o prazo mínimo de contrato razoável?**  
-Marketing precisa de alguns ciclos para gerar leitura de dados confiável, então prazo curto demais costuma frustrar os dois lados. O que importa mais que o número de meses é o escopo estar descrito e a saída estar clara: o que você leva com você quando terminar.
+**O que eu levo comigo se decidir sair?**  
+Tudo o que é seu por direito: as contas de anúncio, os perfis, os acessos e os arquivos do que foi produzido. Isso se combina antes de assinar, e não depois. Agência que resiste a essa conversa está dizendo que pretende usar os seus acessos como trava.
 
 **Como comparo propostas de agências diferentes?**  
 Coloque lado a lado quatro coisas: o que exatamente é entregue por mês, quem faz cada parte, o que é interno e o que é terceirizado, e o que acontece se você quiser sair. Preço só significa alguma coisa depois que essas quatro colunas estão preenchidas.

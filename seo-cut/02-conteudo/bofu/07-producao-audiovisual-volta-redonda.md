@@ -101,9 +101,13 @@ Relatório mensal com leitura executiva: o que funcionou, o que muda e por quê.
 
 ## 7. Case
 
-### Case de audiovisual
+### Case: quando o vídeo vira o ativo da marca
 
-[VERIFICAR COM RENAN: case a definir - trabalho com grande empresa de Volta Redonda]
+O Moraes Buffet de Brasas, de Volta Redonda, queria sair de um restaurante só e entrar no mercado de eventos. A resposta não foi produzir mais vídeo, foi descobrir qual vídeo valia a pena existir.
+
+Depois de muitos testes, a direção criativa encontrou um momento que só existe ao vivo: ele retira os ossos da costela e corta a costela com o próprio osso na frente dos convidados. Filmado com direção, esse instante virou a assinatura da marca. Filmado pelos próprios convidados, virou distribuição gratuita.
+
+É esse o trabalho de uma produtora que também pensa a estratégia: em vez de entregar um institucional bonito que ninguém assiste duas vezes, criar uma cena que a marca pode repetir em todo evento e que as pessoas filmam sem ninguém pedir.
 
 ## 8. Agência local com produção própria x agência de fora
 

@@ -34,8 +34,9 @@ export const site = {
   // Métricas de impacto — só entram no ar quando auditadas (v1.1).
   showMetrics: false,
 
-  // Depoimentos do CUT NPS — trocar por respostas reais autorizadas.
-  showTestimonialPlaceholders: true,
+  // Sem depoimento de exemplo: placeholder em depoimento soa falso.
+  // O componente já estava fora da home; a trava fica aqui para não voltar.
+  showTestimonialPlaceholders: false,
 } as const;
 
 /** Link do WhatsApp comercial. Sem argumento usa a mensagem padrão; o
