@@ -1,3 +1,750 @@
 {
-  "landings": []
+  "landings": [
+    {
+      "slug": "agencia-marketing-digital-barra-mansa",
+      "tipo": "cidade",
+      "titulo": "Marketing digital em Barra Mansa",
+      "metaTitulo": "Agência de Marketing Digital em Barra Mansa | Cut",
+      "metaDescricao": "Agência de marketing em Barra Mansa com audiovisual próprio: estratégia, tráfego pago, conteúdo e gravação na sua operação. Diagnóstico gratuito.",
+      "keywordPrincipal": "agência de marketing digital em Barra Mansa",
+      "keywordsSecundarias": [
+        "marketing digital Barra Mansa",
+        "agência de publicidade Barra Mansa",
+        "tráfego pago Barra Mansa",
+        "social media Barra Mansa",
+        "produtora de vídeo Barra Mansa"
+      ],
+      "h1": "Agência de marketing digital em Barra Mansa",
+      "subheadline": "A Cut Creative fica a poucos minutos de Barra Mansa e atende a cidade presencialmente. A equipe de [produção audiovisual](/producao-audiovisual-volta-redonda) é própria: quem grava dentro da sua loja, da sua fábrica ou do seu escritório é a mesma equipe que monta a estratégia e cuida das campanhas.",
+      "provaSocial": {
+        "titulo": "Quem já confia na Cut",
+        "itens": [
+          "**Mais de 300 clientes atendidos** em 4 anos de operacao.",
+          "**Estrutura presencial**: estudio, equipe de captacao e edicao sob o mesmo teto, sem terceirizar producao.",
+          "**Mais de 30 colaboradores** distribuidos em equipes de estrategia, criacao, trafego e audiovisual."
+        ]
+      },
+      "dor": {
+        "titulo": "O problema raramente é o tamanho da empresa. É a comunicação estar abaixo dela.",
+        "paragrafos": [
+          "Barra Mansa tem duas economias convivendo na mesma cidade. Existe o comércio, que vive de movimento, giro e recorrência de bairro. E existe a indústria, junto da rede de fornecedores que gira em torno dela, que vende para outras empresas, com ciclo longo e decisão técnica. São lógicas de compra opostas, e o que serve para uma quase nunca serve para a outra.",
+          "Na prática, os dois tipos de negócio acabam recebendo a mesma receita: publicar mais, impulsionar o post que foi melhor, repetir. Funciona por algumas semanas e depois para de funcionar, porque nunca houve estratégia por trás. O que falta não é verba, é direção."
+        ]
+      },
+      "entrega": {
+        "titulo": "O que a Cut entrega para uma empresa de Barra Mansa",
+        "itens": [
+          {
+            "titulo": "Diagnóstico antes de qualquer verba",
+            "texto": "Nenhuma campanha sobe antes de entendermos o seu ciclo de venda, a sua margem e o que já foi tentado sem funcionar."
+          },
+          {
+            "titulo": "Gravação presencial na sua operação",
+            "texto": "A equipe se desloca até Barra Mansa e grava dentro do negócio: a loja com movimento, o galpão, a equipe trabalhando. Sem contratar fornecedor local para tapar buraco."
+          },
+          {
+            "titulo": "Tráfego pago com criativo próprio",
+            "texto": "O anúncio não é print de post. É peça produzida pela mesma equipe que faz a [gestão de mídia](/trafego-pago-volta-redonda), com verba acompanhada de perto."
+          },
+          {
+            "titulo": "Conteúdo com calendário, não com pressa",
+            "texto": "Pauta conectada ao objetivo comercial do mês, roteiro, design, edição e postagem, com aprovação pelo portal do cliente."
+          },
+          {
+            "titulo": "Relatório que vira decisão",
+            "texto": "Leitura executiva mensal: o que funcionou, o que muda e por quê. Número aqui não é enfeite de dashboard."
+          },
+          {
+            "titulo": "Estratégia documentada, se você já tem equipe",
+            "texto": "Para quem tem time interno e precisa de direção, existe a [assessoria estratégica](/assessoria-estrategica-de-marketing): o plano escrito para a sua equipe executar."
+          }
+        ]
+      },
+      "metodo": {
+        "titulo": "O Método Cut aplicado ao seu negócio",
+        "etapas": [
+          {
+            "fase": "Entendimento",
+            "nome": "Diagnóstico estratégico",
+            "texto": "Entendemos onde seu negócio está, para onde precisa ir e o que já foi tentado sem funcionar. É aqui que o marketing deixa de ser achismo e passa a ter direção. Sem diagnóstico, toda estratégia vira genérica."
+          },
+          {
+            "fase": "Contexto",
+            "nome": "Estudo de mercado",
+            "texto": "Analisamos seu público real, seus concorrentes e o espaço que ninguém está ocupando. Entendemos o momento do seu mercado antes de propor qualquer ação. É aqui que nasce a sua diferença competitiva."
+          },
+          {
+            "fase": "Direção",
+            "nome": "Planejamento estratégico",
+            "texto": "Definimos posicionamento, o que comunicar, para quem e em que formato. Sua empresa para de publicar por obrigação e passa a comunicar com direção, alinhada ao objetivo comercial e ao tamanho da operação."
+          },
+          {
+            "fase": "Execução",
+            "nome": "Produção",
+            "texto": "Estúdio e equipe próprios. Direção, captação e edição feitas por quem conhece a sua estratégia, não por quem recebeu uma tarefa. Padrão, consistência e escala sem depender de terceiros."
+          },
+          {
+            "fase": "Condução",
+            "nome": "Gestão",
+            "texto": "Responsáveis definidos, rituais de acompanhamento e prazos acordados. Cada fase tem dono e cada entrega tem data. Nada fica solto no caminho e nada depende de cobrança sua."
+          },
+          {
+            "fase": "Evolução",
+            "nome": "Análise e otimização",
+            "texto": "Relatório mensal com leitura executiva: o que funcionou, o que muda e por quê. Medimos, comparamos e ajustamos a cada ciclo. Aqui número não é enfeite de dashboard, vira decisão."
+          }
+        ]
+      },
+      "caseReal": {
+        "titulo": "Case: o restaurante que virou operação de eventos",
+        "paragrafos": [
+          "O Moraes Buffet de Brasas chegou à Cut com um restaurante só e um objetivo claro: entrar no mercado de eventos. O caminho não veio de um post de sorte. Veio de muitos testes até encontrarmos o que construía autoridade de verdade.",
+          "A virada foi criar um momento característico dentro dos eventos. Ele passou a retirar os ossos da costela e cortar a costela com o próprio osso, na frente dos convidados. As pessoas filmavam sozinhas. Em seguida, levamos os próprios contratantes a reproduzir o gesto, e cada evento passou a gerar conteúdo espontâneo, gravado por quem estava lá.",
+          "Foi assim que a operação passou a expandir para eventos: com um ativo de marca que se repete a cada contrato, e não com anúncio comprando atenção do zero toda vez."
+        ]
+      },
+      "porqueLocal": {
+        "titulo": "Agência local com produção própria x agência de fora que terceiriza",
+        "blocos": [
+          {
+            "tipo": "p",
+            "texto": "Uma agência que atende Barra Mansa de outro estado consegue rodar campanha, escrever legenda e montar relatório. O que ela não consegue é estar na sua loja numa quinta-feira à tarde para gravar o movimento real."
+          },
+          {
+            "tipo": "p",
+            "texto": "Quando essa agência precisa de imagem, acontece uma de duas coisas. Ou ela usa banco de imagens, e a sua marca fica com a cara de qualquer outra. Ou contrata um freelancer da região, que recebe um briefing por mensagem, grava o que entendeu e desaparece. O padrão muda a cada mês, o prazo depende da agenda de terceiros e ninguém responde pelo conjunto."
+          },
+          {
+            "tipo": "tabela",
+            "colunas": [
+              "",
+              "Agência de fora",
+              "Cut Creative"
+            ],
+            "linhas": [
+              [
+                "Imagem da sua empresa",
+                "Banco de imagens ou freelancer por diária",
+                "Equipe própria que se desloca e grava na sua operação"
+              ],
+              [
+                "Padrão ao longo dos meses",
+                "Muda conforme quem foi contratado",
+                "O mesmo time, com direção criativa constante"
+              ],
+              [
+                "Quem faz o anúncio",
+                "Um time cria, outro executa",
+                "Quem produz o vídeo é quem cuida da campanha"
+              ],
+              [
+                "Reunião presencial",
+                "Chamada de vídeo",
+                "Presencial em Barra Mansa quando o assunto pede"
+              ]
+            ]
+          },
+          {
+            "tipo": "destaque",
+            "texto": "Quem grava dentro da sua operação enxerga o que nenhum briefing consegue descrever."
+          },
+          {
+            "tipo": "p",
+            "texto": "É esse o motivo de a produção audiovisual não ser um serviço à parte na Cut. Ela é o que alimenta o conteúdo, o anúncio e a construção de autoridade da marca ao mesmo tempo. Se quiser ver só essa parte, ela está detalhada na página de [produção de vídeo](/producao-audiovisual-volta-redonda)."
+          },
+          {
+            "tipo": "advertorial",
+            "utm": "utm_source=site&utm_medium=landing&utm_campaign=barra-mansa"
+          }
+        ]
+      },
+      "faq": [
+        {
+          "pergunta": "Vocês atendem Barra Mansa presencialmente?",
+          "resposta": "Sim. O escritório e o estúdio ficam em Volta Redonda, a poucos minutos de Barra Mansa. Reuniões, captação e gravação acontecem na cidade, com a nossa própria equipe."
+        },
+        {
+          "pergunta": "A gravação é feita na minha empresa ou no estúdio?",
+          "resposta": "Nos dois, conforme a peça. Material de operação rende mais gravado no local real: a loja, o galpão, a linha de produção. Institucional e depoimento costumam render mais no estúdio. A escolha entra na pré-produção."
+        },
+        {
+          "pergunta": "Vocês atendem indústria e B2B ou só comércio?",
+          "resposta": "Os dois, com estratégias diferentes. O comércio vende no impulso e na recorrência; a indústria vende com ciclo longo e decisão técnica. O plano é montado a partir do seu ciclo de venda, não de um pacote pronto."
+        },
+        {
+          "pergunta": "Vocês trabalham com concorrente direto do meu negócio em Barra Mansa?",
+          "resposta": "Não assumimos duas contas que disputam o mesmo público na mesma cidade. Isso é verificado antes de qualquer proposta."
+        },
+        {
+          "pergunta": "Qual o investimento?",
+          "resposta": "Depende do escopo e da verba de mídia, e sai do diagnóstico. A primeira conversa é gratuita e sem compromisso, justamente para chegar a um número que faça sentido para o seu momento."
+        },
+        {
+          "pergunta": "Em quanto tempo aparece resultado?",
+          "resposta": "Organização e leitura de dados aparecem nas primeiras semanas. Demanda qualificada e constante depende de estratégia, verba e ciclo de venda. Quem promete resultado garantido em poucos dias está vendendo o que não controla."
+        },
+        {
+          "pergunta": "Preciso aparecer nos vídeos?",
+          "resposta": "Não obrigatoriamente. Tem marca que pede rosto, tem marca que pede produto, ambiente ou equipe. A direção criativa define o formato certo para cada negócio."
+        },
+        {
+          "pergunta": "Dá para contratar só o audiovisual?",
+          "resposta": "Dá. Tem cliente que contrata só a produção de vídeo e tem cliente que contrata a operação completa de marketing. O escopo é definido no diagnóstico."
+        }
+      ],
+      "ctaFinal": {
+        "titulo": "Vamos olhar o seu marketing antes de vender qualquer coisa",
+        "texto": "O diagnóstico é gratuito, leva cerca de 40 minutos e termina com um mapa do que está travando o seu marketing hoje, mesmo que você decida não contratar. Conheça também a [Cut Creative](/) e a [gestão de tráfego pago](/trafego-pago-volta-redonda)."
+      }
+    },
+    {
+      "slug": "agencia-marketing-digital-resende",
+      "tipo": "cidade",
+      "titulo": "Marketing digital em Resende",
+      "metaTitulo": "Agência de Marketing Digital em Resende | Cut Creative",
+      "metaDescricao": "Marketing digital em Resende com equipe de vídeo própria: estratégia, tráfego pago e conteúdo gravado na sua operação. Diagnóstico gratuito.",
+      "keywordPrincipal": "agência de marketing digital em Resende",
+      "keywordsSecundarias": [
+        "marketing digital Resende",
+        "agência de publicidade Resende",
+        "tráfego pago Resende",
+        "social media Resende",
+        "produtora de vídeo Resende"
+      ],
+      "h1": "Agência de marketing digital em Resende",
+      "subheadline": "Em Resende o seu cliente convive todo dia com a comunicação de marcas de padrão nacional. A Cut Creative sobe a régua do negócio local com estratégia e equipe de [audiovisual própria](/producao-audiovisual-volta-redonda), que grava presencialmente na cidade em vez de mandar briefing para freelancer.",
+      "provaSocial": {
+        "titulo": "Quem já confia na Cut",
+        "itens": [
+          "**Mais de 300 clientes atendidos** em 4 anos de operacao.",
+          "**Estrutura presencial**: estudio, equipe de captacao e edicao sob o mesmo teto, sem terceirizar producao.",
+          "**Mais de 30 colaboradores** distribuidos em equipes de estrategia, criacao, trafego e audiovisual."
+        ]
+      },
+      "dor": {
+        "titulo": "Seu concorrente não é só o negócio da esquina",
+        "paragrafos": [
+          "Resende cresceu em torno do polo automotivo, e isso mudou o público da cidade. Quem trabalha em uma operação de padrão industrial passa o dia exposto a marca bem feita, comunicação revisada e material com acabamento. Quando esse mesmo público olha para o negócio local, ele compara sem perceber que está comparando.",
+          "É por isso que, em Resende, conteúdo improvisado custa caro de um jeito silencioso. Não é que ele espante o cliente na hora. É que ele posiciona a sua empresa um degrau abaixo do que ela realmente entrega, e esse degrau reaparece na hora de justificar o preço."
+        ]
+      },
+      "entrega": {
+        "titulo": "O que muda quando a comunicação sobe de nível",
+        "itens": [
+          {
+            "titulo": "Posicionamento antes de peça",
+            "texto": "Primeiro definimos o lugar que a sua marca ocupa e por que alguém pagaria mais por ela. Só depois se decide formato, canal e frequência."
+          },
+          {
+            "titulo": "Captação presencial em Resende",
+            "texto": "A equipe vai até a cidade gravar dentro da operação. Sem banco de imagem, sem foto genérica de internet, sem freelancer diferente a cada mês."
+          },
+          {
+            "titulo": "Acabamento de marca grande",
+            "texto": "Direção criativa, correção de cor, trilha e identidade visual aplicada. É o que separa um vídeo que constrói autoridade de um que só ocupa espaço no feed."
+          },
+          {
+            "titulo": "Campanhas com verba controlada",
+            "texto": "Público, oferta e funil definidos antes de a mídia entrar no ar, com mensuração configurada desde o primeiro dia."
+          },
+          {
+            "titulo": "Governança com dono e data",
+            "texto": "Responsáveis nomeados, rituais de alinhamento e prazos acordados. Nada fica dependendo da sua cobrança."
+          },
+          {
+            "titulo": "Leitura de negócio, não print de dashboard",
+            "texto": "Relatório mensal que responde uma pergunta só: o que o investimento gerou e qual é o próximo passo."
+          }
+        ]
+      },
+      "metodo": {
+        "titulo": "O Método Cut aplicado ao seu negócio",
+        "etapas": [
+          {
+            "fase": "Entendimento",
+            "nome": "Diagnóstico estratégico",
+            "texto": "Entendemos onde seu negócio está, para onde precisa ir e o que já foi tentado sem funcionar. É aqui que o marketing deixa de ser achismo e passa a ter direção. Sem diagnóstico, toda estratégia vira genérica."
+          },
+          {
+            "fase": "Contexto",
+            "nome": "Estudo de mercado",
+            "texto": "Analisamos seu público real, seus concorrentes e o espaço que ninguém está ocupando. Entendemos o momento do seu mercado antes de propor qualquer ação. É aqui que nasce a sua diferença competitiva."
+          },
+          {
+            "fase": "Direção",
+            "nome": "Planejamento estratégico",
+            "texto": "Definimos posicionamento, o que comunicar, para quem e em que formato. Sua empresa para de publicar por obrigação e passa a comunicar com direção, alinhada ao objetivo comercial e ao tamanho da operação."
+          },
+          {
+            "fase": "Execução",
+            "nome": "Produção",
+            "texto": "Estúdio e equipe próprios. Direção, captação e edição feitas por quem conhece a sua estratégia, não por quem recebeu uma tarefa. Padrão, consistência e escala sem depender de terceiros."
+          },
+          {
+            "fase": "Condução",
+            "nome": "Gestão",
+            "texto": "Responsáveis definidos, rituais de acompanhamento e prazos acordados. Cada fase tem dono e cada entrega tem data. Nada fica solto no caminho e nada depende de cobrança sua."
+          },
+          {
+            "fase": "Evolução",
+            "nome": "Análise e otimização",
+            "texto": "Relatório mensal com leitura executiva: o que funcionou, o que muda e por quê. Medimos, comparamos e ajustamos a cada ciclo. Aqui número não é enfeite de dashboard, vira decisão."
+          }
+        ]
+      },
+      "caseReal": {
+        "titulo": "Case de Resende",
+        "paragrafos": [
+          "[VERIFICAR COM RENAN: case a definir - trabalho com grande empresa de Volta Redonda]"
+        ]
+      },
+      "porqueLocal": {
+        "titulo": "Por que produção própria muda o resultado em uma cidade como Resende",
+        "blocos": [
+          {
+            "tipo": "p",
+            "texto": "A pergunta certa não é se a agência é de Resende ou de fora. É quem vai apertar o botão de gravar quando a sua empresa precisar de imagem nova."
+          },
+          {
+            "tipo": "p",
+            "texto": "Agência sem estrutura audiovisual resolve isso de três maneiras, e nenhuma delas sustenta padrão ao longo de um ano:"
+          },
+          {
+            "tipo": "lista",
+            "itens": [
+              "**Banco de imagens.** Barato e rápido, mas coloca a sua marca com o mesmo rosto de qualquer concorrente que comprou a mesma foto.",
+              "**Freelancer por diária.** O material sai, mas o padrão muda conforme quem estava disponível naquele mês.",
+              "**O próprio cliente grava.** O celular resolve o volume e destrói o posicionamento, justamente onde o público já está acostumado com acabamento."
+            ]
+          },
+          {
+            "tipo": "p",
+            "texto": "Na Cut a captação é interna. A mesma equipe que estudou o seu mercado é a que dirige a gravação, e isso aparece no material: o vídeo responde à estratégia em vez de ilustrar um post."
+          },
+          {
+            "tipo": "destaque",
+            "texto": "Em uma cidade acostumada com padrão industrial, acabamento não é vaidade. É argumento de preço."
+          },
+          {
+            "tipo": "p",
+            "texto": "Se a sua empresa já tem equipe interna e o que falta é direção, o formato certo talvez seja a [assessoria estratégica](/assessoria-estrategica-de-marketing), com o plano documentado para o seu time executar. Se o gargalo é geração de demanda, comece pela [gestão de tráfego pago](/trafego-pago-volta-redonda)."
+          },
+          {
+            "tipo": "advertorial",
+            "utm": "utm_source=site&utm_medium=landing&utm_campaign=resende"
+          }
+        ]
+      },
+      "faq": [
+        {
+          "pergunta": "A Cut atende Resende ou só Volta Redonda?",
+          "resposta": "Atendemos Resende presencialmente. A base fica em Volta Redonda e a equipe se desloca para reunião, captação e gravação na cidade."
+        },
+        {
+          "pergunta": "Minha empresa vende para o polo automotivo, não para o consumidor final. Marketing digital funciona?",
+          "resposta": "Funciona, com outro objetivo. Em venda B2B o marketing raramente fecha o negócio sozinho: ele qualifica, constrói reputação e encurta a conversa que o comercial vai ter. O conteúdo passa a servir de prova de capacidade técnica, e não de vitrine."
+        },
+        {
+          "pergunta": "Vocês conseguem gravar dentro de uma operação industrial?",
+          "resposta": "Sim, respeitando as regras de acesso e segurança do local. A pré-produção alinha autorização, área liberada, equipamento permitido e janela de gravação antes da diária."
+        },
+        {
+          "pergunta": "Meu público é a cidade inteira ou só um bairro. Isso muda a campanha?",
+          "resposta": "Muda bastante. Raio de entrega, deslocamento e concorrência mudam o público da campanha e a oferta. Isso é definido no diagnóstico, antes de a verba entrar."
+        },
+        {
+          "pergunta": "Qual o investimento?",
+          "resposta": "Depende do escopo e da verba de mídia, e sai do diagnóstico. A primeira conversa é gratuita e sem compromisso."
+        },
+        {
+          "pergunta": "Preciso fechar tudo de uma vez?",
+          "resposta": "Não. Tem cliente que começa só pela produção de vídeo, tem cliente que começa pelo tráfego e tem cliente que contrata a operação completa. O escopo sai do diagnóstico, não de um pacote pronto."
+        },
+        {
+          "pergunta": "Vocês assinam contrato de fidelidade longo?",
+          "resposta": "O prazo é acordado antes, com escopo e entregas descritas. Marketing precisa de alguns ciclos para mostrar leitura de dados, e isso é explicado com franqueza na proposta em vez de ser embutido em letra miúda."
+        },
+        {
+          "pergunta": "Em quanto tempo aparece resultado?",
+          "resposta": "Organização e leitura de dados aparecem nas primeiras semanas. Demanda qualificada e constante depende de estratégia, verba e ciclo de venda. Ninguém sério garante resultado em poucos dias."
+        }
+      ],
+      "ctaFinal": {
+        "titulo": "Comece por um diagnóstico, não por um orçamento",
+        "texto": "São cerca de 40 minutos, sem custo e sem compromisso. Você sai com uma leitura clara do que está travando o seu marketing hoje. Veja também a [Cut Creative](/) e a nossa [produção audiovisual](/producao-audiovisual-volta-redonda)."
+      }
+    },
+    {
+      "slug": "marketing-para-clinicas-volta-redonda",
+      "tipo": "segmento",
+      "titulo": "Marketing para clínicas em Volta Redonda",
+      "metaTitulo": "Marketing para Clínicas em Volta Redonda | Cut Creative",
+      "metaDescricao": "Marketing para clínicas e consultórios em Volta Redonda: agenda mais previsível, autoridade e conteúdo gravado dentro da clínica. Diagnóstico gratuito.",
+      "keywordPrincipal": "marketing para clínicas em Volta Redonda",
+      "keywordsSecundarias": [
+        "marketing para consultórios Volta Redonda",
+        "agência de marketing para clínicas",
+        "marketing odontológico Volta Redonda",
+        "divulgação de clínica Volta Redonda"
+      ],
+      "revisaoRegulatoria": true,
+      "h1": "Marketing para clínicas e consultórios em Volta Redonda",
+      "subheadline": "Clínica não vive de alcance, vive de agenda ocupada com o procedimento certo. A Cut Creative estrutura essa comunicação com equipe de [produção audiovisual](/producao-audiovisual-volta-redonda) própria, que grava dentro da clínica, dentro do que os conselhos de classe permitem.",
+      "provaSocial": {
+        "titulo": "Quem já confia na Cut",
+        "itens": [
+          "**Mais de 300 clientes atendidos** em 4 anos de operacao.",
+          "**Estrutura presencial**: estudio, equipe de captacao e edicao sob o mesmo teto, sem terceirizar producao.",
+          "**Mais de 30 colaboradores** distribuidos em equipes de estrategia, criacao, trafego e audiovisual."
+        ]
+      },
+      "dor": {
+        "titulo": "A conta que a clínica só percebe no fim do mês",
+        "paragrafos": [
+          "Uma clínica tem custo fixo que não espera: aluguel, equipe, equipamento, alvará. A cadeira parada às terças de manhã custa o mesmo que a cadeira ocupada. Só que a maior parte das clínicas ainda depende de indicação e de sazonalidade para preencher a agenda, o que significa depender de algo que ninguém controla.",
+          "O outro lado é a distribuição errada. Não adianta encher a agenda de procedimento de ticket baixo enquanto o serviço que sustenta a operação fica ocioso. Marketing de clínica não é sobre aparecer mais, é sobre atrair o paciente certo para o horário certo e para o procedimento que a clínica quer expandir."
+        ]
+      },
+      "entrega": {
+        "titulo": "O que a Cut estrutura para uma clínica",
+        "itens": [
+          {
+            "titulo": "Leitura de agenda antes de estratégia",
+            "texto": "Quais procedimentos sustentam a operação, quais horários ficam ociosos e qual serviço a clínica quer expandir. Sem isso, campanha vira sorteio."
+          },
+          {
+            "titulo": "Conteúdo de autoridade, dentro das regras",
+            "texto": "Conteúdo informativo, apresentação da equipe e da estrutura. Sem promessa de resultado, sem antes e depois e sem sensacionalismo. Cada peça passa pela sua validação antes de ir ao ar."
+          },
+          {
+            "titulo": "Gravação dentro da clínica",
+            "texto": "A equipe grava no ambiente real, com a sua equipe e a sua estrutura. Consultório limpo e bem filmado comunica cuidado antes de qualquer legenda."
+          },
+          {
+            "titulo": "Campanhas segmentadas por procedimento",
+            "texto": "Cada serviço tem público, ticket e ciclo de decisão diferentes. A [mídia paga](/trafego-pago-volta-redonda) é separada por procedimento, não jogada num anúncio só."
+          },
+          {
+            "titulo": "O caminho até a recepção",
+            "texto": "Mapeamos o que acontece entre o clique e o agendamento. Grande parte do desperdício de verba em clínica acontece depois do anúncio, na resposta do WhatsApp."
+          },
+          {
+            "titulo": "Relatório por procedimento",
+            "texto": "Leitura executiva mensal mostrando de onde veio o contato e para qual serviço. Número aqui vira decisão de agenda."
+          }
+        ]
+      },
+      "metodo": {
+        "titulo": "O Método Cut aplicado à sua clínica",
+        "etapas": [
+          {
+            "fase": "Entendimento",
+            "nome": "Diagnóstico estratégico",
+            "texto": "Entendemos onde seu negócio está, para onde precisa ir e o que já foi tentado sem funcionar. É aqui que o marketing deixa de ser achismo e passa a ter direção. Sem diagnóstico, toda estratégia vira genérica."
+          },
+          {
+            "fase": "Contexto",
+            "nome": "Estudo de mercado",
+            "texto": "Analisamos seu público real, seus concorrentes e o espaço que ninguém está ocupando. Entendemos o momento do seu mercado antes de propor qualquer ação. É aqui que nasce a sua diferença competitiva."
+          },
+          {
+            "fase": "Direção",
+            "nome": "Planejamento estratégico",
+            "texto": "Definimos posicionamento, o que comunicar, para quem e em que formato. Sua empresa para de publicar por obrigação e passa a comunicar com direção, alinhada ao objetivo comercial e ao tamanho da operação."
+          },
+          {
+            "fase": "Execução",
+            "nome": "Produção",
+            "texto": "Estúdio e equipe próprios. Direção, captação e edição feitas por quem conhece a sua estratégia, não por quem recebeu uma tarefa. Padrão, consistência e escala sem depender de terceiros."
+          },
+          {
+            "fase": "Condução",
+            "nome": "Gestão",
+            "texto": "Responsáveis definidos, rituais de acompanhamento e prazos acordados. Cada fase tem dono e cada entrega tem data. Nada fica solto no caminho e nada depende de cobrança sua."
+          },
+          {
+            "fase": "Evolução",
+            "nome": "Análise e otimização",
+            "texto": "Relatório mensal com leitura executiva: o que funcionou, o que muda e por quê. Medimos, comparamos e ajustamos a cada ciclo. Aqui número não é enfeite de dashboard, vira decisão."
+          }
+        ]
+      },
+      "caseReal": {
+        "titulo": "Case do segmento",
+        "paragrafos": [
+          "[VERIFICAR COM RENAN: case a definir - trabalho com grande empresa de Volta Redonda]"
+        ]
+      },
+      "porqueLocal": {
+        "titulo": "Por que agência local com produção própria entrega diferente para uma clínica",
+        "blocos": [
+          {
+            "tipo": "p",
+            "texto": "Clínica é o tipo de negócio em que o conteúdo genérico se denuncia sozinho. O paciente reconhece foto de banco de imagem, e reconhece porque já viu o mesmo consultório em anúncio de outra clínica na mesma cidade."
+          },
+          {
+            "tipo": "p",
+            "texto": "Gravar dentro da clínica resolve três coisas ao mesmo tempo, e nenhuma agência que terceiriza consegue entregar as três com constância:"
+          },
+          {
+            "tipo": "lista",
+            "itens": [
+              "**Prova de estrutura.** O paciente vê a sala, o equipamento e a equipe antes de marcar. Isso reduz insegurança melhor do que qualquer texto.",
+              "**Rosto conhecido.** Profissional que aparece com regularidade vira referência local, e referência local encurta a decisão.",
+              "**Volume sem improviso.** Uma diária de gravação bem dirigida abastece semanas de conteúdo, em vez de gerar corrida por post toda segunda-feira."
+            ]
+          },
+          {
+            "tipo": "p",
+            "texto": "E tem a parte prática: a agência de fora marca a gravação por chamada de vídeo e depende da agenda de um freelancer. A nossa equipe combina a diária no intervalo entre atendimentos, presencialmente, sem parar a operação da clínica."
+          },
+          {
+            "tipo": "destaque",
+            "texto": "Em saúde, a comunicação não promete resultado. Ela mostra estrutura, equipe e cuidado, e deixa o paciente decidir com informação."
+          },
+          {
+            "tipo": "p",
+            "texto": "Se você é médico e o que precisa construir é a sua autoridade pessoal, e não a da clínica, o recorte certo está em [marketing para médicos](/marketing-para-medicos-volta-redonda). E se a clínica já tem equipe de marketing interna, o formato pode ser a [assessoria estratégica](/assessoria-estrategica-de-marketing)."
+          },
+          {
+            "tipo": "advertorial",
+            "utm": "utm_source=site&utm_medium=landing&utm_campaign=clinicas"
+          }
+        ]
+      },
+      "faq": [
+        {
+          "pergunta": "O que o conselho de classe permite divulgar?",
+          "resposta": "As resoluções dos conselhos definem os limites, e eles são mais restritivos do que a maioria das agências considera. Na prática trabalhamos com conteúdo informativo, apresentação da equipe e da estrutura, e evitamos promessa de resultado, imagem de antes e depois, sensacionalismo e oferta que trate procedimento como mercadoria. Toda peça passa pela validação do profissional responsável antes de ir ao ar."
+        },
+        {
+          "pergunta": "Vocês fazem anúncio de procedimento com preço?",
+          "resposta": "Preço em publicidade de saúde é um dos pontos mais sensíveis da regulação, e a leitura muda conforme o conselho e a especialidade. Isso é decidido caso a caso, com o profissional responsável técnico, antes de qualquer campanha subir."
+        },
+        {
+          "pergunta": "Preciso aparecer nos vídeos?",
+          "resposta": "Ajuda, mas não é obrigatório. Muita coisa se resolve mostrando estrutura, equipe, rotina de atendimento e conteúdo informativo em off. A direção criativa define o formato conforme o perfil de cada profissional."
+        },
+        {
+          "pergunta": "A gravação atrapalha o atendimento?",
+          "resposta": "Não precisa atrapalhar. A diária é combinada em janela de baixa ocupação e planejada na pré-produção, com roteiro pronto, para render o máximo no menor tempo dentro da clínica."
+        },
+        {
+          "pergunta": "Como fica a privacidade dos pacientes?",
+          "resposta": "Paciente não entra em cena sem autorização formal e específica. A regra padrão da produção é gravar estrutura, equipe e rotina, e tratar qualquer imagem de paciente como exceção autorizada por escrito."
+        },
+        {
+          "pergunta": "Vocês garantem número de pacientes por mês?",
+          "resposta": "Não, e desconfie de quem garante. Existe capacidade de agenda, ciclo de decisão do paciente, sazonalidade e concorrência. O que estruturamos é previsibilidade de demanda ao longo dos ciclos, com leitura mensal do que mudou."
+        },
+        {
+          "pergunta": "Atendem clínicas fora de Volta Redonda?",
+          "resposta": "Sim. A captação presencial cobre Volta Redonda, Barra Mansa, Resende, Angra dos Reis e região. Para clínicas fora dessa área, o formato costuma ser a assessoria estratégica, com o plano documentado para a equipe local executar."
+        },
+        {
+          "pergunta": "Em quanto tempo a agenda sente diferença?",
+          "resposta": "Organização e leitura de dados aparecem nas primeiras semanas. Ocupação mais constante depende do ciclo de decisão do procedimento: consulta simples responde rápido, tratamento de ticket alto leva mais tempo até o paciente decidir."
+        }
+      ],
+      "ctaFinal": {
+        "titulo": "Vamos olhar a agenda da sua clínica antes de falar de campanha",
+        "texto": "O diagnóstico é gratuito, leva cerca de 40 minutos e termina com uma leitura do que está travando a ocupação hoje. Conheça também a [Cut Creative](/) e a nossa [produção de vídeo](/producao-audiovisual-volta-redonda)."
+      }
+    },
+    {
+      "slug": "marketing-para-medicos-volta-redonda",
+      "tipo": "segmento",
+      "titulo": "Marketing para médicos em Volta Redonda",
+      "metaTitulo": "Marketing para Médicos em Volta Redonda | Cut Creative",
+      "metaDescricao": "Marketing médico em Volta Redonda com produção de vídeo própria: autoridade construída com conteúdo ético, dentro das regras do CFM. Diagnóstico gratuito.",
+      "keywordPrincipal": "marketing para médicos em Volta Redonda",
+      "keywordsSecundarias": [
+        "marketing médico Volta Redonda",
+        "agência de marketing para médicos",
+        "divulgação de consultório médico",
+        "publicidade médica Volta Redonda"
+      ],
+      "revisaoRegulatoria": true,
+      "h1": "Marketing para médicos em Volta Redonda",
+      "subheadline": "Aqui o ativo não é a marca, é o seu nome. A Cut Creative constrói autoridade médica com conteúdo produzido por equipe de [audiovisual própria](/producao-audiovisual-volta-redonda) em Volta Redonda, respeitando os limites da publicidade médica.",
+      "provaSocial": {
+        "titulo": "Quem já confia na Cut",
+        "itens": [
+          "**Mais de 300 clientes atendidos** em 4 anos de operacao.",
+          "**Estrutura presencial**: estudio, equipe de captacao e edicao sob o mesmo teto, sem terceirizar producao.",
+          "**Mais de 30 colaboradores** distribuidos em equipes de estrategia, criacao, trafego e audiovisual."
+        ]
+      },
+      "dor": {
+        "titulo": "Reputação você já tem. O que falta é ela chegar antes de você.",
+        "paragrafos": [
+          "O médico que atende bem constrói reputação de um jeito lento e sólido: paciente por paciente, indicação por indicação. O problema é que essa reputação fica presa dentro do consultório. Quem nunca consultou com você não tem como saber que ela existe, e hoje a primeira consulta acontece na busca do Google, não na sala de espera.",
+          "No vazio, quem ocupa o espaço é quem publica mais, não quem atende melhor. E aí o médico cai numa escolha falsa: ou vira produtor de conteúdo em tempo integral, ou aceita ficar invisível. Existe um terceiro caminho, que é ter presença construída por quem produz o material no seu lugar, dentro do que o conselho permite."
+        ]
+      },
+      "entrega": {
+        "titulo": "O que a Cut constrói para um médico",
+        "itens": [
+          {
+            "titulo": "Posicionamento por especialidade",
+            "texto": "Qual paciente você quer atrair, qual caso você quer receber e qual assunto você quer dominar na cidade. Presença sem recorte vira consultório de tudo um pouco."
+          },
+          {
+            "titulo": "Conteúdo informativo, não promessa",
+            "texto": "Explicação clara sobre condição, prevenção e conduta. Autoridade médica se constrói esclarecendo dúvida, e é justamente esse o tipo de conteúdo que a regulação favorece."
+          },
+          {
+            "titulo": "Gravação em bloco, respeitando a sua agenda",
+            "texto": "Uma diária dirigida no consultório ou no nosso estúdio abastece semanas de conteúdo. Você grava uma vez, não todo dia entre um atendimento e outro."
+          },
+          {
+            "titulo": "Roteiro pronto antes da câmera ligar",
+            "texto": "Você não improvisa na frente da lente. Chega com pauta definida, roteiro revisado e direção no set, o que reduz o tempo de gravação e o desconforto de quem não é apresentador."
+          },
+          {
+            "titulo": "Presença encontrável, não só bonita",
+            "texto": "Perfil, ficha no Google e conteúdo organizados para o paciente achar você quando procura pela sua especialidade na cidade."
+          },
+          {
+            "titulo": "Validação antes da publicação",
+            "texto": "Cada peça passa por você antes de ir ao ar. Em publicidade médica a responsabilidade é do profissional, e o processo tem que refletir isso."
+          }
+        ]
+      },
+      "metodo": {
+        "titulo": "O Método Cut aplicado à sua presença",
+        "etapas": [
+          {
+            "fase": "Entendimento",
+            "nome": "Diagnóstico estratégico",
+            "texto": "Entendemos onde seu negócio está, para onde precisa ir e o que já foi tentado sem funcionar. É aqui que o marketing deixa de ser achismo e passa a ter direção. Sem diagnóstico, toda estratégia vira genérica."
+          },
+          {
+            "fase": "Contexto",
+            "nome": "Estudo de mercado",
+            "texto": "Analisamos seu público real, seus concorrentes e o espaço que ninguém está ocupando. Entendemos o momento do seu mercado antes de propor qualquer ação. É aqui que nasce a sua diferença competitiva."
+          },
+          {
+            "fase": "Direção",
+            "nome": "Planejamento estratégico",
+            "texto": "Definimos posicionamento, o que comunicar, para quem e em que formato. Sua empresa para de publicar por obrigação e passa a comunicar com direção, alinhada ao objetivo comercial e ao tamanho da operação."
+          },
+          {
+            "fase": "Execução",
+            "nome": "Produção",
+            "texto": "Estúdio e equipe próprios. Direção, captação e edição feitas por quem conhece a sua estratégia, não por quem recebeu uma tarefa. Padrão, consistência e escala sem depender de terceiros."
+          },
+          {
+            "fase": "Condução",
+            "nome": "Gestão",
+            "texto": "Responsáveis definidos, rituais de acompanhamento e prazos acordados. Cada fase tem dono e cada entrega tem data. Nada fica solto no caminho e nada depende de cobrança sua."
+          },
+          {
+            "fase": "Evolução",
+            "nome": "Análise e otimização",
+            "texto": "Relatório mensal com leitura executiva: o que funcionou, o que muda e por quê. Medimos, comparamos e ajustamos a cada ciclo. Aqui número não é enfeite de dashboard, vira decisão."
+          }
+        ]
+      },
+      "caseReal": {
+        "titulo": "Case do segmento",
+        "paragrafos": [
+          "[VERIFICAR COM RENAN: case a definir - trabalho com grande empresa de Volta Redonda]"
+        ]
+      },
+      "porqueLocal": {
+        "titulo": "Por que produção própria e presença local mudam a construção de autoridade médica",
+        "blocos": [
+          {
+            "tipo": "p",
+            "texto": "Autoridade médica não se compra com verba, se acumula com constância. E constância é exatamente o que quebra quando a produção depende de terceiro: um mês tem vídeo, no outro o freelancer não tinha data, no terceiro a qualidade caiu e o material não foi publicado."
+          },
+          {
+            "tipo": "p",
+            "texto": "Existe também um fator que agência de fora subestima: medicina é local. O paciente escolhe quem atende perto, quem o conhecido dele indicou e quem ele viu explicando algo que fazia sentido. Ser reconhecido na sua própria cidade vale mais do que ter número grande de seguidores espalhado pelo país."
+          },
+          {
+            "tipo": "tabela",
+            "colunas": [
+              "",
+              "Produção terceirizada",
+              "Cut Creative"
+            ],
+            "linhas": [
+              [
+                "Frequência",
+                "Depende da agenda do freelancer",
+                "Diária em bloco, planejada com a sua agenda"
+              ],
+              [
+                "Tempo que você gasta",
+                "Regravação e refação por falta de roteiro",
+                "Roteiro revisado e direção no set"
+              ],
+              [
+                "Consistência visual",
+                "Muda a cada contratação",
+                "O mesmo padrão ao longo dos meses"
+              ],
+              [
+                "Revisão do conteúdo",
+                "Costuma ir ao ar sem passar por você",
+                "Validação do profissional antes da publicação"
+              ]
+            ]
+          },
+          {
+            "tipo": "destaque",
+            "texto": "Em publicidade médica, o que não pode ser dito importa tanto quanto o que vai ser dito."
+          },
+          {
+            "tipo": "p",
+            "texto": "Se além da sua presença pessoal existe uma clínica com agenda, equipe e vários procedimentos para preencher, o recorte certo é [marketing para clínicas](/marketing-para-clinicas-volta-redonda). Para gerar demanda com mídia paga, a base está na [gestão de tráfego pago](/trafego-pago-volta-redonda)."
+          },
+          {
+            "tipo": "advertorial",
+            "utm": "utm_source=site&utm_medium=landing&utm_campaign=medicos"
+          }
+        ]
+      },
+      "faq": [
+        {
+          "pergunta": "Marketing médico é permitido pelo CFM?",
+          "resposta": "Divulgação é permitida; o que a norma restringe é a forma. A publicidade médica não pode prometer resultado, usar imagem de antes e depois com fim promocional, apelar para sensacionalismo ou tratar o ato médico como mercadoria. Trabalhamos dentro desse limite e submetemos cada peça à sua validação antes de publicar."
+        },
+        {
+          "pergunta": "Posso mostrar resultado de tratamento?",
+          "resposta": "É um dos pontos mais restritos da norma e não é uma decisão de agência. A conduta padrão aqui é não usar imagem de resultado com finalidade promocional e construir autoridade por conteúdo informativo, que não depende dessa exceção."
+        },
+        {
+          "pergunta": "Preciso virar influenciador para ter presença?",
+          "resposta": "Não. O objetivo não é transformar médico em influenciador, é construir uma presença que sustente a sua reputação. Isso se faz com constância e clareza, não com dança de trend."
+        },
+        {
+          "pergunta": "Quanto tempo eu preciso dedicar por mês?",
+          "resposta": "Concentramos a gravação em diárias planejadas justamente para caber na rotina de quem atende. O roteiro chega revisado, a direção conduz o set e o restante da operação corre sem você."
+        },
+        {
+          "pergunta": "Onde acontece a gravação?",
+          "resposta": "No consultório, no nosso estúdio em Volta Redonda ou nos dois, conforme a peça. Estrutura e rotina rendem mais no local real; conteúdo informativo costuma render mais no estúdio."
+        },
+        {
+          "pergunta": "Vocês respondem paciente no direct ou no WhatsApp?",
+          "resposta": "Atendimento clínico e triagem são responsabilidade da sua equipe, não da agência. O que fazemos é organizar o caminho até o contato e alinhar com a secretaria o que fazer com a demanda que chega."
+        },
+        {
+          "pergunta": "Vocês garantem aumento de consultas?",
+          "resposta": "Não, e ninguém honesto garante. Existem capacidade de agenda, convênio, sazonalidade e concorrência no meio. O que se constrói é presença consistente e demanda mais previsível ao longo dos ciclos."
+        },
+        {
+          "pergunta": "Atendem médicos fora de Volta Redonda?",
+          "resposta": "A captação presencial cobre Volta Redonda, Barra Mansa, Resende, Angra dos Reis e região. Fora dessa área, o formato costuma ser a assessoria estratégica, com o plano documentado para a sua equipe executar."
+        }
+      ],
+      "ctaFinal": {
+        "titulo": "Vamos conversar sobre a sua presença antes de gravar qualquer coisa",
+        "texto": "O diagnóstico é gratuito, leva cerca de 40 minutos e termina com uma leitura clara de onde a sua autoridade já existe e onde ela ainda não chega. Conheça também a [Cut Creative](/) e o [marketing para clínicas](/marketing-para-clinicas-volta-redonda)."
+      }
+    }
+  ]
 }

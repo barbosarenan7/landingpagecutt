@@ -61,7 +61,7 @@ do mesmo texto:
 
 | # | Peça | Slug | Situação | Prioridade |
 | --- | --- | --- | --- | --- |
-| 06 | Gestão de Tráfego Pago e Redes Sociais em Volta Redonda | `[VERIFICAR COM RENAN: qual URL sobrevive]` | **Reescrita consolidada** de 2 páginas no ar | 1 |
+| 06 | Gestão de Tráfego Pago e Redes Sociais em Volta Redonda | `/trafego-pago-volta-redonda` | **Reescrita consolidada** de 2 páginas no ar | 1 |
 | 07 | Produção de Vídeo e Audiovisual em Volta Redonda | `/producao-audiovisual-volta-redonda` | **Reescrita**, mantém a URL | 1 |
 | 08 | Assessoria Estratégica de Marketing em Volta Redonda | `/assessoria-estrategica-de-marketing` | Já no ar. **Não reescrever**, só linkar | 2 |
 | 09 | Criação de Conteúdo para Instagram em Volta Redonda | `/conteudo-instagram-volta-redonda` | Nova | 2 |
@@ -69,8 +69,10 @@ do mesmo texto:
 
 **Peça 06 — consolidação.** As duas páginas hoje no ar
 (`/trafego-pago-volta-redonda` e `/social-media-volta-redonda`) viram
-uma. A URL sobrevivente sai do histórico de indexação no Search Console;
-a outra recebe **redirect 301**. O argumento da página é que tráfego e
+uma. **URL definitiva: `/trafego-pago-volta-redonda`**, por ter intenção
+comercial mais forte; `/social-media-volta-redonda` recebe **redirect
+301**. Title e H1 seguem citando os dois serviços, para capturar as duas
+buscas. Decisão do Renan na Tarefa 4. O argumento da página é que tráfego e
 social operam juntos, com o vídeo produzido pela própria Cut alimentando
 os dois.
 
@@ -191,16 +193,28 @@ Regras:
 
 ## Pendências que bloqueiam produção
 
-| # | Pendência | Bloqueia |
-| --- | --- | --- |
-| 1 | Qual URL sobrevive na consolidação da peça 06 (decisão via Search Console) | Peça 06 |
-| 2 | Prova real por cidade e por segmento: cliente, case, foto | Todas as BOFU |
-| 3 | Nome e descrição das 6 etapas do Método Cut | Todas as BOFU |
-| 4 | Dados concretos da estrutura audiovisual | Todo o cluster |
-| 5 | Faixa de investimento praticada | Peça 18 |
-| 6 | Revisão regulatória de publicidade médica | Peças 11 e 12 |
+| # | Pendência | Bloqueia | Situação |
+| --- | --- | --- | --- |
+| 1 | Qual URL sobrevive na consolidação da peça 06 | Peça 06 | **Resolvida** na Tarefa 4 |
+| 2 | Nome e descrição das 6 etapas do Método Cut | Todas as BOFU | **Resolvida**: cópia literal da home |
+| 3 | Prova social (logos e número de clientes) | Todas as BOFU | **Resolvida** na Tarefa 4 |
+| 4 | Cases reais por cidade e por segmento | Todas as BOFU | 1 escrito (Moraes), 5 slots abertos |
+| 5 | Menu da home na consolidação da peça 06 | Peça 06 | Aberta |
+| 6 | Dados concretos da estrutura audiovisual | Todo o cluster | Aberta |
+| 7 | Faixa de investimento praticada | Peça 18 | Aberta |
+| 8 | Revisão regulatória de publicidade médica | Peças 11 e 12 | Aberta: as duas fora do sitemap |
 
-Consolidadas na Tarefa 8, em `/seo-cut/03-pendencias/verificar-com-renan.md`.
+Detalhadas em `/seo-cut/03-pendencias/verificar-com-renan.md`, aberto na
+Tarefa 4 e consolidado na Tarefa 8.
+
+## Peças escritas até aqui
+
+| Tarefa | Peças | Onde |
+| --- | --- | --- |
+| Tarefa 4 | 02, 03, 11, 12 | Escritas **e implementadas** em `src/content/landings.json` |
+| Tarefa 4 | 06, 07 | Escritas, **não aplicadas**: dependem de aprovação (ver pendências 5 e o arquivo de cada peça) |
+
+Arquivos em `seo-cut/02-conteudo/bofu/`.
 
 ## Estrutura técnica (Tarefa 3, Parte B)
 

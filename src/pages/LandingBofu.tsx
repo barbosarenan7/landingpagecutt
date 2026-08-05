@@ -3,6 +3,7 @@ import Nav from "../components/Nav";
 import Footer from "../components/Footer";
 import WhatsAppFloat from "../components/WhatsAppFloat";
 import CookieBanner from "../components/CookieBanner";
+import ClientesGrid from "../components/ClientesGrid";
 import FaqLista from "../components/FaqLista";
 import { Blocos, inline } from "../components/BlocosConteudo";
 import type { Landing } from "../lib/tipos";
@@ -10,7 +11,7 @@ import { BtnPrimary } from "../components/primitives";
 import { Reveal } from "../lib/reveal";
 import { Seo } from "../lib/seo";
 import { metaDaLanding } from "../lib/rotas";
-import { site } from "../config/site";
+import { site, whatsappHref } from "../config/site";
 
 /**
  * Template das landings BOFU (cidade, segmento e serviço).
@@ -88,6 +89,9 @@ export default function LandingBofu({ landing: l }: { landing: Landing }) {
           </div>
         </section>
 
+        {/* 3b: as mesmas logos da home, sem lista paralela para manter */}
+        <ClientesGrid />
+
         {/* 4: a dor */}
         <section className="sec-dark section" aria-labelledby="dor">
           <div className="container-cut">
@@ -142,6 +146,7 @@ export default function LandingBofu({ landing: l }: { landing: Landing }) {
                   className="faixa-leitura-lista border-t border-line-light py-6"
                 >
                   <span className="step-num text-accent">{String(i + 1).padStart(2, "0")}</span>
+                  <p className="eyebrow mt-3 flex w-fit">{et.fase}</p>
                   <h3 className="mt-2 text-lg leading-snug font-bold">{et.nome}</h3>
                   <p className="text-2nd mt-2 text-[15px] leading-relaxed">{inline(et.texto)}</p>
                 </Reveal>
@@ -157,7 +162,11 @@ export default function LandingBofu({ landing: l }: { landing: Landing }) {
               <h2 id="case" style={{ fontSize: "var(--fs-h3)" }}>
                 <span className="h-sans block">{l.caseReal.titulo}</span>
               </h2>
-              <p className="text-2nd mt-5 leading-relaxed">{inline(l.caseReal.texto)}</p>
+              {l.caseReal.paragrafos.map((p, i) => (
+                <p key={i} className="text-2nd mt-5 leading-relaxed">
+                  {inline(p)}
+                </p>
+              ))}
             </div>
           </div>
         </section>
@@ -197,7 +206,26 @@ export default function LandingBofu({ landing: l }: { landing: Landing }) {
               <div className="mt-9 flex justify-center">
                 <BtnPrimary href="/#formulario">Solicitar diagnóstico gratuito</BtnPrimary>
               </div>
-              <p className="mt-8 text-sm leading-relaxed text-text3">{site.region}</p>
+              {/* 11: região atendida e formas de contato */}
+              <div className="mt-12 border-t border-line-dark pt-8 text-sm leading-relaxed text-text3">
+                <p>{site.region}</p>
+                <p className="mt-3">
+                  WhatsApp{" "}
+                  <a
+                    href={whatsappHref()}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="underline underline-offset-4"
+                  >
+                    (24) 99269-7807
+                  </a>{" "}
+                  · E-mail{" "}
+                  <a href={`mailto:${site.email}`} className="underline underline-offset-4">
+                    {site.email}
+                  </a>
+                </p>
+                <p className="mt-3">{site.address}</p>
+              </div>
             </div>
           </div>
         </section>

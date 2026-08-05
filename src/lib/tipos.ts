@@ -48,11 +48,19 @@ export type Landing = {
   keywordsSecundarias: string[];
   h1: string;
   subheadline: string;
+  /**
+   * Publicidade médica e odontológica é regulada pelos conselhos de
+   * classe. Enquanto `true`, a rota fica fora do sitemap (ver
+   * `rotas.ts`). Nenhuma tarja aparece para o visitante: o aviso é
+   * interno e vive no arquivo da peça, em `seo-cut/02-conteudo/bofu/`.
+   */
+  revisaoRegulatoria?: boolean;
   provaSocial: { titulo: string; itens: string[] };
   dor: { titulo: string; paragrafos: string[] };
   entrega: { titulo: string; itens: { titulo: string; texto: string }[] };
-  metodo: { titulo: string; etapas: { nome: string; texto: string }[] };
-  caseReal: { titulo: string; texto: string };
+  /** As 6 etapas são cópia literal do Método Cut da home: não reescrever. */
+  metodo: { titulo: string; etapas: { fase: string; nome: string; texto: string }[] };
+  caseReal: { titulo: string; paragrafos: string[] };
   porqueLocal: { titulo: string; blocos: Bloco[] };
   faq: Pergunta[];
   ctaFinal: { titulo: string; texto: string };

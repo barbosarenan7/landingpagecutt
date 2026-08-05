@@ -248,7 +248,14 @@ export function metaDaLanding(slug: string): MetaRota {
     });
   }
 
-  return { path, title: l.metaTitulo, description: l.metaDescricao, jsonLd };
+  // Publicidade médica só entra no sitemap depois da revisão do conselho.
+  return {
+    path,
+    title: l.metaTitulo,
+    description: l.metaDescricao,
+    jsonLd,
+    semIndex: l.revisaoRegulatoria || undefined,
+  };
 }
 
 export const rotasLanding: MetaRota[] = landings.landings.map((l) => metaDaLanding(l.slug));
