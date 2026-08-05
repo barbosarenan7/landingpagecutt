@@ -24,7 +24,7 @@
 
 ## 2. Subheadline
 
-A Cut Creative tem estúdio próprio em Volta Redonda, quatro profissionais na captação e quatro editores fixos. Direção, gravação e edição acontecem sob o mesmo teto, feitas por quem conhece a estratégia do cliente, e não por quem recebeu uma tarefa solta. É o que sustenta padrão, prazo e volume, dentro de uma [operação de marketing completa](/) ou como serviço isolado.
+A Cut Creative tem estúdio próprio em Volta Redonda, quatro profissionais na captação e quatro editores fixos. Direção, gravação e edição acontecem sob o mesmo teto, feitas por quem conhece a estratégia do cliente, e não por quem recebeu uma tarefa solta. É o que sustenta padrão, prazo e volume, dentro de uma [operação de marketing completa em Volta Redonda](/) ou como serviço isolado.
 
 ## 3. Prova social
 
@@ -157,7 +157,7 @@ O prazo de edição é acordado na pré-produção e depende do volume e do form
 
 ### Vamos definir o que precisa ser gravado antes de gravar
 
-O diagnóstico é gratuito, leva cerca de 40 minutos e termina com uma leitura do que a sua comunicação precisa hoje, mesmo que você decida não contratar. Conheça também a [Cut Creative](/) e a [gestão de tráfego pago e redes sociais](/trafego-pago-volta-redonda).
+O diagnóstico é gratuito, leva cerca de 40 minutos e termina com uma leitura do que a sua comunicação precisa hoje, mesmo que você decida não contratar. Conheça também a [Cut Creative, agência de marketing da região Sul Fluminense](/) e a [gestão de tráfego pago e redes sociais](/trafego-pago-volta-redonda).
 
 ## 11. Região atendida e contato
 

@@ -285,6 +285,44 @@ Também nesta passada: o redirect da URL antiga trocou de
 Vercel responde **308** para `permanent: true`. O Google trata 308 como
 301, mas o plano pede 301 literal, e agora é isso que o servidor emite.
 
+## Âncoras da home reforçadas (pedido do Renan)
+
+As 12 âncoras que apontam para o pilar eram genéricas: 6 diziam só "Cut
+Creative" e 3 diziam "página inicial". Só 1 das 12 carregava a
+keyword-mãe.
+
+Âncora é um dos sinais mais fortes que o buscador usa para entender para
+que serve a página de destino. Doze links internos dizendo "página
+inicial" não reforçam nada.
+
+Todas foram reescritas com Volta Redonda, região Sul Fluminense e Rio de
+Janeiro, sem repetir texto:
+
+| Peça | Âncora nova | Termos |
+| --- | --- | --- |
+| 02 | agência de marketing em Volta Redonda | VR |
+| 03 | agência de marketing digital em Volta Redonda | VR |
+| 06 | agência de marketing que atende Volta Redonda e o Sul Fluminense | VR + SF |
+| 07 (subheadline) | operação de marketing completa em Volta Redonda | VR |
+| 07 (CTA) | Cut Creative, agência de marketing da região Sul Fluminense | SF |
+| 11 | Cut Creative, agência de marketing de Volta Redonda | VR |
+| 12 | nossa agência de marketing em Volta Redonda | VR |
+| 19 | agência de marketing estratégico em Volta Redonda | VR |
+| 20 | Cut Creative, agência de marketing em Volta Redonda e no Rio de Janeiro | VR + RJ |
+| 21 | como é uma agência de marketing em Volta Redonda por dentro | VR |
+| 27 | agência de marketing que atende Volta Redonda e toda a região Sul Fluminense | VR + SF |
+| 34 | Cut Creative, agência de marketing em Volta Redonda e região do Rio de Janeiro | VR + RJ |
+
+**11 das 12 citam Volta Redonda** (contra 1 antes), 3 citam Sul
+Fluminense, 2 citam Rio de Janeiro e **nenhuma se repete**.
+
+Rio de Janeiro entra sem esticar a verdade: `site.json` já declara
+"Atendemos presencialmente Volta Redonda, Barra Mansa, Resende, Angra dos
+Reis e Rio de Janeiro".
+
+Nenhuma palavra visível do conteúdo mudou de sentido: só mudou o trecho
+que fica sublinhado como link.
+
 ## Antes de qualquer merge
 
 O que só o ambiente real prova:

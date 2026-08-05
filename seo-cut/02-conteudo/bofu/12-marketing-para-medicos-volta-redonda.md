@@ -156,7 +156,7 @@ A captação presencial cobre Volta Redonda, Barra Mansa, Resende, Angra dos Rei
 
 ### Vamos conversar sobre a sua presença antes de gravar qualquer coisa
 
-O diagnóstico é gratuito, leva cerca de 40 minutos e termina com uma leitura clara de onde a sua autoridade já existe e onde ela ainda não chega. Conheça também a [Cut Creative](/) e o [marketing para clínicas](/marketing-para-clinicas-volta-redonda).
+O diagnóstico é gratuito, leva cerca de 40 minutos e termina com uma leitura clara de onde a sua autoridade já existe e onde ela ainda não chega. Conheça também a [nossa agência de marketing em Volta Redonda](/) e o [marketing para clínicas](/marketing-para-clinicas-volta-redonda).
 
 ## 11. Região atendida e contato
 

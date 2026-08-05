@@ -9,7 +9,7 @@
 | Keywords secundárias | divulgar empresa Volta Redonda, como anunciar negócio local, marketing para empresa de Volta Redonda, onde divulgar meu negócio |
 | Title tag (42 caracteres) | Como Divulgar Meu Negócio em Volta Redonda |
 | Meta description (154 caracteres) | Os canais que funcionam para empresa local em Volta Redonda e região, em que ordem atacar e o que cada um cobra de você. Guia prático, sem receita pronta. |
-| Palavras (só o texto do artigo) | 1287 |
+| Palavras (só o texto do artigo) | 1298 |
 | Tabelas comparativas | 1 |
 | Blocos advertoriais | 2 |
 | FAQ | 4 perguntas |
@@ -104,7 +104,7 @@ O marketing raramente fecha a venda sozinho. Ele qualifica, prova capacidade té
 4. Arrume a bio do perfil para dizer o que você faz e onde fica.
 5. Combine com a equipe quem responde o WhatsApp e em quanto tempo.
 
-Isso não custa verba e resolve o básico. Depois disso, se o gargalo for volume de demanda, o caminho é [tráfego pago com conteúdo na mesma operação](/trafego-pago-volta-redonda); se for falta de direção com equipe já montada, é o [acompanhamento estratégico contínuo](/assessoria-estrategica-de-marketing). E se você quiser entender como a Cut trabalha antes de decidir, comece pela [página inicial](/).
+Isso não custa verba e resolve o básico. Depois disso, se o gargalo for volume de demanda, o caminho é [tráfego pago com conteúdo na mesma operação](/trafego-pago-volta-redonda); se for falta de direção com equipe já montada, é o [acompanhamento estratégico contínuo](/assessoria-estrategica-de-marketing). E se você quiser entender como a Cut trabalha antes de decidir, comece pela [agência de marketing que atende Volta Redonda e toda a região Sul Fluminense](/).
 
 `[bloco de CTA do diagnóstico — utm: utm_source=blog&utm_medium=artigo&utm_campaign=como-divulgar-negocio-fim]`
 

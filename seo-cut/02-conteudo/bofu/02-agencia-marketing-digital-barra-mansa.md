@@ -152,7 +152,7 @@ Dá. Tem cliente que contrata só a produção de vídeo e tem cliente que contr
 
 ### Vamos olhar o seu marketing antes de vender qualquer coisa
 
-O diagnóstico é gratuito, leva cerca de 40 minutos e termina com um mapa do que está travando o seu marketing hoje, mesmo que você decida não contratar. Conheça também a [Cut Creative](/) e a [gestão de tráfego pago](/trafego-pago-volta-redonda).
+O diagnóstico é gratuito, leva cerca de 40 minutos e termina com um mapa do que está travando o seu marketing hoje, mesmo que você decida não contratar. Conheça também a [agência de marketing em Volta Redonda](/) e a [gestão de tráfego pago](/trafego-pago-volta-redonda).
 
 ## 11. Região atendida e contato
 

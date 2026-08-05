@@ -155,7 +155,7 @@ Organização e leitura de dados aparecem nas primeiras semanas. Ocupação mais
 
 ### Vamos olhar a agenda da sua clínica antes de falar de campanha
 
-O diagnóstico é gratuito, leva cerca de 40 minutos e termina com uma leitura do que está travando a ocupação hoje. Conheça também a [Cut Creative](/) e a nossa [produção de vídeo](/producao-audiovisual-volta-redonda).
+O diagnóstico é gratuito, leva cerca de 40 minutos e termina com uma leitura do que está travando a ocupação hoje. Conheça também a [Cut Creative, agência de marketing de Volta Redonda](/) e a nossa [produção de vídeo](/producao-audiovisual-volta-redonda).
 
 ## 11. Região atendida e contato
 

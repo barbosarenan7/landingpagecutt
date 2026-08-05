@@ -148,7 +148,7 @@ Pelo portal do cliente, onde você acompanha calendário, aprovações e a jorna
 
 ### Antes de aumentar a verba, vale entender para onde ela está indo
 
-O diagnóstico é gratuito, leva cerca de 40 minutos e termina com um mapa do que está travando o seu marketing hoje. Conheça também a [Cut Creative](/) e a nossa [produção audiovisual](/producao-audiovisual-volta-redonda).
+O diagnóstico é gratuito, leva cerca de 40 minutos e termina com um mapa do que está travando o seu marketing hoje. Conheça também a [agência de marketing que atende Volta Redonda e o Sul Fluminense](/) e a nossa [produção audiovisual](/producao-audiovisual-volta-redonda).
 
 ## 11. Região atendida e contato
 
