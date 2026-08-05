@@ -26,9 +26,25 @@ Como aparece em cada camada:
 | Segmento | Gravar dentro do contexto: a clínica, o prato no restaurante, o treino na academia |
 | MOFU e TOFU | Quando o tema encostar em vídeo ou conteúdo, falar de dentro de quem produz, não de quem contrata |
 
-Limite: nada de equipamento, prêmio ou volume de produção inventado.
-Onde precisar de dado concreto, marcar
-`[VERIFICAR COM RENAN: detalhe real da estrutura audiovisual]`.
+### Os dados reais da estrutura, confirmados na Tarefa 6
+
+Qualquer peça pode usar isto. **Nada além disto pode ser afirmado**, e
+prêmio, cliente famoso ou número de projetos continuam proibidos até
+virem do Renan.
+
+| | |
+| --- | --- |
+| Estúdio | Próprio, em Volta Redonda, para gravação que pede estrutura controlada: ensaio corporativo, entrevista, conteúdo em cenário. **O cliente escolhe onde grava** |
+| Deslocamento | Sem custo adicional em Volta Redonda e Barra Mansa. Demais municípios, logística conforme a cidade |
+| Equipamento | Câmera de cinema, iluminação profissional, microfone de lapela e boom, drone, gimbal |
+| No set | Equipe de produção acompanhando junto do filmmaker |
+| Equipe | 4 profissionais na captação, 4 editores fixos, mais rede de colaboradores em projeto de maior escala |
+| Volume | Mais de 500 vídeos entregues por mês, somando a carteira toda |
+| Entrega | Todo o material sai já editado |
+
+Como usar: distribuído pelo texto, como afirmação natural da agência.
+Nunca empilhado num quadro de ficha técnica, que é o que faz página de
+agência parecer catálogo de locadora de equipamento.
 
 ## Página pilar
 
@@ -98,7 +114,7 @@ de classe: saem marcadas com `REVISÃO REGULATÓRIA PENDENTE`.
 
 | # | Peça | Slug | Prioridade |
 | --- | --- | --- | --- |
-| 18 | Quanto Custa uma Agência de Marketing Digital em Volta Redonda | `/blog/quanto-custa-agencia-marketing-volta-redonda` | 1 |
+| 18 | **Ângulo revisado**, título e slug a definir | `[A DEFINIR]` | 1 |
 | 19 | Agência de Marketing ou Freelancer: Qual Vale Mais a Pena | `/blog/agencia-ou-freelancer` | 1 |
 | 20 | Tráfego Pago ou Tráfego Orgânico: Por Onde Começar | `/blog/trafego-pago-ou-organico` | 1 |
 | 21 | Como Escolher uma Agência de Marketing Digital sem Errar | `/blog/como-escolher-agencia-marketing` | 1 |
@@ -106,6 +122,20 @@ de classe: saem marcadas com `REVISÃO REGULATÓRIA PENDENTE`.
 | 23 | Contratar Social Media ou Fazer Interno | `/blog/social-media-interno-ou-agencia` | 2 |
 | 24 | Quanto Investir em Tráfego Pago por Mês | `/blog/quanto-investir-trafego-pago` | 2 |
 | 25 | Vídeo ou Foto: O Que Converte Mais no Instagram | `/blog/video-ou-foto-instagram` | 3 |
+
+**Peça 18 — ângulo revisado.** Era "Quanto Custa uma Agência de
+Marketing Digital em Volta Redonda". O Renan decidiu que a Cut **não
+fala de preço**, porque não é a mais barata, e um artigo com aquele
+título que não responde a pergunta seria o pior dos dois mundos.
+
+O novo ângulo é **educativo, na linha de "o que analisar antes de
+contratar uma agência"**: explica o que faz o preço variar, quais
+modelos de cobrança existem e o que muda de fato o valor de uma
+proposta, sem tabelar a da Cut. Mantém a peça no cluster, respeita a
+decisão comercial e responde a intenção real de quem busca, que é saber
+se está pagando caro.
+
+Título e slug definitivos **a definir com o Renan**.
 
 **Peça 25** é chave para o pilar audiovisual: é onde a Cut argumenta,
 de dentro, por que vídeo converte mais, com a autoridade de quem produz.
@@ -149,7 +179,9 @@ consolidar), a 07 (a reescrever) e a 08 (só linkar). **31 são novas.**
 | Tarefa 4 | 02, 03, 06, 07, 11, 12 | BOFU P1: converte e resolve as páginas duplicadas |
 | Tarefa 5 | 19, 20, 21 | MOFU P1: intenção de comparação, alimenta o BOFU |
 | Tarefa 6 | 27, 34 | TOFU P1: volume de topo, alimenta o MOFU |
-| Depois | 12 peças P2 | |
+| **Próxima** | **33** | Vídeo profissional para empresa. Estava bloqueada pela falta de dados da estrutura audiovisual, que chegaram na Tarefa 6. É o segundo pilar audiovisual, no topo do funil |
+| Depois | 18 | Assim que título e slug do ângulo novo forem definidos |
+| Depois | 11 peças P2 restantes | |
 | Por último | 9 peças P3 | |
 
 ## Lógica de links internos
@@ -214,11 +246,16 @@ Detalhadas em `/seo-cut/03-pendencias/verificar-com-renan.md`.
 | Tarefa 4 | 02, 03, 11, 12 | Escritas e implementadas. 11 e 12 fora do sitemap |
 | Tarefa 4 e 5 | 06, 07 | Escritas e **aplicadas** ao site: consolidação com 301 e reescrita do audiovisual |
 | Tarefa 5 | 19, 20, 21 | Escritas e implementadas em `src/content/blog.json` |
-| Tarefa 5 | 18 | **Não escrita.** O Renan decidiu não falar de preço; o ângulo precisa mudar |
+| Tarefa 6 | 27, 34 | Escritas e implementadas |
+| Tarefa 6 | 07 | Bloco de pendência substituído pelos dados reais da estrutura audiovisual |
+| Adiada | 18 | Ângulo novo definido; título e slug a definir |
 
 Arquivos em `seo-cut/02-conteudo/bofu/` e `seo-cut/02-conteudo/mofu/`.
 
-**9 das 34 peças escritas.** Faltam 25.
+**11 das 34 peças escritas.** Faltam 23.
+
+Auditoria de linkagem entre elas em
+`seo-cut/01-estrategia/arquitetura-links.md` (Tarefa 7).
 
 ## Estrutura técnica (Tarefa 3, Parte B)
 

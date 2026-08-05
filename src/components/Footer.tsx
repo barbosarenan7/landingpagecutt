@@ -184,6 +184,12 @@ export default function Footer() {
                   </a>
                 </li>
               ))}
+              {/* o blog é rota própria, então vai de Link e não de âncora */}
+              <li>
+                <Link to="/blog" className="text-2nd transition-colors hover:text-paper-50">
+                  Blog
+                </Link>
+              </li>
             </ul>
           </Grupo>
 

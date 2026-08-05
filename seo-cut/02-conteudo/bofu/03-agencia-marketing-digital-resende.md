@@ -51,7 +51,7 @@ Resende cresceu em torno do polo automotivo, e isso mudou o público da cidade. 
 Primeiro definimos o lugar que a sua marca ocupa e por que alguém pagaria mais por ela. Só depois se decide formato, canal e frequência.
 
 **02. Captação presencial em Resende**  
-A equipe vai até a cidade gravar dentro da operação. Sem banco de imagem, sem foto genérica de internet, sem freelancer diferente a cada mês.
+A nossa equipe de captação vai até a cidade gravar dentro da operação, com câmera de cinema, iluminação e equipe de produção no set. Sem banco de imagem, sem foto genérica de internet, sem freelancer diferente a cada mês.
 
 **03. Acabamento de marca grande**  
 Direção criativa, correção de cor, trilha e identidade visual aplicada. É o que separa um vídeo que constrói autoridade de um que só ocupa espaço no feed.
@@ -120,7 +120,7 @@ Se a sua empresa já tem equipe interna e o que falta é direção, o formato ce
 ## 9. FAQ
 
 **A Cut atende Resende ou só Volta Redonda?**  
-Atendemos Resende presencialmente. A base fica em Volta Redonda e a equipe se desloca para reunião, captação e gravação na cidade.
+Atendemos Resende presencialmente. A base e o estúdio ficam em Volta Redonda e a equipe de captação se desloca para reunião e gravação na cidade. Para Resende entra um custo de logística, combinado antes da diária e não uma surpresa na fatura.
 
 **Minha empresa vende para o polo automotivo, não para o consumidor final. Marketing digital funciona?**  
 Funciona, com outro objetivo. Em venda B2B o marketing raramente fecha o negócio sozinho: ele qualifica, constrói reputação e encurta a conversa que o comercial vai ter. O conteúdo passa a servir de prova de capacidade técnica, e não de vitrine.

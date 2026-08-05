@@ -12,25 +12,29 @@ Cada item diz o que bloqueia.
 | Aprovar a troca do texto da peça 07 | Aprovada e **aplicada**, mantendo a URL |
 | Promessa de exclusividade por cidade | **Removida.** A pergunta da FAQ da peça 02 virou "Quem vai cuidar da minha conta no dia a dia?" |
 | Faixa de investimento | Decidido **não falar de preço**. Ver item 4 |
+| Dados da estrutura audiovisual | **Entregues e aplicados.** O bloco amarelo da peça 07 saiu |
+| Link para `/blog` na home | **Autorizado e aplicado**: rodapé (Navegação) e menu suspenso |
+| Ângulo da peça 18 | **Decidido**: educativo, sem preço. Título e slug a definir |
 
-## 1. Estrutura audiovisual — BLOQUEIA A PUBLICAÇÃO DA PEÇA 07
+## 1. Estrutura audiovisual — RESOLVIDO
 
-A página `/producao-audiovisual-volta-redonda` está no ar na branch com um
-bloco amarelo tracejado escrito **TROCAR ANTES DE PUBLICAR**, visível para
-quem abrir a página. Ele existe para você não esquecer na revisão final, e
-precisa sair antes do site ir ao ar.
+Os quatro dados chegaram e foram aplicados. O bloco amarelo "TROCAR ANTES
+DE PUBLICAR" **não existe mais** na peça 07.
 
-O que falta para substituir esse bloco por conteúdo de verdade:
+Onde cada dado entrou, distribuído em vez de concentrado num quadro:
 
-| # | Dado | Por quê |
-| --- | --- | --- |
-| 1.1 | Descrição do estúdio (metragem, ambientes, cenários fixos) | Hoje "estúdio próprio" é afirmação, não prova |
-| 1.2 | Equipamento: câmeras, lentes, iluminação, áudio | É o que separa produtora de freelancer com celular |
-| 1.3 | Tamanho da equipe de audiovisual especificamente | A home fala em +30 colaboradores no total, o que não diz nada sobre produção |
-| 1.4 | Volume mensal de entregas ou de diárias de gravação | Prova de escala, que é o argumento central da página |
+| Dado | Onde aparece na peça 07 |
+| --- | --- |
+| Estúdio próprio e escolha do local | Subheadline, entregável "Você escolhe onde grava", FAQ |
+| Deslocamento sem custo em VR e Barra Mansa | Entregável e FAQ própria. Também na peça 02 (Barra Mansa) e, com a ressalva de logística, na 03 (Resende) |
+| Equipamento (câmera de cinema, iluminação, lapela e boom, drone, gimbal) | Entregável "Só equipamento profissional" e FAQ |
+| Equipe de produção junto do filmmaker | Entregável próprio |
+| 4 na captação e 4 editores fixos | Subheadline, prova social e seção "por que produção própria" |
+| Mais de 500 vídeos por mês | Prova social e seção "por que produção própria" |
+| Entrega já editada | Entregável de edição, com a observação de que o cliente não recebe arquivo bruto |
 
-Sem esses quatro, a página argumenta bem e não prova nada. Também bloqueia
-a Tarefa 6, onde o audiovisual aparece no topo do funil.
+A peça 07 continua no sitemap e o único placeholder que resta é o slot de
+case, que não impede publicação.
 
 ## 2. Revisão regulatória das peças 11 e 12 — BLOQUEIA PUBLICAÇÃO
 
@@ -85,38 +89,44 @@ Uma observação sobre o Moraes: ele está numa página de **Barra Mansa** e o
 texto **não afirma** que o cliente é de lá, porque essa informação não me
 foi passada. Se for, dá para dizer e a peça fica mais forte.
 
-## 4. Peça 18 — decisão tomada, formato a definir
+## 4. Peça 18 — ângulo decidido, título e slug a definir
 
-A peça 18 seria "Quanto Custa uma Agência de Marketing Digital em Volta
-Redonda". É a busca de maior volume do nicho e hoje só é respondida por
-agências de fora, com faixa nacional genérica.
+Era "Quanto Custa uma Agência de Marketing Digital em Volta Redonda".
 
-**Sua decisão:** não falar de preço, porque a Cut não é a mais barata.
+**Sua decisão:** a Cut não fala de preço, porque não é a mais barata. O
+ângulo passa a ser **educativo, na linha de "o que analisar antes de
+contratar uma agência"**: o que faz o preço variar, quais modelos de
+cobrança existem e o que muda de fato o valor de uma proposta, sem
+tabelar a da Cut.
 
-Isso está certo do ponto de vista comercial e cria um problema editorial:
-um artigo com esse título que não responde a pergunta é o pior dos dois
-mundos. A pessoa entra, não encontra número, sai, e o Google registra isso.
+Registrado no `cluster-map.md`. Falta você definir:
 
-Três saídas possíveis, para você escolher na revisão:
+| # | O que falta |
+| --- | --- |
+| 4.1 | Título definitivo |
+| 4.2 | Slug definitivo (o antigo, `/blog/quanto-custa-agencia-marketing-volta-redonda`, não serve mais para o novo ângulo) |
 
-| Opção | O que é | Risco |
-| --- | --- | --- |
-| **A. Não escrever** | A peça sai do cluster | Deixa a busca de maior volume inteira para o concorrente |
-| **B. Trocar o ângulo** | Escrever "O que faz o preço de uma agência variar" ou "Como saber se você está pagando caro". Explica a estrutura de custo, os modelos de cobrança e o que muda o valor, sem citar a tabela da Cut | Baixo. Responde a intenção real de quem busca, que é entender se vai ser roubado |
-| **C. Faixa de mercado, não a sua** | Citar faixas praticadas na região de forma genérica | Alto. Exige dado real e vira `[FONTE NECESSÁRIA]` |
+Uma ressalva honesta: com o ângulo novo, a peça deixa de disputar a busca
+literal por "quanto custa agência de marketing". Ela passa a disputar uma
+busca menor e mais qualificada. É uma troca consciente de volume por
+alinhamento comercial, e vale saber que é isso que está sendo trocado.
 
-**Recomendo a B.** Mantém a peça no cluster, respeita a sua decisão de não
-tabelar preço e ainda posiciona a Cut como quem explica em vez de quem
-esconde. Preciso do seu ok para escrever.
+Um risco a acompanhar: a peça 21 ("como escolher uma agência sem errar")
+já cobre parte desse terreno. O recorte da 18 precisa ficar em **custo e
+proposta**, e o da 21 em **processo e responsabilidade**, senão as duas
+brigam entre si.
 
-## 5. Link para /blog no menu e no rodapé
+## 5. Link para /blog — RESOLVIDO
 
-Agora tem urgência: os três artigos da Tarefa 5 estão no ar na branch e
-`/blog` só é alcançável por URL direta e pelo sitemap. Nenhum link a partir
-da home aponta para lá.
+Autorizado e aplicado em dois lugares, sem deformar componente:
 
-Colocar no menu ou no rodapé mexe na navegação da home. Preciso da sua
-autorização, como foi com o item de menu da consolidação.
+- **Rodapé**, no grupo "Navegação", junto das âncoras de seção. É a
+  entrada principal, como você preferiu.
+- **Menu suspenso**, no bloco de baixo, ao lado de "Início". Entrou ali
+  porque no celular o menu é a única navegação que existe, e deixar o
+  blog só no rodapé o esconderia de quem está no telefone.
+
+Não entrou na lista de serviços do menu, porque blog não é serviço.
 
 ## 6. Perguntas que ficaram abertas por falta de política definida
 

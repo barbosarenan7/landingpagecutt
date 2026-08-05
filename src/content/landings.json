@@ -39,8 +39,8 @@
             "texto": "Nenhuma campanha sobe antes de entendermos o seu ciclo de venda, a sua margem e o que já foi tentado sem funcionar."
           },
           {
-            "titulo": "Gravação presencial na sua operação",
-            "texto": "A equipe se desloca até Barra Mansa e grava dentro do negócio: a loja com movimento, o galpão, a equipe trabalhando. Sem contratar fornecedor local para tapar buraco."
+            "titulo": "Gravação presencial, sem custo de deslocamento",
+            "texto": "A equipe de captação se desloca até Barra Mansa **sem custo adicional de deslocamento** e grava dentro do negócio: a loja com movimento, o galpão, a equipe trabalhando. Sem contratar fornecedor local para tapar buraco."
           },
           {
             "titulo": "Tráfego pago com criativo próprio",
@@ -161,7 +161,7 @@
       "faq": [
         {
           "pergunta": "Vocês atendem Barra Mansa presencialmente?",
-          "resposta": "Sim. O escritório e o estúdio ficam em Volta Redonda, a poucos minutos de Barra Mansa. Reuniões, captação e gravação acontecem na cidade, com a nossa própria equipe."
+          "resposta": "Sim, e sem cobrar deslocamento. O escritório e o estúdio ficam em Volta Redonda, a poucos minutos daqui, e Barra Mansa está na área onde a gravação não tem custo adicional de logística. Reuniões e captação acontecem na cidade, com a nossa própria equipe de quatro profissionais."
         },
         {
           "pergunta": "A gravação é feita na minha empresa ou no estúdio?",
@@ -237,7 +237,7 @@
           },
           {
             "titulo": "Captação presencial em Resende",
-            "texto": "A equipe vai até a cidade gravar dentro da operação. Sem banco de imagem, sem foto genérica de internet, sem freelancer diferente a cada mês."
+            "texto": "A nossa equipe de captação vai até a cidade gravar dentro da operação, com câmera de cinema, iluminação e equipe de produção no set. Sem banco de imagem, sem foto genérica de internet, sem freelancer diferente a cada mês."
           },
           {
             "titulo": "Acabamento de marca grande",
@@ -338,7 +338,7 @@
       "faq": [
         {
           "pergunta": "A Cut atende Resende ou só Volta Redonda?",
-          "resposta": "Atendemos Resende presencialmente. A base fica em Volta Redonda e a equipe se desloca para reunião, captação e gravação na cidade."
+          "resposta": "Atendemos Resende presencialmente. A base e o estúdio ficam em Volta Redonda e a equipe de captação se desloca para reunião e gravação na cidade. Para Resende entra um custo de logística, combinado antes da diária e não uma surpresa na fatura."
         },
         {
           "pergunta": "Minha empresa vende para o polo automotivo, não para o consumidor final. Marketing digital funciona?",
@@ -954,13 +954,13 @@
       ],
       "h1": "Produção de vídeo e audiovisual em Volta Redonda",
       "resumo": "Captação de foto e vídeo com direção criativa e estúdio próprio — comunicação mais forte, humana e cinematográfica.",
-      "subheadline": "A Cut Creative tem estúdio e equipe audiovisual internos em Volta Redonda. Direção, captação e edição são feitas por quem conhece a estratégia do cliente, e não por quem recebeu uma tarefa solta. É o que sustenta padrão, prazo e volume ao longo dos meses, dentro de uma [operação de marketing completa](/) ou como serviço isolado.",
+      "subheadline": "A Cut Creative tem estúdio próprio em Volta Redonda, quatro profissionais na captação e quatro editores fixos. Direção, gravação e edição acontecem sob o mesmo teto, feitas por quem conhece a estratégia do cliente, e não por quem recebeu uma tarefa solta. É o que sustenta padrão, prazo e volume, dentro de uma [operação de marketing completa](/) ou como serviço isolado.",
       "provaSocial": {
-        "titulo": "Quem já confia na Cut",
+        "titulo": "A estrutura por trás das entregas",
         "itens": [
-          "**Mais de 300 clientes atendidos** em 4 anos de operação.",
-          "**Estúdio próprio em Volta Redonda**, com captação e edição sob o mesmo teto.",
-          "**Mais de 30 colaboradores** distribuídos em equipes de estratégia, criação, tráfego e audiovisual."
+          "**Mais de 500 vídeos entregues por mês**, somando a carteira inteira: conteúdo de redes, campanhas de venda e criativo para tráfego pago.",
+          "**Equipe dedicada**: 4 profissionais na captação e 4 editores fixos, com rede de colaboradores acionada em projetos de maior escala.",
+          "**Estúdio próprio em Volta Redonda**, além de captação na operação do cliente. Quem escolhe onde grava é você."
         ]
       },
       "dor": {
@@ -978,12 +978,20 @@
             "texto": "Conceito e roteiro alinhados ao posicionamento da marca e ao objetivo de cada peça. É a etapa que separa vídeo que constrói autoridade de vídeo que só ocupa espaço."
           },
           {
-            "titulo": "Captação em estúdio ou na sua operação",
-            "texto": "Gravação no nosso estúdio em Volta Redonda ou dentro do negócio do cliente: clínica, indústria, restaurante, escritório, obra."
+            "titulo": "Você escolhe onde grava",
+            "texto": "No nosso estúdio em Volta Redonda, quando a peça pede estrutura controlada, ou dentro do seu negócio: clínica, indústria, restaurante, escritório, obra. Em Volta Redonda e Barra Mansa não há custo adicional de deslocamento; nos demais municípios entra a logística da cidade, combinada antes."
+          },
+          {
+            "titulo": "Só equipamento profissional",
+            "texto": "Câmera de cinema, iluminação profissional, microfone de lapela e boom, drone e gimbal para estabilização. Não é celular com aro de luz, e a diferença aparece na primeira vez que o vídeo roda ao lado do de um concorrente."
+          },
+          {
+            "titulo": "Equipe de produção no set, não só o filmmaker",
+            "texto": "A diária tem equipe de produção acompanhando junto do filmmaker. É o que faz caber mais material no mesmo dia e evita a gravação parar porque faltou alguém para segurar a luz."
           },
           {
             "titulo": "Edição e finalização com padrão de marca",
-            "texto": "Montagem, correção de cor, trilha e identidade visual aplicada, no formato de cada canal, do vertical ao institucional."
+            "texto": "Todo o material é entregue já editado: montagem, correção de cor, trilha e identidade visual aplicada, no formato de cada canal, do vertical ao institucional. Você não recebe pasta de arquivo bruto para resolver depois."
           },
           {
             "titulo": "Volume planejado, não corrida por post",
@@ -1044,12 +1052,16 @@
         "titulo": "Produtora própria não é detalhe de escopo. É o que muda o resto.",
         "blocos": [
           {
-            "tipo": "pendencia",
-            "texto": "**[VERIFICAR COM RENAN]** Aqui entram os dados reais da estrutura audiovisual da Cut: descrição do estúdio, equipamento, tamanho da equipe de produção e volume mensal de entregas. Sem esses números a página argumenta bem, mas não prova nada. Este bloco existe só para você não esquecer de trocar na sua revisão final, e precisa sair antes do site ir ao ar."
+            "tipo": "p",
+            "texto": "A maior parte das agências que disputa as buscas de Volta Redonda não produz vídeo. Contrata. E contratar funciona para uma peça avulsa; o que não funciona é sustentar uma operação de conteúdo em cima disso."
           },
           {
             "tipo": "p",
-            "texto": "A maior parte das agências que disputa as buscas de Volta Redonda não produz vídeo. Contrata. E contratar funciona para uma peça avulsa; o que não funciona é sustentar uma operação de conteúdo em cima disso."
+            "texto": "A diferença fica clara quando se olha o que sustenta o volume. São **mais de 500 vídeos entregues por mês** somando toda a carteira da agência, entre conteúdo de redes, campanha de venda e criativo para tráfego pago. Esse número não sai de uma pessoa com câmera boa: sai de **quatro profissionais na captação e quatro editores fixos**, com rede de colaboradores acionada quando o projeto é maior."
+          },
+          {
+            "tipo": "p",
+            "texto": "É por isso que a edição não vira gargalo. Quem grava não é quem edita, e o material chega ao cliente **já finalizado**, no formato de cada canal. Em estrutura terceirizada, editar costuma ser a etapa em que tudo atrasa, porque é a mais demorada e a que depende de uma pessoa só."
           },
           {
             "tipo": "p",
@@ -1080,11 +1092,19 @@
       "faq": [
         {
           "pergunta": "Vocês têm estúdio próprio?",
-          "resposta": "Sim, estúdio e equipe de produção próprios em Volta Redonda. É o que permite manter padrão, prazo e escala sem terceirizar a captação."
+          "resposta": "Sim, estúdio próprio em Volta Redonda, usado quando a peça pede estrutura controlada: ensaio fotográfico corporativo, entrevista, conteúdo em cenário. Ele existe junto da equipe de captação e dos editores, e é isso que permite manter padrão e prazo sem terceirizar."
         },
         {
           "pergunta": "Dá para gravar na minha empresa?",
-          "resposta": "Dá, e boa parte do material ganha força assim. Chão de fábrica, cozinha, consultório e escritório contam a história que o estúdio não conta. A escolha entra na pré-produção."
+          "resposta": "Dá, e quem escolhe onde grava é você. Boa parte do material ganha força no local real: chão de fábrica, cozinha, consultório, escritório, obra. A escolha entra na pré-produção, junto do roteiro."
+        },
+        {
+          "pergunta": "Vocês cobram deslocamento?",
+          "resposta": "Em Volta Redonda e Barra Mansa, não. Nos demais municípios entra um custo de logística conforme a cidade, combinado antes da diária, sem surpresa depois."
+        },
+        {
+          "pergunta": "Que equipamento vocês usam?",
+          "resposta": "Só equipamento profissional: câmera de cinema, iluminação profissional, microfone de lapela e boom, drone e gimbal para estabilização. A diária tem equipe de produção acompanhando junto do filmmaker, e não uma pessoa fazendo tudo sozinha."
         },
         {
           "pergunta": "A produção pode ser contratada sem o restante do marketing?",
@@ -1095,16 +1115,8 @@
           "resposta": "Depende do roteiro, do número de ambientes e de quantas pessoas aparecem. O número é fechado na pré-produção, quando o roteiro já existe. Chutar volume antes disso é como orçar obra sem planta."
         },
         {
-          "pergunta": "Vocês fazem vídeo institucional e conteúdo de redes no mesmo dia?",
-          "resposta": "Fazemos, e costuma ser a forma mais econômica de aproveitar a diária: mesma preparação, mesma equipe, formatos diferentes na edição."
-        },
-        {
           "pergunta": "Quem escreve o roteiro?",
           "resposta": "A nossa equipe, a partir da estratégia definida no diagnóstico. Você revisa e aprova antes da gravação, para ninguém descobrir divergência com a câmera já ligada."
-        },
-        {
-          "pergunta": "Preciso aparecer nos vídeos?",
-          "resposta": "Não obrigatoriamente. Tem marca que pede rosto, tem marca que pede produto, ambiente ou equipe. A direção criativa define o formato."
         },
         {
           "pergunta": "Em quanto tempo o material fica pronto?",

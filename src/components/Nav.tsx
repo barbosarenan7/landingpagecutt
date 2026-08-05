@@ -133,6 +133,15 @@ export default function Nav() {
                   ))}
                   <li className="mt-1 border-t border-line-light">
                     <Link
+                      to="/blog"
+                      onClick={() => setAberto(false)}
+                      className="text-2nd block px-5 py-3 text-[14px] transition-colors hover:bg-ink-900/5"
+                    >
+                      Blog
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
                       to="/"
                       onClick={() => setAberto(false)}
                       className="text-2nd block px-5 py-3 text-[14px] transition-colors hover:bg-ink-900/5"

@@ -50,8 +50,8 @@ Na prática, os dois tipos de negócio acabam recebendo a mesma receita: publica
 **01. Diagnóstico antes de qualquer verba**  
 Nenhuma campanha sobe antes de entendermos o seu ciclo de venda, a sua margem e o que já foi tentado sem funcionar.
 
-**02. Gravação presencial na sua operação**  
-A equipe se desloca até Barra Mansa e grava dentro do negócio: a loja com movimento, o galpão, a equipe trabalhando. Sem contratar fornecedor local para tapar buraco.
+**02. Gravação presencial, sem custo de deslocamento**  
+A equipe de captação se desloca até Barra Mansa **sem custo adicional de deslocamento** e grava dentro do negócio: a loja com movimento, o galpão, a equipe trabalhando. Sem contratar fornecedor local para tapar buraco.
 
 **03. Tráfego pago com criativo próprio**  
 O anúncio não é print de post. É peça produzida pela mesma equipe que faz a [gestão de mídia](/trafego-pago-volta-redonda), com verba acompanhada de perto.
@@ -125,7 +125,7 @@ Quando essa agência precisa de imagem, acontece uma de duas coisas. Ou ela usa 
 ## 9. FAQ
 
 **Vocês atendem Barra Mansa presencialmente?**  
-Sim. O escritório e o estúdio ficam em Volta Redonda, a poucos minutos de Barra Mansa. Reuniões, captação e gravação acontecem na cidade, com a nossa própria equipe.
+Sim, e sem cobrar deslocamento. O escritório e o estúdio ficam em Volta Redonda, a poucos minutos daqui, e Barra Mansa está na área onde a gravação não tem custo adicional de logística. Reuniões e captação acontecem na cidade, com a nossa própria equipe de quatro profissionais.
 
 **A gravação é feita na minha empresa ou no estúdio?**  
 Nos dois, conforme a peça. Material de operação rende mais gravado no local real: a loja, o galpão, a linha de produção. Institucional e depoimento costumam render mais no estúdio. A escolha entra na pré-produção.
