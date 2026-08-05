@@ -123,19 +123,15 @@ de classe: saem marcadas com `REVISÃO REGULATÓRIA PENDENTE`.
 | 24 | Quanto Investir em Tráfego Pago por Mês | `/blog/quanto-investir-trafego-pago` | 2 |
 | 25 | Vídeo ou Foto: O Que Converte Mais no Instagram | `/blog/video-ou-foto-instagram` | 3 |
 
-**Peça 18 — ângulo revisado.** Era "Quanto Custa uma Agência de
-Marketing Digital em Volta Redonda". O Renan decidiu que a Cut **não
-fala de preço**, porque não é a mais barata, e um artigo com aquele
-título que não responde a pergunta seria o pior dos dois mundos.
+**Peça 18 — escrita com o ângulo revisado.** Era "Quanto Custa uma
+Agência de Marketing Digital em Volta Redonda". A Cut **não fala de
+preço**, porque não é a mais barata, e um artigo com aquele título que
+não respondesse a pergunta seria o pior dos dois mundos.
 
-O novo ângulo é **educativo, na linha de "o que analisar antes de
-contratar uma agência"**: explica o que faz o preço variar, quais
-modelos de cobrança existem e o que muda de fato o valor de uma
-proposta, sem tabelar a da Cut. Mantém a peça no cluster, respeita a
-decisão comercial e responde a intenção real de quem busca, que é saber
-se está pagando caro.
-
-Título e slug definitivos **a definir com o Renan**.
+O ângulo aprovado é **educativo**: explica os seis fatores que fazem o
+preço variar, os modelos de cobrança que existem, o que costuma ficar
+fora da proposta e vira custo depois, e por que o Método Cut entra na
+empresa antes de calcular. Sem tabelar a da Cut.
 
 **Peça 25** é chave para o pilar audiovisual: é onde a Cut argumenta,
 de dentro, por que vídeo converte mais, com a autoridade de quem produz.
