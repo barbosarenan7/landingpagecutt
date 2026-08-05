@@ -9,7 +9,7 @@
 | Keywords secundárias | produtora de vídeo Volta Redonda, produção audiovisual Volta Redonda, estúdio de gravação Volta Redonda, vídeo institucional Volta Redonda, filmagem para empresas Volta Redonda |
 | Title tag (48 caracteres) | Produção de Vídeo e Audiovisual em Volta Redonda |
 | Meta description (141 caracteres) | Produtora com estúdio próprio em Volta Redonda: direção, captação e edição para empresas da região, com equipe interna. Diagnóstico gratuito. |
-| Links internos | `/`, `/agencia-marketing-digital-barra-mansa`, `/agencia-marketing-digital-resende`, `/assessoria-estrategica-de-marketing`, `/trafego-pago-volta-redonda` |
+| Links internos | `/`, `/agencia-marketing-digital-barra-mansa`, `/agencia-marketing-digital-resende`, `/assessoria-estrategica-de-marketing`, `/blog/video-profissional-para-empresa`, `/trafego-pago-volta-redonda` |
 | CTA | 3 (topo, meio e fim) |
 | Schema | ProfessionalService/LocalBusiness + Service + BreadcrumbList + FAQPage |
 | Implementada | Sim, em `src/content/landings.json` |
@@ -119,7 +119,7 @@ A diferença fica clara quando se olha o que sustenta o volume. São **mais de 5
 
 É por isso que a edição não vira gargalo. Quem grava não é quem edita, e o material chega ao cliente **já finalizado**, no formato de cada canal. Em estrutura terceirizada, editar costuma ser a etapa em que tudo atrasa, porque é a mais demorada e a que depende de uma pessoa só.
 
-Três coisas quebram quando a captação é terceirizada:
+Três coisas quebram quando a captação é terceirizada, e elas aparecem sempre na mesma ordem. Se você quer entender o lado técnico disso, escrevemos o passo a passo em [como fazer vídeo profissional para empresa](/blog/video-profissional-para-empresa):
 
 - **Prazo.** A diária depende da agenda de alguém que não responde à sua empresa. Uma semana de atraso vira um mês de calendário furado.
 - **Padrão.** Cada fornecedor tem o seu jeito de enquadrar, cortar e colorir. Ao longo de um ano, a marca acumula sotaques em vez de identidade.

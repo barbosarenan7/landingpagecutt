@@ -323,6 +323,29 @@ Reis e Rio de Janeiro".
 Nenhuma palavra visível do conteúdo mudou de sentido: só mudou o trecho
 que fica sublinhado como link.
 
+## Reauditoria com as peças 13, 18, 33 e 36
+
+Rodada depois que quatro peças novas entraram. As de prioridade média
+foram aplicadas.
+
+| Ponto | Antes | Depois |
+| --- | --- | --- |
+| Peças órfãs | 13, 18 e 36 sem link de entrada | **Zero.** 13 ← 02, 06, 27 · 18 ← 19 · 36 ← 03, 06, 21 |
+| Link para a home | 14 de 14 | mantido |
+| Link duplicado 12 → 11 | 2 links, mesma âncora | **Removido.** O segundo virou link para a assessoria |
+| 02 ↔ 03 | não se linkavam | **02 ← 03** aplicado |
+| 12 → 08 | não existia | **Aplicado** |
+| Âncora "produção audiovisual" | 7 repetições | 5, com duas viradas em "estúdio de produção de vídeo" e "equipe que filma e edita dentro de casa" |
+
+A peça 07 continua hub e agora fecha o ciclo: ela linka para o artigo 33
+(vídeo profissional para empresa), que por sua vez volta para ela. Todo
+mundo que toca em vídeo passa por essas duas.
+
+Repetições que permanecem, por serem nome de cidade ou de serviço, não
+âncora genérica: "Barra Mansa" 5x, "Resende" 4x, "agência de marketing em
+Volta Redonda" 3x, "gestão de tráfego pago" 3x, "treinamento comercial"
+3x.
+
 ## Antes de qualquer merge
 
 O que só o ambiente real prova:
