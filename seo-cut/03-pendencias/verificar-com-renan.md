@@ -1,138 +1,189 @@
 # Verificar com o Renan
 
-Aberto na Tarefa 4, atualizado na Tarefa 5. Será consolidado na Tarefa 8.
-Cada item diz o que bloqueia.
+Tarefa 8, consolidada. Reúne todo marcador aberto do projeto.
 
-## Resolvidas desde a Tarefa 4
+**Nenhum marcador aparece para o visitante.** Todos os
+`[VERIFICAR COM RENAN]` que estavam visíveis em página foram resolvidos:
+ou o texto foi escrito com dado real, ou a seção saiu.
 
-| Item | Como ficou |
+---
+
+## 1. Quadro geral
+
+| Peça | Marcador | O que precisa | Bloqueia publicação? |
+| --- | --- | --- | --- |
+| 18, 19, 20, 21 | `[FONTE NECESSÁRIA]` | Nada. Nenhuma estatística foi usada | **Não** |
+| 27 como divulgar | `[FONTE NECESSÁRIA]` | Idem | **Não** |
+| 33 vídeo profissional | `[FONTE NECESSÁRIA]` | Idem | **Não** |
+| 34 Google Meu Negócio | `[FONTE NECESSÁRIA]` | Idem | **Não** |
+| 11 clínicas | Case | **Resolvido**: Gastro Center e cerca de 50 médicos | **Não** |
+| 12 médicos | Case | **Resolvido**: idem | **Não** |
+| 03 Resende | Case | Sem cliente na cidade. A seção saiu da página | **Não** |
+| 06 tráfego | Case | **Resolvido**: Sugoi, Miss Marmita e Advogada Mafra | **Não** |
+| 07 audiovisual | Estrutura | **Resolvido**: os sete dados chegaram e foram distribuídos | **Não** |
+| 36 treinamento | Formato do serviço | Duração, público e formato nunca foram definidos. O texto está genérico nesses pontos, sem placeholder | **Não** |
+| Home | `showMetrics` | Números auditados, se quiser exibir | **Não** |
+| Google Meu Negócio | Acesso | Login da conta que administra o perfil | **Não** |
+
+**Nada bloqueia publicação hoje.** O site está no ar com 19 rotas.
+
+> Sobre o `[FONTE NECESSÁRIA]`: ele aparece nos arquivos de peça porque o
+> cabeçalho de cada uma declara "Estatística usada: Nenhuma. Não foi
+> preciso marcar `[FONTE NECESSÁRIA]`". É registro de ausência, não
+> pendência. **Nenhum artigo do site usa estatística de terceiro.**
+
+---
+
+## 2. O diferencial audiovisual: resolvido
+
+Era a maior pendência do projeto, porque é o argumento central de todo o
+cluster. **Os dados chegaram e foram aplicados.**
+
+O que pode ser afirmado em qualquer peça, sem consultar de novo:
+
+| Dado | Valor |
 | --- | --- |
-| URL da consolidação (peça 06) | `/trafego-pago-volta-redonda` sobrevive, `/social-media-volta-redonda` recebe 301. **Aplicado** |
-| Menu da home na consolidação | Um item só: "Tráfego pago e social media". **Aplicado** |
-| Aprovar a troca do texto da peça 07 | Aprovada e **aplicada**, mantendo a URL |
-| Promessa de exclusividade por cidade | **Removida.** A pergunta da FAQ da peça 02 virou "Quem vai cuidar da minha conta no dia a dia?" |
-| Faixa de investimento | Decidido **não falar de preço**. Ver item 4 |
-| Dados da estrutura audiovisual | **Entregues e aplicados.** O bloco amarelo da peça 07 saiu |
-| Link para `/blog` na home | **Autorizado e aplicado**: rodapé (Navegação) e menu suspenso |
-| Ângulo da peça 18 | **Decidido**: educativo, sem preço. Título e slug a definir |
+| Estúdio | Próprio, 250 m², em Volta Redonda. O cliente escolhe onde grava |
+| Deslocamento | Sem custo em Volta Redonda e Barra Mansa. Demais cidades têm logística, acertada antes da diária |
+| Equipamento | Câmera de cinema, iluminação profissional, lapela e boom, drone, gimbal |
+| No set | Equipe de produção junto do filmmaker |
+| Equipe audiovisual | 4 na captação, 4 editores fixos, mais rede de colaboradores |
+| Volume | Mais de 500 vídeos por mês |
+| Entrega | Material sai já editado |
+| Carteira | 100 clientes ativos, mais de 300 atendidos em 4 anos |
+| Retenção | Tempo médio de casa de 14 meses |
+| Equipe total | 30 colaboradores |
 
-## 1. Estrutura audiovisual — RESOLVIDO
+**Proibido afirmar qualquer coisa fora desta lista.** Prêmio,
+certificação e comparação com concorrente continuam vetados até virem do
+Renan.
 
-Os quatro dados chegaram e foram aplicados. O bloco amarelo "TROCAR ANTES
-DE PUBLICAR" **não existe mais** na peça 07.
+Uma frase foi **vetada** por falta de prova: "a agência de Volta Redonda
+com mais clientes ativos". Não está em nenhuma página.
 
-Onde cada dado entrou, distribuído em vez de concentrado num quadro:
+Uma foi **autorizada**: "a agência que mais atende médicos em Volta
+Redonda", nas peças 11 e 12.
 
-| Dado | Onde aparece na peça 07 |
+---
+
+## 3. Clientes e cases autorizados
+
+| Cliente | Onde aparece |
 | --- | --- |
-| Estúdio próprio e escolha do local | Subheadline, entregável "Você escolhe onde grava", FAQ |
-| Deslocamento sem custo em VR e Barra Mansa | Entregável e FAQ própria. Também na peça 02 (Barra Mansa) e, com a ressalva de logística, na 03 (Resende) |
-| Equipamento (câmera de cinema, iluminação, lapela e boom, drone, gimbal) | Entregável "Só equipamento profissional" e FAQ |
-| Equipe de produção junto do filmmaker | Entregável próprio |
-| 4 na captação e 4 editores fixos | Subheadline, prova social e seção "por que produção própria" |
-| Mais de 500 vídeos por mês | Prova social e seção "por que produção própria" |
-| Entrega já editada | Entregável de edição, com a observação de que o cliente não recebe arquivo bruto |
+| Moraes Buffet de Brasas | Peças 02 e 07 |
+| Clínica Gastro Center | Peças 11 e 12 |
+| Sugoi Sushi | Peças 06 e 13 |
+| Miss Marmita | Peças 06 e 13 |
+| Advogada Mafra | Peça 06 |
+| Paulo do Peixe, Bella Pizza, Ducks, Turcos Lanches, Esquina Grill, Garagem Hot Dogs | Peça 13 |
 
-A peça 07 continua no sitemap e o único placeholder que resta é o slot de
-case, que não impede publicação.
+Números publicados, todos passados pelo Renan: Sugoi Sushi com R$ 5 mil
+em mídia gerando mais de R$ 150 mil e retorno acima de 30 vezes; Miss
+Marmita com 56% de crescimento no primeiro mês; Advogada Mafra com custo
+por contato caindo de R$ 20 para R$ 3.
 
-## 2. Revisão regulatória das peças 11 e 12 — BLOQUEIA PUBLICAÇÃO
+> **Ponto de atenção:** se um lead perguntar "e no meu caso?", a resposta
+> precisa existir. Número forte atrai cobrança.
 
-Publicidade médica e odontológica é regulada pelos conselhos de classe, e
-a responsabilidade pelo que vai ao ar é do profissional, não da agência.
-As duas peças estão escritas e implementadas, com `revisaoRegulatoria:
-true` no `landings.json`, o que as mantém **fora do sitemap**. Nenhuma
-tarja aparece para o visitante.
+---
 
-| Peça | URL |
+## 4. Política comercial registrada
+
+| Tema | Como está no site |
 | --- | --- |
-| 11 | `/marketing-para-clinicas-volta-redonda` |
-| 12 | `/marketing-para-medicos-volta-redonda` |
+| Prazo | Gestão de redes a partir de 4 meses. Campanha pontual tem o prazo do projeto |
+| Preço | Não se fala de preço em conteúdo. A peça 18 explica o que faz variar, sem tabelar |
+| Publicidade médica | Imagem de resultado só com autorização e solicitação do profissional, e consentimento formal de quem aparece |
+| Validação | Toda peça de saúde passa pelo profissional antes de publicar. **É regra da casa** |
+| Garantias | Nenhuma. O texto afirma explicitamente que não garante número de pacientes nem de consultas |
 
-O que foi feito por precaução no texto, sem esperar a revisão:
+---
 
-- Nenhuma promessa de resultado de tratamento.
-- Nenhuma menção a antes e depois como argumento de venda.
-- Nenhuma oferta, preço ou condição de pagamento de procedimento.
-- Nenhum superlativo de comparação ("o melhor", "referência absoluta").
-- Nenhum depoimento de paciente.
-- A resposta sobre garantia de pacientes diz explicitamente que não há.
+## 5. O que ainda depende de você
 
-O que precisa de decisão humana antes de indexar:
+### 5.1 Acesso ao Google Meu Negócio
 
-| # | Ponto a checar | Onde aparece |
-| --- | --- | --- |
-| 2.1 | Um profissional responsável técnico precisa ler e aprovar as duas páginas | as duas |
-| 2.2 | Confirmar a redação sobre **preço em publicidade de saúde**. Hoje ela diz que a decisão é caso a caso com o responsável técnico | peça 11, FAQ 2 |
-| 2.3 | Confirmar a resposta sobre **imagem de resultado**. Hoje diz que a conduta padrão é não usar com finalidade promocional | peça 12, FAQ 2 |
-| 2.4 | Confirmar a citação genérica ao **CFM**. Não citamos número de resolução de propósito, para o texto não envelhecer | peça 12, FAQ 1 |
-| 2.5 | Definir se a Cut assume por contrato a **validação prévia de cada peça** pelo profissional. O texto afirma que sim, em três lugares | as duas |
-| 2.6 | Odontologia tem regra própria (CFO). Se houver cliente de odonto, a peça 11 precisa de uma passada específica | peça 11 |
+Testei as quatro contas logadas no seu Chrome e **o perfil da Cut não
+aparece em nenhuma**:
 
-## 3. Cases reais — 5 slots em aberto
-
-O case do **Moraes Buffet de Brasas** está escrito na peça 02 (Barra
-Mansa), sem número de faturamento e sem métrica inventada.
-
-| Peça | Onde entra |
+| Conta | Conteúdo |
 | --- | --- |
-| 03 | Resende |
-| 06 | tráfego e social media |
-| 07 | audiovisual |
-| 11 | clínicas |
-| 12 | médicos |
+| `u/0` | 0 empresas |
+| `u/1` | Garagens Hot Dog, que é cliente de vocês |
+| `u/2` | 0 empresas |
+| `u/3` | 0 empresas |
 
-Todos marcados como
-`[VERIFICAR COM RENAN: case a definir - trabalho com grande empresa de Volta Redonda]`.
+Na busca, o painel mostra "É proprietário desta empresa?", que é o que o
+Google exibe para quem não é dono.
 
-Uma observação sobre o Moraes: ele está numa página de **Barra Mansa** e o
-texto **não afirma** que o cliente é de lá, porque essa informação não me
-foi passada. Se for, dá para dizer e a peça fica mais forte.
+Ficam esperando: 6 postagens escritas, 9 serviços com descrição pronta e
+2 categorias (Produtora de vídeo, Marketing na Internet). Tudo em
+`GMN-rascunhos.md`. Passo a passo no fim deste arquivo.
 
-## 4. Peça 18 — ângulo decidido, título e slug a definir
+### 5.2 Peça 36, treinamento e palestras
 
-Era "Quanto Custa uma Agência de Marketing Digital em Volta Redonda".
+Escrita sem duração, formato ou público, porque nunca foram passados. Não
+tem placeholder na página: o texto está honesto e genérico nesses pontos.
+Se você definir, ela fica bem mais concreta.
 
-**Sua decisão:** a Cut não fala de preço, porque não é a mais barata. O
-ângulo passa a ser **educativo, na linha de "o que analisar antes de
-contratar uma agência"**: o que faz o preço variar, quais modelos de
-cobrança existem e o que muda de fato o valor de uma proposta, sem
-tabelar a da Cut.
+### 5.3 Números da home
 
-Registrado no `cluster-map.md`. Falta você definir:
+A trava `showMetrics` continua desligada. Os números que você passou já
+entraram nas landings. Exibir algum na home é decisão sua, porque mexe na
+home.
 
-| # | O que falta |
+### 5.4 Componentes parqueados
+
+`Cases.tsx`, `Depoimentos.tsx` e `LogoMarquee.tsx` têm marcador
+`[CONFIRMAR]` e estão **fora do ar** desde a v1. Depoimentos você já
+decidiu que não entra. Os outros dois seguem parqueados.
+
+---
+
+## 6. Fora do escopo, e de quem é
+
+| Item | Quem faz |
 | --- | --- |
-| 4.1 | Título definitivo |
-| 4.2 | Slug definitivo (o antigo, `/blog/quanto-custa-agencia-marketing-volta-redonda`, não serve mais para o novo ângulo) |
+| Alterar texto ou layout da home | Ninguém, salvo autorização item a item. Houve quatro: menu consolidado, link do Blog, item de treinamento e a limpeza de travessões |
+| Publicar as páginas ou fazer merge | Renan, após revisão |
+| Definir qual URL sobrevive na consolidação | **Resolvido.** `/trafego-pago-volta-redonda`, com 301 da outra |
+| Pesquisa de volume no SEMrush | Renan |
+| Baseline no Search Console e Analytics | Renan. Foi pedido para pular |
+| Google Meu Negócio | Time da Cut, hoje bloqueado por acesso |
+| Link building | Time da Cut |
+| Revisão editorial e regulatória | **Feita.** Aprovada pelo Renan |
 
-Uma ressalva honesta: com o ângulo novo, a peça deixa de disputar a busca
-literal por "quanto custa agência de marketing". Ela passa a disputar uma
-busca menor e mais qualificada. É uma troca consciente de volume por
-alinhamento comercial, e vale saber que é isso que está sendo trocado.
+---
 
-Um risco a acompanhar: a peça 21 ("como escolher uma agência sem errar")
-já cobre parte desse terreno. O recorte da 18 precisa ficar em **custo e
-proposta**, e o da 21 em **processo e responsabilidade**, senão as duas
-brigam entre si.
+## 7. Checklist de segurança
 
-## 5. Link para /blog — RESOLVIDO
+Estado ao fim desta execução:
 
-Autorizado e aplicado em dois lugares, sem deformar componente:
+- [x] Nenhum texto visível da home alterado **sem autorização**. As quatro alterações foram pedidas explicitamente
+- [x] Só as páginas autorizadas tiveram conteúdo reescrito (06 e 07)
+- [x] Páginas protegidas verificadas com diff do HTML gerado a cada commit
+- [x] Formulário e CTAs funcionando. Três CTAs por landing, dois advertoriais por artigo
+- [x] Nenhum push direto para a branch principal. Todo merge foi feito pelo Renan, via Pull Request
+- [x] Nenhum dado, número, preço, prêmio ou equipamento inventado. Tudo veio do Renan
+- [x] Audiovisual próprio evidenciado nas 15 peças
+- [x] Todo dado ausente marcado como pendência, e nenhum marcador visível em página
+- [x] **Zero travessões nas 19 rotas**
 
-- **Rodapé**, no grupo "Navegação", junto das âncoras de seção. É a
-  entrada principal, como você preferiu.
-- **Menu suspenso**, no bloco de baixo, ao lado de "Início". Entrou ali
-  porque no celular o menu é a única navegação que existe, e deixar o
-  blog só no rodapé o esconderia de quem está no telefone.
+---
 
-Não entrou na lista de serviços do menu, porque blog não é serviço.
+## 8. Passo a passo do login no Google
 
-## 6. Perguntas que ficaram abertas por falta de política definida
+1. Neste mesmo Chrome, abra **google.com** e clique no seu avatar, no canto superior direito.
+2. Clique em **Adicionar outra conta**.
+3. Entre com **agencia.cutcreative@gmail.com** e a senha.
+4. Depois de entrar, abra **business.google.com/locations**.
+5. **Confirme que aparece "Agência Cut Creative" na lista**, com status Confirmado. Se aparecer "0 empresa", a conta é outra e o perfil está sob e-mail diferente.
+6. Me avise aqui no chat.
 
-| Onde | Pergunta | Como está hoje |
-| --- | --- | --- |
-| Peça 03, FAQ 7 | "Vocês assinam contrato de fidelidade longo?" | Diz que o prazo é acordado antes, sem citar número de meses |
-| Peça 21 (artigo), FAQ 2 | "Qual o prazo mínimo de contrato razoável?" | Mesma linha: fala em ciclos, sem número |
+Se em nenhuma conta sua o perfil aparecer, o caminho muda: na busca do
+Google, procure "Agência Cut Creative", clique em **"É proprietário desta
+empresa?"** e siga a reivindicação de propriedade. O Google pede
+verificação, normalmente por vídeo.
 
-Se existe uma política de prazo definida, as duas ficam mais firmes com ela.
+**Não vou acessar nem alterar o perfil do Garagens Hot Dog**, que é de um
+cliente de vocês.

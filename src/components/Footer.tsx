@@ -233,7 +233,7 @@ export default function Footer() {
 
         <div className="faixa-leitura-lista mt-7 flex flex-col gap-2 border-t border-line-dark pt-5 text-xs text-text3 md:mt-14 md:flex-row md:items-center md:justify-between md:gap-3 md:pt-6">
           <p>
-            © {new Date().getFullYear()} {site.legalName} — CNPJ {site.cnpj}
+            © {new Date().getFullYear()} {site.legalName}. CNPJ {site.cnpj}
           </p>
           <Link to="/privacidade" className="underline underline-offset-4 transition-colors hover:text-paper-50">
             Política de privacidade
