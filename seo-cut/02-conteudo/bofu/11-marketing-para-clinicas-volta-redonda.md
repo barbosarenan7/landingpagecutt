@@ -59,7 +59,7 @@ O outro lado é a distribuição errada. Não adianta encher a agenda de procedi
 Quais procedimentos sustentam a operação, quais horários ficam ociosos e qual serviço a clínica quer expandir. Sem isso, campanha vira sorteio.
 
 **02. Conteúdo de autoridade, dentro das regras**  
-Conteúdo informativo, apresentação da equipe e da estrutura. Sem promessa de resultado, sem antes e depois e sem sensacionalismo. Cada peça passa pela sua validação antes de ir ao ar.
+Conteúdo informativo, apresentação da equipe e da estrutura. Sem promessa de resultado e sem sensacionalismo. Imagem de resultado só entra quando o profissional responsável autoriza e solicita, com consentimento formal de quem aparece. Cada peça passa pela sua validação antes de ir ao ar.
 
 **03. Gravação dentro da clínica**  
 A equipe grava no ambiente real, com a sua equipe e a sua estrutura. Consultório limpo e bem filmado comunica cuidado antes de qualquer legenda.
@@ -132,7 +132,7 @@ Se você é médico e o que precisa construir é a sua autoridade pessoal, e nã
 ## 9. FAQ
 
 **O que o conselho de classe permite divulgar?**  
-As resoluções dos conselhos definem os limites, e eles são mais restritivos do que a maioria das agências considera. Na prática trabalhamos com conteúdo informativo, apresentação da equipe e da estrutura, e evitamos promessa de resultado, imagem de antes e depois, sensacionalismo e oferta que trate procedimento como mercadoria. Toda peça passa pela validação do profissional responsável antes de ir ao ar.
+As resoluções dos conselhos definem os limites, e eles são mais restritivos do que a maioria das agências considera. Na prática trabalhamos com conteúdo informativo, apresentação da equipe e da estrutura, e nunca com promessa de resultado, sensacionalismo ou oferta que trate procedimento como mercadoria. Imagem de resultado é exceção: só entra quando o profissional responsável autoriza e solicita, com consentimento formal de quem aparece. Toda peça passa pela validação do profissional responsável antes de ir ao ar.
 
 **Vocês fazem anúncio de procedimento com preço?**  
 Preço em publicidade de saúde é um dos pontos mais sensíveis da regulação, e a leitura muda conforme o conselho e a especialidade. Isso é decidido caso a caso, com o profissional responsável técnico, antes de qualquer campanha subir.
