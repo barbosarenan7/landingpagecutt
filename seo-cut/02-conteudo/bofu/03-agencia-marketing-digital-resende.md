@@ -28,9 +28,9 @@ Em Resende o seu cliente convive todo dia com a comunicação de marcas de padr�
 
 **Quem já confia na Cut**
 
-- **Mais de 300 clientes atendidos** em 4 anos de operacao.
-- **Estrutura presencial**: estudio, equipe de captacao e edicao sob o mesmo teto, sem terceirizar producao.
-- **Mais de 30 colaboradores** distribuidos em equipes de estrategia, criacao, trafego e audiovisual.
+- **100 clientes ativos hoje** e mais de 300 atendidos em 4 anos de operação.
+- **Estrutura própria de 250 m²** em Volta Redonda, com estúdio, equipe de captação e edição sob o mesmo teto.
+- **30 colaboradores** e um tempo médio de casa de 14 meses por cliente, num mercado em que trocar de agência todo semestre virou rotina.
 
 Abaixo dos cartões entra a mesma grade de logos da landing principal
 (componente `ClientesGrid`, alimentado por `site.json → logos`).
@@ -120,7 +120,7 @@ Se a sua empresa já tem equipe interna e o que falta é direção, o formato ce
 ## 9. FAQ
 
 **A Cut atende Resende ou só Volta Redonda?**  
-Atendemos Resende presencialmente. A base e o estúdio ficam em Volta Redonda e a equipe de captação se desloca para reunião e gravação na cidade. Para Resende entra um custo de logística, combinado antes da diária e não uma surpresa na fatura.
+Atendemos Resende presencialmente. A base e o estúdio ficam em Volta Redonda, e a equipe de captação se desloca para reunião e gravação na cidade. Volta Redonda e Barra Mansa não têm custo de deslocamento; para as demais cidades, incluindo Resende, existe um custo de logística sempre acertado antes da diária.
 
 **Minha empresa vende para o polo automotivo, não para o consumidor final. Marketing digital funciona?**  
 Funciona, com outro objetivo. Em venda B2B o marketing raramente fecha o negócio sozinho: ele qualifica, constrói reputação e encurta a conversa que o comercial vai ter. O conteúdo passa a servir de prova de capacidade técnica, e não de vitrine.
@@ -138,7 +138,7 @@ Depende do escopo e da verba de mídia, e sai do diagnóstico. A primeira conver
 Não. Tem cliente que começa só pela produção de vídeo, tem cliente que começa pelo tráfego e tem cliente que contrata a operação completa. O escopo sai do diagnóstico, não de um pacote pronto.
 
 **Vocês assinam contrato de fidelidade longo?**  
-O contrato mínimo é de 5 meses. Não é fidelidade por fidelidade: marketing precisa de alguns ciclos para gerar leitura de dados confiável, e prometer resultado em prazo menor seria vender o que ninguém controla. Escopo e entregas ficam descritos antes de você assinar.
+Depende do escopo. Gestão de redes sociais começa em 4 meses, porque marketing precisa de alguns ciclos para gerar leitura de dados confiável. Campanha pontual, como um planejamento de verão ou uma ação específica, tem o prazo do próprio projeto. O que fica descrito antes de você assinar é o escopo e as entregas, não uma letra miúda.
 
 **Em quanto tempo aparece resultado?**  
 Organização e leitura de dados aparecem nas primeiras semanas. Demanda qualificada e constante depende de estratégia, verba e ciclo de venda. Ninguém sério garante resultado em poucos dias.

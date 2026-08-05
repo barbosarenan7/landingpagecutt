@@ -30,9 +30,9 @@ Tráfego e conteúdo são o mesmo serviço na Cut Creative, e por um motivo prá
 
 **Quem já confia na Cut**
 
-- **Mais de 300 clientes atendidos** em 4 anos de operacao.
-- **Estrutura presencial**: estudio, equipe de captacao e edicao sob o mesmo teto, sem terceirizar producao.
-- **Mais de 30 colaboradores** distribuidos em equipes de estrategia, criacao, trafego e audiovisual.
+- **100 clientes ativos hoje** e mais de 300 atendidos em 4 anos de operação.
+- **Estrutura própria de 250 m²** em Volta Redonda, com estúdio, equipe de captação e edição sob o mesmo teto.
+- **30 colaboradores** e um tempo médio de casa de 14 meses por cliente, num mercado em que trocar de agência todo semestre virou rotina.
 
 Abaixo dos cartões entra a mesma grade de logos da landing principal
 (componente `ClientesGrid`, alimentado por `site.json → logos`).
@@ -95,9 +95,15 @@ Relatório mensal com leitura executiva: o que funcionou, o que muda e por quê.
 
 ## 7. Case
 
-**Seção ausente da página, de propósito.** Não há case real para
-esta peça ainda, e a seção não é renderizada em vez de exibir
-aviso interno ou cliente inventado. Ver `perguntas-para-o-renan.md`.
+### Três campanhas, três problemas diferentes
+
+**Sugoi Sushi.** Com uma estratégia que juntou aquisição, comunicação e conversão, R$ 5 mil investidos em mídia viraram mais de R$ 150 mil em faturamento, um retorno acima de 30 vezes o valor aplicado. O trabalho não parou no anúncio: ele ajudou a triplicar o faturamento da operação.
+
+**Miss Marmita.** Crescimento de 56% já no primeiro mês de campanha. E a campanha foi só metade do trabalho. A outra metade foi arrumar a comunicação da marca e a forma como os produtos apareciam, porque a qualidade já existia e não estava sendo comunicada antes do primeiro pedido.
+
+**Advogada Mafra.** O custo por contato caiu de R$ 20 para R$ 3 no primeiro mês da estratégia nova, uma redução de 85%. Não veio de truque de plataforma: veio de ajuste de público, comunicação mais clara e otimização constante, o que permitiu gerar muito mais oportunidade com o mesmo investimento.
+
+Repare no que os três têm em comum. Nenhum deles foi resolvido só subindo anúncio. Em todos, o que destravou foi mexer na oferta e na comunicação antes de mexer na verba.
 
 ## 8. Agência local com produção própria x agência de fora
 

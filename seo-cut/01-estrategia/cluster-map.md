@@ -101,7 +101,7 @@ fica confinado nela: é o fio condutor de todo o cluster.
 | --- | --- | --- | --- |
 | 11 | Marketing para Clínicas e Consultórios em Volta Redonda | `/marketing-para-clinicas-volta-redonda` | 1 |
 | 12 | Marketing para Médicos em Volta Redonda | `/marketing-para-medicos-volta-redonda` | 1 |
-| 13 | Marketing para Restaurantes em Volta Redonda | `/marketing-para-restaurantes-volta-redonda` | 2 |
+| 13 | Marketing para Restaurantes e Delivery em Volta Redonda | `/marketing-para-restaurantes-volta-redonda` | **1** (promovida: delivery é foco comercial) |
 | 14 | Marketing para Academias em Volta Redonda | `/marketing-para-academias-volta-redonda` | 2 |
 | 15 | Marketing para Imobiliárias e Construtoras em Volta Redonda | `/marketing-para-imobiliarias-volta-redonda` | 3 |
 | 16 | Marketing para Óticas em Volta Redonda | `/marketing-para-oticas-volta-redonda` | 3 |
@@ -114,7 +114,7 @@ de classe: saem marcadas com `REVISÃO REGULATÓRIA PENDENTE`.
 
 | # | Peça | Slug | Prioridade |
 | --- | --- | --- | --- |
-| 18 | **Ângulo revisado**, título e slug a definir | `[A DEFINIR]` | 1 |
+| 18 | Por Que Agência Séria Não Passa Preço Antes de Entender o Seu Negócio | `/blog/preco-de-agencia-de-marketing` | 1 |
 | 19 | Agência de Marketing ou Freelancer: Qual Vale Mais a Pena | `/blog/agencia-ou-freelancer` | 1 |
 | 20 | Tráfego Pago ou Tráfego Orgânico: Por Onde Começar | `/blog/trafego-pago-ou-organico` | 1 |
 | 21 | Como Escolher uma Agência de Marketing Digital sem Errar | `/blog/como-escolher-agencia-marketing` | 1 |
@@ -248,11 +248,12 @@ Detalhadas em `/seo-cut/03-pendencias/verificar-com-renan.md`.
 | Tarefa 5 | 19, 20, 21 | Escritas e implementadas em `src/content/blog.json` |
 | Tarefa 6 | 27, 34 | Escritas e implementadas |
 | Tarefa 6 | 07 | Bloco de pendência substituído pelos dados reais da estrutura audiovisual |
-| Adiada | 18 | Ângulo novo definido; título e slug a definir |
+| Tarefa 9 | 18 | Escrita com o ângulo novo, sem citar preço |
+| Tarefa 9 | 13 | Escrita e implementada. Promovida para P1 por decisão comercial |
 
 Arquivos em `seo-cut/02-conteudo/bofu/` e `seo-cut/02-conteudo/mofu/`.
 
-**11 das 34 peças escritas.** Faltam 23.
+**13 das 34 peças escritas.** Faltam 21.
 
 Auditoria de linkagem entre elas em
 `seo-cut/01-estrategia/arquitetura-links.md` (Tarefa 7).

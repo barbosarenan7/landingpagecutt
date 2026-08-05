@@ -36,9 +36,9 @@ Aqui o ativo não é a marca, é o seu nome. A Cut Creative constrói autoridade
 
 **Quem já confia na Cut**
 
-- **Mais de 300 clientes atendidos** em 4 anos de operacao.
-- **Estrutura presencial**: estudio, equipe de captacao e edicao sob o mesmo teto, sem terceirizar producao.
-- **Mais de 30 colaboradores** distribuidos em equipes de estrategia, criacao, trafego e audiovisual.
+- **100 clientes ativos hoje** e mais de 300 atendidos em 4 anos de operação.
+- **Estrutura própria de 250 m²** em Volta Redonda, com estúdio, equipe de captação e edição sob o mesmo teto.
+- **30 colaboradores** e um tempo médio de casa de 14 meses por cliente, num mercado em que trocar de agência todo semestre virou rotina.
 
 Abaixo dos cartões entra a mesma grade de logos da landing principal
 (componente `ClientesGrid`, alimentado por `site.json → logos`).
@@ -101,9 +101,9 @@ Relatório mensal com leitura executiva: o que funcionou, o que muda e por quê.
 
 ## 7. Case
 
-### Case: mais de 40 médicos acompanhados
+### Case: cerca de 50 médicos acompanhados
 
-A Cut é hoje a agência que mais atende médicos em Volta Redonda. São mais de 40 profissionais acompanhados, em pediatria, cardiologia, endocrinologia, psiquiatria, geriatria, dermatologia e outras especialidades, além de operações de saúde maiores como a Clínica Cardio Centro.
+A Cut é hoje a agência que mais atende médicos em Volta Redonda. São cerca de 50 profissionais acompanhados, em pediatria, cardiologia, endocrinologia, psiquiatria, geriatria, dermatologia e outras especialidades, além de operações de saúde maiores como a Clínica Gastro Center.
 
 O que torna isso possível é uma equipe interna dedicada exclusivamente a marketing médico. Não é o mesmo time que atende restaurante e loja tentando adaptar a receita. É gente que já sabe o que a publicidade em saúde permite, que entende a diferença entre construir autoridade e fazer propaganda de procedimento, e que não precisa aprender o seu setor do zero.
 
@@ -136,7 +136,7 @@ Se além da sua presença pessoal existe uma clínica com agenda, equipe e vári
 Divulgação é permitida; o que a norma restringe é a forma. A publicidade médica não pode prometer resultado, usar imagem de antes e depois com fim promocional, apelar para sensacionalismo ou tratar o ato médico como mercadoria. Trabalhamos dentro desse limite e submetemos cada peça à sua validação antes de publicar.
 
 **Posso mostrar resultado de tratamento?**  
-É um dos pontos mais restritos da norma e não é uma decisão de agência. A conduta padrão aqui é não usar imagem de resultado com finalidade promocional e construir autoridade por conteúdo informativo, que não depende dessa exceção.
+Pode, dentro do que a norma permite e com o paciente de acordo. Trabalhamos com imagem de resultado quando o médico responsável autoriza e solicita, seguindo as regras do conselho e com o consentimento formal de quem aparece. O que não fazemos é usar esse tipo de material como chamariz, prometendo resultado a quem assiste. A decisão final é sempre do profissional, e a construção de autoridade não depende dessa exceção.
 
 **Preciso virar influenciador para ter presença?**  
 Não. O objetivo não é transformar médico em influenciador, é construir uma presença que sustente a sua reputação. Isso se faz com constância e clareza, não com dança de trend.

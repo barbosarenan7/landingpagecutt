@@ -32,7 +32,7 @@ A Cut Creative tem estúdio próprio em Volta Redonda, quatro profissionais na c
 
 - **Mais de 500 vídeos entregues por mês**, somando a carteira inteira: conteúdo de redes, campanhas de venda e criativo para tráfego pago.
 - **Equipe dedicada**: 4 profissionais na captação e 4 editores fixos, com rede de colaboradores acionada em projetos de maior escala.
-- **Estúdio próprio em Volta Redonda**, além de captação na operação do cliente. Quem escolhe onde grava é você.
+- **Estúdio próprio de 250 m²** em Volta Redonda, além de captação na operação do cliente. Quem escolhe onde grava é você.
 
 Abaixo dos cartões entra a mesma grade de logos da landing principal
 (componente `ClientesGrid`, alimentado por `site.json → logos`).

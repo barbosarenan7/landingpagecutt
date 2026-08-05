@@ -36,9 +36,9 @@ Clínica não vive de alcance, vive de agenda ocupada com o procedimento certo. 
 
 **Quem já confia na Cut**
 
-- **Mais de 300 clientes atendidos** em 4 anos de operacao.
-- **Estrutura presencial**: estudio, equipe de captacao e edicao sob o mesmo teto, sem terceirizar producao.
-- **Mais de 30 colaboradores** distribuidos em equipes de estrategia, criacao, trafego e audiovisual.
+- **100 clientes ativos hoje** e mais de 300 atendidos em 4 anos de operação.
+- **Estrutura própria de 250 m²** em Volta Redonda, com estúdio, equipe de captação e edição sob o mesmo teto.
+- **30 colaboradores** e um tempo médio de casa de 14 meses por cliente, num mercado em que trocar de agência todo semestre virou rotina.
 
 Abaixo dos cartões entra a mesma grade de logos da landing principal
 (componente `ClientesGrid`, alimentado por `site.json → logos`).
@@ -103,7 +103,7 @@ Relatório mensal com leitura executiva: o que funcionou, o que muda e por quê.
 
 ### Case: a maior operação de marketing em saúde da região
 
-Hoje a Cut é a agência que mais atende saúde em Volta Redonda. São mais de 40 médicos acompanhados, em especialidades que vão de pediatria e cardiologia a endocrinologia, psiquiatria, geriatria e dermatologia, além de operações maiores como a Clínica Cardio Centro.
+Hoje a Cut é a agência que mais atende saúde em Volta Redonda. São cerca de 50 médicos acompanhados, em especialidades que vão de pediatria e cardiologia a endocrinologia, psiquiatria, geriatria e dermatologia, além de operações maiores como a Clínica Gastro Center.
 
 O que sustenta esse volume não é um atendente cuidando de tudo. É uma equipe interna dedicada só a marketing médico, que conhece o que o conselho permite, entende a diferença entre encher a agenda de consulta simples e preencher o horário de um procedimento de ticket alto, e não precisa aprender o setor a cada cliente novo.
 

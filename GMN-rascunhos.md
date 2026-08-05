@@ -132,18 +132,24 @@ para clicar. Cada uma abaixo já vem com o botão sugerido.
 
 ## 3. Serviços a cadastrar no perfil
 
-Em **Editar serviços**, na categoria "Agência de Marketing". Nome +
-descrição (até 300 caracteres cada):
+Lista definida pelo Renan. Cadastrar exatamente estes nove, nesta ordem,
+em Perfil da empresa → Editar → Serviços.
 
-| Serviço | Descrição |
+| Serviço | Descrição sugerida (cabe no campo do Google) |
 | --- | --- |
-| Gestão de tráfego pago | Campanhas com planejamento, acompanhamento e relatório. Mídia para gerar demanda, agendamento e venda, sem verba jogada fora. |
-| Social media estratégico | Gestão completa das redes: calendário, roteiro, design, edição e postagem. Conteúdo com direção, alinhado ao objetivo comercial. |
-| Produção audiovisual | Captação de foto e vídeo com direção criativa e estúdio próprio. Padrão e escala sem depender de terceiros. |
-| Assessoria estratégica | Programa de 90 dias com diagnóstico, manual de marca, análise de mercado e plano de ação para a sua equipe executar. |
-| Diagnóstico de marketing | Análise gratuita do momento da sua empresa, com direção clara dos próximos passos. Sem compromisso. |
+| Audiovisual | Produção de vídeo e foto com estúdio próprio em Volta Redonda. Direção, captação e edição com equipe interna. |
+| Social media | Gestão completa das redes: planejamento, roteiro, design, edição e postagem, com calendário ligado ao objetivo comercial. |
+| Assessoria empresarial | Acompanhamento estratégico do marketing da empresa, com diagnóstico, plano documentado e rituais de alinhamento. |
+| Tráfego pago | Gestão de campanhas em Meta Ads e Google Ads, com criativo produzido pela própria equipe e relatório com leitura de negócio. |
+| Planejamento estratégico | Estudo de mercado, posicionamento e plano de ação por etapas, para a empresa parar de comunicar por obrigação. |
+| Branding | Construção e reposicionamento de marca: identidade, tom de voz e diretrizes de comunicação documentadas. |
+| Campanha de marketing | Campanhas de data, lançamento e sazonalidade, do conceito à veiculação, com produção interna. |
+| Treinamentos comerciais | Capacitação de equipe comercial para transformar demanda gerada pelo marketing em venda fechada. |
+| Palestras | Palestras sobre marketing, posicionamento e comunicação para empresas, eventos e entidades da região. |
 
----
+> **Nota:** treinamentos comerciais e palestras **não existem no site
+> hoje**. Se forem serviços ativos, valem uma seção ou uma página
+> própria, porque são procurados e a Cut não aparece para eles.
 
 ## 4. Categorias — situação
 

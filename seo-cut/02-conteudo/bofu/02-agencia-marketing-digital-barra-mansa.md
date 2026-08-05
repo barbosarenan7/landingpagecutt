@@ -28,9 +28,9 @@ A Cut Creative fica a poucos minutos de Barra Mansa e atende a cidade presencial
 
 **Quem já confia na Cut**
 
-- **Mais de 300 clientes atendidos** em 4 anos de operacao.
-- **Estrutura presencial**: estudio, equipe de captacao e edicao sob o mesmo teto, sem terceirizar producao.
-- **Mais de 30 colaboradores** distribuidos em equipes de estrategia, criacao, trafego e audiovisual.
+- **100 clientes ativos hoje** e mais de 300 atendidos em 4 anos de operação.
+- **Estrutura própria de 250 m²** em Volta Redonda, com estúdio, equipe de captação e edição sob o mesmo teto.
+- **30 colaboradores** e um tempo médio de casa de 14 meses por cliente, num mercado em que trocar de agência todo semestre virou rotina.
 
 Abaixo dos cartões entra a mesma grade de logos da landing principal
 (componente `ClientesGrid`, alimentado por `site.json → logos`).
