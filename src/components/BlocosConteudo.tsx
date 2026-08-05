@@ -174,6 +174,21 @@ export function Blocos({ blocos }: { blocos: Bloco[] }) {
                 {inline(b.texto)}
               </p>
             );
+          case "pendencia":
+            // aviso de revisão para o Renan, não conteúdo da página.
+            // Feio de propósito: tem que doer de ver e sair antes de publicar.
+            return (
+              <aside
+                key={i}
+                data-pendencia
+                className="my-10 rounded-card border-2 border-dashed border-accent bg-accent/10 p-6"
+              >
+                <p className="text-[11px] font-bold tracking-[0.18em] text-accent uppercase">
+                  Trocar antes de publicar
+                </p>
+                <p className="mt-3 text-[15px] leading-relaxed font-medium">{inline(b.texto)}</p>
+              </aside>
+            );
           case "advertorial":
             return <Advertorial key={i} utm={b.utm} />;
           default:

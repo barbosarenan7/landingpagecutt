@@ -16,6 +16,8 @@ export type Bloco =
   | { tipo: "lista"; itens: string[]; ordenada?: boolean }
   | { tipo: "tabela"; colunas: string[]; linhas: string[][] }
   | { tipo: "destaque"; texto: string }
+  /** aviso interno de revisão: berrante de propósito, não pode ir ao ar */
+  | { tipo: "pendencia"; texto: string }
   | { tipo: "advertorial"; utm: string };
 
 export type Pergunta = { pergunta: string; resposta: string };
@@ -48,6 +50,8 @@ export type Landing = {
   keywordsSecundarias: string[];
   h1: string;
   subheadline: string;
+  /** frase curta para os cartões de "outros serviços" (ver `servicos-menu.ts`) */
+  resumo?: string;
   /**
    * Publicidade médica e odontológica é regulada pelos conselhos de
    * classe. Enquanto `true`, a rota fica fora do sitemap (ver

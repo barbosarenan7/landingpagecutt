@@ -133,8 +133,8 @@ Nos dois, conforme a peça. Material de operação rende mais gravado no local r
 **Vocês atendem indústria e B2B ou só comércio?**  
 Os dois, com estratégias diferentes. O comércio vende no impulso e na recorrência; a indústria vende com ciclo longo e decisão técnica. O plano é montado a partir do seu ciclo de venda, não de um pacote pronto.
 
-**Vocês trabalham com concorrente direto do meu negócio em Barra Mansa?**  
-Não assumimos duas contas que disputam o mesmo público na mesma cidade. Isso é verificado antes de qualquer proposta.
+**Quem vai cuidar da minha conta no dia a dia?**  
+Um time fixo alocado na sua conta, com estratégia, criação, tráfego e audiovisual. Você fala com quem executa, e não com um atendimento que repassa recado. Cada fase tem responsável nomeado e cada entrega tem data.
 
 **Qual o investimento?**  
 Depende do escopo e da verba de mídia, e sai do diagnóstico. A primeira conversa é gratuita e sem compromisso, justamente para chegar a um número que faça sentido para o seu momento.

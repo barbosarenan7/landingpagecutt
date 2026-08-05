@@ -147,7 +147,7 @@ consolidar), a 07 (a reescrever) e a 08 (só linkar). **31 são novas.**
 | Etapa | Peças | Por quê |
 | --- | --- | --- |
 | Tarefa 4 | 02, 03, 06, 07, 11, 12 | BOFU P1: converte e resolve as páginas duplicadas |
-| Tarefa 5 | 18, 19, 20, 21 | MOFU P1: intenção de comparação, alimenta o BOFU |
+| Tarefa 5 | 19, 20, 21 | MOFU P1: intenção de comparação, alimenta o BOFU |
 | Tarefa 6 | 27, 34 | TOFU P1: volume de topo, alimenta o MOFU |
 | Depois | 12 peças P2 | |
 | Por último | 9 peças P3 | |
@@ -195,26 +195,30 @@ Regras:
 
 | # | Pendência | Bloqueia | Situação |
 | --- | --- | --- | --- |
-| 1 | Qual URL sobrevive na consolidação da peça 06 | Peça 06 | **Resolvida** na Tarefa 4 |
-| 2 | Nome e descrição das 6 etapas do Método Cut | Todas as BOFU | **Resolvida**: cópia literal da home |
-| 3 | Prova social (logos e número de clientes) | Todas as BOFU | **Resolvida** na Tarefa 4 |
-| 4 | Cases reais por cidade e por segmento | Todas as BOFU | 1 escrito (Moraes), 5 slots abertos |
-| 5 | Menu da home na consolidação da peça 06 | Peça 06 | Aberta |
-| 6 | Dados concretos da estrutura audiovisual | Todo o cluster | Aberta |
-| 7 | Faixa de investimento praticada | Peça 18 | Aberta |
+| 1 | Qual URL sobrevive na consolidação da peça 06 | Peça 06 | **Resolvida e aplicada** |
+| 2 | Menu da home na consolidação | Peça 06 | **Resolvida**: um item, "Tráfego pago e social media" |
+| 3 | Nome e descrição das 6 etapas do Método Cut | Todas as BOFU | **Resolvida**: cópia literal da home |
+| 4 | Prova social (logos e número de clientes) | Todas as BOFU | **Resolvida** |
+| 5 | Cases reais por cidade e por segmento | Todas as BOFU | 1 escrito (Moraes), 5 slots abertos |
+| 6 | Dados concretos da estrutura audiovisual | Peça 07 e Tarefa 6 | Aberta. Bloco visível de aviso na peça 07 |
+| 7 | Ângulo da peça 18, já que preço está fora | Peça 18 | Aberta. Três opções propostas |
 | 8 | Revisão regulatória de publicidade médica | Peças 11 e 12 | Aberta: as duas fora do sitemap |
+| 9 | Link para `/blog` no menu e no rodapé | Todo o blog | Aberta, e agora urgente |
 
-Detalhadas em `/seo-cut/03-pendencias/verificar-com-renan.md`, aberto na
-Tarefa 4 e consolidado na Tarefa 8.
+Detalhadas em `/seo-cut/03-pendencias/verificar-com-renan.md`.
 
 ## Peças escritas até aqui
 
-| Tarefa | Peças | Onde |
+| Tarefa | Peças | Situação |
 | --- | --- | --- |
-| Tarefa 4 | 02, 03, 11, 12 | Escritas **e implementadas** em `src/content/landings.json` |
-| Tarefa 4 | 06, 07 | Escritas, **não aplicadas**: dependem de aprovação (ver pendências 5 e o arquivo de cada peça) |
+| Tarefa 4 | 02, 03, 11, 12 | Escritas e implementadas. 11 e 12 fora do sitemap |
+| Tarefa 4 e 5 | 06, 07 | Escritas e **aplicadas** ao site: consolidação com 301 e reescrita do audiovisual |
+| Tarefa 5 | 19, 20, 21 | Escritas e implementadas em `src/content/blog.json` |
+| Tarefa 5 | 18 | **Não escrita.** O Renan decidiu não falar de preço; o ângulo precisa mudar |
 
-Arquivos em `seo-cut/02-conteudo/bofu/`.
+Arquivos em `seo-cut/02-conteudo/bofu/` e `seo-cut/02-conteudo/mofu/`.
+
+**9 das 34 peças escritas.** Faltam 25.
 
 ## Estrutura técnica (Tarefa 3, Parte B)
 

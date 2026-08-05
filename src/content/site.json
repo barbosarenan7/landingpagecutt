@@ -1,6 +1,20 @@
 {
   "nav": {
     "cta": "Solicitar diagnóstico",
+    "servicos": [
+      {
+        "label": "Tráfego pago e social media",
+        "href": "/trafego-pago-volta-redonda"
+      },
+      {
+        "label": "Produção audiovisual",
+        "href": "/producao-audiovisual-volta-redonda"
+      },
+      {
+        "label": "Assessoria estratégica",
+        "href": "/assessoria-estrategica-de-marketing"
+      }
+    ],
     "links": [
       {
         "label": "Como trabalhamos",

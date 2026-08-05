@@ -172,8 +172,8 @@
           "resposta": "Os dois, com estratégias diferentes. O comércio vende no impulso e na recorrência; a indústria vende com ciclo longo e decisão técnica. O plano é montado a partir do seu ciclo de venda, não de um pacote pronto."
         },
         {
-          "pergunta": "Vocês trabalham com concorrente direto do meu negócio em Barra Mansa?",
-          "resposta": "Não assumimos duas contas que disputam o mesmo público na mesma cidade. Isso é verificado antes de qualquer proposta."
+          "pergunta": "Quem vai cuidar da minha conta no dia a dia?",
+          "resposta": "Um time fixo alocado na sua conta, com estratégia, criação, tráfego e audiovisual. Você fala com quem executa, e não com um atendimento que repassa recado. Cada fase tem responsável nomeado e cada entrega tem data."
         },
         {
           "pergunta": "Qual o investimento?",
@@ -744,6 +744,376 @@
       "ctaFinal": {
         "titulo": "Vamos conversar sobre a sua presença antes de gravar qualquer coisa",
         "texto": "O diagnóstico é gratuito, leva cerca de 40 minutos e termina com uma leitura clara de onde a sua autoridade já existe e onde ela ainda não chega. Conheça também a [Cut Creative](/) e o [marketing para clínicas](/marketing-para-clinicas-volta-redonda)."
+      }
+    },
+    {
+      "slug": "trafego-pago-volta-redonda",
+      "tipo": "servico",
+      "titulo": "Tráfego pago e social media",
+      "metaTitulo": "Tráfego Pago e Redes Sociais em Volta Redonda | Cut",
+      "metaDescricao": "Gestão de tráfego pago e redes sociais em Volta Redonda, com criativo produzido por equipe própria. Diagnóstico gratuito e sem compromisso.",
+      "keywordPrincipal": "gestão de tráfego pago em Volta Redonda",
+      "keywordsSecundarias": [
+        "social media Volta Redonda",
+        "gestão de redes sociais Volta Redonda",
+        "Meta Ads Volta Redonda",
+        "Google Ads Volta Redonda",
+        "agência de tráfego pago Volta Redonda"
+      ],
+      "h1": "Gestão de tráfego pago e redes sociais em Volta Redonda",
+      "resumo": "Campanhas e conteúdo na mesma operação, com criativo produzido pelo nosso estúdio. Mídia para gerar demanda, sem verba jogada fora.",
+      "subheadline": "Tráfego e conteúdo são o mesmo serviço na Cut Creative, e por um motivo prático: o vídeo que roda no anúncio sai da mesma equipe que planeja o conteúdo e cuida da campanha. A [produção é própria](/producao-audiovisual-volta-redonda), em estúdio em Volta Redonda, sem terceirizar captação.",
+      "provaSocial": {
+        "titulo": "Quem já confia na Cut",
+        "itens": [
+          "**Mais de 300 clientes atendidos** em 4 anos de operacao.",
+          "**Estrutura presencial**: estudio, equipe de captacao e edicao sob o mesmo teto, sem terceirizar producao.",
+          "**Mais de 30 colaboradores** distribuidos em equipes de estrategia, criacao, trafego e audiovisual."
+        ]
+      },
+      "dor": {
+        "titulo": "Separar tráfego de conteúdo é o que faz a verba render menos",
+        "paragrafos": [
+          "A divisão clássica do mercado é essa: uma pessoa cuida do perfil e outra cuida dos anúncios. Cada uma com o seu relatório, cada uma com a sua métrica, e nenhuma responsável pelo resultado inteiro. Quando a venda cai, o social diz que o tráfego não converteu e o tráfego diz que o criativo não prestava. O cliente fica no meio, pagando as duas contas.",
+          "O prejuízo aparece no criativo. Sem produção própria, o anúncio vira print do post que foi melhor no orgânico, e post de feed não foi feito para converter tráfego frio. É a diferença entre uma peça pensada para quem já conhece a marca e uma peça pensada para quem nunca ouviu falar dela. Colocar verba em cima da primeira é a forma mais comum de queimar investimento sem perceber."
+        ]
+      },
+      "entrega": {
+        "titulo": "Uma operação só, do planejamento ao relatório",
+        "itens": [
+          {
+            "titulo": "Estratégia antes da verba",
+            "texto": "Público, oferta e funil definidos a partir do diagnóstico. Você sabe o que a campanha precisa provar antes de ela subir."
+          },
+          {
+            "titulo": "Calendário de conteúdo com direção",
+            "texto": "Pauta conectada ao objetivo comercial do mês, com posicionamento definido, e não tendência aleatória. Roteiro, design, edição e postagem."
+          },
+          {
+            "titulo": "Captação com estúdio próprio",
+            "texto": "Gravação de foto e vídeo sem depender de terceiros. É o que garante padrão e volume ao longo dos meses, em vez de picos e sumiços."
+          },
+          {
+            "titulo": "Criativo feito para anúncio, não reaproveitado",
+            "texto": "A peça de mídia nasce com a função de converter tráfego frio. Quem produz o vídeo é quem cuida da campanha, então o ajuste de criativo acontece na mesma semana, não no mês seguinte."
+          },
+          {
+            "titulo": "Gestão e otimização contínua",
+            "texto": "Acompanhamento das campanhas, testes e realocação de verba conforme o que está performando. Nada roda no piloto automático."
+          },
+          {
+            "titulo": "Relatório que vira decisão",
+            "texto": "Leitura executiva mensal com orgânico e pago na mesma página: o que funcionou, o que muda e por quê."
+          }
+        ]
+      },
+      "metodo": {
+        "titulo": "O Método Cut aplicado à sua operação de mídia",
+        "etapas": [
+          {
+            "fase": "Entendimento",
+            "nome": "Diagnóstico estratégico",
+            "texto": "Entendemos onde seu negócio está, para onde precisa ir e o que já foi tentado sem funcionar. É aqui que o marketing deixa de ser achismo e passa a ter direção. Sem diagnóstico, toda estratégia vira genérica."
+          },
+          {
+            "fase": "Contexto",
+            "nome": "Estudo de mercado",
+            "texto": "Analisamos seu público real, seus concorrentes e o espaço que ninguém está ocupando. Entendemos o momento do seu mercado antes de propor qualquer ação. É aqui que nasce a sua diferença competitiva."
+          },
+          {
+            "fase": "Direção",
+            "nome": "Planejamento estratégico",
+            "texto": "Definimos posicionamento, o que comunicar, para quem e em que formato. Sua empresa para de publicar por obrigação e passa a comunicar com direção, alinhada ao objetivo comercial e ao tamanho da operação."
+          },
+          {
+            "fase": "Execução",
+            "nome": "Produção",
+            "texto": "Estúdio e equipe próprios. Direção, captação e edição feitas por quem conhece a sua estratégia, não por quem recebeu uma tarefa. Padrão, consistência e escala sem depender de terceiros."
+          },
+          {
+            "fase": "Condução",
+            "nome": "Gestão",
+            "texto": "Responsáveis definidos, rituais de acompanhamento e prazos acordados. Cada fase tem dono e cada entrega tem data. Nada fica solto no caminho e nada depende de cobrança sua."
+          },
+          {
+            "fase": "Evolução",
+            "nome": "Análise e otimização",
+            "texto": "Relatório mensal com leitura executiva: o que funcionou, o que muda e por quê. Medimos, comparamos e ajustamos a cada ciclo. Aqui número não é enfeite de dashboard, vira decisão."
+          }
+        ]
+      },
+      "caseReal": {
+        "titulo": "Case de tráfego e conteúdo",
+        "paragrafos": [
+          "[VERIFICAR COM RENAN: case a definir - trabalho com grande empresa de Volta Redonda]"
+        ]
+      },
+      "porqueLocal": {
+        "titulo": "Por que tráfego e conteúdo juntos rendem mais do que separados",
+        "blocos": [
+          {
+            "tipo": "p",
+            "texto": "Uma campanha de mídia consome criativo em ritmo que a maioria das empresas subestima. Anúncio cansa: o mesmo vídeo que trouxe resultado na primeira semana perde eficiência conforme o público já o viu. A partir daí, quem tem produção resolve trocando a peça. Quem não tem, aumenta a verba em cima de um criativo gasto e chama isso de otimização."
+          },
+          {
+            "tipo": "tabela",
+            "colunas": [
+              "",
+              "Estrutura separada",
+              "Cut Creative"
+            ],
+            "linhas": [
+              [
+                "Quem faz o criativo do anúncio",
+                "Fornecedor diferente de quem gere a campanha",
+                "A mesma equipe, sob o mesmo teto"
+              ],
+              [
+                "Tempo até trocar um criativo cansado",
+                "Depende de briefing, agenda e aprovação de terceiro",
+                "Nova peça na fila de gravação já planejada"
+              ],
+              [
+                "Orgânico e pago",
+                "Dois relatórios, duas versões da história",
+                "Uma leitura só, com o mesmo objetivo comercial"
+              ],
+              [
+                "Quando o resultado cai",
+                "Cada lado aponta para o outro",
+                "Um responsável pelo conjunto"
+              ]
+            ]
+          },
+          {
+            "tipo": "destaque",
+            "texto": "Anúncio não é print de post. É peça produzida para converter quem ainda não conhece a sua marca."
+          },
+          {
+            "tipo": "p",
+            "texto": "Se a sua empresa está em [Barra Mansa](/agencia-marketing-digital-barra-mansa) ou em [Resende](/agencia-marketing-digital-resende), o atendimento é presencial, com gravação feita na própria cidade. E se o que falta é direção, e não execução, o formato pode ser a [assessoria estratégica](/assessoria-estrategica-de-marketing)."
+          },
+          {
+            "tipo": "advertorial",
+            "utm": "utm_source=site&utm_medium=landing&utm_campaign=trafego-social"
+          }
+        ]
+      },
+      "faq": [
+        {
+          "pergunta": "Por que tráfego e social estão na mesma página?",
+          "resposta": "Porque na Cut são a mesma operação. O calendário de conteúdo e a campanha de mídia dividem a mesma estratégia, o mesmo estúdio e o mesmo relatório. Separar os dois é o que cria a discussão de quem tem culpa quando o resultado cai."
+        },
+        {
+          "pergunta": "Dá para contratar só o tráfego, sem o conteúdo?",
+          "resposta": "Dá, e acontece. Só é justo avisar o que muda: sem produção própria de criativo, o ritmo de troca de peça depende do que a sua equipe conseguir entregar, e isso costuma ser o gargalo da campanha depois do segundo mês."
+        },
+        {
+          "pergunta": "Vocês trabalham com Meta Ads e Google Ads?",
+          "resposta": "Sim. A escolha da plataforma sai da estratégia, não do gosto: depende de onde está a demanda do seu negócio e em que momento da jornada o cliente decide."
+        },
+        {
+          "pergunta": "Qual o investimento mínimo em mídia?",
+          "resposta": "Depende do segmento, do ciclo de venda e do objetivo. A verba é definida no diagnóstico, junto com a expectativa realista de retorno. É por isso que a primeira conversa é gratuita e sem compromisso."
+        },
+        {
+          "pergunta": "Em quanto tempo a campanha dá resultado?",
+          "resposta": "Organização e leitura de dados aparecem nas primeiras semanas. Demanda qualificada e constante vem conforme estratégia, verba e ciclo de venda. Quem promete resultado garantido em poucos dias está vendendo o que não controla."
+        },
+        {
+          "pergunta": "Preciso aparecer nos vídeos?",
+          "resposta": "Não obrigatoriamente. A direção criativa encontra o formato certo para cada negócio: tem marca que pede rosto, tem marca que pede produto, ambiente ou equipe."
+        },
+        {
+          "pergunta": "Vocês fazem a captação ou só a edição?",
+          "resposta": "As duas. Temos estúdio e equipe de produção próprios, então captação, edição e postagem acontecem sob o mesmo teto, sem terceirizar e sem ficar refém de freelancer."
+        },
+        {
+          "pergunta": "Como aprovo o que vai ser publicado?",
+          "resposta": "Pelo portal do cliente, onde você acompanha calendário, aprovações e a jornada do projeto. Cada entrega tem responsável e data."
+        }
+      ],
+      "ctaFinal": {
+        "titulo": "Antes de aumentar a verba, vale entender para onde ela está indo",
+        "texto": "O diagnóstico é gratuito, leva cerca de 40 minutos e termina com um mapa do que está travando o seu marketing hoje. Conheça também a [Cut Creative](/) e a nossa [produção audiovisual](/producao-audiovisual-volta-redonda)."
+      }
+    },
+    {
+      "slug": "producao-audiovisual-volta-redonda",
+      "tipo": "servico",
+      "titulo": "Produção audiovisual",
+      "metaTitulo": "Produção de Vídeo e Audiovisual em Volta Redonda",
+      "metaDescricao": "Produtora com estúdio próprio em Volta Redonda: direção, captação e edição para empresas da região, com equipe interna. Diagnóstico gratuito.",
+      "keywordPrincipal": "produção de vídeo em Volta Redonda",
+      "keywordsSecundarias": [
+        "produtora de vídeo Volta Redonda",
+        "produção audiovisual Volta Redonda",
+        "estúdio de gravação Volta Redonda",
+        "vídeo institucional Volta Redonda",
+        "filmagem para empresas Volta Redonda"
+      ],
+      "h1": "Produção de vídeo e audiovisual em Volta Redonda",
+      "resumo": "Captação de foto e vídeo com direção criativa e estúdio próprio — comunicação mais forte, humana e cinematográfica.",
+      "subheadline": "A Cut Creative tem estúdio e equipe audiovisual internos em Volta Redonda. Direção, captação e edição são feitas por quem conhece a estratégia do cliente, e não por quem recebeu uma tarefa solta. É o que sustenta padrão, prazo e volume ao longo dos meses, dentro de uma [operação de marketing completa](/) ou como serviço isolado.",
+      "provaSocial": {
+        "titulo": "Quem já confia na Cut",
+        "itens": [
+          "**Mais de 300 clientes atendidos** em 4 anos de operação.",
+          "**Estúdio próprio em Volta Redonda**, com captação e edição sob o mesmo teto.",
+          "**Mais de 30 colaboradores** distribuídos em equipes de estratégia, criação, tráfego e audiovisual."
+        ]
+      },
+      "dor": {
+        "titulo": "O vídeo não falha no equipamento. Falha antes dele.",
+        "paragrafos": [
+          "Quase toda empresa já tentou resolver vídeo por conta própria. Comprou um bom celular, contratou um freelancer por diária, gravou um lote de material num sábado. O primeiro mês sai bem. O terceiro já não sai, e no sexto ninguém lembra por que parou. Não foi falta de equipamento, foi falta de direção e de uma estrutura que aguente a rotina.",
+          "O outro sintoma é mais silencioso: o material sai, mas não parece a sua empresa. Cada peça tem uma cor, um enquadramento e um ritmo diferente, porque cada uma foi feita por uma pessoa diferente. O público não consegue nomear o problema, mas percebe. E marca que parece improvisada tem menos margem para cobrar caro."
+        ]
+      },
+      "entrega": {
+        "titulo": "Direção, captação e edição sob o mesmo teto",
+        "itens": [
+          {
+            "titulo": "Direção criativa antes da câmera",
+            "texto": "Conceito e roteiro alinhados ao posicionamento da marca e ao objetivo de cada peça. É a etapa que separa vídeo que constrói autoridade de vídeo que só ocupa espaço."
+          },
+          {
+            "titulo": "Captação em estúdio ou na sua operação",
+            "texto": "Gravação no nosso estúdio em Volta Redonda ou dentro do negócio do cliente: clínica, indústria, restaurante, escritório, obra."
+          },
+          {
+            "titulo": "Edição e finalização com padrão de marca",
+            "texto": "Montagem, correção de cor, trilha e identidade visual aplicada, no formato de cada canal, do vertical ao institucional."
+          },
+          {
+            "titulo": "Volume planejado, não corrida por post",
+            "texto": "Uma diária bem dirigida abastece semanas de conteúdo. O calendário é feito para render, não para gerar urgência toda segunda-feira."
+          },
+          {
+            "titulo": "Criativo que alimenta a mídia paga",
+            "texto": "O mesmo material sustenta o orgânico e a [campanha de tráfego pago](/trafego-pago-volta-redonda). Quando um criativo cansa, a peça seguinte já está na fila."
+          },
+          {
+            "titulo": "Escala e padrão ao longo do ano",
+            "texto": "Equipe própria garante consistência ao longo dos meses, sem depender de quem estava disponível naquele mês."
+          }
+        ]
+      },
+      "metodo": {
+        "titulo": "O Método Cut aplicado à sua produção",
+        "etapas": [
+          {
+            "fase": "Entendimento",
+            "nome": "Diagnóstico estratégico",
+            "texto": "Entendemos onde seu negócio está, para onde precisa ir e o que já foi tentado sem funcionar. É aqui que o marketing deixa de ser achismo e passa a ter direção. Sem diagnóstico, toda estratégia vira genérica."
+          },
+          {
+            "fase": "Contexto",
+            "nome": "Estudo de mercado",
+            "texto": "Analisamos seu público real, seus concorrentes e o espaço que ninguém está ocupando. Entendemos o momento do seu mercado antes de propor qualquer ação. É aqui que nasce a sua diferença competitiva."
+          },
+          {
+            "fase": "Direção",
+            "nome": "Planejamento estratégico",
+            "texto": "Definimos posicionamento, o que comunicar, para quem e em que formato. Sua empresa para de publicar por obrigação e passa a comunicar com direção, alinhada ao objetivo comercial e ao tamanho da operação."
+          },
+          {
+            "fase": "Execução",
+            "nome": "Produção",
+            "texto": "Estúdio e equipe próprios. Direção, captação e edição feitas por quem conhece a sua estratégia, não por quem recebeu uma tarefa. Padrão, consistência e escala sem depender de terceiros."
+          },
+          {
+            "fase": "Condução",
+            "nome": "Gestão",
+            "texto": "Responsáveis definidos, rituais de acompanhamento e prazos acordados. Cada fase tem dono e cada entrega tem data. Nada fica solto no caminho e nada depende de cobrança sua."
+          },
+          {
+            "fase": "Evolução",
+            "nome": "Análise e otimização",
+            "texto": "Relatório mensal com leitura executiva: o que funcionou, o que muda e por quê. Medimos, comparamos e ajustamos a cada ciclo. Aqui número não é enfeite de dashboard, vira decisão."
+          }
+        ]
+      },
+      "caseReal": {
+        "titulo": "Case de audiovisual",
+        "paragrafos": [
+          "[VERIFICAR COM RENAN: case a definir - trabalho com grande empresa de Volta Redonda]"
+        ]
+      },
+      "porqueLocal": {
+        "titulo": "Produtora própria não é detalhe de escopo. É o que muda o resto.",
+        "blocos": [
+          {
+            "tipo": "pendencia",
+            "texto": "**[VERIFICAR COM RENAN]** Aqui entram os dados reais da estrutura audiovisual da Cut: descrição do estúdio, equipamento, tamanho da equipe de produção e volume mensal de entregas. Sem esses números a página argumenta bem, mas não prova nada. Este bloco existe só para você não esquecer de trocar na sua revisão final, e precisa sair antes do site ir ao ar."
+          },
+          {
+            "tipo": "p",
+            "texto": "A maior parte das agências que disputa as buscas de Volta Redonda não produz vídeo. Contrata. E contratar funciona para uma peça avulsa; o que não funciona é sustentar uma operação de conteúdo em cima disso."
+          },
+          {
+            "tipo": "p",
+            "texto": "Três coisas quebram quando a captação é terceirizada:"
+          },
+          {
+            "tipo": "lista",
+            "itens": [
+              "**Prazo.** A diária depende da agenda de alguém que não responde à sua empresa. Uma semana de atraso vira um mês de calendário furado.",
+              "**Padrão.** Cada fornecedor tem o seu jeito de enquadrar, cortar e colorir. Ao longo de um ano, a marca acumula sotaques em vez de identidade.",
+              "**Contexto.** O freelancer recebe um briefing e grava o que entendeu. Ele não estava na reunião em que se decidiu o posicionamento, então filma o que é bonito, não o que é estratégico."
+            ]
+          },
+          {
+            "tipo": "destaque",
+            "texto": "Quem grava dentro da sua operação enxerga o que nenhum briefing consegue descrever."
+          },
+          {
+            "tipo": "p",
+            "texto": "A produção presencial cobre a região: gravamos em [Barra Mansa](/agencia-marketing-digital-barra-mansa), [Resende](/agencia-marketing-digital-resende), Angra dos Reis e toda a Sul Fluminense. Para empresas fora dessa área, o caminho costuma ser a [assessoria estratégica](/assessoria-estrategica-de-marketing), com o plano documentado para a equipe local executar."
+          },
+          {
+            "tipo": "advertorial",
+            "utm": "utm_source=site&utm_medium=landing&utm_campaign=audiovisual"
+          }
+        ]
+      },
+      "faq": [
+        {
+          "pergunta": "Vocês têm estúdio próprio?",
+          "resposta": "Sim, estúdio e equipe de produção próprios em Volta Redonda. É o que permite manter padrão, prazo e escala sem terceirizar a captação."
+        },
+        {
+          "pergunta": "Dá para gravar na minha empresa?",
+          "resposta": "Dá, e boa parte do material ganha força assim. Chão de fábrica, cozinha, consultório e escritório contam a história que o estúdio não conta. A escolha entra na pré-produção."
+        },
+        {
+          "pergunta": "A produção pode ser contratada sem o restante do marketing?",
+          "resposta": "Pode. Tem cliente que contrata só audiovisual e tem cliente que contrata a operação completa. O escopo é definido no diagnóstico."
+        },
+        {
+          "pergunta": "Quantos vídeos saem de uma diária de gravação?",
+          "resposta": "Depende do roteiro, do número de ambientes e de quantas pessoas aparecem. O número é fechado na pré-produção, quando o roteiro já existe. Chutar volume antes disso é como orçar obra sem planta."
+        },
+        {
+          "pergunta": "Vocês fazem vídeo institucional e conteúdo de redes no mesmo dia?",
+          "resposta": "Fazemos, e costuma ser a forma mais econômica de aproveitar a diária: mesma preparação, mesma equipe, formatos diferentes na edição."
+        },
+        {
+          "pergunta": "Quem escreve o roteiro?",
+          "resposta": "A nossa equipe, a partir da estratégia definida no diagnóstico. Você revisa e aprova antes da gravação, para ninguém descobrir divergência com a câmera já ligada."
+        },
+        {
+          "pergunta": "Preciso aparecer nos vídeos?",
+          "resposta": "Não obrigatoriamente. Tem marca que pede rosto, tem marca que pede produto, ambiente ou equipe. A direção criativa define o formato."
+        },
+        {
+          "pergunta": "Em quanto tempo o material fica pronto?",
+          "resposta": "O prazo de edição é acordado na pré-produção e depende do volume e do formato. O que não acontece aqui é prazo que depende da agenda de terceiro, porque a edição é interna."
+        }
+      ],
+      "ctaFinal": {
+        "titulo": "Vamos definir o que precisa ser gravado antes de gravar",
+        "texto": "O diagnóstico é gratuito, leva cerca de 40 minutos e termina com uma leitura do que a sua comunicação precisa hoje, mesmo que você decida não contratar. Conheça também a [Cut Creative](/) e a [gestão de tráfego pago e redes sociais](/trafego-pago-volta-redonda)."
       }
     }
   ]

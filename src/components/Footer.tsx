@@ -2,7 +2,6 @@ import { useState, type ReactNode } from "react";
 import { Link } from "react-router-dom";
 import { site, whatsappHref, track } from "../config/site";
 import content from "../content/site.json";
-import servicos from "../content/servicos.json";
 
 /** Ícones sociais em SVG inline de 18px (seção 12.8). */
 function InstagramIcon() {
@@ -192,13 +191,10 @@ export default function Footer() {
               encontrar e entender as novas páginas */}
           <Grupo titulo="Serviços" rotulo="Serviços">
             <ul className="flex flex-col gap-3 text-sm">
-              {servicos.servicos.map((s) => (
-                <li key={s.slug}>
-                  <Link
-                    to={`/${s.slug}`}
-                    className="text-2nd transition-colors hover:text-paper-50"
-                  >
-                    {s.nome}
+              {content.nav.servicos.map((s) => (
+                <li key={s.href}>
+                  <Link to={s.href} className="text-2nd transition-colors hover:text-paper-50">
+                    {s.label}
                   </Link>
                 </li>
               ))}

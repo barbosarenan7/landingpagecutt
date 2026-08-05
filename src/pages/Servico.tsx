@@ -9,6 +9,7 @@ import { Reveal } from "../lib/reveal";
 import { Seo } from "../lib/seo";
 import { jsonLdServico } from "../lib/rotas";
 import dados from "../content/servicos.json";
+import { outrosServicos } from "../lib/servicos-menu";
 
 export type Servico = (typeof dados.servicos)[number];
 
@@ -85,7 +86,9 @@ function FaqServico({ itens }: { itens: Servico["faq"] }) {
  * src/content/servicos.json; as rotas são registradas em App.tsx.
  */
 export default function ServicoPage({ servico }: { servico: Servico }) {
-  const outros = dados.servicos.filter((s) => s.slug !== servico.slug);
+  // vem do menu, e não de servicos.json: depois da consolidação de
+  // tráfego e social, dois dos serviços viram landing BOFU
+  const outros = outrosServicos(servico.slug);
 
   const jsonLd = jsonLdServico(servico.slug);
 
@@ -250,7 +253,7 @@ export default function ServicoPage({ servico }: { servico: Servico }) {
               <p className="eyebrow">Outros serviços</p>
               <div className="mt-6 grid gap-3 md:grid-cols-2">
                 {outros.map((o) => (
-                  <Link key={o.slug} to={`/${o.slug}`} className="card-soft card-dif block">
+                  <Link key={o.href} to={o.href} className="card-soft card-dif block">
                     <Corner />
                     <h3 className="pr-8 text-lg leading-snug font-bold">{o.nome}</h3>
                     <p className="text-2nd mt-2 text-sm leading-relaxed">{o.resumo}</p>
