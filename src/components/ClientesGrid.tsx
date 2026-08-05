@@ -107,15 +107,22 @@ export default function ClientesGrid() {
                 className="logo-cell relative flex items-center justify-center border-r border-b border-line-dark px-2 py-5 md:px-4 md:py-9"
               >
                 {finalSrc && (
-                  <img
-                    src={finalSrc}
-                    alt="Logo de cliente da Cut Creative"
-                    loading="lazy"
-                    decoding="async"
-                    draggable={false}
-                    className="logo-cloud-img pointer-events-none w-auto max-w-full object-contain opacity-90 transition-opacity duration-300 select-none hover:opacity-100"
-                    style={esc ? ({ "--esc": esc } as CSSProperties) : undefined}
-                  />
+                  // AVIF primeiro (~70% menor), WebP para navegador antigo
+                  // e o PNG segue como último recurso. Gerados junto dos
+                  // originais em public/logos-white/.
+                  <picture className="contents">
+                    <source type="image/avif" srcSet={finalSrc.replace(/\.png$/, ".avif")} />
+                    <source type="image/webp" srcSet={finalSrc.replace(/\.png$/, ".webp")} />
+                    <img
+                      src={finalSrc}
+                      alt="Logo de cliente da Cut Creative"
+                      loading="lazy"
+                      decoding="async"
+                      draggable={false}
+                      className="logo-cloud-img pointer-events-none w-auto max-w-full object-contain opacity-90 transition-opacity duration-300 select-none hover:opacity-100"
+                      style={esc ? ({ "--esc": esc } as CSSProperties) : undefined}
+                    />
+                  </picture>
                 )}
                 <Plus />
               </div>

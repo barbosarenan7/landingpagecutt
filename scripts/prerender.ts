@@ -88,10 +88,49 @@ const { render } = (await import(join(raiz, "dist-ssr/entry-server.js"))) as {
   render: (url: string) => string;
 };
 
-const molde = readFileSync(join(raiz, DIST, "index.html"), "utf8");
+let molde = readFileSync(join(raiz, DIST, "index.html"), "utf8");
 if (!molde.includes('<div id="root"></div>')) {
   throw new Error("Molde inesperado: não achei <div id=\"root\"></div> em dist/index.html");
 }
+
+/**
+ * Duas otimizações de caminho crítico, medidas no PageSpeed (celular,
+ * 4G lento):
+ *
+ * 1. O CSS entra inline no <head>. Sendo requisição separada, ele
+ *    bloqueava a renderização por ~900 ms: o navegador só pintava depois
+ *    de baixá-lo. Inline, a página pinta com o próprio HTML. O custo é o
+ *    HTML crescer ~55 KB antes do gzip, que comprime junto.
+ *
+ * 2. As três fontes que a primeira dobra usa ganham preload. Sem isso o
+ *    navegador só as descobre depois de processar o CSS, formando a
+ *    cadeia html → css → fonte que aparecia como 586 ms de latência.
+ */
+const reCssLink = /<link[^>]+rel="stylesheet"[^>]+href="(\/assets\/[^"]+\.css)"[^>]*>/i;
+const cssMatch = molde.match(reCssLink);
+if (cssMatch) {
+  const css = readFileSync(join(raiz, DIST, cssMatch[1].replace(/^\//, "")), "utf8");
+  molde = molde.replace(reCssLink, `<style>${css}</style>`);
+}
+
+const preloadFontes = [
+  "/fonts/satoshi-500.woff2",
+  "/fonts/satoshi-700.woff2",
+]
+  .map(
+    (f) =>
+      `<link rel="preload" href="${f}" as="font" type="font/woff2" crossorigin />`,
+  )
+  .join("\n    ");
+// a serif do Instrument fica no bundle com hash; acha pelo CSS já inline
+const serif = molde.match(/\/assets\/instrument-serif-latin-400-normal[^")]+\.woff2/);
+const preloadSerif = serif
+  ? `<link rel="preload" href="${serif[0]}" as="font" type="font/woff2" crossorigin />\n    `
+  : "";
+molde = molde.replace(
+  "</head>",
+  `    ${preloadSerif}${preloadFontes}\n  </head>`,
+);
 
 for (const rota of rotas) {
   const corpo = render(rota.path);
