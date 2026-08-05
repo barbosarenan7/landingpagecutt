@@ -122,14 +122,19 @@ const preloadFontes = [
       `<link rel="preload" href="${f}" as="font" type="font/woff2" crossorigin />`,
   )
   .join("\n    ");
-// a serif do Instrument fica no bundle com hash; acha pelo CSS já inline
-const serif = molde.match(/\/assets\/instrument-serif-latin-400-normal[^")]+\.woff2/);
-const preloadSerif = serif
-  ? `<link rel="preload" href="${serif[0]}" as="font" type="font/woff2" crossorigin />\n    `
-  : "";
+// A serif e os pesos 400/900 NÃO ganham preload de propósito: não
+// aparecem na primeira dobra do celular, e cada preload de fonte
+// disputa banda com a foto do hero num 4G lento. Eles carregam via
+// CSS (font-display: swap) quando a rolagem chega neles.
+molde = molde.replace("</head>", `    ${preloadFontes}\n  </head>`);
+
+// O bundle nao pinta nada: hidrata o que ja esta pintado. Rebaixar sua
+// prioridade de download deixa a foto do hero passar na frente no 4G
+// lento. O Vite descarta o atributo no index.html fonte, entao ele
+// entra aqui, no HTML final.
 molde = molde.replace(
-  "</head>",
-  `    ${preloadSerif}${preloadFontes}\n  </head>`,
+  '<script type="module" crossorigin src=',
+  '<script type="module" crossorigin fetchpriority="low" src=',
 );
 
 for (const rota of rotas) {
