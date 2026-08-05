@@ -1,6 +1,24 @@
 {
   "nav": {
     "cta": "Solicitar diagnóstico",
+    "servicos": [
+      {
+        "label": "Tráfego pago e social media",
+        "href": "/trafego-pago-volta-redonda"
+      },
+      {
+        "label": "Produção audiovisual",
+        "href": "/producao-audiovisual-volta-redonda"
+      },
+      {
+        "label": "Assessoria estratégica",
+        "href": "/assessoria-estrategica-de-marketing"
+      },
+      {
+        "label": "Treinamento e palestras",
+        "href": "/treinamento-comercial-e-palestras-volta-redonda"
+      }
+    ],
     "links": [
       {
         "label": "Como trabalhamos",

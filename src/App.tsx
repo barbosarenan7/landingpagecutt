@@ -5,7 +5,16 @@ import Obrigado from "./pages/Obrigado";
 import Privacidade from "./pages/Privacidade";
 import ServicoPage from "./pages/Servico";
 import NaoEncontrada from "./pages/NaoEncontrada";
+import Blog from "./pages/Blog";
+import BlogPost from "./pages/BlogPost";
+import LandingBofu from "./pages/LandingBofu";
 import servicos from "./content/servicos.json";
+import blogJson from "./content/blog.json";
+import landingsJson from "./content/landings.json";
+import type { ConteudoBlog, ConteudoLandings } from "./lib/tipos";
+
+const blog = blogJson as ConteudoBlog;
+const landings = landingsJson as ConteudoLandings;
 
 export default function App() {
   const { pathname } = useLocation();
@@ -21,6 +30,18 @@ export default function App() {
       {/* uma rota por serviço, com URL descritiva (bom para busca) */}
       {servicos.servicos.map((s) => (
         <Route key={s.slug} path={`/${s.slug}`} element={<ServicoPage servico={s} />} />
+      ))}
+      {/* landings BOFU (cidade, segmento, serviço) — vêm de landings.json */}
+      {landings.landings.map((l) => (
+        <Route
+          key={l.slug}
+          path={`/${l.slug}`}
+          element={<LandingBofu landing={l} />}
+        />
+      ))}
+      <Route path="/blog" element={<Blog />} />
+      {blog.posts.map((p) => (
+        <Route key={p.slug} path={`/blog/${p.slug}`} element={<BlogPost post={p} />} />
       ))}
       <Route path="/obrigado" element={<Obrigado />} />
       <Route path="/privacidade" element={<Privacidade />} />

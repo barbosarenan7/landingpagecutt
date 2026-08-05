@@ -2,7 +2,6 @@ import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import { Arrow } from "./primitives";
 import content from "../content/site.json";
-import servicos from "../content/servicos.json";
 
 /**
  * Nav sticky de 72px: paper-50 com blur e hairline inferior (seção 6).
@@ -10,6 +9,11 @@ import servicos from "../content/servicos.json";
  * O menu existe porque as páginas de serviço não têm outra porta de
  * entrada a partir da home. O logo é branco no arquivo original, então
  * recebe `brightness-0` para virar preto sobre o header claro.
+ *
+ * Os itens vêm de `site.json → nav.servicos`, e não mais de
+ * `servicos.json`: depois da consolidação de tráfego e social, o rótulo
+ * do menu deixou de ser um por página. "Tráfego pago e social media" é
+ * um item só, apontando para a URL que sobreviveu.
  */
 function Logo() {
   return (
@@ -116,18 +120,27 @@ export default function Nav() {
                 className="absolute top-full right-0 mt-2 w-[17rem] overflow-hidden rounded-card border border-line-light bg-paper-50 shadow-lg"
               >
                 <ul className="flex flex-col py-1">
-                  {servicos.servicos.map((s) => (
-                    <li key={s.slug}>
+                  {content.nav.servicos.map((s) => (
+                    <li key={s.href}>
                       <Link
-                        to={`/${s.slug}`}
+                        to={s.href}
                         onClick={() => setAberto(false)}
                         className="block px-5 py-3 text-[14px] font-medium text-ink-900 transition-colors hover:bg-ink-900/5"
                       >
-                        {s.nome}
+                        {s.label}
                       </Link>
                     </li>
                   ))}
                   <li className="mt-1 border-t border-line-light">
+                    <Link
+                      to="/blog"
+                      onClick={() => setAberto(false)}
+                      className="text-2nd block px-5 py-3 text-[14px] transition-colors hover:bg-ink-900/5"
+                    >
+                      Blog
+                    </Link>
+                  </li>
+                  <li>
                     <Link
                       to="/"
                       onClick={() => setAberto(false)}

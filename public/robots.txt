@@ -2,4 +2,29 @@ User-agent: *
 Allow: /
 Disallow: /obrigado
 
+# Crawlers de IA liberados explicitamente. Eles já seriam atendidos pela
+# regra geral acima, mas deixar nominal evita que um ajuste futuro no
+# bloco "*" tire a Cut das respostas do ChatGPT, Claude e Perplexity.
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+# Autoriza o uso do conteúdo para IA do Google (Gemini/AI Overviews)
+User-agent: Google-Extended
+Allow: /
+
 Sitemap: https://cutcreativee.com.br/sitemap.xml

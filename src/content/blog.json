@@ -1,0 +1,1344 @@
+{
+  "indice": {
+    "eyebrow": "Blog",
+    "tituloLinha1": "Marketing sem enrolação,",
+    "tituloLinha2": "para quem toca um negócio.",
+    "descricao": "O que a gente responde toda semana para empresário do Sul Fluminense, escrito por quem executa: estratégia, tráfego, conteúdo e produção audiovisual própria.",
+    "metaTitulo": "Blog da Cut Creative | Marketing em Volta Redonda",
+    "metaDescricao": "Artigos sobre marketing digital para empresas de Volta Redonda e região: quanto custa, o que funciona e como medir. Escrito por quem executa."
+  },
+  "posts": [
+    {
+      "slug": "agencia-ou-freelancer",
+      "titulo": "Agência de marketing ou freelancer: qual vale mais a pena?",
+      "metaTitulo": "Agência de Marketing ou Freelancer: o Que Vale Mais",
+      "metaDescricao": "A diferença real entre agência e freelancer: custo, prazo, escala e o que quebra primeiro. Comparativo honesto de quem opera no Sul Fluminense.",
+      "resumo": "Não é uma questão de preço. É de escopo, de continuidade e do que acontece quando a pessoa que fazia tudo tira férias.",
+      "data": "2026-08-05",
+      "intencao": "comparação",
+      "keywordPrincipal": "agência de marketing ou freelancer",
+      "keywordsSecundarias": [
+        "vale a pena contratar agência de marketing",
+        "freelancer de marketing digital",
+        "diferença entre agência e freelancer",
+        "contratar social media freelancer"
+      ],
+      "blocos": [
+        {
+          "tipo": "p",
+          "texto": "Resposta curta: **freelancer compensa quando o trabalho tem começo, meio e fim definidos**, como uma identidade visual, um site ou uma campanha pontual. **Agência compensa quando o marketing é uma operação contínua** que depende de várias competências ao mesmo tempo, estratégia, conteúdo, mídia e produção, funcionando juntas todo mês."
+        },
+        {
+          "tipo": "p",
+          "texto": "O que quase ninguém avalia na hora de decidir é o custo de coordenação. Com um freelancer, quem junta as pontas é você. Com três freelancers, quem vira gerente de projeto é você. É aí que a conta muda: o valor da hora contratada é menor, e o valor do seu tempo some do orçamento porque ninguém emite nota por ele."
+        },
+        {
+          "tipo": "h2",
+          "texto": "O que o freelancer faz melhor"
+        },
+        {
+          "tipo": "p",
+          "texto": "Vale começar pelo que é honesto reconhecer. Existe trabalho em que contratar agência é caro demais e lento demais."
+        },
+        {
+          "tipo": "lista",
+          "itens": [
+            "**Escopo fechado.** Um logo, um site, um vídeo institucional único. Começou e terminou.",
+            "**Especialidade estreita e profunda.** Um editor de vídeo excelente, um redator de e-mail, alguém que domina uma ferramenta específica.",
+            "**Orçamento apertado numa fase inicial.** Empresa que ainda está descobrindo o próprio posicionamento não precisa de squad, precisa de teste barato.",
+            "**Você já tem quem coordene.** Se existe alguém interno com repertório para dirigir o trabalho, o freelancer executa muito bem."
+          ]
+        },
+        {
+          "tipo": "h2",
+          "texto": "O que a agência faz melhor"
+        },
+        {
+          "tipo": "p",
+          "texto": "A agência não vende hora, vende continuidade. É o que você contrata quando o marketing deixou de ser projeto e virou parte da operação."
+        },
+        {
+          "tipo": "lista",
+          "itens": [
+            "**Várias competências no mesmo lugar.** Estratégia, criação, tráfego e produção respondendo ao mesmo plano, sem você traduzir um para o outro.",
+            "**Não para quando alguém para.** Freelancer adoece, viaja, arruma outro cliente maior. Estrutura tem substituto.",
+            "**Alguém dono do resultado.** Quando a venda cai, existe um responsável para explicar por quê, não três fornecedores apontando um para o outro.",
+            "**Capacidade de escalar.** Dobrar o volume de conteúdo não depende de a mesma pessoa ter mais horas no dia."
+          ]
+        },
+        {
+          "tipo": "h2",
+          "texto": "Comparativo direto"
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "",
+            "Freelancer",
+            "Agência"
+          ],
+          "linhas": [
+            [
+              "Melhor para",
+              "Escopo fechado e pontual",
+              "Operação contínua"
+            ],
+            [
+              "Quem coordena",
+              "Você",
+              "A agência"
+            ],
+            [
+              "Se a pessoa some",
+              "A entrega para",
+              "Outro assume"
+            ],
+            [
+              "Custo direto",
+              "Menor",
+              "Maior"
+            ],
+            [
+              "Custo do seu tempo",
+              "Alto e invisível",
+              "Baixo"
+            ],
+            [
+              "Escala de produção",
+              "Limitada às horas de uma pessoa",
+              "Limitada à estrutura, que é maior"
+            ],
+            [
+              "Responsabilidade pelo resultado",
+              "Difusa entre fornecedores",
+              "Concentrada em um contrato"
+            ]
+          ]
+        },
+        {
+          "tipo": "p",
+          "texto": "Repare que a linha decisiva não é a de custo direto. É a de coordenação. Empresa que contrata três freelancers costuma economizar na fatura e gastar o dobro em reunião, cobrança e retrabalho."
+        },
+        {
+          "tipo": "advertorial",
+          "utm": "utm_source=blog&utm_medium=artigo&utm_campaign=agencia-ou-freelancer"
+        },
+        {
+          "tipo": "h2",
+          "texto": "O custo de coordenação, com números do seu próprio dia"
+        },
+        {
+          "tipo": "p",
+          "texto": "Faça a conta com o seu caso, não com uma média de mercado. Some quantas horas por semana você gasta explicando o negócio, revisando peça, cobrando prazo, aprovando texto e juntando o que um fornecedor fez com o que o outro precisa. Multiplique por quatro para chegar ao mês."
+        },
+        {
+          "tipo": "p",
+          "texto": "Agora responda: se essas horas voltassem para você, elas iriam para onde? Para o comercial, para a operação, para uma decisão que só o dono toma. Essa é a diferença que não aparece em nenhuma proposta comercial, porque nenhum fornecedor emite nota pelo seu tempo."
+        },
+        {
+          "tipo": "p",
+          "texto": "Não é um argumento contra freelancer. É um argumento contra decidir só pelo valor da fatura. Um freelancer bem escolhido, com escopo claro e alguém competente coordenando, é a melhor relação de custo que existe. Três freelancers sem ninguém coordenando é a pior."
+        },
+        {
+          "tipo": "h2",
+          "texto": "O risco que ninguém coloca na planilha"
+        },
+        {
+          "tipo": "p",
+          "texto": "Contratar uma pessoa é concentrar risco. Ela adoece, viaja, arruma um cliente maior, muda de cidade. Nada disso é falha de caráter, é vida normal de quem trabalha sozinho. O problema é que a sua operação de marketing para junto."
+        },
+        {
+          "tipo": "p",
+          "texto": "Existe uma versão pior desse risco: quando tudo mora na cabeça e no computador de uma pessoa só. Acessos das contas de anúncio, arquivos editáveis, senhas, o raciocínio por trás das decisões. Se essa pessoa sair de forma ruim, você não perde só a execução do mês, perde o histórico inteiro. Vale combinar isso no primeiro dia, com qualquer fornecedor: **os acessos e os arquivos são seus**, não de quem executa."
+        },
+        {
+          "tipo": "h2",
+          "texto": "O gargalo que aparece no terceiro mês: produção de imagem"
+        },
+        {
+          "tipo": "p",
+          "texto": "Esse é o ponto que mais vemos travar, e ele quase nunca entra na decisão inicial. Nos primeiros dois meses existe material acumulado: fotos de eventos antigos, vídeos que alguém gravou, o banco de imagens. No terceiro mês acaba."
+        },
+        {
+          "tipo": "p",
+          "texto": "A partir daí, quem produz conteúdo precisa de matéria-prima nova toda semana. E aí o freelancer de social media, que é ótimo escrevendo e diagramando, esbarra em algo que não é a função dele: alguém precisa ir até a sua empresa e gravar. Você contrata um segundo freelancer, agora de vídeo, com outra agenda, outro padrão de cor e outro entendimento da marca."
+        },
+        {
+          "tipo": "destaque",
+          "texto": "Marketing não trava por falta de ideia. Trava por falta de imagem nova para sustentar a ideia."
+        },
+        {
+          "tipo": "p",
+          "texto": "É exatamente por isso que a Cut Creative mantém [produção audiovisual própria](/producao-audiovisual-volta-redonda) em vez de terceirizar: a mesma equipe que planeja o conteúdo é a que grava. Quando um criativo cansa na [campanha de tráfego pago](/trafego-pago-volta-redonda), a peça seguinte já está na fila, e não dependendo da agenda de um terceiro."
+        },
+        {
+          "tipo": "h3",
+          "texto": "Por que isso pesa mais no Sul Fluminense"
+        },
+        {
+          "tipo": "p",
+          "texto": "Em cidade grande, encontrar um bom videomaker disponível é questão de procurar. Em Volta Redonda, Barra Mansa ou Resende, o número de profissionais que fazem captação com padrão profissional e prazo confiável é pequeno, e eles são disputados pelos mesmos clientes. Isso significa que a sua operação de conteúdo passa a depender da agenda de alguém que atende também o seu concorrente."
+        },
+        {
+          "tipo": "h2",
+          "texto": "E o time interno? É uma terceira opção"
+        },
+        {
+          "tipo": "p",
+          "texto": "Contratar alguém dentro de casa resolve a disponibilidade e cria outro problema: uma pessoa só não cobre estratégia, design, tráfego e vídeo com profundidade. O que costuma funcionar é a combinação."
+        },
+        {
+          "tipo": "lista",
+          "itens": [
+            "Alguém interno cuidando da rotina, do relacionamento e da agilidade do dia a dia.",
+            "Direção estratégica vindo de fora, documentada, para essa pessoa não trabalhar no escuro.",
+            "Produção pesada, de vídeo e campanha, com quem tem estrutura para isso."
+          ]
+        },
+        {
+          "tipo": "p",
+          "texto": "É esse o desenho da [assessoria estratégica](/assessoria-estrategica-de-marketing): a Cut entrega o plano escrito e a sua equipe executa. Serve bem para quem já tem gente boa dentro de casa e o que falta é direção."
+        },
+        {
+          "tipo": "h2",
+          "texto": "Como decidir na prática"
+        },
+        {
+          "tipo": "p",
+          "texto": "Quatro perguntas resolvem a maior parte dos casos:"
+        },
+        {
+          "tipo": "lista",
+          "ordenada": true,
+          "itens": [
+            "**O trabalho acaba?** Se acaba, freelancer. Se é para sempre, estrutura.",
+            "**Quantas competências diferentes ele exige?** Uma, freelancer. Três ou mais, agência.",
+            "**Quem vai coordenar?** Se a resposta for você e você não tem esse tempo, a economia é falsa.",
+            "**De onde vem a imagem nova daqui a três meses?** Se não houver resposta, o plano vai travar, independentemente de quem você contratar."
+          ]
+        },
+        {
+          "tipo": "p",
+          "texto": "E vale dizer o contrário também, porque isso raramente aparece em texto de agência: se a sua empresa ainda não tem clareza do que vende e para quem, contratar agência é caro e prematuro. O primeiro passo é entender o próprio negócio, e é por aí que começa o trabalho de uma [agência de marketing estratégico em Volta Redonda](/), não pelo aumento do volume de publicação."
+        },
+        {
+          "tipo": "advertorial",
+          "utm": "utm_source=blog&utm_medium=artigo&utm_campaign=agencia-ou-freelancer-fim"
+        }
+      ],
+      "faq": [
+        {
+          "pergunta": "Agência é sempre mais cara que freelancer?",
+          "resposta": "Na fatura, quase sempre sim. No custo total, depende. Com um freelancer você paga menos e coordena; com três, você paga menos por cada um e vira gerente de projeto sem receber por isso. A comparação honesta inclui o seu tempo."
+        },
+        {
+          "pergunta": "Posso começar com freelancer e migrar para agência depois?",
+          "resposta": "Pode, e é um caminho comum. Só vale documentar o que foi feito: acessos, arquivos e o raciocínio por trás das decisões. A transição trava quando tudo estava na cabeça de uma pessoa que saiu."
+        },
+        {
+          "pergunta": "Como sei que chegou a hora de sair do freelancer?",
+          "resposta": "Três sinais costumam aparecer juntos: você virou o gargalo das aprovações, o calendário para quando a pessoa tira férias e não existe mais material novo para publicar sem alguém ir gravar."
+        },
+        {
+          "pergunta": "A Cut Creative trabalha com escopo pontual?",
+          "resposta": "Trabalha. Tem cliente que contrata só a produção audiovisual e tem cliente que contrata a operação completa. O escopo sai do diagnóstico, e se o seu caso for melhor resolvido por um freelancer, a gente diz isso na primeira conversa."
+        }
+      ]
+    },
+    {
+      "slug": "trafego-pago-ou-organico",
+      "titulo": "Tráfego pago ou tráfego orgânico: por onde começar?",
+      "metaTitulo": "Tráfego Pago ou Orgânico: por Onde Começar",
+      "metaDescricao": "Quando começar pelo pago, quando começar pelo orgânico e por que os dois dependem do mesmo ativo. Guia direto para empresas de Volta Redonda e região.",
+      "resumo": "Um traz demanda em semanas e some quando você desliga. O outro leva meses e fica. A escolha depende do seu caixa, não da sua preferência.",
+      "data": "2026-08-05",
+      "intencao": "comparação",
+      "keywordPrincipal": "tráfego pago ou tráfego orgânico",
+      "keywordsSecundarias": [
+        "diferença entre tráfego pago e orgânico",
+        "vale a pena investir em tráfego pago",
+        "tráfego orgânico funciona",
+        "por onde começar no marketing digital"
+      ],
+      "blocos": [
+        {
+          "tipo": "p",
+          "texto": "Resposta curta: **comece pelo tráfego pago se você precisa de demanda nas próximas semanas e tem margem para bancar o teste**. **Comece pelo orgânico se o seu problema é não ser conhecido nem lembrado**, e você tem alguns meses de fôlego antes de precisar do retorno."
+        },
+        {
+          "tipo": "p",
+          "texto": "Só que a pergunta esconde uma armadilha: ela sugere que são dois caminhos separados. Não são. Os dois consomem exatamente a mesma matéria-prima, que é conteúdo produzido, e é aí que a maior parte das empresas trava, independentemente do caminho que escolheu."
+        },
+        {
+          "tipo": "h2",
+          "texto": "O que cada um faz de verdade"
+        },
+        {
+          "tipo": "h3",
+          "texto": "Tráfego pago"
+        },
+        {
+          "tipo": "p",
+          "texto": "Você paga para colocar uma mensagem na frente de quem ainda não te procurou. Liga rápido, mede rápido e desliga rápido. O resultado aparece enquanto você paga e some quando você para. Serve para gerar demanda agora, testar oferta e descobrir o que o mercado responde antes de investir meses numa direção errada."
+        },
+        {
+          "tipo": "h3",
+          "texto": "Tráfego orgânico"
+        },
+        {
+          "tipo": "p",
+          "texto": "Você constrói motivos para as pessoas chegarem sozinhas: conteúdo, presença no Google, recomendação, reputação. Demora, exige constância e não tem botão de acelerar. Em compensação, o que foi construído continua trabalhando depois. Um artigo que ranqueia e uma ficha bem cuidada no Google Meu Negócio seguem trazendo contato meses depois de prontos."
+        },
+        {
+          "tipo": "h2",
+          "texto": "Comparativo direto"
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "",
+            "Tráfego pago",
+            "Tráfego orgânico"
+          ],
+          "linhas": [
+            [
+              "Tempo até o primeiro resultado",
+              "Dias",
+              "Meses"
+            ],
+            [
+              "O que acontece se você parar",
+              "Para junto",
+              "Continua rendendo, com queda lenta"
+            ],
+            [
+              "Controle sobre o volume",
+              "Alto: mais verba, mais gente",
+              "Baixo: depende de acúmulo"
+            ],
+            [
+              "Custo ao longo do tempo",
+              "Sobe conforme a concorrência",
+              "Cai por contato conquistado"
+            ],
+            [
+              "Serve para testar oferta",
+              "Sim, é o melhor uso",
+              "Não, é lento demais para isso"
+            ],
+            [
+              "Constrói reputação",
+              "Pouco",
+              "É exatamente o que ele faz"
+            ],
+            [
+              "Depende de conteúdo produzido",
+              "Sim",
+              "Sim"
+            ]
+          ]
+        },
+        {
+          "tipo": "p",
+          "texto": "A última linha é a mais importante da tabela e a que mais passa despercebida."
+        },
+        {
+          "tipo": "advertorial",
+          "utm": "utm_source=blog&utm_medium=artigo&utm_campaign=trafego-pago-ou-organico"
+        },
+        {
+          "tipo": "h2",
+          "texto": "Os dois dependem do mesmo ativo"
+        },
+        {
+          "tipo": "p",
+          "texto": "Anúncio precisa de criativo. Perfil precisa de post. Site precisa de imagem. Tudo isso é a mesma coisa vista de ângulos diferentes: material produzido sobre a sua empresa."
+        },
+        {
+          "tipo": "p",
+          "texto": "É por isso que a divisão clássica do mercado, uma pessoa cuidando do orgânico e outra cuidando dos anúncios, cria mais problema do que resolve. Quando a venda cai, o social diz que o tráfego não converteu e o tráfego diz que o criativo não prestava. Ninguém responde pelo conjunto, e o cliente paga as duas contas."
+        },
+        {
+          "tipo": "destaque",
+          "texto": "Anúncio não é print de post. Post de feed foi feito para quem já conhece a marca; anúncio precisa converter quem nunca ouviu falar dela."
+        },
+        {
+          "tipo": "p",
+          "texto": "Na Cut Creative, [tráfego e conteúdo são a mesma operação](/trafego-pago-volta-redonda), alimentada por [produção audiovisual própria](/producao-audiovisual-volta-redonda). Quando um criativo cansa, a peça seguinte já está na fila de gravação, porque quem grava é a mesma equipe que acompanha a campanha."
+        },
+        {
+          "tipo": "h2",
+          "texto": "Quando começar pelo pago"
+        },
+        {
+          "tipo": "lista",
+          "itens": [
+            "Você tem produto ou serviço validado e precisa de volume agora.",
+            "A margem aguenta pagar por cliente enquanto o orgânico não existe.",
+            "Você quer testar uma oferta nova antes de apostar meses nela.",
+            "O ciclo de venda é curto: a pessoa vê, decide e compra."
+          ]
+        },
+        {
+          "tipo": "h2",
+          "texto": "Quando começar pelo orgânico"
+        },
+        {
+          "tipo": "lista",
+          "itens": [
+            "O seu problema é ser desconhecido ou não ser levado a sério pelo preço que cobra.",
+            "O ciclo de venda é longo e a decisão passa por confiança, como em saúde, serviço técnico e B2B.",
+            "A verba de mídia hoje é pequena demais para gerar aprendizado, e queimá-la só ia gerar frustração.",
+            "Você depende de indicação e quer que a busca no Google confirme o que o amigo falou."
+          ]
+        },
+        {
+          "tipo": "h3",
+          "texto": "O caso específico de quem vende para a região"
+        },
+        {
+          "tipo": "p",
+          "texto": "Para uma empresa que atende Volta Redonda, Barra Mansa, Resende e a Costa Verde, o orgânico tem um componente que gente de fora subestima: a busca local. Quem procura por serviço perto de casa quase sempre resolve na primeira página, olhando o mapa e as avaliações. Ficha do Google bem cuidada, com foto de verdade e avaliação respondida, costuma render mais do que um mês inteiro de post."
+        },
+        {
+          "tipo": "p",
+          "texto": "E existe um efeito cruzado que vale conhecer: quando alguém vê o seu anúncio e depois pesquisa o nome da sua empresa, o que ele encontra decide a venda. Pagar por tráfego para um perfil abandonado é comprar visita para uma loja com a luz apagada."
+        },
+        {
+          "tipo": "h2",
+          "texto": "Os erros mais comuns de cada lado"
+        },
+        {
+          "tipo": "h3",
+          "texto": "No tráfego pago"
+        },
+        {
+          "tipo": "lista",
+          "itens": [
+            "**Subir campanha antes de saber o que ela precisa provar.** Sem objetivo definido, qualquer número parece bom e nenhum vira decisão.",
+            "**Trocar a verba de lugar toda semana.** Campanha precisa de dado acumulado para aprender. Mexer todo dia impede o aprendizado e depois se culpa a plataforma.",
+            "**Mandar o tráfego para um lugar despreparado.** Anúncio bom levando para um WhatsApp que responde em dois dias é dinheiro entregue ao concorrente.",
+            "**Usar um criativo até ele morrer.** O mesmo vídeo perde eficiência conforme o público já o viu. Quem não tem produção nova aumenta a verba em cima de peça gasta e chama isso de otimização."
+          ]
+        },
+        {
+          "tipo": "h3",
+          "texto": "No tráfego orgânico"
+        },
+        {
+          "tipo": "lista",
+          "itens": [
+            "**Publicar por obrigação.** Frequência sem direção enche o feed e não constrói nada.",
+            "**Desistir no terceiro mês.** É justamente quando o acúmulo começaria a aparecer.",
+            "**Ignorar a busca local.** Muita empresa caprichou no Instagram e deixou a ficha do Google com foto ruim, horário errado e avaliação sem resposta.",
+            "**Depender do material antigo.** Quando o acervo acaba, o calendário trava. E ele sempre acaba."
+          ]
+        },
+        {
+          "tipo": "h2",
+          "texto": "Como medir cada um sem se enganar"
+        },
+        {
+          "tipo": "p",
+          "texto": "Os dois se medem de formas diferentes, e comparar pelas mesmas métricas gera decisão errada. Tráfego pago se avalia por custo do contato qualificado e pelo que ele virou no comercial. Orgânico se avalia por acúmulo: quantas pessoas chegam sozinhas, buscando o nome da empresa ou o serviço na cidade, e como esse número se comporta ao longo dos meses."
+        },
+        {
+          "tipo": "p",
+          "texto": "O erro clássico é cobrar do orgânico uma resposta semanal e do pago uma construção de marca. Cada um entrega o que sabe entregar, e a leitura mensal precisa mostrar os dois na mesma página, com o mesmo objetivo comercial no topo."
+        },
+        {
+          "tipo": "h2",
+          "texto": "A resposta que a gente dá na prática"
+        },
+        {
+          "tipo": "p",
+          "texto": "Na maioria dos casos de empresa já em operação, o desenho que funciona é o mesmo: orgânico como base, para existir de forma decente quando alguém procurar, e pago em cima, direcionado ao que precisa vender agora. Um sustenta a reputação, o outro traz o volume."
+        },
+        {
+          "tipo": "p",
+          "texto": "O que define a proporção entre os dois é o seu caixa e o seu ciclo de venda, e não uma regra de mercado. É isso que sai de um diagnóstico, antes de qualquer verba entrar no ar. Se você quer o plano documentado para a sua equipe executar, esse é o formato da [assessoria estratégica da Cut](/assessoria-estrategica-de-marketing); se quer entender o quadro geral primeiro, comece pela [Cut Creative, agência de marketing em Volta Redonda e no Rio de Janeiro](/)."
+        },
+        {
+          "tipo": "advertorial",
+          "utm": "utm_source=blog&utm_medium=artigo&utm_campaign=trafego-pago-ou-organico-fim"
+        }
+      ],
+      "faq": [
+        {
+          "pergunta": "Dá para fazer só orgânico e nunca investir em anúncio?",
+          "resposta": "Dá, e existem negócios que crescem assim, principalmente os que vivem de indicação. O custo é o tempo: você abre mão de controlar o volume. Em mês fraco, não há alavanca para puxar demanda."
+        },
+        {
+          "pergunta": "Quanto tempo até o orgânico dar retorno?",
+          "resposta": "Depende do ponto de partida, da concorrência do seu termo e da constância. O que dá para afirmar com honestidade é que se mede em meses, não em semanas, e que qualquer promessa de prazo fechado antes de olhar o seu caso é chute."
+        },
+        {
+          "pergunta": "Se eu parar o tráfego pago, perco tudo?",
+          "resposta": "Perde o fluxo, não o aprendizado. Fica o que você descobriu sobre público, oferta e criativo, e ficam os clientes que entraram. Por isso vale rodar campanha com mensuração desde o primeiro dia: o dado é o que sobra."
+        },
+        {
+          "pergunta": "Preciso aparecer em vídeo para fazer orgânico funcionar?",
+          "resposta": "Não obrigatoriamente. Tem marca que pede rosto, tem marca que rende mais mostrando produto, bastidor, equipe ou o ambiente da operação. O que não funciona é ficar sem imagem nova, porque aí não existe o que publicar."
+        }
+      ]
+    },
+    {
+      "slug": "como-escolher-agencia-marketing",
+      "titulo": "Como escolher uma agência de marketing digital sem errar",
+      "metaTitulo": "Como Escolher uma Agência de Marketing sem Errar",
+      "metaDescricao": "O que olhar antes de assinar: processo, responsabilidade, produção e contrato. Sinais de alerta e as perguntas certas para a primeira reunião.",
+      "resumo": "Portfólio bonito é o critério mais fácil de fabricar. O que separa agência séria de vendedor de proposta é processo, responsabilidade e o que está escrito no contrato.",
+      "data": "2026-08-05",
+      "intencao": "comparação",
+      "keywordPrincipal": "como escolher uma agência de marketing digital",
+      "keywordsSecundarias": [
+        "como contratar agência de marketing",
+        "o que perguntar para uma agência de marketing",
+        "agência de marketing confiável",
+        "cuidados ao contratar agência digital"
+      ],
+      "blocos": [
+        {
+          "tipo": "p",
+          "texto": "Resposta curta: **escolha pelo processo, não pelo portfólio**. Peça para a agência descrever o que acontece nos primeiros 30 dias, quem é o responsável pela sua conta, com que frequência vocês se falam e o que exatamente chega na sua mão todo mês. Quem tem método responde isso em cinco minutos. Quem não tem, muda de assunto para case."
+        },
+        {
+          "tipo": "p",
+          "texto": "O segundo critério é responsabilidade: quem responde quando o resultado não vem. Agência boa aceita ser cobrada por processo e por entrega. Agência ruim já entra na conversa distribuindo culpa antecipada, no produto, no preço, no mercado, no seu comercial."
+        },
+        {
+          "tipo": "h2",
+          "texto": "Por que portfólio é o critério mais fraco"
+        },
+        {
+          "tipo": "p",
+          "texto": "Portfólio mostra o que a agência conseguiu fazer no melhor dia dela, com o melhor cliente que ela já teve. Não diz nada sobre o que ela entrega no oitavo mês de um contrato comum, que é onde a sua experiência vai acontecer."
+        },
+        {
+          "tipo": "p",
+          "texto": "Pior: peça bonita é o item mais fácil de terceirizar. Uma agência sem estrutura pode contratar um freelancer excelente para a apresentação e nunca mais alcançar aquele padrão na rotina. Se o portfólio impressionar, a pergunta certa é: quem fez isso ainda trabalha aí, e é quem vai fazer o meu?"
+        },
+        {
+          "tipo": "h2",
+          "texto": "Os sinais que valem olhar"
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Sinal de alerta",
+            "Sinal de agência séria"
+          ],
+          "linhas": [
+            [
+              "Promete número de clientes ou faturamento",
+              "Fala em previsibilidade e explica o que não controla"
+            ],
+            [
+              "Começa pela proposta",
+              "Começa por diagnóstico e perguntas sobre o seu comercial"
+            ],
+            [
+              "Pacote fechado antes de conhecer o negócio",
+              "Escopo montado depois de entender ciclo de venda e margem"
+            ],
+            [
+              "Não sabe dizer quem cuida da sua conta",
+              "Nomeia responsáveis e rituais de acompanhamento"
+            ],
+            [
+              "Relatório é print de dashboard",
+              "Relatório responde o que mudou e qual o próximo passo"
+            ],
+            [
+              "Terceiriza tudo e evita o assunto",
+              "Diz com clareza o que é interno e o que é parceiro"
+            ],
+            [
+              "Contrato longo com escopo vago",
+              "Prazo, escopo e entregas descritos por escrito"
+            ]
+          ]
+        },
+        {
+          "tipo": "advertorial",
+          "utm": "utm_source=blog&utm_medium=artigo&utm_campaign=como-escolher-agencia"
+        },
+        {
+          "tipo": "h2",
+          "texto": "As perguntas para levar à primeira reunião"
+        },
+        {
+          "tipo": "lista",
+          "ordenada": true,
+          "itens": [
+            "**Quem vai trabalhar na minha conta e eu vou falar com quem?** Se a resposta for um atendimento que repassa recado, some uma camada de ruído entre você e quem executa.",
+            "**O que acontece nos primeiros 30 dias?** A resposta revela se existe método ou se a execução começa no escuro.",
+            "**O que vocês produzem internamente e o que é terceirizado?** Não existe resposta errada, existe resposta vaga. Terceirizar é legítimo; esconder que terceiriza não é.",
+            "**Como é o relatório e com que frequência?** Peça para ver um modelo real, com os dados de outro cliente apagados.",
+            "**O que vocês precisam de mim?** Agência que diz que não precisa de nada vai entregar conteúdo genérico, porque não vai conhecer o seu negócio.",
+            "**Como saio do contrato e o que levo comigo?** Contas de anúncio, perfis e arquivos precisam ser seus. Isso se resolve antes de assinar, nunca depois."
+          ]
+        },
+        {
+          "tipo": "h2",
+          "texto": "A pergunta sobre produção, que quase ninguém faz"
+        },
+        {
+          "tipo": "p",
+          "texto": "Nos primeiros dois meses de qualquer contrato existe material acumulado para publicar. No terceiro acaba, e aí aparece a pergunta que devia ter sido feita na reunião inicial: de onde vem a imagem nova?"
+        },
+        {
+          "tipo": "p",
+          "texto": "Agência sem estrutura de captação resolve isso de três formas, e nenhuma delas sustenta padrão ao longo de um ano: banco de imagens, que deixa a sua marca com a cara de qualquer concorrente; freelancer por diária, que muda de padrão conforme quem estava disponível; ou pede para você mesmo gravar com o celular."
+        },
+        {
+          "tipo": "destaque",
+          "texto": "Pergunte quem vai apertar o botão de gravar quando a sua empresa precisar de imagem nova. A resposta explica metade dos contratos que morrem no quarto mês."
+        },
+        {
+          "tipo": "p",
+          "texto": "É por esse motivo que a Cut Creative mantém [estúdio e equipe audiovisual próprios](/producao-audiovisual-volta-redonda) e trata [tráfego e conteúdo como uma operação só](/trafego-pago-volta-redonda). Não é preferência estética, é o que permite manter prazo e padrão sem depender da agenda de terceiro."
+        },
+        {
+          "tipo": "h2",
+          "texto": "Agência local ou agência de fora?"
+        },
+        {
+          "tipo": "p",
+          "texto": "Para estratégia e gestão de mídia, distância não atrapalha: reunião por chamada de vídeo funciona bem. O problema aparece na parte física do trabalho."
+        },
+        {
+          "tipo": "p",
+          "texto": "Uma agência de outro estado não consegue estar na sua loja numa quinta-feira à tarde para gravar o movimento real, nem sentar na sua sala quando a conversa é difícil. Se a sua operação depende de mostrar o que acontece dentro dela, e a maioria depende, a distância vira custo escondido."
+        },
+        {
+          "tipo": "p",
+          "texto": "Vale a inversa também, e é justo dizer: se o seu negócio é digital, vende para o Brasil inteiro e não precisa de captação presencial, contratar por proximidade não traz vantagem nenhuma. Escolha por competência."
+        },
+        {
+          "tipo": "h2",
+          "texto": "O que observar nos primeiros 90 dias"
+        },
+        {
+          "tipo": "p",
+          "texto": "A escolha não termina na assinatura. O começo do contrato é a melhor amostra que você vai ter do resto, e dá para corrigir cedo se algo estiver errado."
+        },
+        {
+          "tipo": "lista",
+          "itens": [
+            "**Perguntaram sobre o seu comercial?** Agência que só fala de rede social e nunca perguntou como a sua venda acontece vai produzir conteúdo desconectado do que gera receita.",
+            "**As entregas têm data e dono?** Se você precisa cobrar para as coisas andarem, o problema é de governança e não some com o tempo.",
+            "**O relatório muda alguma decisão?** Relatório que só informa é enfeite. Ele precisa terminar dizendo o que muda no próximo ciclo e por quê.",
+            "**Apareceu material novo, gravado agora?** No terceiro mês o acervo antigo acaba. Se nada novo foi produzido, o calendário vai travar.",
+            "**Você fala com quem executa?** Uma camada de atendimento entre você e quem faz o trabalho costuma virar telefone sem fio."
+          ]
+        },
+        {
+          "tipo": "p",
+          "texto": "Se depois de 90 dias você não souber explicar em duas frases o que a agência está tentando construir, o problema não é de paciência. É de estratégia não documentada."
+        },
+        {
+          "tipo": "h2",
+          "texto": "Quando a resposta é não contratar agência"
+        },
+        {
+          "tipo": "p",
+          "texto": "Existem três situações em que contratar é prematuro, e nenhuma agência séria deveria vender nelas:"
+        },
+        {
+          "tipo": "lista",
+          "itens": [
+            "**A empresa ainda não sabe o que vende e para quem.** Aumentar o volume de publicação não resolve falta de posicionamento.",
+            "**A verba total mal cobre o serviço, sem sobrar para mídia e produção.** Contratar gestão sem verba para gerir é pagar por relatório.",
+            "**O comercial não consegue atender o que já chega.** Gerar mais demanda para uma operação que não responde WhatsApp é queimar dinheiro e reputação."
+          ]
+        },
+        {
+          "tipo": "p",
+          "texto": "Se o seu caso é o primeiro, o formato certo costuma ser um plano documentado, como a [assessoria estratégica de 90 dias](/assessoria-estrategica-de-marketing), e não uma operação mensal completa. Se quiser conhecer como a Cut trabalha antes de decidir qualquer coisa, comece por [como é uma agência de marketing em Volta Redonda por dentro](/)."
+        },
+        {
+          "tipo": "advertorial",
+          "utm": "utm_source=blog&utm_medium=artigo&utm_campaign=como-escolher-agencia-fim"
+        }
+      ],
+      "faq": [
+        {
+          "pergunta": "Devo pedir garantia de resultado?",
+          "resposta": "Peça clareza, não garantia. Ninguém controla concorrência, sazonalidade e decisão de compra. O que uma agência pode garantir é processo: escopo descrito, prazos acordados, responsáveis nomeados e relatório em data combinada. Quem garante faturamento está prometendo o que não controla."
+        },
+        {
+          "pergunta": "O que eu levo comigo se decidir sair?",
+          "resposta": "Tudo o que é seu por direito: as contas de anúncio, os perfis, os acessos e os arquivos do que foi produzido. Isso se combina antes de assinar, e não depois. Agência que resiste a essa conversa está dizendo que pretende usar os seus acessos como trava."
+        },
+        {
+          "pergunta": "Como comparo propostas de agências diferentes?",
+          "resposta": "Coloque lado a lado quatro coisas: o que exatamente é entregue por mês, quem faz cada parte, o que é interno e o que é terceirizado, e o que acontece se você quiser sair. Preço só significa alguma coisa depois que essas quatro colunas estão preenchidas."
+        },
+        {
+          "pergunta": "Vale contratar a agência mais barata?",
+          "resposta": "Vale entender por que ela é mais barata. Às vezes é estrutura enxuta e escopo menor, o que é legítimo. Às vezes é a mesma pessoa atendendo trinta contas, e aí o barato aparece na entrega genérica. Pergunte quantos clientes cada squad atende."
+        }
+      ]
+    },
+    {
+      "slug": "como-divulgar-negocio-volta-redonda",
+      "titulo": "Como divulgar meu negócio em Volta Redonda",
+      "metaTitulo": "Como Divulgar Meu Negócio em Volta Redonda",
+      "metaDescricao": "Os canais que funcionam para empresa local em Volta Redonda e região, em que ordem atacar e o que cada um cobra de você. Guia prático, sem receita pronta.",
+      "resumo": "A ordem importa mais que o canal. Começar pelo Instagram quando a ficha do Google está abandonada é gastar energia na etapa errada.",
+      "data": "2026-08-05",
+      "intencao": "informacional",
+      "keywordPrincipal": "como divulgar meu negócio em Volta Redonda",
+      "keywordsSecundarias": [
+        "divulgar empresa Volta Redonda",
+        "como anunciar negócio local",
+        "marketing para empresa de Volta Redonda",
+        "onde divulgar meu negócio"
+      ],
+      "blocos": [
+        {
+          "tipo": "p",
+          "texto": "Resposta curta: **comece pelo que já procura por você**. Antes de produzir post, arrume a ficha do Google Meu Negócio, o perfil que já existe e o caminho até o WhatsApp. Quem busca \"pizzaria em Volta Redonda\" ou \"dentista no Aterrado\" está pronto para comprar, e essa demanda já existe hoje, de graça, esperando quem apareça direito."
+        },
+        {
+          "tipo": "p",
+          "texto": "Depois disso, sim, vale investir em conteúdo e em anúncio. A ordem não é detalhe: divulgar um negócio cuja ficha do Google tem foto ruim e horário errado é levar gente para uma loja com a luz apagada. Este texto está na ordem em que a gente recomenda atacar, e não na ordem de quanto cada canal é famoso."
+        },
+        {
+          "tipo": "h2",
+          "texto": "Etapa 1: existir direito na busca local"
+        },
+        {
+          "tipo": "p",
+          "texto": "É a etapa mais barata e a que mais gente pula. Quando alguém em Volta Redonda procura um serviço no celular, o Google mostra primeiro um mapa com três negócios. Estar ali vale mais do que qualquer post da semana, porque é a pessoa procurando você, e não você interrompendo a pessoa."
+        },
+        {
+          "tipo": "lista",
+          "itens": [
+            "**Ficha do Google Meu Negócio completa**, com categoria certa, horário atualizado e endereço exato.",
+            "**Fotos de verdade**, do lugar como ele é hoje. Foto de banco de imagem em ficha local se denuncia sozinha.",
+            "**Avaliações respondidas**, inclusive as ruins. Responder bem uma reclamação convence mais do que dez elogios.",
+            "**Telefone e WhatsApp que alguém atende.** Parece óbvio, e é o erro mais comum."
+          ]
+        },
+        {
+          "tipo": "p",
+          "texto": "O passo a passo completo dessa parte está em [como configurar o Google Meu Negócio](/blog/google-meu-negocio-como-configurar). Vale fazer mesmo que você não contrate ninguém para isso."
+        },
+        {
+          "tipo": "h2",
+          "texto": "Etapa 2: o perfil como vitrine, não como diário"
+        },
+        {
+          "tipo": "p",
+          "texto": "Quem viu o seu anúncio, ouviu de um amigo ou achou no mapa vai fazer a mesma coisa: abrir o seu Instagram para conferir se a empresa é séria. Nesse momento o perfil não precisa ser divertido, precisa ser convincente."
+        },
+        {
+          "tipo": "p",
+          "texto": "Três coisas resolvem a maior parte dos casos: a bio dizendo o que você faz e onde fica, os destaques respondendo as dúvidas que sua equipe cansou de responder no direct, e os últimos posts mostrando o trabalho real. Frequência vem depois. Perfil que publica todo dia sem dizer o que a empresa faz não converte."
+        },
+        {
+          "tipo": "h2",
+          "texto": "Etapa 3: os canais, e o que cada um cobra de você"
+        },
+        {
+          "tipo": "p",
+          "texto": "Divulgação local não é escolher o canal certo, é entender o preço de cada um. Todo canal cobra em dinheiro, em tempo ou em constância. A comparação de fundo entre os dois motores está em [a diferença entre tráfego pago e orgânico](/blog/trafego-pago-ou-organico)."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Canal",
+            "Bom para",
+            "O que ele cobra"
+          ],
+          "linhas": [
+            [
+              "Google Meu Negócio",
+              "Quem já procura pelo seu serviço na cidade",
+              "Manutenção: foto nova, horário, resposta a avaliação"
+            ],
+            [
+              "Instagram e redes",
+              "Construir autoridade e ser lembrado",
+              "Constância e material novo toda semana"
+            ],
+            [
+              "Tráfego pago",
+              "Demanda agora, com volume controlável",
+              "Verba mensal e criativo novo quando a peça cansa"
+            ],
+            [
+              "WhatsApp",
+              "Fechar o que os outros canais trouxeram",
+              "Alguém respondendo rápido, de verdade"
+            ],
+            [
+              "Indicação",
+              "Cliente que chega meio convencido",
+              "Qualidade na entrega, que é o mais difícil"
+            ],
+            [
+              "Placa, fachada, rádio local",
+              "Reconhecimento na cidade",
+              "Dinheiro, e é difícil medir o retorno"
+            ]
+          ]
+        },
+        {
+          "tipo": "p",
+          "texto": "Repare que só uma linha cobra exclusivamente dinheiro. As outras cobram tempo e organização, e é por isso que tanta empresa com verba disponível continua invisível."
+        },
+        {
+          "tipo": "advertorial",
+          "utm": "utm_source=blog&utm_medium=artigo&utm_campaign=como-divulgar-negocio"
+        },
+        {
+          "tipo": "h2",
+          "texto": "O que trava quase todo mundo no terceiro mês"
+        },
+        {
+          "tipo": "p",
+          "texto": "O plano costuma funcionar por dois meses. Existe material acumulado: fotos de um evento, um vídeo que alguém gravou, o registro de uma obra pronta. No terceiro mês acaba, e aí a divulgação para, não por falta de ideia, mas por falta de imagem nova."
+        },
+        {
+          "tipo": "destaque",
+          "texto": "Divulgação não morre por falta de plano. Morre por falta de matéria-prima para alimentar o plano."
+        },
+        {
+          "tipo": "p",
+          "texto": "Existem três saídas honestas para isso. A primeira é alguém da equipe gravar com o celular, o que resolve o volume e limita o padrão. A segunda é contratar um freelancer por diária, o que resolve o padrão e cria dependência de agenda. A terceira é ter quem produza de forma contínua."
+        },
+        {
+          "tipo": "p",
+          "texto": "É onde a Cut Creative é diferente da maioria das agências da região: a captação é interna, com quatro profissionais na filmagem, quatro editores fixos e estúdio próprio em Volta Redonda. São mais de 500 vídeos entregues por mês somando a carteira toda. Em Volta Redonda e Barra Mansa a gravação não tem custo de deslocamento, e a página de [produção de vídeo](/producao-audiovisual-volta-redonda) detalha como isso funciona."
+        },
+        {
+          "tipo": "h2",
+          "texto": "Divulgação por tipo de negócio"
+        },
+        {
+          "tipo": "h3",
+          "texto": "Comércio e serviço de bairro"
+        },
+        {
+          "tipo": "p",
+          "texto": "Busca local resolve a maior parte. Prioridade absoluta para a ficha do Google, avaliação e foto atual. Conteúdo entra para dar cara de marca e sustentar preço, não para gerar a primeira venda."
+        },
+        {
+          "tipo": "h3",
+          "texto": "Saúde e serviço técnico"
+        },
+        {
+          "tipo": "p",
+          "texto": "A decisão passa por confiança, então autoridade vale mais que alcance. Conteúdo informativo, estrutura visível e reputação bem cuidada. Vale lembrar que publicidade médica e odontológica tem regra própria dos conselhos de classe, e nem tudo que funciona em outro segmento é permitido aqui."
+        },
+        {
+          "tipo": "h3",
+          "texto": "Indústria e B2B"
+        },
+        {
+          "tipo": "p",
+          "texto": "O marketing raramente fecha a venda sozinho. Ele qualifica, prova capacidade técnica e encurta a conversa que o comercial vai ter. Conteúdo de bastidor da operação costuma render mais do que post institucional."
+        },
+        {
+          "tipo": "h3",
+          "texto": "Alimentação"
+        },
+        {
+          "tipo": "p",
+          "texto": "É o segmento em que imagem decide. Foto ruim de prato afasta mais do que preço alto. Aqui a produção de imagem não é luxo, é o produto sendo mostrado."
+        },
+        {
+          "tipo": "h2",
+          "texto": "Erros que a gente vê toda semana na região"
+        },
+        {
+          "tipo": "lista",
+          "itens": [
+            "**Impulsionar post por impulso.** Colocar verba no post que teve mais curtida não é campanha, é aposta.",
+            "**Sumir do Google e caprichar só no Instagram.** Quem procura serviço na cidade quase sempre resolve no mapa.",
+            "**Trocar de estratégia todo mês.** Nada tem tempo de acumular, e a conclusão vira \"marketing não funciona\".",
+            "**Gerar demanda que ninguém atende.** Anúncio bom levando para um WhatsApp que responde em dois dias é dinheiro entregue ao concorrente.",
+            "**Copiar o concorrente.** Você não sabe se o que ele faz está dando certo. Talvez ele esteja copiando outro."
+          ]
+        },
+        {
+          "tipo": "h2",
+          "texto": "Por onde começar esta semana"
+        },
+        {
+          "tipo": "lista",
+          "ordenada": true,
+          "itens": [
+            "Abra a sua ficha do Google e confira horário, endereço, telefone e categoria.",
+            "Tire cinco fotos do lugar como ele está hoje e substitua as antigas.",
+            "Responda todas as avaliações que estão sem resposta, começando pelas ruins.",
+            "Arrume a bio do perfil para dizer o que você faz e onde fica.",
+            "Combine com a equipe quem responde o WhatsApp e em quanto tempo."
+          ]
+        },
+        {
+          "tipo": "p",
+          "texto": "Isso não custa verba e resolve o básico. Depois disso, se o gargalo for volume de demanda, o caminho é [tráfego pago com conteúdo na mesma operação](/trafego-pago-volta-redonda); se for falta de direção com equipe já montada, é o [acompanhamento estratégico contínuo](/assessoria-estrategica-de-marketing). E se você quiser entender como a Cut trabalha antes de decidir, comece pela [agência de marketing que atende Volta Redonda e toda a região Sul Fluminense](/)."
+        },
+        {
+          "tipo": "advertorial",
+          "utm": "utm_source=blog&utm_medium=artigo&utm_campaign=como-divulgar-negocio-fim"
+        }
+      ],
+      "faq": [
+        {
+          "pergunta": "Preciso estar em todas as redes sociais?",
+          "resposta": "Não, e tentar isso costuma piorar o resultado. Melhor um canal bem cuidado do que quatro abandonados, porque perfil parado passa a impressão de empresa que fechou. Escolha onde o seu cliente realmente está e trate os outros como vitrine mínima."
+        },
+        {
+          "pergunta": "Dá para divulgar sem investir em anúncio?",
+          "resposta": "Dá. Busca local, reputação e indicação sustentam muito negócio na região sem verba de mídia. O que você abre mão é de controlar o volume: em mês fraco não existe alavanca para puxar demanda."
+        },
+        {
+          "pergunta": "Quanto tempo até aparecer resultado?",
+          "resposta": "A parte de busca local costuma responder rápido, porque é organizar algo que já existe. Construção de marca se mede em meses. Qualquer prazo fechado prometido antes de olhar o seu caso é chute."
+        },
+        {
+          "pergunta": "Vale a pena contratar agência sendo um negócio pequeno?",
+          "resposta": "Depende de duas coisas: se o marketing virou operação contínua e se sobra verba para mídia e produção além do serviço. Se a resposta for não para as duas, o dinheiro rende mais arrumando o básico e contratando trabalho pontual."
+        }
+      ]
+    },
+    {
+      "slug": "google-meu-negocio-como-configurar",
+      "titulo": "Google Meu Negócio: como configurar e aparecer no mapa",
+      "metaTitulo": "Google Meu Negócio: Como Configurar e Aparecer",
+      "metaDescricao": "Passo a passo real para criar, verificar e otimizar seu perfil no Google, aparecer no mapa e responder avaliações. Sem atalho e sem promessa mágica.",
+      "resumo": "O passo a passo completo, inclusive o que quase ninguém conta: como funciona a verificação, o que decide a ordem do mapa e por que a categoria é a escolha mais importante.",
+      "data": "2026-08-05",
+      "intencao": "informacional",
+      "keywordPrincipal": "google meu negócio como configurar",
+      "keywordsSecundarias": [
+        "perfil da empresa no google",
+        "aparecer no mapa do google",
+        "verificar google meu negócio",
+        "otimizar google meu negócio"
+      ],
+      "blocos": [
+        {
+          "tipo": "p",
+          "texto": "Resposta curta: o perfil se cria em **google.com/business**, com a conta Google da empresa. Você informa nome, categoria, endereço e telefone, passa pela verificação (hoje quase sempre por vídeo), e o perfil vai ao ar. Isso leva minutos; a verificação pode levar alguns dias."
+        },
+        {
+          "tipo": "p",
+          "texto": "O que decide se você aparece no mapa vem depois, e é outra conversa. O Google combina três coisas: **relevância** (o quanto o seu perfil corresponde ao que a pessoa buscou), **distância** (onde ela está) e **destaque** (o quanto o seu negócio é conhecido e bem avaliado). Você não controla a distância. Controla as outras duas, e é aí que este texto se concentra."
+        },
+        {
+          "tipo": "h2",
+          "texto": "Passo a passo para criar"
+        },
+        {
+          "tipo": "lista",
+          "ordenada": true,
+          "itens": [
+            "**Use a conta Google da empresa, não a sua pessoal.** Se você sair um dia, o perfil não sai junto. Vale criar uma conta específica antes de começar.",
+            "**Procure o seu negócio antes de criar.** Muita empresa já tem uma ficha gerada automaticamente ou criada por um cliente. Nesse caso o caminho é reivindicar, e não criar outra: duas fichas do mesmo negócio brigam entre si.",
+            "**Escreva o nome exatamente como ele é.** Nada de \"Pizzaria Tal | A Melhor de Volta Redonda\". Enfiar palavra-chave no nome viola as diretrizes e pode derrubar o perfil.",
+            "**Escolha a categoria principal com cuidado.** É a decisão mais importante da configuração inteira, e a que mais gente erra. Voltamos a ela adiante.",
+            "**Informe endereço e área de atendimento.** Se o cliente vai até você, o endereço aparece. Se você vai até ele, marque como negócio de serviço e defina as cidades atendidas.",
+            "**Passe pela verificação.** Hoje o caminho mais comum é gravar um vídeo mostrando a fachada, o interior, algo que prove que você opera ali, e o equipamento ou material de trabalho. Grave com calma: refazer é comum e não tem problema."
+          ]
+        },
+        {
+          "tipo": "p",
+          "texto": "Depois de verificado, o perfil já aparece. O trabalho de verdade começa agora."
+        },
+        {
+          "tipo": "h2",
+          "texto": "A categoria é a escolha mais importante"
+        },
+        {
+          "tipo": "p",
+          "texto": "A categoria principal é o que mais pesa para o Google decidir em quais buscas você entra. Uma clínica cadastrada como \"clínica\" genérica compete com tudo; cadastrada na especialidade certa, compete com quem realmente é concorrente e aparece para quem procura aquilo."
+        },
+        {
+          "tipo": "p",
+          "texto": "Duas regras práticas: a principal deve ser a atividade que você mais quer vender, não a mais abrangente. E vale preencher categorias secundárias, mas só as que você realmente exerce, porque categoria falsa gera denúncia de concorrente e suspensão."
+        },
+        {
+          "tipo": "p",
+          "texto": "Se a categoria que você procura não aparece no autocompletar, o Google simplesmente não tem aquela opção. Não force uma parecida: escolha a mais próxima verdadeira e descreva o resto nos serviços."
+        },
+        {
+          "tipo": "h2",
+          "texto": "O que preencher depois de verificado"
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Item",
+            "Por que importa",
+            "Com que frequência mexer"
+          ],
+          "linhas": [
+            [
+              "Categorias",
+              "Define em quais buscas você entra",
+              "Revisar a cada 6 meses"
+            ],
+            [
+              "Serviços",
+              "Aparece para busca específica, não só pela categoria",
+              "Ao mudar o que você vende"
+            ],
+            [
+              "Horário",
+              "Horário errado gera avaliação ruim de gente que foi à toa",
+              "Sempre que mudar, e em feriado"
+            ],
+            [
+              "Fotos",
+              "Perfil com foto atual recebe mais contato que perfil sem",
+              "Mensal"
+            ],
+            [
+              "Avaliações",
+              "Peso direto no destaque e na decisão de quem lê",
+              "Responder todas, sempre"
+            ],
+            [
+              "Postagens",
+              "Ocupam espaço no perfil e mostram atividade",
+              "Quinzenal"
+            ],
+            [
+              "Perguntas e respostas",
+              "Qualquer um pode responder por você se ficar vazio",
+              "Popular você mesmo"
+            ]
+          ]
+        },
+        {
+          "tipo": "p",
+          "texto": "A última linha merece atenção: o campo de perguntas é aberto. Se você não responder, um cliente confuso ou um concorrente responde. Vale escrever você mesmo as cinco dúvidas mais comuns e respondê-las."
+        },
+        {
+          "tipo": "advertorial",
+          "utm": "utm_source=blog&utm_medium=artigo&utm_campaign=google-meu-negocio"
+        },
+        {
+          "tipo": "h2",
+          "texto": "Como subir no mapa, sem atalho"
+        },
+        {
+          "tipo": "h3",
+          "texto": "Avaliações, e principalmente as respostas"
+        },
+        {
+          "tipo": "p",
+          "texto": "Peça avaliação de forma sistemática, no momento em que o cliente está satisfeito, com o link direto. E responda todas, inclusive as ruins. Uma resposta educada e específica a uma reclamação convence mais quem está lendo do que dez elogios seguidos, porque mostra como você se comporta quando algo dá errado."
+        },
+        {
+          "tipo": "p",
+          "texto": "O que não fazer: comprar avaliação, pedir para funcionário avaliar, oferecer desconto em troca. O Google detecta padrão e o custo de ser pego é perder o perfil inteiro."
+        },
+        {
+          "tipo": "h3",
+          "texto": "Fotos que provam que o negócio existe"
+        },
+        {
+          "tipo": "p",
+          "texto": "Perfil com foto atual do lugar como ele é hoje ganha de perfil com foto de banco de imagem, e a diferença é visível para qualquer pessoa que abra a ficha. Fachada, interior, equipe, produto, e nada de imagem genérica de internet."
+        },
+        {
+          "tipo": "p",
+          "texto": "Vale um alerta que quase ninguém dá: **o cliente também posta foto**. Se as fotos dos clientes forem melhores que as suas, ótimo; se forem piores, a sua ficha fica com a cara delas. Isso é resolvido publicando material bom com regularidade."
+        },
+        {
+          "tipo": "h3",
+          "texto": "Consistência do NAP"
+        },
+        {
+          "tipo": "p",
+          "texto": "Nome, endereço e telefone precisam estar iguais em todo lugar: site, perfil, redes, cadastros. Divergência entre eles confunde o Google e derruba a confiança na ficha. É um trabalho chato e que rende."
+        },
+        {
+          "tipo": "h2",
+          "texto": "O que não funciona"
+        },
+        {
+          "tipo": "lista",
+          "itens": [
+            "**Palavra-chave no nome da empresa.** Viola diretriz, é fácil de denunciar e pode suspender o perfil.",
+            "**Endereço falso ou caixa postal.** Verificação por vídeo pega, e a suspensão é difícil de reverter.",
+            "**Criar uma segunda ficha para o mesmo negócio.** As duas se enfraquecem e uma acaba removida.",
+            "**Sumir por seis meses e voltar.** Perfil sem movimento perde espaço para quem mantém o dele vivo."
+          ]
+        },
+        {
+          "tipo": "h2",
+          "texto": "A parte local, que muda o jogo em Volta Redonda"
+        },
+        {
+          "tipo": "p",
+          "texto": "Numa cidade do porte de Volta Redonda, Barra Mansa ou Resende, a concorrência por termo local é pequena comparada à de uma capital. Isso é uma boa notícia: um perfil bem cuidado sobe rápido, porque muita empresa da região ainda tem ficha abandonada, com foto de cinco anos atrás e avaliação sem resposta."
+        },
+        {
+          "tipo": "destaque",
+          "texto": "Ficha bem cuidada costuma render mais para um negócio local do que um mês inteiro de post no Instagram."
+        },
+        {
+          "tipo": "p",
+          "texto": "A distância também pesa mais em cidade média: quem busca no bairro tende a ver quem está no bairro. Se você atende mais de um município, vale usar a área de atendimento com honestidade em vez de inventar endereço, que é onde muita gente se queima."
+        },
+        {
+          "tipo": "h2",
+          "texto": "Faça você mesmo, mas conheça o trabalho que dá"
+        },
+        {
+          "tipo": "p",
+          "texto": "Tudo o que está aqui você consegue fazer sozinho, e vale a pena fazer mesmo sem contratar ninguém. Não existe segredo nesta parte, existe trabalho: a criação leva uma tarde, e a manutenção é o que separa perfil que sobe de perfil que estaciona."
+        },
+        {
+          "tipo": "p",
+          "texto": "A manutenção é justamente o que costuma morrer na correria: foto nova todo mês, avaliação respondida na semana, horário atualizado no feriado, serviço novo cadastrado, postagem a cada quinze dias. É trabalho pequeno, recorrente e chato, do tipo que fica para depois."
+        },
+        {
+          "tipo": "p",
+          "texto": "É essa parte que a [Cut Creative, agência de marketing em Volta Redonda e região do Rio de Janeiro](/), assume quando entra numa conta, junto do resto da operação. E tem uma vantagem prática: o item que mais trava a manutenção é foto e vídeo novos, e a nossa captação é interna, com equipe própria e estúdio em Volta Redonda. Se quiser ver como isso funciona, está detalhado na página de [produção audiovisual](/producao-audiovisual-volta-redonda); se o seu gargalo for demanda, o caminho é [tráfego pago e conteúdo na mesma operação](/trafego-pago-volta-redonda)."
+        },
+        {
+          "tipo": "p",
+          "texto": "E se o Google for só uma parte do problema, o texto sobre [como divulgar um negócio em Volta Redonda](/blog/como-divulgar-negocio-volta-redonda) coloca esta etapa no lugar dela dentro do plano inteiro."
+        },
+        {
+          "tipo": "advertorial",
+          "utm": "utm_source=blog&utm_medium=artigo&utm_campaign=google-meu-negocio-fim"
+        }
+      ],
+      "faq": [
+        {
+          "pergunta": "Quanto tempo demora a verificação?",
+          "resposta": "A gravação do vídeo leva minutos e a análise costuma sair em alguns dias. Se for recusada, dá para tentar de novo mostrando melhor a fachada, o interior e algo que prove a atividade, como equipamento ou material de trabalho. Recusa na primeira tentativa é comum e não significa problema com o negócio."
+        },
+        {
+          "pergunta": "Posso ter perfil sem endereço físico?",
+          "resposta": "Pode, se você atende no cliente. Nesse caso o perfil é cadastrado como negócio de serviço, com área de atendimento definida por cidade ou região, e o endereço fica oculto. O que não pode é inventar um endereço comercial que você não usa."
+        },
+        {
+          "pergunta": "Avaliação ruim pode ser removida?",
+          "resposta": "Só se violar as políticas do Google, como conteúdo ofensivo, spam ou avaliação de quem nunca foi cliente. Insatisfação legítima não é removida, e tentar apagar é o caminho errado: uma resposta bem escrita transforma a avaliação ruim em prova de que você resolve problema."
+        },
+        {
+          "pergunta": "Preciso postar no Google Meu Negócio?",
+          "resposta": "Não é obrigatório e ajuda. As postagens ocupam espaço no perfil, mostram que o negócio está ativo e permitem divulgar novidade ou promoção. Uma a cada quinze dias já sustenta, desde que o resto da ficha esteja em ordem."
+        }
+      ]
+    },
+    {
+      "slug": "preco-de-agencia-de-marketing",
+      "titulo": "Por que agência séria não passa preço antes de entender o seu negócio",
+      "metaTitulo": "Por Que Agência Séria Não Passa Preço de Cara",
+      "metaDescricao": "O que faz o preço de uma agência variar, quais modelos de cobrança existem e por que orçamento fechado no primeiro contato costuma sair caro depois.",
+      "resumo": "Quem passa valor antes de entender a operação está vendendo pacote, não solução. E pacote pronto é a forma mais cara de economizar.",
+      "data": "2026-08-05",
+      "intencao": "comparação",
+      "keywordPrincipal": "preço de agência de marketing",
+      "keywordsSecundarias": [
+        "quanto custa uma agência de marketing",
+        "como é calculado o valor de uma agência",
+        "orçamento de agência de marketing",
+        "modelos de cobrança de agência"
+      ],
+      "blocos": [
+        {
+          "tipo": "p",
+          "texto": "Resposta curta: **porque o preço não existe antes do escopo**. Uma agência que dá valor no primeiro contato está fazendo uma de duas coisas. Ou vendendo um pacote fechado que já existia antes de você aparecer, ou chutando alto para ter margem de negociação depois. Nos dois casos, quem paga a conta do erro é você."
+        },
+        {
+          "tipo": "p",
+          "texto": "O que muda o valor de verdade não é o tamanho da sua empresa nem quantos posts você quer por mês. É o que precisa ser resolvido, quanta produção isso exige e em quanto tempo. Duas empresas do mesmo porte podem ter propostas muito diferentes, e a que parece mais cara às vezes é a única que resolve."
+        },
+        {
+          "tipo": "h2",
+          "texto": "O que realmente faz o preço variar"
+        },
+        {
+          "tipo": "p",
+          "texto": "São poucos fatores, e todos são verificáveis. Se a agência não souber explicar cada um deles na sua proposta, o número foi inventado."
+        },
+        {
+          "tipo": "lista",
+          "itens": [
+            "**Volume de produção.** Quantas peças, quantos vídeos, quantas diárias de gravação por mês. É de longe o item que mais pesa.",
+            "**Logística.** Onde a equipe precisa estar e com que frequência. Gravar dentro da sua operação custa diferente de produzir tudo remoto.",
+            "**Tamanho do time alocado.** Estratégia, criação, tráfego e audiovisual são funções diferentes. Quantas delas o seu caso exige de verdade.",
+            "**Verba de mídia.** É dinheiro que vai para a plataforma, não para a agência, e precisa aparecer separado na proposta.",
+            "**Complexidade do setor.** Saúde tem regra de conselho, indústria tem ciclo de venda longo, alimentação exige produção de imagem constante.",
+            "**Prazo.** Resolver em 4 meses e resolver em 12 meses são operações de tamanho diferente."
+          ]
+        },
+        {
+          "tipo": "h2",
+          "texto": "Os modelos de cobrança que existem"
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Modelo",
+            "Como funciona",
+            "Quando faz sentido"
+          ],
+          "linhas": [
+            [
+              "Mensal por escopo",
+              "Valor fixo pelo que está descrito em contrato",
+              "Operação contínua, que é o caso da maioria"
+            ],
+            [
+              "Projeto fechado",
+              "Preço por entrega única, com começo e fim",
+              "Vídeo institucional, identidade visual, campanha de data"
+            ],
+            [
+              "Percentual da mídia",
+              "A agência ganha um percentual da verba de anúncio",
+              "Raro e perigoso: cria incentivo para você gastar mais"
+            ],
+            [
+              "Por hora",
+              "Cobrança pelo tempo trabalhado",
+              "Consultoria pontual, quase nunca para operação"
+            ],
+            [
+              "Fee mais variável",
+              "Valor fixo menor com bônus por meta",
+              "Só quando a agência controla o funil inteiro, incluindo o comercial"
+            ]
+          ]
+        },
+        {
+          "tipo": "p",
+          "texto": "O modelo mais comum e mais honesto para operação contínua é o mensal por escopo, desde que o escopo esteja escrito. Sem isso, mensalidade vira assinatura de algo que ninguém sabe definir."
+        },
+        {
+          "tipo": "advertorial",
+          "utm": "utm_source=blog&utm_medium=artigo&utm_campaign=preco-de-agencia"
+        },
+        {
+          "tipo": "h2",
+          "texto": "Por que a Cut faz diagnóstico antes de falar de valor"
+        },
+        {
+          "tipo": "p",
+          "texto": "A maior parte das agências executa mais do mesmo. Você chega pedindo social media, ela vende social media. Você chega pedindo tráfego, ela vende tráfego. Ninguém pergunta se aquilo era o problema."
+        },
+        {
+          "tipo": "p",
+          "texto": "O nosso processo entra na empresa antes disso. Estudamos o negócio como se fosse nosso, entendemos para onde você quer levar a operação, e só então calculamos o que aquilo exige de logística, equipe, gravação, material de mídia, tráfego pago e gestão de redes. O preço é consequência dessa conta, não o ponto de partida dela."
+        },
+        {
+          "tipo": "destaque",
+          "texto": "Se a agência não demonstra ter entendido o seu negócio, a chance de o trabalho sair genérico é enorme. E genérico é caro em qualquer preço."
+        },
+        {
+          "tipo": "p",
+          "texto": "Na prática isso quer dizer que a mesma empresa pode receber propostas bem diferentes da gente em momentos diferentes, porque o que ela precisava mudou. É o oposto da tabela de pacotes prata, ouro e diamante, que assume que todo cliente tem o mesmo problema em três tamanhos."
+        },
+        {
+          "tipo": "h2",
+          "texto": "Como avaliar uma proposta sem olhar só o número"
+        },
+        {
+          "tipo": "p",
+          "texto": "Coloque as propostas lado a lado e preencha estas colunas antes de comparar valores. Quase sempre a diferença de preço se explica sozinha."
+        },
+        {
+          "tipo": "lista",
+          "ordenada": true,
+          "itens": [
+            "**O que exatamente é entregue por mês?** Se estiver escrito \"gestão de redes sociais\", isso não é escopo, é um título.",
+            "**O que é produzido internamente e o que é terceirizado?** Terceirizar é legítimo. Não dizer que terceiriza, não.",
+            "**A verba de mídia está separada do serviço?** Se estiver misturada, você não sabe quanto está pagando por cada coisa.",
+            "**Quem trabalha na conta e você fala com quem?** Preço baixo às vezes é a mesma pessoa atendendo trinta clientes.",
+            "**Qual o prazo e o que acontece se você sair?** Acessos e arquivos precisam ser seus.",
+            "**A agência perguntou sobre o seu comercial?** Quem nunca perguntou como você vende vai produzir conteúdo desconectado da receita."
+          ]
+        },
+        {
+          "tipo": "p",
+          "texto": "O detalhe da última linha é o mais revelador de todos. Uma agência que fecha proposta sem entender como o seu dinheiro entra está vendendo execução, não resultado. Esse é exatamente o assunto de [como escolher uma agência de marketing sem errar](/blog/como-escolher-agencia-marketing)."
+        },
+        {
+          "tipo": "h2",
+          "texto": "O que costuma ficar fora da proposta e vira custo depois"
+        },
+        {
+          "tipo": "p",
+          "texto": "Boa parte da frustração com agência não vem do valor combinado. Vem do que ninguém combinou. Quatro itens somem das propostas com frequência e voltam como conta extra ou como entrega que não aconteceu:"
+        },
+        {
+          "tipo": "lista",
+          "itens": [
+            "**Deslocamento para gravar.** Se a equipe precisa ir até a sua operação, isso tem custo. Aqui, Volta Redonda e Barra Mansa não têm; as demais cidades têm, e a logística é acertada antes da diária, nunca depois.",
+            "**Impulsionamento de conteúdo orgânico.** Muita proposta inclui a produção do post e esquece que colocar verba nele é outra linha.",
+            "**Fotografia de produto.** Aparece como se fosse parte do conteúdo de redes, mas ensaio de produto é uma produção separada, com montagem e tempo próprios.",
+            "**Refação.** Quantas rodadas de ajuste estão incluídas por peça. Sem isso escrito, uma das partes vai se sentir passada para trás no segundo mês."
+          ]
+        },
+        {
+          "tipo": "p",
+          "texto": "Nenhum desses itens é armadilha por si só. Vira armadilha quando não está no papel. Perguntar sobre os quatro na reunião custa cinco minutos e evita a conversa desagradável lá na frente."
+        },
+        {
+          "tipo": "h2",
+          "texto": "O barato que sai caro, e o caro que sai caro também"
+        },
+        {
+          "tipo": "p",
+          "texto": "Existe proposta barata que faz sentido: estrutura enxuta, escopo menor, expectativa alinhada. E existe proposta barata que é só volume: a mesma pessoa atendendo dezenas de contas, entregando o mesmo conteúdo com o logo trocado."
+        },
+        {
+          "tipo": "p",
+          "texto": "Do outro lado, proposta cara não é garantia de nada. Estrutura grande com processo ruim entrega tão genérico quanto freelancer sobrecarregado, só que com relatório mais bonito. O que separa os dois não é o valor, é conseguir explicar o porquê de cada linha."
+        },
+        {
+          "tipo": "h2",
+          "texto": "E se você só quer uma referência de quanto custa"
+        },
+        {
+          "tipo": "p",
+          "texto": "É justo querer. Só que qualquer faixa que alguém te dê pela internet vai estar errada para o seu caso, porque não considera nenhum dos seis fatores lá de cima. Faixa nacional genérica serve para você descobrir que existe gente cobrando de quinhentos reais a cinquenta mil, o que não ajuda em nada."
+        },
+        {
+          "tipo": "p",
+          "texto": "O caminho mais rápido para um número real é uma conversa de 40 minutos em que alguém entende a sua operação. Se no fim fizer sentido, você recebe uma proposta com escopo escrito. Se não fizer, você sai com o diagnóstico do que está travando o seu marketing, o que já vale a conversa."
+        },
+        {
+          "tipo": "p",
+          "texto": "Se o que a sua empresa precisa é direção e não execução, existe um formato menor para isso, que é o [plano estratégico documentado](/assessoria-estrategica-de-marketing). E se quiser entender como a gente trabalha antes de qualquer conversa, comece pela [agência de marketing em Volta Redonda](/)."
+        },
+        {
+          "tipo": "advertorial",
+          "utm": "utm_source=blog&utm_medium=artigo&utm_campaign=preco-de-agencia-fim"
+        }
+      ],
+      "faq": [
+        {
+          "pergunta": "Por que agência nenhuma coloca preço no site?",
+          "resposta": "Porque um número sem escopo engana os dois lados. Quem publica tabela precisa padronizar a entrega para o preço fechar, e aí você recebe o pacote que existia antes de você chegar. Quem trabalha por escopo precisa entender o caso antes de calcular."
+        },
+        {
+          "pergunta": "Posso pedir uma proposta sem passar pelo diagnóstico?",
+          "resposta": "Pode pedir, e você vai receber um chute. A conversa de diagnóstico é gratuita e não obriga a nada, então ela costuma ser o caminho mais curto para um número que se sustenta."
+        },
+        {
+          "pergunta": "A verba de anúncio entra no valor da agência?",
+          "resposta": "Não deve entrar. São coisas separadas: uma é o trabalho da equipe, a outra é dinheiro que vai direto para Meta ou Google. Proposta que junta as duas esconde quanto você está pagando por cada uma."
+        },
+        {
+          "pergunta": "Qual o prazo mínimo de contrato?",
+          "resposta": "Gestão de redes começa em 4 meses, porque abaixo disso não existe ciclo suficiente para ler dado com segurança. Campanha pontual, como ação de verão ou lançamento, tem o prazo do próprio projeto."
+        }
+      ]
+    }
+  ]
+}

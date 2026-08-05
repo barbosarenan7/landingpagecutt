@@ -48,6 +48,7 @@ bun run build        # build de produção (dist/)
 | `/trafego-pago-volta-redonda` | Serviço — tráfego pago |
 | `/social-media-volta-redonda` | Serviço — social media |
 | `/producao-audiovisual-volta-redonda` | Serviço — audiovisual |
+| `/assessoria-estrategica-de-marketing` | Serviço — assessoria |
 | `/privacidade` | Política de privacidade |
 | `*` | 404 com `noindex` |
 
@@ -55,22 +56,22 @@ As páginas de serviço existem para dar ao Google conteúdo por
 serviço + localidade — a home sozinha não ranqueia todos os termos.
 Compartilham o layout `src/pages/Servico.tsx` e vêm de
 `src/content/servicos.json`: **para criar um serviço novo basta
-adicionar um item nesse JSON** (a rota, o link do rodapé e o schema
-saem de lá). Depois, acrescentar a URL em `public/sitemap.xml`.
+adicionar um item nesse JSON** (rota, link do rodapé, schema, sitemap e
+pré-renderização saem de lá).
 
-Metadados por rota ficam em `src/lib/seo.tsx` (title, description,
-canonical, OG e JSON-LD). Sem ele toda rota herdaria o title da home.
+Metadados por rota vivem em **`src/lib/rotas.ts`**, consumidos tanto pelo
+`<Seo>` (no navegador) quanto pelo pré-renderizador (no build). Ver
+"Renderização" no fim deste arquivo.
 
 ## Ordem atual das seções
 
 Hero → **Clientes** (grade preta, logos brancos) → Prova social →
-A dor real → Segmentos → Método → Diferenciais → Diagnóstico +
-Formulário → **FAQ** → Footer.
+A dor real → Segmentos → Método → Diferenciais → **FAQ** →
+Diagnóstico + Formulário → Footer.
 
-> A **FAQ** foi adicionada ao final da página de propósito, para o
-> cliente decidir onde ela fica. Para movê-la, basta reordenar
-> `<Faq />` em `src/pages/Home.tsx`. Ela alimenta o schema `FAQPage`
-> da home (candidato a resultado rico na busca).
+> A **FAQ** responde as objeções logo antes do formulário. Para movê-la,
+> basta reordenar `<Faq />` em `src/pages/Home.tsx`. Ela alimenta o
+> schema `FAQPage` da home (candidato a resultado rico na busca).
 
 > Os dois blocos de logos (grade e carrossel) são um **teste A/B** em
 > paralelo e usam a mesma lista `site.json → logos`. A grade usa as
@@ -151,3 +152,31 @@ Para a notificação chegar, o número precisa ter interagido com o seu bot
   recebia erro ao seguir o sitemap). Não remover.
 - **Satoshi é self-hosted** (`public/fonts/`). Não recolocar o CSS da
   Fontshare no `index.html` — ele é render-blocking e custou ~1,2s de FCP.
+
+## Renderização (pré-renderização no build)
+
+O site é uma SPA, mas o `bun run build` gera **HTML estático por rota**
+(`dist/<rota>/index.html`) com o conteúdo já dentro do `#root`. No
+navegador, `hydrateRoot` assume esse HTML.
+
+Por que existe: sem isso o HTML servido era só `<div id="root"></div>`.
+O Google até renderiza JS, mas crawlers de IA (GPTBot, ClaudeBot,
+PerplexityBot) não — para eles o site não tinha conteúdo nenhum.
+
+Cadeia do build:
+
+```
+tsc -b → vite build → vite build --ssr (dist-ssr) → scripts/prerender.ts
+```
+
+`scripts/prerender.ts` faz três coisas: injeta o HTML de cada rota,
+reescreve title/description/canonical/OG + JSON-LD no `<head>` e gera o
+`sitemap.xml`.
+
+**Rota nova:** basta acrescentar em `src/lib/rotas.ts`. Rota, sitemap e
+metadados saem de lá. Não existe mais `public/sitemap.xml` — ele é
+gerado, para não haver duas fontes de verdade.
+
+> Atenção: os metadados vivem em `src/lib/rotas.ts`, não nos componentes.
+> O `<Seo>` injeta por `useEffect`, que não roda em Node — se a rota não
+> estiver nesse arquivo, o HTML gerado herda o title da home.
