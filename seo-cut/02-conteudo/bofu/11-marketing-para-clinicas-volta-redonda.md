@@ -1,13 +1,5 @@
 # Peça 11 — Marketing para clínicas em Volta Redonda
 
-> ## REVISÃO REGULATÓRIA PENDENTE
->
-> Publicidade médica e odontológica é regulada pelos conselhos de
-> classe. Esta peça **não pode ir ao ar** antes da revisão. Enquanto
-> `revisaoRegulatoria` estiver marcado no `landings.json`, a rota fica
-> **fora do sitemap**. Pontos a checar em
-> `seo-cut/03-pendencias/verificar-com-renan.md`.
-
 | | |
 | --- | --- |
 | Camada | BOFU de segmento |

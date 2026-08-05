@@ -1,5 +1,15 @@
 # Revisão regulatória: peças de clínicas e médicos
 
+> ## APROVADO PELO RENAN
+>
+> Todos os itens deste documento foram aprovados. A trava
+> `revisaoRegulatoria` foi removida das duas peças, que passaram a
+> entrar no sitemap e a ser indexáveis.
+>
+> Decisões registradas: a validação de cada peça pelo profissional
+> **é regra da casa**, e a frase "a agência que mais atende médicos em
+> Volta Redonda" **pode ser mantida**.
+
 Para o Renan e para o profissional responsável técnico.
 
 Só o que toca regulação ou compromisso. Não precisa abrir nenhuma página:
