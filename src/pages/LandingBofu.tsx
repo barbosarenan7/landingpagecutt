@@ -227,10 +227,7 @@ export default function LandingBofu({ landing: l }: { landing: Landing }) {
                     {site.email}
                   </a>
                 </p>
-                {/* o endereço vem de site.json, que é conteúdo da home e não
-                    pode ser alterado. Aqui só trocamos os separadores, que
-                    no texto original são travessão e ponto médio. */}
-                <p className="mt-3">{site.address.replace(" — ", ", ").replace(" · ", ". ")}</p>
+                <p className="mt-3">{site.address}</p>
               </div>
             </div>
           </div>

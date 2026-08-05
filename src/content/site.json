@@ -101,7 +101,7 @@
   "segmentos": {
     "tituloLinha1": "Experiência com diferentes tipos de negócio.",
     "tituloLinha2": "Foco no resultado de cada um.",
-    "texto": "A Cut atende empresas em operação que precisam estruturar o marketing e crescer com consistência. Cada negócio tem uma dinâmica diferente — e a estratégia acompanha isso para gerar resultado de verdade.",
+    "texto": "A Cut atende empresas em operação que precisam estruturar o marketing e crescer com consistência. Cada negócio tem uma dinâmica diferente, e a estratégia acompanha isso para gerar resultado de verdade.",
     "cta": "Solicitar diagnóstico",
     "cards": [
       {
@@ -175,7 +175,7 @@
     "itens": [
       {
         "titulo": "Squad dedicado",
-        "texto": "Um time fixo alocado na sua conta — estratégia, criação, tráfego e audiovisual. Você fala com quem executa, não com um atendimento que repassa recado."
+        "texto": "Um time fixo alocado na sua conta: estratégia, criação, tráfego e audiovisual. Você fala com quem executa, não com um atendimento que repassa recado."
       },
       {
         "titulo": "Governança clara",
@@ -198,11 +198,11 @@
     "itens": [
       {
         "pergunta": "Já tive agência e não deu resultado. Por que com vocês seria diferente?",
-        "resposta": "Porque aqui a execução só começa depois do diagnóstico. Você recebe estratégia documentada, relatórios mensais, calls de acompanhamento e um portal onde acompanha tudo — calendário, aprovações e jornada. Método não é promessa: é processo que você consegue ver."
+        "resposta": "Porque aqui a execução só começa depois do diagnóstico. Você recebe estratégia documentada, relatórios mensais, calls de acompanhamento e um portal onde acompanha tudo: calendário, aprovações e jornada. Método não é promessa: é processo que você consegue ver."
       },
       {
         "pergunta": "Quanto custa contratar a Cut Creative?",
-        "resposta": "Depende do diagnóstico. Os planos variam por escopo — tráfego pago, social media, audiovisual ou a operação completa. Por isso a primeira conversa é gratuita e sem compromisso: primeiro entendemos o negócio, depois falamos de investimento."
+        "resposta": "Depende do diagnóstico. Os planos variam por escopo: tráfego pago, social media, audiovisual ou a operação completa. Por isso a primeira conversa é gratuita e sem compromisso: primeiro entendemos o negócio, depois falamos de investimento."
       },
       {
         "pergunta": "Em quanto tempo vejo resultado?",
@@ -210,11 +210,11 @@
       },
       {
         "pergunta": "Preciso aparecer nos vídeos?",
-        "resposta": "Não obrigatoriamente. A direção criativa encontra o formato certo para cada negócio — tem marca que pede rosto, tem marca que pede produto, ambiente ou equipe."
+        "resposta": "Não obrigatoriamente. A direção criativa encontra o formato certo para cada negócio: tem marca que pede rosto, tem marca que pede produto, ambiente ou equipe."
       },
       {
         "pergunta": "A Cut Creative atende a minha cidade?",
-        "resposta": "Presencialmente: Volta Redonda, Barra Mansa, Resende, Angra dos Reis e toda a região Sul Fluminense. Fora da região, atendemos via assessoria estratégica remota — o método completo, à distância."
+        "resposta": "Presencialmente: Volta Redonda, Barra Mansa, Resende, Angra dos Reis e toda a região Sul Fluminense. Fora da região, atendemos via assessoria estratégica remota, com o método completo à distância."
       },
       {
         "pergunta": "Vocês atendem empresas de qual porte?",
@@ -233,7 +233,7 @@
       "Direção clara dos próximos passos para crescer com método",
       "Conversa com quem entende de estratégia."
     ],
-    "regiao": "A Cut atende empresas em Volta Redonda, Barra Mansa, Resende, Angra dos Reis e toda a região — negócios que já estão em operação e querem profissionalizar o marketing com método e acompanhamento próximo.",
+    "regiao": "A Cut atende empresas em Volta Redonda, Barra Mansa, Resende, Angra dos Reis e toda a região, para negócios que já estão em operação e querem profissionalizar o marketing com método e acompanhamento próximo.",
     "imagem": "/logo-grupo.png",
     "form": {
       "titulo": "Diagnóstico gratuito para profissionalizar o marketing da sua empresa",
@@ -268,7 +268,7 @@
     "linkedin": "https://www.linkedin.com/company/cutcreative/",
     "behance": "https://www.behance.net/cutagencia",
     "regiao": "Atendemos presencialmente Volta Redonda, Barra Mansa, Resende, Angra dos Reis e Rio de Janeiro.",
-    "endereco": "Rua Norival de Freitas, 52, sala 101 — Volta Redonda, RJ · CEP 27215-100",
+    "endereco": "Rua Norival de Freitas, 52, sala 101, Volta Redonda, RJ. CEP 27215-100",
     "razaoSocial": "Cut Creative Publicidade e Gestão de Mídia Ltda",
     "cnpj": "55.255.701/0001-63"
   }

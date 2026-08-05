@@ -54,7 +54,7 @@ export default function Privacidade() {
           <p>
             Cookies essenciais mantêm o funcionamento do site. Cookies de medição
             só são ativados com o seu consentimento no aviso exibido na primeira
-            visita — e você pode revogá-lo limpando os dados do navegador.
+            visita, e você pode revogá-lo limpando os dados do navegador.
           </p>
 
           <p className="text-sm text-text3">Última atualização: julho de 2026.</p>
