@@ -9,7 +9,7 @@
 | Keywords secundárias | marketing digital Barra Mansa, agência de publicidade Barra Mansa, tráfego pago Barra Mansa, social media Barra Mansa, produtora de vídeo Barra Mansa |
 | Title tag (49 caracteres) | Agência de Marketing Digital em Barra Mansa | Cut |
 | Meta description (145 caracteres) | Agência de marketing em Barra Mansa com audiovisual próprio: estratégia, tráfego pago, conteúdo e gravação na sua operação. Diagnóstico gratuito. |
-| Links internos | `/`, `/assessoria-estrategica-de-marketing`, `/producao-audiovisual-volta-redonda`, `/trafego-pago-volta-redonda` |
+| Links internos | `/`, `/assessoria-estrategica-de-marketing`, `/blog/agencia-ou-freelancer`, `/producao-audiovisual-volta-redonda`, `/trafego-pago-volta-redonda` |
 | CTA | 3 (topo, meio e fim) |
 | Schema | ProfessionalService/LocalBusiness + Service + BreadcrumbList + FAQPage |
 | Implementada | Sim, em `src/content/landings.json` |
@@ -63,7 +63,7 @@ Pauta conectada ao objetivo comercial do mês, roteiro, design, edição e posta
 Leitura executiva mensal: o que funcionou, o que muda e por quê. Número aqui não é enfeite de dashboard.
 
 **06. Estratégia documentada, se você já tem equipe**  
-Para quem tem time interno e precisa de direção, existe a [assessoria estratégica](/assessoria-estrategica-de-marketing): o plano escrito para a sua equipe executar.
+Para quem tem time interno e precisa de direção, existe a [assessoria estratégica de marketing](/assessoria-estrategica-de-marketing): o plano escrito para a sua equipe executar.
 
 ## 6. Método Cut em 6 etapas
 
@@ -107,7 +107,7 @@ Foi assim que a operação passou a expandir para eventos: com um ativo de marca
 
 Uma agência que atende Barra Mansa de outro estado consegue rodar campanha, escrever legenda e montar relatório. O que ela não consegue é estar na sua loja numa quinta-feira à tarde para gravar o movimento real.
 
-Quando essa agência precisa de imagem, acontece uma de duas coisas. Ou ela usa banco de imagens, e a sua marca fica com a cara de qualquer outra. Ou contrata um freelancer da região, que recebe um briefing por mensagem, grava o que entendeu e desaparece. O padrão muda a cada mês, o prazo depende da agenda de terceiros e ninguém responde pelo conjunto.
+Quando essa agência precisa de imagem, acontece uma de duas coisas. Ou ela usa banco de imagens, e a sua marca fica com a cara de qualquer outra. Ou contrata um freelancer da região, que recebe um briefing por mensagem, grava o que entendeu e desaparece. O padrão muda a cada mês, o prazo depende da agenda de terceiros e ninguém responde pelo conjunto. A conta completa dessa escolha, com o que cada formato cobra de você, está em [agência ou freelancer: qual vale mais a pena](/blog/agencia-ou-freelancer).
 
 |   | Agência de fora | Cut Creative |
 | --- | --- | --- |

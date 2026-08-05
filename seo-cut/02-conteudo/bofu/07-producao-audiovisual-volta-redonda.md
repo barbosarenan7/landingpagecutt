@@ -123,7 +123,7 @@ Três coisas quebram quando a captação é terceirizada:
 
 > Quem grava dentro da sua operação enxerga o que nenhum briefing consegue descrever.
 
-A produção presencial cobre a região: gravamos em [Barra Mansa](/agencia-marketing-digital-barra-mansa), [Resende](/agencia-marketing-digital-resende), Angra dos Reis e toda a Sul Fluminense. Para empresas fora dessa área, o caminho costuma ser a [assessoria estratégica](/assessoria-estrategica-de-marketing), com o plano documentado para a equipe local executar.
+A produção presencial cobre a região: gravamos em [Barra Mansa](/agencia-marketing-digital-barra-mansa), [Resende](/agencia-marketing-digital-resende), Angra dos Reis e toda a Sul Fluminense. Para empresas fora dessa área, o caminho costuma ser um [plano de marketing documentado](/assessoria-estrategica-de-marketing) para a equipe local executar.
 
 `[bloco de CTA do diagnóstico — utm: utm_source=site&utm_medium=landing&utm_campaign=audiovisual]`
 

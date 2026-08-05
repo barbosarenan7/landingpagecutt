@@ -3,8 +3,9 @@
 Auditoria das 11 peças produzidas até aqui, mais o pilar (01) e a
 assessoria (08), que já estava no ar.
 
-**Nada foi corrigido.** As correções estão na última seção, para você
-aprovar.
+As seções 1 a 9 registram o estado **encontrado** pela auditoria. As
+correções de prioridade alta (e a M1) foram aplicadas depois, no Bloco A:
+o resultado está na seção "Correções aplicadas", antes do fim.
 
 ## O que foi medido, e como
 
@@ -183,8 +184,8 @@ O que **foi** verificado localmente:
 
 | Verificação | Resultado |
 | --- | --- |
-| Regra em `vercel.json` | `{"source": "/social-media-volta-redonda", "destination": "/trafego-pago-volta-redonda", "permanent": true}` |
-| `permanent: true` gera 301 (e não 307) | Correto |
+| Regra em `vercel.json` | `{"source": "/social-media-volta-redonda", "destination": "/trafego-pago-volta-redonda", "statusCode": 301}` |
+| `statusCode: 301` emite 301 literal (a Vercel responde 308 para `permanent: true`) | Corrigido no Bloco A |
 | `redirects` é avaliado antes de `rewrites` na Vercel | Correto |
 | O `rewrites` de SPA não sombreia a regra | Confirmado |
 | `dist/social-media-volta-redonda/` ainda existe? | **Não.** Deixou de ser pré-renderizada |
@@ -245,6 +246,44 @@ Em ordem de impacto. **Nenhuma foi aplicada.**
 A A2 e a A3 se resolvem juntas em uma passada só, editando cinco peças.
 São as duas que mais mudam o desenho do cluster, e as mais baratas de
 aplicar, porque é acrescentar frase e não reescrever seção.
+
+## Correções aplicadas (Bloco A, pós-auditoria)
+
+As três correções de prioridade alta e a M1 foram aplicadas e a
+auditoria rodou de novo. Estado atual:
+
+| Ponto | Antes | Depois |
+| --- | --- | --- |
+| Peças órfãs | 19, 20 e 21 sem nenhum link de entrada | **Zero órfãs**: 19 ← 02 · 20 ← 06 e 27 · 21 ← 03 |
+| Link para a home | Peça 34 não linkava | **11 de 11 linkam**, a 34 com a âncora "Cut Creative, agência de marketing em Volta Redonda" |
+| Âncora "assessoria estratégica" | 9 repetições idênticas | **1 ocorrência** (peça 19). As outras 8 viraram variantes distintas |
+
+As variantes aplicadas para `/assessoria-estrategica-de-marketing`, uma
+por peça: "assessoria estratégica de marketing" (02), "programa de
+estratégia de 90 dias" (03), "consultoria estratégica da Cut" (06),
+"plano de marketing documentado" (07), "estratégia documentada para a
+sua equipe interna" (11), "assessoria estratégica" (19), "assessoria
+estratégica da Cut" (20), "assessoria estratégica de 90 dias" (21),
+"acompanhamento estratégico contínuo" (27).
+
+Links de entrada novos, com as âncoras:
+
+| Origem | Destino | Âncora |
+| --- | --- | --- |
+| 02 Barra Mansa | 19 | "agência ou freelancer: qual vale mais a pena" |
+| 06 tráfego e social | 20 | "tráfego pago ou orgânico: por onde começar" |
+| 27 como divulgar | 20 | "a diferença entre tráfego pago e orgânico" |
+| 03 Resende | 21 | "como escolher uma agência de marketing sem errar" |
+
+Repetições que **permanecem**, por estarem fora do escopo pedido
+(sugestões B1 e M1b, de prioridade menor): "Cut Creative" 6x,
+"produção audiovisual" 5x, "produção de vídeo" 3x, "gestão de tráfego
+pago" 3x. Nenhuma delas é genérica; são nome de marca e de serviço.
+
+Também nesta passada: o redirect da URL antiga trocou de
+`permanent: true` para `statusCode: 301` no `vercel.json`. Motivo: a
+Vercel responde **308** para `permanent: true`. O Google trata 308 como
+301, mas o plano pede 301 literal, e agora é isso que o servidor emite.
 
 ## Antes de qualquer merge
 

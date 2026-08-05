@@ -121,7 +121,7 @@ E tem a parte prática: a agência de fora marca a gravação por chamada de ví
 
 > Em saúde, a comunicação não promete resultado. Ela mostra estrutura, equipe e cuidado, e deixa o paciente decidir com informação.
 
-Se você é médico e o que precisa construir é a sua autoridade pessoal, e não a da clínica, o recorte certo está em [marketing para médicos](/marketing-para-medicos-volta-redonda). E se a clínica já tem equipe de marketing interna, o formato pode ser a [assessoria estratégica](/assessoria-estrategica-de-marketing).
+Se você é médico e o que precisa construir é a sua autoridade pessoal, e não a da clínica, o recorte certo está em [marketing para médicos](/marketing-para-medicos-volta-redonda). E se a clínica já tem equipe de marketing interna, o formato pode ser a [estratégia documentada para a sua equipe interna](/assessoria-estrategica-de-marketing).
 
 `[bloco de CTA do diagnóstico — utm: utm_source=site&utm_medium=landing&utm_campaign=clinicas]`
 

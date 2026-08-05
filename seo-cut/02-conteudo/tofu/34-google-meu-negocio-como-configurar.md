@@ -9,11 +9,11 @@
 | Keywords secundárias | perfil da empresa no google, aparecer no mapa do google, verificar google meu negócio, otimizar google meu negócio |
 | Title tag (46 caracteres) | Google Meu Negócio: Como Configurar e Aparecer |
 | Meta description (148 caracteres) | Passo a passo real para criar, verificar e otimizar seu perfil no Google, aparecer no mapa e responder avaliações. Sem atalho e sem promessa mágica. |
-| Palavras (só o texto do artigo) | 1389 |
+| Palavras (só o texto do artigo) | 1395 |
 | Tabelas comparativas | 1 |
 | Blocos advertoriais | 2 |
 | FAQ | 4 perguntas |
-| Links internos | `/blog/como-divulgar-negocio-volta-redonda`, `/producao-audiovisual-volta-redonda`, `/trafego-pago-volta-redonda` |
+| Links internos | `/`, `/blog/como-divulgar-negocio-volta-redonda`, `/producao-audiovisual-volta-redonda`, `/trafego-pago-volta-redonda` |
 | Schema | BlogPosting + BreadcrumbList + FAQPage |
 | Estatística usada | Nenhuma. Não foi preciso marcar `[FONTE NECESSÁRIA]` |
 | Implementado | Sim, em `src/content/blog.json` |
@@ -100,7 +100,7 @@ Tudo o que está aqui você consegue fazer sozinho, e vale a pena fazer mesmo se
 
 A manutenção é justamente o que costuma morrer na correria: foto nova todo mês, avaliação respondida na semana, horário atualizado no feriado, serviço novo cadastrado, postagem a cada quinze dias. É trabalho pequeno, recorrente e chato, do tipo que fica para depois.
 
-É essa parte que a Cut Creative assume quando entra numa conta, junto do resto da operação. E tem uma vantagem prática: o item que mais trava a manutenção é foto e vídeo novos, e a nossa captação é interna, com equipe própria e estúdio em Volta Redonda. Se quiser ver como isso funciona, está detalhado na página de [produção audiovisual](/producao-audiovisual-volta-redonda); se o seu gargalo for demanda, o caminho é [tráfego pago e conteúdo na mesma operação](/trafego-pago-volta-redonda).
+É essa parte que a [Cut Creative, agência de marketing em Volta Redonda](/), assume quando entra numa conta, junto do resto da operação. E tem uma vantagem prática: o item que mais trava a manutenção é foto e vídeo novos, e a nossa captação é interna, com equipe própria e estúdio em Volta Redonda. Se quiser ver como isso funciona, está detalhado na página de [produção audiovisual](/producao-audiovisual-volta-redonda); se o seu gargalo for demanda, o caminho é [tráfego pago e conteúdo na mesma operação](/trafego-pago-volta-redonda).
 
 E se o Google for só uma parte do problema, o texto sobre [como divulgar um negócio em Volta Redonda](/blog/como-divulgar-negocio-volta-redonda) coloca esta etapa no lugar dela dentro do plano inteiro.
 

@@ -4,7 +4,7 @@
     {
       "source": "/social-media-volta-redonda",
       "destination": "/trafego-pago-volta-redonda",
-      "permanent": true
+      "statusCode": 301
     }
   ],
   "rewrites": [

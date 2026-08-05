@@ -9,7 +9,7 @@
 | Keywords secundárias | social media Volta Redonda, gestão de redes sociais Volta Redonda, Meta Ads Volta Redonda, Google Ads Volta Redonda, agência de tráfego pago Volta Redonda |
 | Title tag (51 caracteres) | Tráfego Pago e Redes Sociais em Volta Redonda | Cut |
 | Meta description (139 caracteres) | Gestão de tráfego pago e redes sociais em Volta Redonda, com criativo produzido por equipe própria. Diagnóstico gratuito e sem compromisso. |
-| Links internos | `/`, `/agencia-marketing-digital-barra-mansa`, `/agencia-marketing-digital-resende`, `/assessoria-estrategica-de-marketing`, `/producao-audiovisual-volta-redonda` |
+| Links internos | `/`, `/agencia-marketing-digital-barra-mansa`, `/agencia-marketing-digital-resende`, `/assessoria-estrategica-de-marketing`, `/blog/trafego-pago-ou-organico`, `/producao-audiovisual-volta-redonda` |
 | CTA | 3 (topo, meio e fim) |
 | Schema | ProfessionalService/LocalBusiness + Service + BreadcrumbList + FAQPage |
 | Implementada | Sim, em `src/content/landings.json` |
@@ -114,7 +114,7 @@ Uma campanha de mídia consome criativo em ritmo que a maioria das empresas sube
 
 > Anúncio não é print de post. É peça produzida para converter quem ainda não conhece a sua marca.
 
-Se a sua empresa está em [Barra Mansa](/agencia-marketing-digital-barra-mansa) ou em [Resende](/agencia-marketing-digital-resende), o atendimento é presencial, com gravação feita na própria cidade. E se o que falta é direção, e não execução, o formato pode ser a [assessoria estratégica](/assessoria-estrategica-de-marketing).
+Se a sua empresa está em [Barra Mansa](/agencia-marketing-digital-barra-mansa) ou em [Resende](/agencia-marketing-digital-resende), o atendimento é presencial, com gravação feita na própria cidade. E se o que falta é direção, e não execução, o formato pode ser a [consultoria estratégica da Cut](/assessoria-estrategica-de-marketing). Agora, se a dúvida ainda é anterior, entre pagar por mídia ou construir presença, o artigo [tráfego pago ou orgânico: por onde começar](/blog/trafego-pago-ou-organico) resolve isso antes de qualquer contrato.
 
 `[bloco de CTA do diagnóstico — utm: utm_source=site&utm_medium=landing&utm_campaign=trafego-social]`
 

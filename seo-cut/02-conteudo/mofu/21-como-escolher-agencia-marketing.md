@@ -9,7 +9,7 @@
 | Keywords secundárias | como contratar agência de marketing, o que perguntar para uma agência de marketing, agência de marketing confiável, cuidados ao contratar agência digital |
 | Title tag (48 caracteres) | Como Escolher uma Agência de Marketing sem Errar |
 | Meta description (142 caracteres) | O que olhar antes de assinar: processo, responsabilidade, produção e contrato. Sinais de alerta e as perguntas certas para a primeira reunião. |
-| Palavras (só o texto do artigo) | 1260 |
+| Palavras (só o texto do artigo) | 1263 |
 | Tabelas comparativas | 1 |
 | Blocos advertoriais | 2 |
 | FAQ | 4 perguntas |
@@ -93,7 +93,7 @@ Existem três situações em que contratar é prematuro, e nenhuma agência sér
 - **A verba total mal cobre o serviço, sem sobrar para mídia e produção.** Contratar gestão sem verba para gerir é pagar por relatório.
 - **O comercial não consegue atender o que já chega.** Gerar mais demanda para uma operação que não responde WhatsApp é queimar dinheiro e reputação.
 
-Se o seu caso é o primeiro, o formato certo costuma ser um plano documentado, como a [assessoria estratégica](/assessoria-estrategica-de-marketing), e não uma operação mensal completa. Se quiser conhecer como a Cut trabalha antes de decidir qualquer coisa, comece pela [página inicial](/).
+Se o seu caso é o primeiro, o formato certo costuma ser um plano documentado, como a [assessoria estratégica de 90 dias](/assessoria-estrategica-de-marketing), e não uma operação mensal completa. Se quiser conhecer como a Cut trabalha antes de decidir qualquer coisa, comece pela [página inicial](/).
 
 `[bloco de CTA do diagnóstico — utm: utm_source=blog&utm_medium=artigo&utm_campaign=como-escolher-agencia-fim]`
 

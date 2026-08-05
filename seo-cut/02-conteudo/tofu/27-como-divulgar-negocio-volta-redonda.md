@@ -9,11 +9,11 @@
 | Keywords secundárias | divulgar empresa Volta Redonda, como anunciar negócio local, marketing para empresa de Volta Redonda, onde divulgar meu negócio |
 | Title tag (42 caracteres) | Como Divulgar Meu Negócio em Volta Redonda |
 | Meta description (154 caracteres) | Os canais que funcionam para empresa local em Volta Redonda e região, em que ordem atacar e o que cada um cobra de você. Guia prático, sem receita pronta. |
-| Palavras (só o texto do artigo) | 1269 |
+| Palavras (só o texto do artigo) | 1287 |
 | Tabelas comparativas | 1 |
 | Blocos advertoriais | 2 |
 | FAQ | 4 perguntas |
-| Links internos | `/`, `/assessoria-estrategica-de-marketing`, `/blog/google-meu-negocio-como-configurar`, `/producao-audiovisual-volta-redonda`, `/trafego-pago-volta-redonda` |
+| Links internos | `/`, `/assessoria-estrategica-de-marketing`, `/blog/google-meu-negocio-como-configurar`, `/blog/trafego-pago-ou-organico`, `/producao-audiovisual-volta-redonda`, `/trafego-pago-volta-redonda` |
 | Schema | BlogPosting + BreadcrumbList + FAQPage |
 | Estatística usada | Nenhuma. Não foi preciso marcar `[FONTE NECESSÁRIA]` |
 | Implementado | Sim, em `src/content/blog.json` |
@@ -45,7 +45,7 @@ Três coisas resolvem a maior parte dos casos: a bio dizendo o que você faz e o
 
 ## Etapa 3: os canais, e o que cada um cobra de você
 
-Divulgação local não é escolher o canal certo, é entender o preço de cada um. Todo canal cobra em dinheiro, em tempo ou em constância.
+Divulgação local não é escolher o canal certo, é entender o preço de cada um. Todo canal cobra em dinheiro, em tempo ou em constância. A comparação de fundo entre os dois motores está em [a diferença entre tráfego pago e orgânico](/blog/trafego-pago-ou-organico).
 
 | Canal | Bom para | O que ele cobra |
 | --- | --- | --- |
@@ -104,7 +104,7 @@ O marketing raramente fecha a venda sozinho. Ele qualifica, prova capacidade té
 4. Arrume a bio do perfil para dizer o que você faz e onde fica.
 5. Combine com a equipe quem responde o WhatsApp e em quanto tempo.
 
-Isso não custa verba e resolve o básico. Depois disso, se o gargalo for volume de demanda, o caminho é [tráfego pago com conteúdo na mesma operação](/trafego-pago-volta-redonda); se for falta de direção com equipe já montada, é a [assessoria estratégica](/assessoria-estrategica-de-marketing). E se você quiser entender como a Cut trabalha antes de decidir, comece pela [página inicial](/).
+Isso não custa verba e resolve o básico. Depois disso, se o gargalo for volume de demanda, o caminho é [tráfego pago com conteúdo na mesma operação](/trafego-pago-volta-redonda); se for falta de direção com equipe já montada, é o [acompanhamento estratégico contínuo](/assessoria-estrategica-de-marketing). E se você quiser entender como a Cut trabalha antes de decidir, comece pela [página inicial](/).
 
 `[bloco de CTA do diagnóstico — utm: utm_source=blog&utm_medium=artigo&utm_campaign=como-divulgar-negocio-fim]`
 

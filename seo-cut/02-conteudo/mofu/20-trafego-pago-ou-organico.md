@@ -9,7 +9,7 @@
 | Keywords secundárias | diferença entre tráfego pago e orgânico, vale a pena investir em tráfego pago, tráfego orgânico funciona, por onde começar no marketing digital |
 | Title tag (42 caracteres) | Tráfego Pago ou Orgânico: por Onde Começar |
 | Meta description (150 caracteres) | Quando começar pelo pago, quando começar pelo orgânico e por que os dois dependem do mesmo ativo. Guia direto para empresas de Volta Redonda e região. |
-| Palavras (só o texto do artigo) | 1297 |
+| Palavras (só o texto do artigo) | 1299 |
 | Tabelas comparativas | 1 |
 | Blocos advertoriais | 2 |
 | FAQ | 4 perguntas |
@@ -108,7 +108,7 @@ O erro clássico é cobrar do orgânico uma resposta semanal e do pago uma const
 
 Na maioria dos casos de empresa já em operação, o desenho que funciona é o mesmo: orgânico como base, para existir de forma decente quando alguém procurar, e pago em cima, direcionado ao que precisa vender agora. Um sustenta a reputação, o outro traz o volume.
 
-O que define a proporção entre os dois é o seu caixa e o seu ciclo de venda, e não uma regra de mercado. É isso que sai de um diagnóstico, antes de qualquer verba entrar no ar. Se você quer o plano documentado para a sua equipe executar, esse é o formato da [assessoria estratégica](/assessoria-estrategica-de-marketing); se quer entender o quadro geral primeiro, comece pela [nossa página inicial](/).
+O que define a proporção entre os dois é o seu caixa e o seu ciclo de venda, e não uma regra de mercado. É isso que sai de um diagnóstico, antes de qualquer verba entrar no ar. Se você quer o plano documentado para a sua equipe executar, esse é o formato da [assessoria estratégica da Cut](/assessoria-estrategica-de-marketing); se quer entender o quadro geral primeiro, comece pela [nossa página inicial](/).
 
 `[bloco de CTA do diagnóstico — utm: utm_source=blog&utm_medium=artigo&utm_campaign=trafego-pago-ou-organico-fim]`
 

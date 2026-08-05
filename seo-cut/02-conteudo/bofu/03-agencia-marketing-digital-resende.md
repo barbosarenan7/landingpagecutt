@@ -9,7 +9,7 @@
 | Keywords secundárias | marketing digital Resende, agência de publicidade Resende, tráfego pago Resende, social media Resende, produtora de vídeo Resende |
 | Title tag (54 caracteres) | Agência de Marketing Digital em Resende | Cut Creative |
 | Meta description (140 caracteres) | Marketing digital em Resende com equipe de vídeo própria: estratégia, tráfego pago e conteúdo gravado na sua operação. Diagnóstico gratuito. |
-| Links internos | `/`, `/assessoria-estrategica-de-marketing`, `/producao-audiovisual-volta-redonda`, `/trafego-pago-volta-redonda` |
+| Links internos | `/`, `/assessoria-estrategica-de-marketing`, `/blog/como-escolher-agencia-marketing`, `/producao-audiovisual-volta-redonda`, `/trafego-pago-volta-redonda` |
 | CTA | 3 (topo, meio e fim) |
 | Schema | ProfessionalService/LocalBusiness + Service + BreadcrumbList + FAQPage |
 | Implementada | Sim, em `src/content/landings.json` |
@@ -113,7 +113,7 @@ Na Cut a captação é interna. A mesma equipe que estudou o seu mercado é a qu
 
 > Em uma cidade acostumada com padrão industrial, acabamento não é vaidade. É argumento de preço.
 
-Se a sua empresa já tem equipe interna e o que falta é direção, o formato certo talvez seja a [assessoria estratégica](/assessoria-estrategica-de-marketing), com o plano documentado para o seu time executar. Se o gargalo é geração de demanda, comece pela [gestão de tráfego pago](/trafego-pago-volta-redonda).
+Se a sua empresa já tem equipe interna e o que falta é direção, o formato certo talvez seja o [programa de estratégia de 90 dias](/assessoria-estrategica-de-marketing), com o plano documentado para o seu time executar. Se o gargalo é geração de demanda, comece pela [gestão de tráfego pago](/trafego-pago-volta-redonda). E antes de assinar com qualquer agência, da Cut ou de outra, vale ler [como escolher uma agência de marketing sem errar](/blog/como-escolher-agencia-marketing).
 
 `[bloco de CTA do diagnóstico — utm: utm_source=site&utm_medium=landing&utm_campaign=resende]`
 
