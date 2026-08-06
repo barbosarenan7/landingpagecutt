@@ -96,9 +96,9 @@ const midias = [
   },
   {
     n: "03/",
-    file: "prova-03.webp",
+    file: "prova-03-v2.webp",
     src: p.card03Imagem,
-    srcMobile: p.card03Imagem,
+    srcMobile: p.card03ImagemMobile,
     alt: "Bastidores da operação da Cut Creative",
     legenda: p.card03Legenda,
   },
@@ -107,7 +107,7 @@ const midias = [
     file: "prova-04.webp",
     src: p.card04Imagem,
     srcMobile: p.card04Imagem,
-    alt: "+300 marcas atendidas — estratégia, criação e resultados reais",
+    alt: "+300 marcas atendidas. Estratégia, criação e resultados reais",
     legenda: "",
   },
 ];
