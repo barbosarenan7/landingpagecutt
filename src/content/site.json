@@ -76,7 +76,7 @@
     "card01Imagem": "/prova-01.jpg",
     "card02Imagem": "/prova-02.jpg",
     "card02ImagemMobile": "/prova-02-mobile.jpg",
-    "card03Imagem": "/prova-03.jpg",
+    "card03Imagem": "/prova-03-v2.jpg",
     "card04Imagem": "/prova-04.jpg"
   },
   "dorReal": {
@@ -253,7 +253,7 @@
       ],
       "cta": "Solicitar diagnóstico",
       "sucessoTitulo": "Recebemos as informações da sua empresa.",
-      "sucessoTexto": "Nossa equipe vai analisar o momento da sua empresa e entrar em contato pelo WhatsApp informado para uma conversa sem compromisso — em até 1 dia útil.",
+      "sucessoTexto": "Nossa equipe vai analisar o momento da sua empresa e entrar em contato pelo WhatsApp informado para uma conversa sem compromisso, em até 1 dia útil.",
       "sucessoCta": "Seguir a Cut no Instagram"
     }
   },

@@ -19,7 +19,7 @@ function Logo() {
   return (
     // no celular a logo se afasta da borda esquerda (ml-2); no desktop
     // o container-cut já dá o respiro e a margem volta a zero
-    <Link to="/" aria-label="Cut Creative — início" className="ml-2 flex items-center md:ml-0">
+    <Link to="/" aria-label="Cut Creative, início" className="ml-2 flex items-center md:ml-0">
       <img
         src="/logo-cut.png"
         alt="Cut Creative"
