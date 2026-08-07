@@ -31,6 +31,25 @@ ativo está visível. O seletor acima pega as duas, e o módulo trata a
 seção como uma só: o relógio só fecha quando nenhuma variante está na
 tela.
 
+### O que conta como "seção sendo lida"
+
+Metade da **seção** na tela, **ou** metade da **tela** ocupada pela
+seção. A segunda regra não é enfeite: no celular, `segmentos`, `metodo`
+e `diagnostico` são mais altas que duas telas, então nunca chegariam a
+50% de si mesmas. Com a régua de 50% da seção sozinha, essas três nunca
+seriam medidas, e `diagnostico` é justamente a seção da conversão.
+
+Medido num aparelho de 375×812:
+
+| Seção | Altura | Fração máxima possível | Media com a régua antiga? |
+|---|---|---|---|
+| `segmentos` | 2853 px | 0,28 | não |
+| `metodo` | 2291 px | 0,34 | não |
+| `diagnostico` | 1721 px | 0,46 | não |
+
+Se você for reusar este módulo em outro site, é este o ponto para não
+copiar errado.
+
 ## 2. Eventos (acionadores de evento personalizado)
 
 | Evento | Quando |

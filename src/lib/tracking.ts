@@ -81,19 +81,21 @@ function seguro<T extends unknown[]>(fn: (...args: T) => void) {
    Estado das seções (compartilhado por vários eventos)
    ========================================================== */
 
-/** Elementos visíveis agora, com a fração visível de cada um. */
+/** Elementos visíveis agora, com quantos pixels de cada um estão na tela. */
 const visiveis = new Map<Element, number>();
 
 /**
- * Seção em foco: entre as visíveis, a de maior fração na tela. Usada
- * como `secao_atual` / `secao_origem` de outros eventos.
+ * Seção em foco: entre as visíveis, a que ocupa mais pixels da tela.
+ * Usada como `secao_atual` / `secao_origem` de outros eventos. O critério
+ * é altura visível, e não fração da seção, porque numa seção longa a
+ * fração é baixa mesmo quando ela toma a tela inteira.
  */
 function secaoAtual(): string | undefined {
   let melhor: string | undefined;
   let maior = 0;
-  visiveis.forEach((razao, el) => {
-    if (razao > maior) {
-      maior = razao;
+  visiveis.forEach((altura, el) => {
+    if (altura > maior) {
+      maior = altura;
       melhor = (el as HTMLElement).dataset.section;
     }
   });
@@ -345,10 +347,19 @@ function ligarSecoes(limpezas: (() => void)[]) {
       entradas.forEach((entrada) => {
         const el = entrada.target as HTMLElement;
         const nome = el.dataset.section!;
-        const dentro = entrada.intersectionRatio >= 0.5;
+        // "Está sendo lida" = metade da SEÇÃO na tela, ou metade da TELA
+        // ocupada pela seção. A segunda regra existe porque três seções
+        // são mais altas que duas telas de celular (segmentos, método e
+        // diagnóstico): elas nunca chegariam a 50% de si mesmas e ficariam
+        // sem medição justamente no aparelho onde está o volume.
+        const alturaVisivel = entrada.intersectionRect.height;
+        const dentro =
+          entrada.intersectionRatio >= 0.5 || alturaVisivel >= window.innerHeight * 0.5;
 
         if (dentro) {
-          visiveis.set(el, entrada.intersectionRatio);
+          // ranqueia por altura visível, não por fração: numa seção longa a
+          // fração é baixa mesmo quando ela domina a tela
+          visiveis.set(el, alturaVisivel);
           const e = pegar(nome);
           const indice = ordem.indexOf(nome);
 
@@ -375,7 +386,10 @@ function ligarSecoes(limpezas: (() => void)[]) {
         }
       });
     }),
-    { threshold: [0, 0.5, 1] },
+    // passos de 5%: numa seção de três telas de altura, metade da tela
+    // equivale a ~17% dela, então a régua precisa ser fina o bastante
+    // para a travessia ser percebida
+    { threshold: Array.from({ length: 21 }, (_, i) => i / 20) },
   );
 
   alvos.forEach((el) => io.observe(el));
