@@ -67,7 +67,7 @@ export default function LandingBofu({ landing: l }: { landing: Landing }) {
                 {inline(l.subheadline)}
               </p>
               <div className="mt-9">
-                <BtnPrimary href="/#formulario">Solicitar diagnóstico gratuito</BtnPrimary>
+                <BtnPrimary href="/#diagnostico">Solicitar diagnóstico gratuito</BtnPrimary>
               </div>
             </div>
           </div>
@@ -207,7 +207,7 @@ export default function LandingBofu({ landing: l }: { landing: Landing }) {
               </h2>
               <p className="text-2nd mt-6 leading-relaxed">{inline(l.ctaFinal.texto)}</p>
               <div className="mt-9 flex justify-center">
-                <BtnPrimary href="/#formulario">Solicitar diagnóstico gratuito</BtnPrimary>
+                <BtnPrimary href="/#diagnostico">Solicitar diagnóstico gratuito</BtnPrimary>
               </div>
               {/* 11: região atendida e formas de contato */}
               <div className="mt-12 border-t border-line-dark pt-8 text-sm leading-relaxed text-text3">

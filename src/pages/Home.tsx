@@ -11,8 +11,10 @@ import ClientesGrid from "../components/ClientesGrid";
 import Footer from "../components/Footer";
 import WhatsAppFloat from "../components/WhatsAppFloat";
 import CookieBanner from "../components/CookieBanner";
+import { useEffect } from "react";
 import { Seo } from "../lib/seo";
 import { rotaHome } from "../lib/rotas";
+import { iniciarRastreamento } from "../lib/tracking";
 
 /**
  * CUT EDITORIAL — ritmo de fundos (seção 6):
@@ -22,6 +24,10 @@ import { rotaHome } from "../lib/rotas";
  * em src/components/ (fora da árvore) até a v1.1.
  */
 export default function Home() {
+  // camada de eventos do GTM: só no cliente, e só depois que as seções
+  // marcadas com data-section já existem no DOM (ver src/lib/tracking.ts)
+  useEffect(() => iniciarRastreamento(), []);
+
   return (
     <>
       <Seo {...rotaHome} />

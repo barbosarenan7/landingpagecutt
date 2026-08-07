@@ -32,7 +32,12 @@ export default function Metodo() {
   }, []);
 
   return (
-    <section id="metodo" className="sec-light section" aria-labelledby="metodo-title">
+    <section
+      id="metodo"
+      data-section="metodo"
+      className="sec-light section"
+      aria-labelledby="metodo-title"
+    >
       <div className="container-cut">
         {/* no mobile todo o texto fica centralizado; a partir de md volta
             ao alinhamento à esquerda do desktop */}

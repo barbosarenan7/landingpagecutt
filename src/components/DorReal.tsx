@@ -200,7 +200,7 @@ export default function DorReal() {
       <div className="dor-cabecalho container-cut relative">
         {/* ===== mobile (<768px): título serif+sans centralizado (mesma
             linguagem da grade de clientes e do Método) + foto em sangria. */}
-        <div className="md:hidden">
+        <div data-section="dor" className="md:hidden">
           <h2
             id="dor-title"
             className="faixa-leitura mx-auto text-center text-balance"
@@ -250,7 +250,7 @@ export default function DorReal() {
         </div>
 
         {/* ===== md+ : composição em cards, preservada ===== */}
-        <div className="hidden gap-3 md:grid md:grid-cols-2 lg:grid-cols-12">
+        <div data-section="dor" className="hidden gap-3 md:grid md:grid-cols-2 lg:grid-cols-12">
           {/* coluna 1: headline + texto */}
           <div className="flex flex-col gap-3 lg:col-span-4">
             <Reveal className="card-soft">
@@ -308,9 +308,11 @@ export default function DorReal() {
           </Reveal>
         </div>
 
-        <Reveal delay={120} className="mt-16 lg:mt-20">
-          <FraseDestaque texto={d.fraseTransicao} />
-        </Reveal>
+        <div data-section="transicao-metodo">
+          <Reveal delay={120} className="mt-16 lg:mt-20">
+            <FraseDestaque texto={d.fraseTransicao} />
+          </Reveal>
+        </div>
       </div>
     </section>
   );

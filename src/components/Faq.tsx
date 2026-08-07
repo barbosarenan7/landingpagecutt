@@ -5,6 +5,21 @@ import content from "../content/site.json";
 const fq = content.faq;
 
 /**
+ * Identificadores estáveis das perguntas, na ordem em que aparecem em
+ * site.json → faq.itens. Vira data-faq no botão e é o que o
+ * rastreamento envia: se a redação da pergunta mudar, o relatório
+ * continua comparável.
+ */
+const slugs = [
+  "ja-tive-agencia",
+  "quanto-custa",
+  "tempo-de-resultado",
+  "preciso-aparecer",
+  "atende-minha-cidade",
+  "qual-porte",
+];
+
+/**
  * Perguntas frequentes — mesma linguagem das outras seções claras
  * (par serifa/sans no título, cards `.card-soft`, acento no "+").
  * Além de responder objeções antes do formulário, alimenta o schema
@@ -17,6 +32,7 @@ export default function Faq() {
   return (
     <section
       id="faq"
+      data-section="faq"
       className="sec-dark section"
       aria-labelledby="faq-title"
     >
@@ -45,6 +61,7 @@ export default function Faq() {
                 <h3>
                   <button
                     type="button"
+                    data-faq={slugs[i]}
                     className="flex w-full cursor-pointer items-start justify-between gap-6 px-6 py-5 text-left md:px-7"
                     aria-expanded={aberto}
                     aria-controls={`faq-painel-${i}`}

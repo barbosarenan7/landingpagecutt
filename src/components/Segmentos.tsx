@@ -17,7 +17,12 @@ const segments = seg.cards.map((c, i) => ({ ...c, ...style[i] }));
 
 export default function Segmentos() {
   return (
-    <section id="segmentos" className="sec-dark section" aria-labelledby="seg-title">
+    <section
+      id="segmentos"
+      data-section="segmentos"
+      className="sec-dark section"
+      aria-labelledby="seg-title"
+    >
       <div className="container-cut">
         <div className="faixa-leitura mx-auto max-w-[60rem] text-center">
           <h2 id="seg-title" style={{ fontSize: "var(--fs-h2)" }}>
@@ -56,7 +61,9 @@ export default function Segmentos() {
         </div>
 
         <Reveal delay={120} className="mt-16 flex justify-center md:mt-20">
-          <BtnPrimary href="#formulario">{seg.cta}</BtnPrimary>
+          <BtnPrimary href="#diagnostico" dataCta="segmentos">
+            {seg.cta}
+          </BtnPrimary>
         </Reveal>
       </div>
     </section>

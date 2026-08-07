@@ -71,7 +71,7 @@ function Advertorial({ utm }: { utm: string }) {
         com o mapa do que está travando o seu marketing hoje, mesmo que decida
         não contratar.
       </p>
-      <a href={`/#formulario?${utm}`} className="btn-primary mt-6">
+      <a href={`/#diagnostico?${utm}`} className="btn-primary mt-6">
         <span className="pl-0">Solicitar diagnóstico gratuito</span>
         <span className="btn-circle" aria-hidden>
           <Arrow />
