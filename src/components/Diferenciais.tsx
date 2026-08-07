@@ -29,6 +29,7 @@ export default function Diferenciais() {
   return (
     <section
       id="diferenciais"
+      data-section="diferenciais"
       className="sec-light pb-[clamp(88px,11vw,176px)]"
       aria-labelledby="dif-title"
     >

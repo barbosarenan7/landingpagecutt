@@ -2,6 +2,12 @@ import { useRef, useState, type FormEvent } from "react";
 import { Link } from "react-router-dom";
 import { Arrow } from "./primitives";
 import { site, track, whatsappHref } from "../config/site";
+import {
+  rastrearErroDeEnvio,
+  rastrearErrosDeFormulario,
+  rastrearLeadGerado,
+  rastrearTentativaDeEnvio,
+} from "../lib/tracking";
 import content from "../content/site.json";
 
 const f = content.diagnostico.form;
@@ -74,9 +80,17 @@ export default function LeadForm() {
     ev.preventDefault();
     const form = ev.currentTarget;
     const data = new FormData(form);
+    rastrearTentativaDeEnvio();
     const errs = validate(data);
     setErrors(errs);
     if (Object.keys(errs).length > 0) {
+      // só o nome do campo e se ele estava vazio; nenhum valor digitado
+      rastrearErrosDeFormulario(
+        Object.keys(errs),
+        Object.fromEntries(
+          Object.keys(errs).map((k) => [k, !String(data.get(k) || "").trim()]),
+        ),
+      );
       const order = [
         "nome",
         "whatsapp",
@@ -118,16 +132,21 @@ export default function LeadForm() {
     //    bloqueia o sucesso; o WhatsApp acima já é o canal garantido)
     setSending(true);
     try {
-      await fetch("/api/lead", {
+      const res = await fetch("/api/lead", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(payload),
       });
-    } catch {
+      // registra a falha técnica sem mudar o fluxo: o comercial já
+      // recebeu o lead pelo WhatsApp aberto acima
+      if (!res.ok) rastrearErroDeEnvio(`HTTP ${res.status}`);
+    } catch (err) {
       // silencioso: o lead não se perde, o comercial já recebeu pelo WhatsApp
+      rastrearErroDeEnvio(err instanceof Error ? `${err.name}: ${err.message}` : "falha_de_rede");
     }
     track("lead_form_submit", { segmento: payload.segmento });
     track("lead"); // GA4 + Meta Pixel Lead via GTM
+    rastrearLeadGerado({ segmento: payload.segmento, investimento: payload.investimento });
     setSuccess(true);
   }
 
@@ -167,7 +186,12 @@ export default function LeadForm() {
           </h3>
           <p className="mt-2 text-sm text-text2-dark">{f.subtitulo}</p>
 
-          <form onSubmit={onSubmit} noValidate className="mt-8 flex flex-col gap-5">
+          <form
+            id="formulario"
+            onSubmit={onSubmit}
+            noValidate
+            className="mt-8 flex flex-col gap-5"
+          >
             {/* honeypot: invisível para humanos, irresistível para bots */}
             <div className="hidden" aria-hidden="true">
               <label htmlFor="f-website">Não preencha este campo</label>
@@ -362,6 +386,7 @@ export default function LeadForm() {
             <button
               type="submit"
               disabled={sending}
+              data-cta="submit-form"
               className="btn-white w-full disabled:cursor-default disabled:opacity-50"
             >
               {sending ? "Enviando…" : f.cta}

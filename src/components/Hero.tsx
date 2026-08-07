@@ -14,7 +14,7 @@ const otimDesktop = fontesOtimizadas(h.imagem);
  */
 export default function Hero() {
   return (
-    <section id="top" className="sec-light" aria-labelledby="hero-title">
+    <section id="top" data-section="hero" className="sec-light" aria-labelledby="hero-title">
       <div className="container-cut pt-4 pb-[clamp(40px,5vw,72px)] md:pt-6">
         {/* No desktop o card assume a proporção exata do arquivo (2000×1315),
             para o object-cover não cortar nada — é o wordmark embutido que
@@ -97,7 +97,7 @@ export default function Hero() {
                 {/* no celular o CTA principal vive no header, por isso ele
                     só aparece a partir de sm */}
                 <Reveal delay={200} className="mt-7 flex flex-wrap items-center gap-4">
-                  <BtnPrimary href="#formulario" className="hidden sm:inline-flex">
+                  <BtnPrimary href="#diagnostico" className="hidden sm:inline-flex">
                     {h.ctaPrimario}
                   </BtnPrimary>
                 </Reveal>
@@ -106,7 +106,10 @@ export default function Hero() {
               {/* No celular estas duas colunas saem do card e vão para a área
                   clara, logo abaixo — assim a foto fica só com o wordmark no
                   topo e o texto principal no pé. De lg pra cima, nada muda. */}
-              <div className="hidden gap-8 sm:grid-cols-2 lg:col-span-6 lg:grid lg:grid-cols-2 lg:pl-10">
+              <div
+                data-section="como-trabalhamos"
+                className="hidden gap-8 sm:grid-cols-2 lg:col-span-6 lg:grid lg:grid-cols-2 lg:pl-10"
+              >
                 <Reveal delay={260}>
                   <h2 className="flex items-center gap-4 text-[22px] font-bold">
                     {h.col1Titulo}
@@ -135,7 +138,10 @@ export default function Hero() {
             título forte com a régua no acento e texto na cor secundária
             da seção. Some a partir de lg, onde eles voltam para dentro
             da foto. */}
-        <div className="faixa-leitura mt-12 grid gap-9 sm:grid-cols-2 sm:gap-8 lg:hidden">
+        <div
+          data-section="como-trabalhamos"
+          className="faixa-leitura mt-12 grid gap-9 sm:grid-cols-2 sm:gap-8 lg:hidden"
+        >
           <Reveal>
             <h2 className="flex items-center gap-4 text-[22px] font-bold">
               {h.col1Titulo}

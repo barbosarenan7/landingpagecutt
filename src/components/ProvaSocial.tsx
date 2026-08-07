@@ -2,6 +2,7 @@ import { useEffect, useRef, useState, type ReactNode } from "react";
 import { Reveal } from "../lib/reveal";
 import { BtnPrimary, Media } from "./primitives";
 import { site, track } from "../config/site";
+import { rastrearCarrossel } from "../lib/tracking";
 import content from "../content/site.json";
 
 const p = content.provaSocial;
@@ -178,6 +179,12 @@ function CarrosselMobile() {
 
   const ativo = ((foco % N) + N) % N;
 
+  // card alcançado no carrossel (uma vez cada, tratado no módulo). O
+  // índice segue as etiquetas visíveis: 01/ a 04/.
+  useEffect(() => {
+    rastrearCarrossel("provas", ativo + 1);
+  }, [ativo]);
+
   /** caminho mais curto até o indicador `i`, já contando com o loop. */
   const pularPara = (i: number) => {
     let delta = i - ativo;
@@ -187,7 +194,7 @@ function CarrosselMobile() {
   };
 
   return (
-    <div className="mt-10 lg:hidden">
+    <div data-section="provas" className="mt-10 lg:hidden">
       <div
         ref={trilha}
         onScroll={aoRolar}
@@ -269,6 +276,9 @@ export default function ProvaSocial() {
   return (
     <section className="sec-light py-[clamp(40px,5vw,72px)]" aria-labelledby="prova-title">
       <div className="container-cut">
+        {/* o bloco de texto + CTA é o "manifesto" para o rastreamento; a
+            div não tem classe nenhuma, só agrupa o que já estava aqui */}
+        <div data-section="manifesto">
         {/* título na fonte do logotipo, centralizado, destaque no acento */}
         <h2
           id="prova-title"
@@ -287,11 +297,14 @@ export default function ProvaSocial() {
         </Reveal>
 
         <Reveal delay={140} className="mt-8 flex justify-center">
-          <BtnPrimary href="#formulario">{p.cta}</BtnPrimary>
+          <BtnPrimary href="#diagnostico" dataCta="manifesto">
+            {p.cta}
+          </BtnPrimary>
         </Reveal>
+        </div>
 
         {/* ===== desktop: bento assimétrico (estrutura preservada) ===== */}
-        <div className="mt-12 hidden gap-3 lg:grid lg:grid-cols-12">
+        <div data-section="provas" className="mt-12 hidden gap-3 lg:grid lg:grid-cols-12">
           {/* 01 — alto, ocupa as duas linhas; mídia absoluta para não
               inflar a altura das linhas e manter o gap uniforme */}
           <Reveal className="relative col-span-4 row-span-2">

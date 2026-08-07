@@ -80,6 +80,7 @@ export default function ClientesGrid() {
   return (
     <section
       id="clientes"
+      data-section="logos-clientes"
       className="sec-dark py-[clamp(64px,8vw,112px)]"
       aria-labelledby="clientes-title"
     >

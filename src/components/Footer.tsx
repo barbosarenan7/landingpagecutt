@@ -136,7 +136,7 @@ function Grupo({
 
 export default function Footer() {
   return (
-    <footer className="sec-dark relative border-t border-line-dark">
+    <footer data-section="rodape" className="sec-dark relative border-t border-line-dark">
       <div className="container-cut py-9 md:py-20">
         <div className="faixa-leitura grid gap-5 md:grid-cols-2 md:gap-12 lg:grid-cols-4">
           <div>

@@ -8,6 +8,7 @@ export default function WhatsAppFloat() {
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Falar com a Cut no WhatsApp"
+      data-cta="whatsapp-flutuante"
       onClick={() => {
         track("whatsapp_click", { origem: "float" });
         // evento para o GTM (trigger "CE - Clique WhatsApp" → GA4 + Google Ads)

@@ -37,14 +37,17 @@ export function BtnPrimary({
   children,
   className = "",
   onClick,
+  dataCta,
 }: {
   href: string;
   children: ReactNode;
   className?: string;
   onClick?: () => void;
+  /** Vira data-cta no <a>. Gancho de rastreamento (ver src/lib/tracking.ts). */
+  dataCta?: string;
 }) {
   return (
-    <a href={href} onClick={onClick} className={`btn-primary ${className}`}>
+    <a href={href} onClick={onClick} data-cta={dataCta} className={`btn-primary ${className}`}>
       <span className="pl-0">{children}</span>
       <span className="btn-circle" aria-hidden>
         <Arrow />

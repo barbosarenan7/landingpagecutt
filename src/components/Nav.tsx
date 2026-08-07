@@ -153,7 +153,8 @@ export default function Nav() {
                       entra aqui para o caminho até o formulário não sumir */}
                   <li className="border-t border-line-light p-3 sm:hidden">
                     <a
-                      href="/#formulario"
+                      href="/#diagnostico"
+                      data-cta="header"
                       onClick={() => setAberto(false)}
                       className="btn-primary !min-h-0 w-full !justify-between !gap-2.5 !py-1.5 !pr-1.5 !pl-4 !text-[13px]"
                     >
@@ -173,7 +174,8 @@ export default function Nav() {
               celular sai de cena: fica só o menu, e o CTA aparece dentro
               dele e ao longo da página. */}
           <a
-            href="/#formulario"
+            href="/#diagnostico"
+            data-cta="header"
             className="btn-primary !hidden !min-h-0 !gap-2.5 !py-1.5 !pr-1.5 !pl-4 !text-[13px] sm:!inline-flex"
           >
             <span>{content.nav.cta}</span>

@@ -34,7 +34,12 @@ function Check() {
 
 export default function Diagnostico() {
   return (
-    <section id="diagnostico" className="sec-dark section" aria-labelledby="diag-title">
+    <section
+      id="diagnostico"
+      data-section="diagnostico"
+      className="sec-dark section"
+      aria-labelledby="diag-title"
+    >
       <div className="container-cut">
         <Reveal>
           <div className="grid overflow-hidden rounded-card border border-line-dark lg:grid-cols-2">
@@ -88,8 +93,11 @@ export default function Diagnostico() {
               </div>
             </div>
 
-            {/* painel direito: formulário escuro */}
-            <div id="formulario" className="bg-ink-900 p-7 md:p-10 lg:border-l lg:border-line-dark">
+            {/* painel direito: formulário escuro. O id #formulario vive no
+                <form> lá dentro (LeadForm): a âncora dos CTAs é
+                #diagnostico, no topo da oferta, e #formulario existe só
+                como gancho de rastreamento. */}
+            <div className="bg-ink-900 p-7 md:p-10 lg:border-l lg:border-line-dark">
               <LeadForm />
             </div>
           </div>

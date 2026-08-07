@@ -127,7 +127,7 @@ export default function ServicoPage({ servico }: { servico: Servico }) {
                 {servico.resumo}
               </p>
               <div className="mt-9">
-                <BtnPrimary href="/#formulario">Solicitar diagnóstico</BtnPrimary>
+                <BtnPrimary href="/#diagnostico">Solicitar diagnóstico</BtnPrimary>
               </div>
             </div>
           </div>
@@ -245,7 +245,7 @@ export default function ServicoPage({ servico }: { servico: Servico }) {
                 marketing da sua operação está travando e qual o próximo passo.
               </p>
               <div className="mt-9 flex justify-center">
-                <BtnPrimary href="/#formulario">Solicitar diagnóstico</BtnPrimary>
+                <BtnPrimary href="/#diagnostico">Solicitar diagnóstico</BtnPrimary>
               </div>
             </div>
 
