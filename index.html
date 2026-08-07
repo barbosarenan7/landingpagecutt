@@ -58,7 +58,13 @@
          pesos mais visíveis do primeiro paint entram com preload -->
     <title>Cut Creative — Marketing com método | Volta Redonda, RJ</title>
     <link rel="canonical" href="https://cutcreativee.com.br/" />
-    <!-- favicon precisa ser quadrado e >=48px para o Google exibir na busca -->
+    <!-- favicon precisa ser quadrado e >=48px para o Google exibir na busca.
+         O /favicon.ico e obrigatorio: e o primeiro lugar onde o rastreador
+         do Google procura, e sem um arquivo real ali o rewrite de SPA da
+         Vercel respondia 200 com o HTML da home. O Google recebia texto no
+         lugar de imagem e caia no globo generico, tanto na busca organica
+         quanto no anuncio. -->
+    <link rel="icon" href="/favicon.ico" sizes="48x48" />
     <link rel="icon" type="image/png" sizes="192x192" href="/favicon.png" />
     <link rel="icon" type="image/png" sizes="512x512" href="/icon-512.png" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
