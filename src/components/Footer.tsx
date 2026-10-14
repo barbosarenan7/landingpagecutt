@@ -235,9 +235,16 @@ export default function Footer() {
           <p>
             © {new Date().getFullYear()} {site.legalName}. CNPJ {site.cnpj}
           </p>
-          <Link to="/privacidade" className="underline underline-offset-4 transition-colors hover:text-paper-50">
-            Política de privacidade
-          </Link>
+          {/* empilhados no celular: lado a lado, o segundo passava por baixo
+              do botão flutuante do WhatsApp ao chegar no fim da página */}
+          <nav aria-label="Documentos" className="flex flex-col items-start gap-2 sm:flex-row sm:flex-wrap sm:gap-x-6">
+            <Link to="/termos-de-uso" className="underline underline-offset-4 transition-colors hover:text-paper-50">
+              Manual e termos de uso
+            </Link>
+            <Link to="/privacidade" className="underline underline-offset-4 transition-colors hover:text-paper-50">
+              Política de privacidade
+            </Link>
+          </nav>
         </div>
       </div>
 

@@ -90,6 +90,7 @@ HTML pré-renderizado e URL no sitemap saem sozinhos.
 | `src/content/blog.json` | Índice e artigos |
 | `src/content/site.json` | Conteúdo da home. **Protegido** |
 | `src/content/servicos.json` | Só a assessoria, hoje |
+| `src/content/termos.json` | Manual e termos de uso, em `/termos-de-uso` (folha branca, só logo e texto). Fora do sitemap. Gerado a partir de markdown: ao receber versão nova do texto, converter de novo em vez de editar o JSON à mão |
 | `src/lib/rotas.ts` | Fonte única dos metadados de toda rota |
 | `src/lib/tipos.ts` | Tipos de `Post`, `Landing` e blocos |
 | `src/lib/servicos-menu.ts` | Serviços do menu e dos cartões |

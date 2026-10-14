@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import Home from "./pages/Home";
 import Obrigado from "./pages/Obrigado";
 import Privacidade from "./pages/Privacidade";
+import TermosDeUso from "./pages/TermosDeUso";
 import ServicoPage from "./pages/Servico";
 import NaoEncontrada from "./pages/NaoEncontrada";
 import Blog from "./pages/Blog";
@@ -45,6 +46,7 @@ export default function App() {
       ))}
       <Route path="/obrigado" element={<Obrigado />} />
       <Route path="/privacidade" element={<Privacidade />} />
+      <Route path="/termos-de-uso" element={<TermosDeUso />} />
       <Route path="*" element={<NaoEncontrada />} />
     </Routes>
   );

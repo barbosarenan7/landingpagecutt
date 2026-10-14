@@ -1,0 +1,847 @@
+{
+  "titulo": "Termos de Prestação de Serviços e Metodologia de Trabalho",
+  "blocos": [
+    {
+      "tipo": "h2",
+      "texto": "1. Sobre estes Termos"
+    },
+    {
+      "tipo": "p",
+      "texto": "1.1. Estes Termos reúnem as regras de relacionamento, planejamento, produção, aprovação, atendimento e pedidos adicionais que se aplicam a todos os serviços prestados pela Cut Creative (\"Cut Creative\" ou \"agência\") a seus clientes (\"Cliente\"), qualquer que seja o plano contratado."
+    },
+    {
+      "tipo": "p",
+      "texto": "1.2. Estes Termos integram o contrato de prestação de serviços por referência expressa e devem ser consultados pelo Cliente sempre que houver dúvida sobre processos, entregas ou solicitações."
+    },
+    {
+      "tipo": "p",
+      "texto": "1.3. Estes Termos complementam o contrato e a proposta comercial, sem substituí-los. Em caso de divergência, prevalece a seguinte ordem:"
+    },
+    {
+      "tipo": "lista",
+      "itens": [
+        "Contrato de prestação de serviços e seus anexos;",
+        "Proposta comercial aceita pelo Cliente;",
+        "Estes Termos."
+      ],
+      "ordenada": true
+    },
+    {
+      "tipo": "p",
+      "texto": "1.4. As regras destes Termos valem para todos os planos. Quando uma cláusula tratar de um serviço específico (por exemplo, gravação ou anúncios), ela se aplica apenas aos planos que incluem esse serviço."
+    },
+    {
+      "tipo": "p",
+      "texto": "1.5. Os valores dos serviços, dos pedidos extras e de quaisquer acréscimos não constam destes Termos. Eles estão no contrato e na tabela de valores anexa a ele. Sempre que estes Termos mencionarem cobrança, o valor aplicável é o previsto no anexo do contrato ou, quando indicado, o informado em orçamento prévio."
+    },
+    {
+      "tipo": "p",
+      "texto": "1.6. A Cut Creative pode atualizar estes Termos para refletir melhorias de processo. A versão vigente é sempre a publicada nesta página, com a data da última atualização. Alterações relevantes serão comunicadas ao Cliente com antecedência mínima de [30] dias e não alteram valores, quantidades ou condições comerciais já contratadas."
+    },
+    {
+      "tipo": "h2",
+      "texto": "2. Definições"
+    },
+    {
+      "tipo": "tabela",
+      "colunas": [
+        "Termo",
+        "Significado"
+      ],
+      "linhas": [
+        [
+          "**Plano Contratado**",
+          "Conjunto de serviços, quantidades, formatos, prazos e duração definidos no contrato e na proposta comercial."
+        ],
+        [
+          "**Entrega**",
+          "Qualquer item produzido pela Cut Creative dentro do Plano Contratado: conteúdos, vídeos, artes, criativos de anúncio, campanhas, roteiros, relatórios, planejamentos e similares."
+        ],
+        [
+          "**Grupo de Atendimento**",
+          "Canal oficial de comunicação entre o Cliente e a equipe da Cut Creative."
+        ],
+        [
+          "**Briefing**",
+          "Formulários e materiais preenchidos e enviados pelo Cliente no início da parceria."
+        ],
+        [
+          "**Ciclo Estratégico**",
+          "Período coberto por cada planejamento, com a duração definida no Plano Contratado."
+        ],
+        [
+          "**Base Estratégica**",
+          "Definições estáveis do Ciclo Estratégico: objetivo, público, posicionamento, tom de voz e restrições."
+        ],
+        [
+          "**Camada de Execução**",
+          "Temas, formatos, criativos, campanhas, ofertas, referências e ordem das entregas de cada mês."
+        ],
+        [
+          "**Banco de Ideias**",
+          "Registro das ideias, trends e referências trazidas pelo Cliente ou pela agência ao longo da parceria."
+        ],
+        [
+          "**Pedido Extra**",
+          "Solicitação que ultrapassa o volume, os formatos ou as condições do Plano Contratado."
+        ],
+        [
+          "**Substituição**",
+          "Troca de uma Entrega prevista por uma nova demanda equivalente."
+        ],
+        [
+          "**Urgência Real**",
+          "Situação que justifica alterar a ordem de produção, conforme a cláusula 13."
+        ],
+        [
+          "**Dia útil**",
+          "Segunda a sexta-feira, exceto feriados nacionais e municipais de Volta Redonda (RJ)."
+        ]
+      ]
+    },
+    {
+      "tipo": "h2",
+      "texto": "3. Escopo dos serviços"
+    },
+    {
+      "tipo": "p",
+      "texto": "3.1. A atuação da Cut Creative não consiste em entregas isoladas. Cada Entrega faz parte de uma sequência estratégica, construída para fortalecer posicionamento, gerar confiança, aproximar o público e criar oportunidades de negócio ao longo do tempo."
+    },
+    {
+      "tipo": "p",
+      "texto": "3.2. Conforme o Plano Contratado, os serviços podem abranger, isoladamente ou em conjunto:"
+    },
+    {
+      "tipo": "lista",
+      "itens": [
+        "Planejamento estratégico e de marketing;",
+        "Gestão de redes sociais;",
+        "Gestão de tráfego pago e campanhas de anúncios;",
+        "Produção audiovisual (roteiro, gravação e edição);",
+        "Design e criação de peças digitais;",
+        "Suporte ou consultoria comercial;",
+        "Relatórios, reuniões de acompanhamento e atendimento."
+      ]
+    },
+    {
+      "tipo": "p",
+      "texto": "3.3. Os serviços incluídos, as quantidades, os formatos e a duração de cada plano são os definidos no contrato e na proposta comercial. A descrição da metodologia nestes Termos não amplia nem reduz o que foi contratado."
+    },
+    {
+      "tipo": "p",
+      "texto": "3.4. O foco dos serviços é a comunicação e o marketing em meios digitais. Banners, cartões, cardápios, flyers, adesivos, papelaria, apresentações impressas e demais materiais offline não fazem parte automaticamente de nenhum plano e são tratados como Pedido Extra, conforme a cláusula 16."
+    },
+    {
+      "tipo": "p",
+      "texto": "3.5. Nos planos com tráfego pago, o investimento em mídia (verba paga às plataformas de anúncio) não está incluído no valor dos serviços e é pago pelo Cliente diretamente às plataformas, salvo disposição diversa no contrato."
+    },
+    {
+      "tipo": "h2",
+      "texto": "4. Etapas da parceria"
+    },
+    {
+      "tipo": "p",
+      "texto": "4.1. Todos os planos seguem as mesmas etapas de início, na seguinte sequência:"
+    },
+    {
+      "tipo": "tabela",
+      "colunas": [
+        "Etapa",
+        "Entrega"
+      ],
+      "linhas": [
+        [
+          "Diagnóstico inicial",
+          "Envio do Briefing estratégico ao Cliente, para entender onde o negócio está, para onde precisa ir e o que não deve ser repetido."
+        ],
+        [
+          "Manual de marca",
+          "Definição de público-alvo, posicionamento, identidade visual, tom de voz, concorrência e personificação da marca."
+        ],
+        [
+          "Reunião de alinhamento inicial",
+          "Validação do posicionamento, dos pilares de comunicação e do escopo, e aprovação dos temas do Ciclo Estratégico (cláusula 7)."
+        ],
+        [
+          "Planejamento fechado",
+          "Plano de ação do período, roteiros, organização do que será gravado e visão de médio prazo."
+        ],
+        [
+          "Execução",
+          "Publicação dos conteúdos e/ou veiculação das campanhas, acompanhamento de dados e relatório mensal."
+        ]
+      ]
+    },
+    {
+      "tipo": "p",
+      "texto": "4.2. Após o início, a parceria segue um ciclo mensal contínuo: reunião mensal, produção, aprovação, publicação ou veiculação, acompanhamento de resultados e nova reunião mensal."
+    },
+    {
+      "tipo": "h2",
+      "texto": "5. Início da parceria"
+    },
+    {
+      "tipo": "p",
+      "texto": "5.1. Os primeiros dias são dedicados ao entendimento do negócio, do público, dos serviços, dos diferenciais e dos objetivos do Cliente. Os formulários de Briefing são detalhados porque servem de base para todas as decisões seguintes. Quanto mais completas forem as respostas, mais coerente será a comunicação com a realidade do Cliente."
+    },
+    {
+      "tipo": "p",
+      "texto": "5.2. O cronograma de execução começa a ser contado a partir do recebimento completo das informações, materiais e acessos solicitados. Pendências do Cliente nessa etapa adiam, na mesma proporção, o planejamento, a gravação e o início da execução."
+    },
+    {
+      "tipo": "p",
+      "texto": "5.3. O prazo médio entre o envio do Briefing completo e a primeira gravação é de 10 (dez) a 15 (quinze) dias."
+    },
+    {
+      "tipo": "p",
+      "texto": "5.4. Por causa desse período de implantação, somente no primeiro mês de parceria o volume de Entregas é menor que o previsto no Plano Contratado. A partir do segundo mês, o plano é executado de forma completa."
+    },
+    {
+      "tipo": "h2",
+      "texto": "6. Planejamento estratégico"
+    },
+    {
+      "tipo": "p",
+      "texto": "6.1. Todo plano é conduzido a partir de um Ciclo Estratégico, com a duração definida no Plano Contratado. A proposta é conduzir o público do Cliente por uma sequência de percepções: conhecer a marca, compreender o problema, reconhecer autoridade, reduzir objeções e avançar para uma decisão."
+    },
+    {
+      "tipo": "p",
+      "texto": "6.2. O planejamento é composto por duas camadas:"
+    },
+    {
+      "tipo": "p",
+      "texto": "**a) Base Estratégica.** Composta por 5 (cinco) definições que permanecem estáveis durante todo o Ciclo Estratégico:"
+    },
+    {
+      "tipo": "tabela",
+      "colunas": [
+        "Definição",
+        "Conteúdo"
+      ],
+      "linhas": [
+        [
+          "Objetivo",
+          "O que cada mês precisa entregar para o negócio do Cliente."
+        ],
+        [
+          "Público",
+          "Para quem a marca fala e para quem decide não falar."
+        ],
+        [
+          "Posicionamento",
+          "Como a marca aparece e como quer ser lembrada."
+        ],
+        [
+          "Tom de voz",
+          "Como a marca fala e quais palavras combinam com ela."
+        ],
+        [
+          "Restrições",
+          "O que não pode aparecer, ser dito ou ser prometido."
+        ]
+      ]
+    },
+    {
+      "tipo": "p",
+      "texto": "A Base Estratégica é validada na reunião de alinhamento inicial. Mudanças relevantes durante o ciclo exigem nova análise e novo registro de aceite."
+    },
+    {
+      "tipo": "p",
+      "texto": "**b) Camada de Execução.** Temas, formatos, criativos, campanhas, ofertas, referências e ordem das Entregas do período. É revisada mensalmente e pode ser adaptada conforme resultados, contexto e necessidades do Cliente, sem alterar a Base Estratégica."
+    },
+    {
+      "tipo": "p",
+      "texto": "6.3. O Cliente contribui com o conhecimento sobre o próprio negócio e participa das decisões de direção. A Cut Creative transforma essas informações em estratégia, planejamento e execução."
+    },
+    {
+      "tipo": "p",
+      "texto": "6.4. Toda Entrega é conferida contra a Base Estratégica antes de ser enviada para aprovação."
+    },
+    {
+      "tipo": "p",
+      "texto": "6.5. O planejamento tem prioridade na organização da equipe. Ideias e pedidos que surgirem durante o ciclo são tratados conforme as cláusulas 12 a 16, sem interromper o que já está planejado."
+    },
+    {
+      "tipo": "h2",
+      "texto": "7. Reunião de alinhamento inicial e registro de aceite"
+    },
+    {
+      "tipo": "p",
+      "texto": "7.1. Na reunião de alinhamento inicial, a Cut Creative apresenta ao Cliente o funcionamento da parceria e o planejamento do Ciclo Estratégico. Nela, o Cliente escolhe, junto com a equipe e a partir de uma lista de opções, os temas e as prioridades dos meses seguintes."
+    },
+    {
+      "tipo": "p",
+      "texto": "7.2. Os temas e prioridades aprovados nessa reunião passam a orientar a produção do ciclo. Nas reuniões mensais seguintes, a Cut Creative apresenta esse material já pré-aprovado, pronto para validação."
+    },
+    {
+      "tipo": "p",
+      "texto": "7.3. No mesmo dia da reunião, a Cut Creative envia ao Grupo de Atendimento uma mensagem de registro com:"
+    },
+    {
+      "tipo": "lista",
+      "itens": [
+        "A direção de cada mês do Ciclo Estratégico;",
+        "Público prioritário, posicionamento, tom de voz e restrições;",
+        "Organização do primeiro mês: temas, data da gravação e início das publicações ou campanhas, quando aplicável."
+      ]
+    },
+    {
+      "tipo": "p",
+      "texto": "7.4. A produção começa somente após a confirmação do Cliente (\"ok\" ou manifestação equivalente) no Grupo de Atendimento. Em relação a esse registro:"
+    },
+    {
+      "tipo": "lista",
+      "itens": [
+        "O silêncio do Cliente não é tratado como aprovação;",
+        "Divergências devem ser apontadas e corrigidas antes do início da produção;",
+        "Nenhuma Entrega é produzida enquanto a estratégia ainda estiver em discussão."
+      ]
+    },
+    {
+      "tipo": "p",
+      "texto": "7.5. O atraso na confirmação do registro adia o início da produção e da execução na mesma proporção."
+    },
+    {
+      "tipo": "h2",
+      "texto": "8. Princípios da metodologia"
+    },
+    {
+      "tipo": "p",
+      "texto": "8.1. Independentemente do plano, a execução da Cut Creative segue os seguintes princípios:"
+    },
+    {
+      "tipo": "tabela",
+      "colunas": [
+        "Princípio",
+        "Como se aplica"
+      ],
+      "linhas": [
+        [
+          "Captação periódica",
+          "Gravações recorrentes, quando previstas no plano, mantêm o material atual e permitem reagir ao mercado."
+        ],
+        [
+          "Entrega com direção",
+          "Cada vídeo, conteúdo ou criativo tem objetivo, roteiro ou direção criativa definidos antes da produção."
+        ],
+        [
+          "Consistência",
+          "As Entregas seguem um calendário planejado, e não pedidos pontuais."
+        ],
+        [
+          "Integração",
+          "Canais e formatos trabalham juntos, e cada período de comunicação termina em uma chamada para ação."
+        ],
+        [
+          "Leitura de dados",
+          "Os resultados de cada mês orientam as decisões do mês seguinte."
+        ]
+      ]
+    },
+    {
+      "tipo": "p",
+      "texto": "8.2. A quantidade, os formatos e a frequência das Entregas são os definidos no Plano Contratado."
+    },
+    {
+      "tipo": "h2",
+      "texto": "9. Fluxo de produção e aprovações"
+    },
+    {
+      "tipo": "p",
+      "texto": "9.1. A produção acontece em etapas sequenciais. Cada etapa depende da conclusão e, quando aplicável, da aprovação da anterior:"
+    },
+    {
+      "tipo": "tabela",
+      "colunas": [
+        "Etapa",
+        "Responsável",
+        "Descrição"
+      ],
+      "linhas": [
+        [
+          "01. Alinhamento",
+          "Cut Creative e Cliente",
+          "Temas, objetivos, prioridades e gravação definidos."
+        ],
+        [
+          "02. Roteiros e direcionamentos",
+          "Cut Creative",
+          "Roteiros, briefings de criativos ou plano de ação preparados para aprovação."
+        ],
+        [
+          "03. Aprovação inicial",
+          "Cliente",
+          "Validação ou envio de ajustes no prazo da cláusula 9.3."
+        ],
+        [
+          "04. Produção",
+          "Cut Creative e Cliente",
+          "Gravação, quando prevista, e captação dos materiais do período."
+        ],
+        [
+          "05. Finalização",
+          "Cut Creative",
+          "Edição, design e montagem de criativos ou campanhas."
+        ],
+        [
+          "06. Aprovação final",
+          "Cliente",
+          "Confirmação das Entregas antes da publicação ou veiculação."
+        ],
+        [
+          "07. Publicação ou veiculação",
+          "Cut Creative",
+          "Entregas publicadas no calendário ou campanhas colocadas no ar."
+        ]
+      ]
+    },
+    {
+      "tipo": "p",
+      "texto": "9.2. A Cut Creative trabalha com antecedência para ampliar o tempo de criação, revisão e organização, reduzindo decisões apressadas e preservando a qualidade das Entregas."
+    },
+    {
+      "tipo": "p",
+      "texto": "9.3. O Cliente tem até 48 (quarenta e oito) horas, contadas em dias úteis, para analisar roteiros, conteúdos, criativos e campanhas enviados para aprovação. Uma confirmação simples é suficiente quando o material estiver aprovado. Se houver ajustes, as observações devem ser enviadas dentro do mesmo prazo."
+    },
+    {
+      "tipo": "p",
+      "texto": "9.4. **Ausência de aprovação no prazo.** Se o Cliente não se manifestar em até 48 horas, a Cut Creative pode manter a programação com outra Entrega já aprovada ou disponível (por exemplo, um carrossel, uma foto ou um criativo já em uso), para não interromper a presença do Cliente. Nesse caso, a equipe:"
+    },
+    {
+      "tipo": "lista",
+      "itens": [
+        "Atualiza o calendário e avisa o Cliente;",
+        "Mantém a Entrega pendente no fluxo;",
+        "Reposiciona a Entrega pendente para a próxima data possível, após o aceite."
+      ]
+    },
+    {
+      "tipo": "p",
+      "texto": "Nenhuma Entrega é publicada ou veiculada sem aprovação do Cliente."
+    },
+    {
+      "tipo": "p",
+      "texto": "9.5. **Atraso de responsabilidade da Cut Creative.** Se o atraso de uma Entrega for de responsabilidade da agência, a Cut Creative compensa o Cliente com uma Entrega adicional equivalente no mesmo mês (por exemplo, um carrossel, uma foto ou um criativo). A equipe comunica o atraso e registra a compensação por iniciativa própria, sem necessidade de solicitação do Cliente."
+    },
+    {
+      "tipo": "p",
+      "texto": "9.6. A regra de prazo vale para as duas partes."
+    },
+    {
+      "tipo": "h2",
+      "texto": "10. Gravações"
+    },
+    {
+      "tipo": "p",
+      "texto": "10.1. Esta cláusula se aplica aos planos que incluem produção audiovisual."
+    },
+    {
+      "tipo": "p",
+      "texto": "10.2. Cada gravação consiste em uma sessão de 3 (três) a 4 (quatro) horas, agendada e preparada com antecedência, realizada em Volta Redonda ou Barra Mansa (RJ), salvo disposição diversa no contrato."
+    },
+    {
+      "tipo": "p",
+      "texto": "10.3. Antes da data, a Cut Creative envia ao Cliente orientações sobre roupas, cenários, produtos, materiais e organização dos blocos de gravação. Na véspera, os principais detalhes são confirmados com o Cliente."
+    },
+    {
+      "tipo": "p",
+      "texto": "10.4. Se os materiais, o local ou as condições combinadas não estiverem disponíveis no dia, parte da gravação pode ser reagendada ou adaptada. A preparação e leitura dos roteiros pelo Cliente influencia diretamente o aproveitamento da sessão e a qualidade das entregas podendo até mesmo ficar sem o total de vídeos referente ao mês."
+    },
+    {
+      "tipo": "p",
+      "texto": "10.5. Gravações com duração superior a 4 horas, fora de Volta Redonda e Barra Mansa, em horário noturno, aos sábados ou em eventos podem gerar cobrança adicional, conforme o anexo do contrato ou orçamento prévio."
+    },
+    {
+      "tipo": "p",
+      "texto": "10.6. A primeira Entrega em vídeo é publicada ou veiculada, preferencialmente, em até 2 (dois) dias úteis após a primeira gravação, desde que os roteiros estejam aprovados e não haja pendências do Cliente. Depois disso, as Entregas seguem o calendário acordado."
+    },
+    {
+      "tipo": "h2",
+      "texto": "11. Reunião mensal"
+    },
+    {
+      "tipo": "p",
+      "texto": "11.1. A reunião mensal é o principal momento de acompanhamento da parceria, em todos os planos. Ela tem duração média de [30 a 40] minutos e segue sempre a mesma pauta:"
+    },
+    {
+      "tipo": "tabela",
+      "colunas": [
+        "Bloco",
+        "Conteúdo"
+      ],
+      "linhas": [
+        [
+          "Resultado e análise",
+          "Leitura do relatório, com aprofundamento nas métricas que importam para o objetivo do mês: o que funcionou, o que não funcionou e o que muda."
+        ],
+        [
+          "Aprovação do próximo período",
+          "Aprovação dos roteiros, criativos ou plano de ação do período seguinte, com ajustes de tom, informação e detalhe."
+        ],
+        [
+          "Pedidos e ideias",
+          "Espaço para as ideias do Cliente e para itens do Banco de Ideias."
+        ],
+        [
+          "Próximos passos",
+          "Definição da próxima gravação, quando prevista, e das prioridades do período."
+        ]
+      ]
+    },
+    {
+      "tipo": "p",
+      "texto": "11.2. Pedidos, sugestões e mudanças de direcionamento devem ser apresentados preferencialmente na reunião mensal. Assim, podem ser incorporados ao planejamento sem interromper Entregas que já estejam em produção."
+    },
+    {
+      "tipo": "p",
+      "texto": "11.3. O material apresentado na reunião mensal corresponde aos temas e prioridades escolhidos pelo Cliente na reunião de alinhamento inicial (cláusula 7). A recusa ou troca desse material é tratada como mudança na Camada de Execução e segue as cláusulas 14 e 16."
+    },
+    {
+      "tipo": "h2",
+      "texto": "12. Atendimento e comunicação"
+    },
+    {
+      "tipo": "p",
+      "texto": "12.1. O atendimento acontece de segunda a sexta-feira, das 9h às 18h, exceto em feriados e em períodos comunicados com antecedência."
+    },
+    {
+      "tipo": "p",
+      "texto": "12.2. As mensagens do Grupo de Atendimento são verificadas 4 (quatro) vezes ao dia, às 9h, 11h, 14h e 16h. As janelas de verificação existem para que a equipe concilie atendimento, planejamento, produção e análise."
+    },
+    {
+      "tipo": "p",
+      "texto": "12.3. Mensagens enviadas após o horário comercial, aos finais de semana ou em feriados são respondidas no próximo dia útil."
+    },
+    {
+      "tipo": "p",
+      "texto": "12.4. Demandas que exijam análise, criação ou consulta a outros profissionais podem necessitar de prazo adicional para uma resposta completa."
+    },
+    {
+      "tipo": "p",
+      "texto": "12.5. O Grupo de Atendimento é o canal oficial para aprovações, registros de aceite e pedidos. Combinações feitas por outros canais devem ser registradas no grupo para ter validade."
+    },
+    {
+      "tipo": "h2",
+      "texto": "13. Urgências"
+    },
+    {
+      "tipo": "p",
+      "texto": "13.1. São consideradas **Urgências Reais**, tratadas com prioridade:"
+    },
+    {
+      "tipo": "lista",
+      "itens": [
+        "Informação incorreta em circulação, inclusive em anúncios ativos;",
+        "Acontecimento sensível envolvendo o Cliente ou sua marca;",
+        "Mudança importante no setor do Cliente;",
+        "Necessidade de posicionamento público imediato;",
+        "Oportunidade com prazo curto e impacto evidente."
+      ]
+    },
+    {
+      "tipo": "p",
+      "texto": "Nesses casos, a equipe entende o contexto, confirma as informações e organiza a produção com prioridade, podendo adiar uma Entrega do planejamento."
+    },
+    {
+      "tipo": "p",
+      "texto": "13.2. **Não são urgências automáticas:**"
+    },
+    {
+      "tipo": "lista",
+      "itens": [
+        "Ideia nova que não se encaixa nas diretrizes do mês;",
+        "Mudança de preferência sem motivo estratégico;",
+        "Trend sem impacto para o posicionamento;",
+        "Pedido comum feito para o mesmo dia;",
+        "Promoção, oferta ou evento comunicado sem antecedência;",
+        "Material que poderia ter sido planejado antes."
+      ]
+    },
+    {
+      "tipo": "p",
+      "texto": "Nesses casos, o pedido entra na próxima data possível, ou a equipe apresenta o prazo viável ou avalia a Substituição de uma Entrega prevista."
+    },
+    {
+      "tipo": "h2",
+      "texto": "14. Tratamento de pedidos durante o mês"
+    },
+    {
+      "tipo": "p",
+      "texto": "14.1. Todo pedido feito durante o mês passa pelas mesmas 3 (três) perguntas, sempre nesta ordem:"
+    },
+    {
+      "tipo": "tabela",
+      "colunas": [
+        "Pergunta",
+        "O que define"
+      ],
+      "linhas": [
+        [
+          "1. O pedido interfere no planejamento?",
+          "Se a Entrega planejada continua ou se há troca."
+        ],
+        [
+          "2. É uma Urgência Real?",
+          "Se o pedido justifica alterar a ordem de produção (cláusula 13)."
+        ],
+        [
+          "3. É simples ou complexo?",
+          "Se o pedido é atendido no fluxo ou vira Substituição ou Pedido Extra."
+        ]
+      ]
+    },
+    {
+      "tipo": "p",
+      "texto": "14.2. O objetivo das 3 perguntas é garantir ao Cliente uma resposta rápida e coerente, com qualquer integrante da equipe. Todo pedido recebe um encaminhamento."
+    },
+    {
+      "tipo": "p",
+      "texto": "14.3. **Se o pedido não interfere** no planejamento, a Cut Creative o inclui dentro do escopo do mês e sinaliza isso ao Cliente."
+    },
+    {
+      "tipo": "p",
+      "texto": "14.4. **Se o pedido interfere** no planejamento, a equipe explica o impacto ao Cliente. Se o Cliente mantiver o pedido, ele pode ser produzido como Entrega adicional, e o que foi planejado continua sendo executado. A Entrega adicional segue as regras da cláusula 16."
+    },
+    {
+      "tipo": "p",
+      "texto": "14.5. São pedidos de **baixa complexidade**, atendidos diretamente pela equipe:"
+    },
+    {
+      "tipo": "lista",
+      "itens": [
+        "Arte ou foto;",
+        "Adaptação de uma trend;",
+        "Alteração em uma Entrega secundária;",
+        "Ajustes de texto em conteúdos ou anúncios;",
+        "Reorganização de uma data dentro do mês;",
+        "Uso de material já gravado."
+      ]
+    },
+    {
+      "tipo": "p",
+      "texto": "Esses pedidos são atendidos desde que não interfiram no planejamento, não aumentem o volume contratado, não substituam a Entrega principal do período, não exijam nova gravação e não comprometam os prazos."
+    },
+    {
+      "tipo": "p",
+      "texto": "14.6. São pedidos de **alta complexidade**, tratados como Substituição ou Pedido Extra:"
+    },
+    {
+      "tipo": "lista",
+      "itens": [
+        "Vídeo ou campanha com tema novo em cima da hora;",
+        "Edição fora do padrão contratado;",
+        "Vídeo institucional, de formato longo ou cobertura de evento;",
+        "Motion design elaborado;",
+        "Material para mídia offline;",
+        "Volume de Entregas acima do contratado;",
+        "Novas plataformas, contas, páginas de destino ou integrações não previstas no plano;",
+        "Produção com prazo reduzido."
+      ]
+    },
+    {
+      "tipo": "h2",
+      "texto": "15. Ideias, trends e Banco de Ideias"
+    },
+    {
+      "tipo": "p",
+      "texto": "15.1. Ideias, referências e tendências do Cliente são bem-vindas. Toda ideia trazida pelo Cliente, ou trend identificada pela equipe como adequada à marca, é registrada no Banco de Ideias, com contexto e referência, e aguarda o mês em que fizer sentido dentro da estratégia."
+    },
+    {
+      "tipo": "p",
+      "texto": "15.2. A Cut Creative pode, em comum acordo com o Cliente, substituir uma Entrega planejada por uma ideia do Cliente, desde que ela caiba no objetivo do mês."
+    },
+    {
+      "tipo": "p",
+      "texto": "15.3. Antes de aprovar uma trend, a equipe avalia se ela:"
+    },
+    {
+      "tipo": "lista",
+      "itens": [
+        "Combina com o posicionamento da marca;",
+        "É adequada para o público;",
+        "Ainda está dentro do timing;",
+        "Pode ser produzida com qualidade;",
+        "Oferece risco à imagem do Cliente;",
+        "Contribui para algum objetivo do planejamento;",
+        "É um formato com o qual o Cliente tem naturalidade."
+      ],
+      "ordenada": true
+    },
+    {
+      "tipo": "p",
+      "texto": "15.4. Uma trend aprovada entra, nesta ordem de preferência: no lugar de uma Entrega secundária; como Entrega extra do mês; ou, em último caso e somente se for muito relevante, no lugar da Entrega principal do período."
+    },
+    {
+      "tipo": "p",
+      "texto": "15.5. Ajustes simples, novos temas, trends compatíveis e pequenas adaptações podem ser incorporados ao fluxo, trocados por um item equivalente ou programados para uma data futura. Demandas que exijam nova gravação, edição fora do padrão, material offline ou aumento de volume são tratadas como Substituição ou Pedido Extra (cláusula 16)."
+    },
+    {
+      "tipo": "h2",
+      "texto": "16. Substituições e Pedidos Extras"
+    },
+    {
+      "tipo": "p",
+      "texto": "16.1. São Pedidos Extras as solicitações que ultrapassam o volume, os formatos ou as condições do Plano Contratado."
+    },
+    {
+      "tipo": "p",
+      "texto": "16.2. Diante de uma nova demanda, o Cliente escolhe entre duas saídas:"
+    },
+    {
+      "tipo": "p",
+      "texto": "**a) Substituição.** A nova demanda ocupa o lugar de uma Entrega equivalente já prevista. É indicada quando a nova ideia é mais relevante para o objetivo do mês, a troca não prejudica a estratégia e existe tempo hábil para produzir com qualidade. Se as substituições se tornarem frequentes, a equipe sinalizará ao Cliente que o planejamento precisa ser revisto na reunião mensal."
+    },
+    {
+      "tipo": "p",
+      "texto": "**b) Demanda adicional.** A nova Entrega é produzida além do planejado, que continua sendo executado. É indicada quando o Cliente quer manter tudo o que foi planejado, quando o pedido está fora do formato contratado ou quando é necessária nova gravação."
+    },
+    {
+      "tipo": "p",
+      "texto": "16.3. A Entrega original e a nova demanda não são produzidas simultaneamente sem que o Cliente escolha entre Substituição e demanda adicional. Essa definição protege os prazos, o escopo e a qualidade do trabalho."
+    },
+    {
+      "tipo": "p",
+      "texto": "16.4. **Benefício mensal.** Quando previsto no Plano Contratado, o Cliente tem direito a 1 (um) pedido extra simples por mês, sem custo adicional. O benefício não é cumulativo e não pode ser transferido para meses seguintes."
+    },
+    {
+      "tipo": "p",
+      "texto": "16.5. **Cobrança.** A partir do segundo Pedido Extra no mesmo mês, ou do primeiro quando o plano não prever o benefício, a Cut Creative apresenta o valor antes do início da produção. A produção começa somente após a aprovação do Cliente. O Cliente sempre conhece o valor antes da execução, nunca depois."
+    },
+    {
+      "tipo": "p",
+      "texto": "16.6. **Valores.** Os valores dos Pedidos Extras estão na tabela anexa ao contrato. Os valores da tabela são de referência: o valor final pode variar conforme a complexidade de cada Entrega e, nesses casos, será informado em orçamento prévio."
+    },
+    {
+      "tipo": "p",
+      "texto": "16.7. **Sempre sob orçamento.** São avaliados individualmente, mediante orçamento prévio, por variarem em tempo e estrutura de produção:"
+    },
+    {
+      "tipo": "lista",
+      "itens": [
+        "Vídeos institucionais, propagandas e cobertura de eventos;",
+        "Vídeos fora do formato contratado e materiais longos;",
+        "Motion design elaborado;",
+        "Cartazes, cardápios e materiais offline complexos;",
+        "Novas plataformas, páginas de destino ou integrações;",
+        "Gravações fora das condições da cláusula 10.2."
+      ]
+    },
+    {
+      "tipo": "p",
+      "texto": "16.8. **Gravação extra.** O valor da gravação extra corresponde apenas à sessão de captação e não inclui automaticamente as Entregas editadas adicionais. Se o Cliente quiser novas peças editadas além do planejado, elas são consideradas Entregas extras de edição. Se o Cliente quiser apenas aproveitar uma ocasião para captar material, ele entra na esteira normal de produção, dentro do volume contratado."
+    },
+    {
+      "tipo": "p",
+      "texto": "16.9. **Pedidos urgentes.** Pedidos extras com prazo reduzido estão sujeitos à disponibilidade da equipe e podem ter acréscimo de valor, conforme o anexo do contrato."
+    },
+    {
+      "tipo": "p",
+      "texto": "16.10. **Prazos de referência.** Os prazos abaixo começam a contar após o recebimento de todas as informações e, quando aplicável, após a aprovação do orçamento:"
+    },
+    {
+      "tipo": "tabela",
+      "colunas": [
+        "Tipo de entrega",
+        "Prazo de referência"
+      ],
+      "linhas": [
+        [
+          "Artes simples",
+          "1 a 3 dias úteis"
+        ],
+        [
+          "Alterações de texto em carrosséis",
+          "No mesmo dia útil"
+        ],
+        [
+          "Flyers e banners",
+          "3 a 7 dias úteis"
+        ],
+        [
+          "Materiais para impressão",
+          "3 a 7 dias úteis"
+        ],
+        [
+          "Projetos complexos, vídeos e formatos especiais",
+          "Sob consulta"
+        ]
+      ]
+    },
+    {
+      "tipo": "p",
+      "texto": "16.11. O planejamento contratado tem prioridade na organização da equipe. Pedidos Extras são produzidos sem prejuízo das Entregas previstas."
+    },
+    {
+      "tipo": "h2",
+      "texto": "17. Responsabilidades das partes"
+    },
+    {
+      "tipo": "p",
+      "texto": "17.1. **Cabe à Cut Creative:**"
+    },
+    {
+      "tipo": "lista",
+      "itens": [
+        "Conduzir o planejamento;",
+        "Produzir e executar as Entregas previstas no Plano Contratado;",
+        "Orientar o Cliente sobre preparação, gravações e aprovações;",
+        "Comunicar atrasos, alterações e compensações;",
+        "Cumprir os prazos sob sua responsabilidade."
+      ]
+    },
+    {
+      "tipo": "p",
+      "texto": "17.2. **Cabe ao Cliente:**"
+    },
+    {
+      "tipo": "lista",
+      "itens": [
+        "Fornecer informações corretas e atualizadas;",
+        "Preencher os formulários de Briefing;",
+        "Disponibilizar materiais e os acessos necessários (redes sociais, contas de anúncio, páginas e ferramentas);",
+        "Manter ativo o meio de pagamento das plataformas de anúncio, quando houver tráfego pago;",
+        "Comparecer às reuniões e gravações agendadas;",
+        "Aprovar as Entregas e conferir as informações técnicas antes da publicação ou veiculação;",
+        "Dar retorno aos contatos e oportunidades gerados pelas ações de marketing;",
+        "Informar previamente campanhas, eventos, promoções e mudanças no negócio;",
+        "Informar restrições legais, regulatórias ou profissionais que possam afetar a comunicação (por exemplo, normas de conselhos de classe)."
+      ]
+    },
+    {
+      "tipo": "p",
+      "texto": "17.3. Ao aprovar uma Entrega, o Cliente confirma a exatidão das informações técnicas, preços, condições comerciais e dados sobre seus produtos e serviços nela contidos."
+    },
+    {
+      "tipo": "p",
+      "texto": "17.4. Atrasos causados pelo não cumprimento das responsabilidades do Cliente adiam os prazos da Cut Creative na mesma proporção e não geram compensação."
+    },
+    {
+      "tipo": "h2",
+      "texto": "18. Resultados"
+    },
+    {
+      "tipo": "p",
+      "texto": "18.1. A Cut Creative se compromete com a aplicação da metodologia, a qualidade e os prazos das Entregas. Resultados como alcance, seguidores, contatos e vendas dependem também de fatores fora do controle da agência, como investimento em mídia, regras e instabilidades das plataformas, mercado, oferta e atendimento comercial do Cliente."
+    },
+    {
+      "tipo": "p",
+      "texto": "18.2. Metas numéricas só são consideradas compromisso quando estiverem expressamente previstas no contrato ou na proposta comercial."
+    },
+    {
+      "tipo": "p",
+      "texto": "18.3. As plataformas de redes sociais e anúncios podem alterar regras, reprovar anúncios ou restringir contas a seu critério. Nesses casos, a Cut Creative atua para orientar e corrigir o que estiver ao seu alcance."
+    },
+    {
+      "tipo": "h2",
+      "texto": "19. Disposições finais"
+    },
+    {
+      "tipo": "p",
+      "texto": "19.1. A Cut Creative atua como parceira estratégica: o Cliente contribui com o conhecimento do próprio negócio, e a agência transforma essas informações em direcionamento, comunicação e execução."
+    },
+    {
+      "tipo": "p",
+      "texto": "19.2. Sempre que houver dúvida sobre processos, Entregas ou solicitações, o Cliente deve consultar estes Termos e acionar a equipe responsável pelo Grupo de Atendimento. A Cut Creative prefere esclarecer os pontos com antecedência a permitir que dúvidas se transformem em desalinhamentos ao longo da parceria."
+    }
+  ]
+}
