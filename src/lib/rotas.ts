@@ -116,6 +116,18 @@ export const rotaPrivacidade: MetaRota = {
     "Como a Cut Creative trata os dados pessoais coletados neste site, em conformidade com a LGPD.",
 };
 
+/**
+ * Documento que o contrato cita por referência. Fica de fora do sitemap:
+ * é para o cliente que já fechou, não para ranquear na busca.
+ */
+export const rotaTermos: MetaRota = {
+  path: "/termos-de-uso",
+  title: "Termos de Prestação de Serviços e Metodologia de Trabalho | Cut Creative",
+  description:
+    "Regras de relacionamento, planejamento, produção, aprovação, atendimento e pedidos adicionais que se aplicam aos serviços prestados pela Cut Creative.",
+  semIndex: true,
+};
+
 export const rotasServico: MetaRota[] = servicos.servicos.map((s) => ({
   path: `/${s.slug}`,
   title: s.metaTitulo,
@@ -274,4 +286,5 @@ export const rotas: MetaRota[] = [
   rotaBlog,
   ...rotasPost,
   rotaPrivacidade,
+  rotaTermos,
 ];
